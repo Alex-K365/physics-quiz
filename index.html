@@ -182,14 +182,13 @@ tr:nth-child(even){background:var(--card-bg)}
 <div class="subscribe-card" id="subscribeSection">
 <h3>📬 每週收到精選理化題 + 解題技巧</h3>
 <p>免費訂閱電子報，每週一三五收到實戰題目與冷知識</p>
-<form class="subscribe-form" action="https://us5.list-manage.com/subscribe/post?u=21587eb750f9f24c0baf7d64e&amp;id=cbbdc8165d" method="post" target="mc-iframe" onsubmit="return handleSubscribe(this)">
-<input type="email" name="EMAIL" id="subscribeEmail" placeholder="請輸入 Email" required>
+<form class="subscribe-form" onsubmit="return handleSubscribe(this)">
+<input type="email" id="subscribeEmail" placeholder="請輸入 Email" required>
 <div style="position:absolute;left:-5000px" aria-hidden="true">
 <input type="text" name="b_21587eb750f9f24c0baf7d64e_cbbdc8165d" tabindex="-1">
 </div>
 <button id="subscribeBtn" type="submit">免費訂閱</button>
 </form>
-<iframe name="mc-iframe" id="mcIframe" style="display:none"></iframe>
 <div class="subscribe-msg" id="subscribeMsg"></div>
 <div class="subscribe-count" id="subscribeCount"></div>
 </div>
@@ -764,8 +763,8 @@ function initApp() {
 const SUBSCRIBERS_KEY = 'chem_subscribers';
 
 function handleSubscribe(form) {
-  const input = form.querySelector('input[name=EMAIL]');
-  const btn = form.querySelector('button');
+  const input = document.getElementById('subscribeEmail');
+  const btn = document.getElementById('subscribeBtn');
   const msg = document.getElementById('subscribeMsg');
   const email = input.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -784,15 +783,21 @@ function handleSubscribe(form) {
     updateSubscribeCount();
   }
 
-  document.getElementById('mcIframe').onload = function() {
+  const cb = 'mc_cb_' + Date.now();
+  window[cb] = function(data) {
     msg.textContent = '✅ 訂閱成功！歡迎加入！';
     msg.className += ' success';
     input.value = '';
     btn.disabled = false;
     btn.textContent = '免費訂閱';
+    delete window[cb];
   };
 
-  setTimeout(() => {
+  const s = document.createElement('script');
+  s.src = 'https://us5.list-manage.com/subscribe/post-json?u=21587eb750f9f24c0baf7d64e&id=cbbdc8165d&EMAIL=' + encodeURIComponent(email) + '&b_21587eb750f9f24c0baf7d64e_cbbdc8165d=&subscribe=Subscribe&c=' + cb;
+  document.body.appendChild(s);
+
+  setTimeout(function() {
     if (btn.disabled) {
       msg.textContent = '✅ 訂閱成功！歡迎加入！';
       msg.className += ' success';
@@ -800,9 +805,9 @@ function handleSubscribe(form) {
       btn.disabled = false;
       btn.textContent = '免費訂閱';
     }
-  }, 5000);
+  }, 8000);
 
-  return true;
+  return false;
 }
 
 function updateSubscribeCount() {
