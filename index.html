@@ -184,9 +184,6 @@ tr:nth-child(even){background:var(--card-bg)}
 <p>免費訂閱電子報，每週一三五收到實戰題目與冷知識</p>
 <form class="subscribe-form" onsubmit="return handleSubscribe(this)">
 <input type="email" id="subscribeEmail" placeholder="請輸入 Email" required>
-<div style="position:absolute;left:-5000px" aria-hidden="true">
-<input type="text" name="b_21587eb750f9f24c0baf7d64e_cbbdc8165d" tabindex="-1">
-</div>
 <button id="subscribeBtn" type="submit">免費訂閱</button>
 </form>
 <div class="subscribe-msg" id="subscribeMsg"></div>
@@ -783,29 +780,21 @@ function handleSubscribe(form) {
     updateSubscribeCount();
   }
 
-  const cb = 'mc_cb_' + Date.now();
-  window[cb] = function(data) {
-    msg.textContent = '✅ 訂閱成功！歡迎加入！';
-    msg.className += ' success';
-    input.value = '';
-    btn.disabled = false;
-    btn.textContent = '免費訂閱';
-    delete window[cb];
-  };
+  const params = new URLSearchParams();
+  params.append('u', '21587eb750f9f24c0baf7d64e');
+  params.append('id', 'cbbdc8165d');
+  params.append('EMAIL', email);
+  params.append('b_21587eb750f9f24c0baf7d64e_cbbdc8165d', '');
+  params.append('subscribe', 'Subscribe');
 
-  const s = document.createElement('script');
-  s.src = 'https://us5.list-manage.com/subscribe/post-json?u=21587eb750f9f24c0baf7d64e&id=cbbdc8165d&EMAIL=' + encodeURIComponent(email) + '&b_21587eb750f9f24c0baf7d64e_cbbdc8165d=&subscribe=Subscribe&c=' + cb;
-  document.body.appendChild(s);
+  const img = new Image();
+  img.src = 'https://us5.list-manage.com/subscribe/post?' + params.toString();
 
-  setTimeout(function() {
-    if (btn.disabled) {
-      msg.textContent = '✅ 訂閱成功！歡迎加入！';
-      msg.className += ' success';
-      input.value = '';
-      btn.disabled = false;
-      btn.textContent = '免費訂閱';
-    }
-  }, 8000);
+  msg.textContent = '✅ 訂閱成功！歡迎加入！';
+  msg.className += ' success';
+  input.value = '';
+  btn.disabled = false;
+  btn.textContent = '免費訂閱';
 
   return false;
 }
