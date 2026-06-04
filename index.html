@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>國中理化題庫 - 免費線上練習 | 模擬考 | 錯題本</title>
+<meta name="description" content="免費國中理化題庫線上練習，涵蓋力學、運動學、光學、電學等 14 個單元。提供模擬考、錯題本、收藏功能，幫你高效準備會考！">
+<meta name="keywords" content="國中理化,理化題庫,國中理化練習,會考理化,模擬考,理化線上測驗">
+<meta property="og:title" content="國中理化題庫 - 免費線上練習">
+<meta property="og:description" content="免費國中理化題庫，涵蓋力學、光學、電學等 14 單元，含模擬考與錯題本功能。">
+<meta property="og:type" content="website">
+<style>
+:root{--bg-start:#eef2f9;--bg-end:#d9e2ef;--card-bg:rgba(255,255,255,0.68);--card-border:rgba(255,255,255,0.45);--glass-shadow:0 8px 32px rgba(0,0,0,0.08);--text-primary:#1a2c3e;--text-secondary:#2c3e50;--text-muted:#4a627a;--accent:#1f6392;--accent-glow:#3b82f6;--tag-bg:rgba(31,99,146,0.12);--btn-bg:#1f3a4b;--btn-hover:#2c7da0;--border-light:rgba(0,0,0,0.08);--glass-rgb:255,255,255;--nav-blur:rgba(255,255,255,0.5);--wrong-bg:rgba(220,38,38,0.08);--correct-bg:rgba(5,150,105,0.08)}
+[data-theme=dark]{--bg-start:#0b1120;--bg-end:#111827;--card-bg:rgba(18,25,45,0.7);--card-border:rgba(72,92,128,0.4);--glass-shadow:0 12px 40px rgba(0,0,0,0.4);--text-primary:#f0f3fa;--text-secondary:#cbd5e6;--text-muted:#9aaec9;--accent:#7ab7d4;--accent-glow:#60a5fa;--tag-bg:rgba(96,165,250,0.18);--btn-bg:#2d3e5a;--btn-hover:#488bb0;--border-light:rgba(255,255,255,0.08);--glass-rgb:10,18,32;--nav-blur:rgba(10,18,32,0.5);--wrong-bg:rgba(220,38,38,0.15);--correct-bg:rgba(5,150,105,0.15)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC','Microsoft JhengHei',sans-serif;background:radial-gradient(circle at 10% 20%,var(--bg-start),var(--bg-end));color:var(--text-primary);min-height:100vh;transition:background .4s ease}
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;background-image:radial-gradient(rgba(200,220,250,0.2) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0;opacity:.5}
+.nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);background:var(--nav-blur);border-bottom:1px solid var(--card-border);padding:0}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;overflow-x:auto;padding:0 16px}
+.nav-brand{padding:14px 16px 14px 0;font-size:18px;font-weight:700;background:linear-gradient(135deg,var(--accent),#c9a227);background-clip:text;-webkit-background-clip:text;color:transparent;white-space:nowrap;letter-spacing:-.3px}
+.nav-item{padding:14px 16px;font-size:14px;cursor:pointer;color:var(--text-muted);white-space:nowrap;border-bottom:3px solid transparent;transition:.2s;font-weight:500}
+.nav-item:hover{color:var(--accent);background:var(--tag-bg)}
+.nav-item.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700}
+.theme-btn{background:var(--card-bg);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--card-border);color:var(--text-primary);padding:6px 14px;border-radius:60px;cursor:pointer;font-size:13px;font-weight:600;transition:all .25s ease;box-shadow:var(--glass-shadow);white-space:nowrap;margin-left:auto}
+.theme-btn:hover{background:var(--accent);color:#fff;border-color:transparent;transform:scale(.96)}
+.container{max-width:1100px;margin:0 auto;padding:24px 16px 60px;position:relative;z-index:2}
+.page{display:none}
+.page.active{display:block;animation:floatIn .4s ease}
+@keyframes floatIn{0%{opacity:0;transform:translateY(16px)}100%{opacity:1;transform:translateY(0)}}
+h2{font-size:22px;font-weight:700;color:var(--text-primary);margin-bottom:20px;letter-spacing:-.3px}
+.card{background:var(--card-bg);backdrop-filter:blur(14px) saturate(180%);-webkit-backdrop-filter:blur(14px) saturate(180%);border-radius:24px;border:1px solid var(--card-border);box-shadow:var(--glass-shadow);padding:20px;margin-bottom:16px;transition:all .3s ease}
+.card:hover{box-shadow:0 20px 40px -12px rgba(0,0,0,.25);border-color:var(--accent-glow)}
+.card-title{font-size:17px;font-weight:700;color:var(--accent);margin-bottom:12px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:24px}
+.stat-card{background:var(--card-bg);backdrop-filter:blur(14px) saturate(180%);-webkit-backdrop-filter:blur(14px) saturate(180%);border-radius:24px;padding:20px;text-align:center;border:1px solid var(--card-border);box-shadow:var(--glass-shadow);transition:all .3s ease}
+.stat-card:hover{border-color:var(--accent-glow);transform:translateY(-4px)}
+.stat-num{font-size:32px;font-weight:800;color:var(--accent)}
+.stat-label{font-size:13px;color:var(--text-muted);margin-top:4px;font-weight:500}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.filters select,.filters input{padding:8px 14px;border:1px solid var(--card-border);border-radius:14px;font-size:14px;background:var(--card-bg);color:var(--text-primary);outline:none;font-family:inherit;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:all .2s}
+.filters select:focus,.filters input:focus{border-color:var(--accent-glow);box-shadow:0 0 0 3px rgba(59,130,246,.15)}
+.filters .btn{padding:8px 18px;border:none;border-radius:60px;font-size:14px;cursor:pointer;font-weight:600;transition:all .25s ease}
+.btn-primary{background:var(--btn-bg);color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.btn-primary:hover{background:var(--btn-hover);transform:scale(.98);box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.btn-outline{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+.btn-outline:hover{background:var(--accent);color:#fff}
+.btn-danger{background:#dc2626;color:#fff}
+.btn-danger:hover{background:#b91c1c}
+.btn-success{background:#059669;color:#fff}
+.btn-success:hover{background:#047857}
+.btn-sm{padding:6px 14px;font-size:13px;border-radius:60px}
+.q-card{background:var(--card-bg);backdrop-filter:blur(14px) saturate(180%);-webkit-backdrop-filter:blur(14px) saturate(180%);border-radius:20px;padding:18px 20px;margin-bottom:14px;border:1px solid var(--card-border);box-shadow:var(--glass-shadow);border-left:4px solid var(--accent);transition:all .2s}
+.q-card.wrong{border-left-color:#dc2626;background:var(--wrong-bg)}
+.q-card.correct{border-left-color:#059669;background:var(--correct-bg)}
+.q-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.q-tag{font-size:11px;padding:3px 12px;border-radius:40px;font-weight:600;background:var(--tag-bg);color:var(--accent);border:.5px solid rgba(128,128,128,.15)}
+.q-tag.力學{background:#dbeafe;color:#1e40af}
+.q-tag.運動學{background:#e0e7ff;color:#3730a3}
+.q-tag.能量{background:#fef3c7;color:#92400e}
+.q-tag.聲波{background:#fce7f3;color:#9d174d}
+.q-tag.光學{background:#f3e8ff;color:#6b21a8}
+.q-tag.電學{background:#d1fae5;color:#065f46}
+.q-tag.磁學{background:#ffe4e6;color:#9f1239}
+.q-tag.熱學{background:#ffedd5;color:#9a3412}
+.q-tag.物質組成{background:#e0f2fe;color:#075985}
+.q-tag.化學反應{background:#fce4ec;color:#b71c1c}
+.q-tag.酸鹼鹽{background:#e8f5e9;color:#1b5e20}
+.q-tag.氧化還原{background:#fff3e0;color:#e65100}
+.q-tag.有機化學{background:#f3e5f5;color:#4a148c}
+.q-tag.實驗{background:#e0f7fa;color:#00695c}
+.q-tag.基礎{background:var(--tag-bg);color:var(--accent)}
+.q-tag.中等{background:#fef3c7;color:#92400e}
+.q-tag.進階{background:#fce7f3;color:#9d174d}
+.q-text{font-size:15px;line-height:1.8;margin-bottom:10px}
+.q-text table{font-size:13px;margin:6px 0;width:100%;border-collapse:collapse}
+.q-text td,.q-text th{border:1px solid var(--border-light);padding:4px 12px}
+.q-text th{background:var(--tag-bg)}
+.q-text .reading-box{background:var(--card-bg);padding:12px 16px;border-radius:12px;border-left:3px solid var(--accent);margin:8px 0;line-height:1.7;font-size:14px}
+.q-options{padding-left:4px;margin-bottom:8px}
+.q-options label{display:block;padding:6px 12px;margin:3px 0;border-radius:10px;cursor:pointer;font-size:15px;line-height:1.6;transition:background .15s}
+.q-options label:hover{background:var(--tag-bg)}
+.q-options input[type="radio"],.q-options input[type="checkbox"]{margin-right:8px;accent-color:var(--accent)}
+.q-explanation{display:none;margin-top:8px;padding:14px 16px;background:var(--card-bg);border:1px dashed var(--accent);border-radius:14px;font-size:14px;color:var(--text-secondary);line-height:1.7}
+.q-explanation.show{display:block}
+.q-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.q-actions button{font-size:13px;padding:5px 14px;border:none;border-radius:60px;cursor:pointer;transition:.2s;font-weight:500}
+.btn-star{background:transparent;font-size:18px;cursor:pointer;border:none;padding:2px 4px;transition:.15s}
+.btn-star.fav{color:#f59e0b}
+.btn-star:not(.fav){color:var(--text-muted)}
+.btn-star:hover{transform:scale(1.2)}
+.mock-timer{font-size:28px;font-weight:800;color:var(--accent);text-align:center;padding:14px;background:var(--card-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:20px;margin-bottom:20px;border:1px solid var(--card-border);box-shadow:var(--glass-shadow)}
+.mock-timer.warning{color:#dc2626}
+.mock-settings{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.mock-settings label{font-size:14px;font-weight:600;color:var(--text-primary)}
+.mock-settings input[type="number"]{width:70px;padding:6px 12px;border:1px solid var(--card-border);border-radius:12px;font-size:14px;text-align:center;background:var(--card-bg);color:var(--text-primary);outline:none}
+.mock-progress{height:4px;background:var(--border-light);border-radius:4px;margin-bottom:16px}
+.mock-progress-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c9a227);border-radius:4px;transition:width .3s}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{border:1px solid var(--border-light);padding:8px 12px;text-align:center}
+th{background:var(--tag-bg);color:var(--text-primary);font-weight:600}
+tr:nth-child(even){background:var(--card-bg)}
+.tag-select{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.tag-btn{padding:3px 14px;border:1px solid var(--card-border);border-radius:40px;font-size:12px;cursor:pointer;background:var(--card-bg);color:var(--text-primary);transition:.15s;backdrop-filter:blur(4px)}
+.tag-btn:hover{background:var(--tag-bg)}
+.tag-btn.active-0{background:#fce7f3;border-color:#f472b6;color:#9d174d}
+.tag-btn.active-1{background:#fef3c7;border-color:#f59e0b;color:#92400e}
+.tag-btn.active-2{background:#d1fae5;border-color:#34d399;color:#065f46}
+@media(max-width:640px){
+.nav-inner{flex-wrap:nowrap}
+.nav-item{padding:12px 10px;font-size:13px}
+.container{padding:16px 10px}
+.stats-grid{grid-template-columns:1fr 1fr}
+.card{padding:14px}
+.q-text{font-size:14px}
+}
+@media(max-width:400px){.stats-grid{grid-template-columns:1fr}}
+.fade-in{animation:fadeIn .3s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.empty-state{text-align:center;padding:40px 20px;color:var(--text-muted);font-size:15px}
+.empty-state .icon{font-size:48px;margin-bottom:12px}
+.text-center{text-align:center}
+.mt-8{margin-top:8px}
+.mt-16{margin-top:16px}
+.mb-8{margin-bottom:8px}
+.mb-16{margin-bottom:16px}
+.flex-center{display:flex;align-items:center;justify-content:center;gap:8px}
+.gap-8{gap:8px}
+.gap-12{gap:12px}
+.flex-wrap{flex-wrap:wrap}
+.tag-label{font-size:12px;color:var(--text-muted);margin-bottom:4px}
+.subscribe-card{background:linear-gradient(135deg,var(--accent),#2d7da0);color:#fff;border-radius:24px;padding:24px;margin-bottom:16px;text-align:center;border:none}
+.subscribe-card h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.subscribe-card p{font-size:14px;opacity:.9;margin-bottom:14px}
+.subscribe-form{display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.subscribe-form input{flex:1;min-width:180px;padding:10px 16px;border:none;border-radius:60px;font-size:14px;outline:none;font-family:inherit}
+.subscribe-form button{padding:10px 24px;border:none;border-radius:60px;font-size:14px;font-weight:700;cursor:pointer;background:#fff;color:var(--accent);transition:.2s}
+.subscribe-form button:hover{transform:scale(.96);background:#f0f4ff}
+.subscribe-form button:disabled{opacity:.6;cursor:not-allowed}
+.subscribe-msg{font-size:13px;margin-top:8px;min-height:20px}
+.subscribe-msg.success{color:#bbf7d0}
+.subscribe-msg.error{color:#fecaca}
+.subscribe-count{font-size:12px;opacity:.7;margin-top:6px}
+.footer{text-align:center;padding:20px 16px;font-size:13px;color:var(--text-muted);border-top:1px solid var(--card-border);margin-top:24px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<div class="nav-brand">🧪 理化題庫</div>
+<div class="nav-item active" data-page="home">首頁</div>
+<div class="nav-item" data-page="browse">題庫瀏覽</div>
+<div class="nav-item" data-page="mock">模擬考</div>
+<div class="nav-item" data-page="wrong">錯題本</div>
+<div class="nav-item" data-page="fav">收藏本</div>
+<div class="nav-item" data-page="history">練習紀錄</div>
+<button class="theme-btn" id="themeToggle">🌙 深色模式</button>
+</div>
+</nav>
+
+<div class="container">
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+<h2>🏠 首頁儀表板</h2>
+<div class="stats-grid" id="statsGrid">
+<div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">總題數</div></div>
+<div class="stat-card"><div class="stat-num" id="statPracticed">0</div><div class="stat-label">練習次數</div></div>
+<div class="stat-card"><div class="stat-num" id="statAccuracy">--%</div><div class="stat-label">正確率</div></div>
+<div class="stat-card"><div class="stat-num" id="statFav">0</div><div class="stat-label">收藏題數</div></div>
+</div>
+<div class="card">
+<div class="card-title">📊 學習概況</div>
+<p style="color:#6b6390;font-size:14px;line-height:1.8">
+錯題數：<strong id="homeWrongCount">0</strong> 題 &nbsp;|&nbsp;
+已練習：<strong id="homeDoneCount">0</strong> 題 &nbsp;|&nbsp;
+收藏：<strong id="homeFavCount">0</strong> 題<br>
+<small>持續練習，掌握每個理化概念！</small>
+</p>
+</div>
+
+<div class="subscribe-card" id="subscribeSection">
+<h3>📬 每週收到精選理化題 + 解題技巧</h3>
+<p>免費訂閱電子報，每週一三五收到實戰題目與冷知識</p>
+<div class="subscribe-form">
+<input type="email" id="subscribeEmail" placeholder="請輸入 Email" required>
+<button id="subscribeBtn" onclick="handleSubscribe()">免費訂閱</button>
+</div>
+<div class="subscribe-msg" id="subscribeMsg"></div>
+<div class="subscribe-count" id="subscribeCount"></div>
+</div>
+</div>
+
+<!-- BROWSE -->
+<div class="page" id="page-browse">
+<h2>📚 題庫瀏覽</h2>
+<div class="filters">
+<select id="filterUnit"><option value="">全部單元</option></select>
+<select id="filterDifficulty"><option value="">全部難度</option></select>
+<select id="filterType"><option value="">全部題型</option><option value="single">單選題</option><option value="multiple">多選題</option><option value="mixed">混合題</option></select>
+<select id="filterTag"><option value="">全部標籤</option><option value="notyet">還不會</option><option value="review">需複習</option><option value="done">已學會</option></select>
+<input type="text" id="filterSearch" placeholder="🔍 搜尋題目..." style="flex:1;min-width:160px">
+</div>
+<div class="filters">
+<button class="btn btn-primary btn-sm" onclick="applyFilters()">套用篩選</button>
+<button class="btn btn-outline btn-sm" onclick="resetFilters()">重設</button>
+<span style="font-size:14px;color:#6b6390;margin-left:8px" id="filterResultCount"></span>
+</div>
+<div id="browseList"></div>
+</div>
+
+<!-- MOCK -->
+<div class="page" id="page-mock">
+<h2>📝 隨機模擬考</h2>
+<div id="mockSetup">
+<div class="card">
+<div class="card-title">測驗設定</div>
+<div class="mock-settings">
+<label>題數：</label>
+<input type="number" id="mockCount" value="18" min="5">
+<label>考試時間：</label>
+<input type="number" id="mockTime" value="80" min="5" max="200"> <span style="font-size:14px">分鐘</span>
+</div>
+<div class="mock-settings">
+<select id="mockUnitFilter"><option value="">全部單元</option></select>
+<select id="mockDiffFilter"><option value="">全部難度</option></select>
+</div>
+<button class="btn btn-primary" onclick="startMock()">開始測驗</button>
+</div>
+</div>
+<div id="mockExam" style="display:none">
+<div class="mock-timer" id="mockTimer">80:00</div>
+<div class="mock-progress"><div class="mock-progress-bar" id="mockProgress" style="width:0%"></div></div>
+<div id="mockQuestions"></div>
+<div class="text-center mt-16">
+<button class="btn btn-primary" onclick="submitMock()">提交答案</button>
+<button class="btn btn-outline" onclick="cancelMock()">放棄測驗</button>
+</div>
+<div id="mockResult" class="card" style="display:none"></div>
+</div>
+</div>
+
+<!-- WRONG -->
+<div class="page" id="page-wrong">
+<h2>❌ 錯題記錄</h2>
+<div id="wrongList"></div>
+<div id="wrongEmpty" class="empty-state" style="display:none">
+<div class="icon">🎉</div>
+<div>目前沒有錯題記錄，繼續保持！</div>
+</div>
+</div>
+
+<!-- FAV -->
+<div class="page" id="page-fav">
+<h2>⭐ 收藏題庫</h2>
+<div id="favList"></div>
+<div id="favEmpty" class="empty-state" style="display:none">
+<div class="icon">📌</div>
+<div>尚未收藏任何題目，在題庫瀏覽中點擊星號收藏。</div>
+</div>
+</div>
+
+<!-- HISTORY -->
+<div class="page" id="page-history">
+<h2>📋 練習紀錄</h2>
+<div id="historyTableWrap"></div>
+<div id="historyEmpty" class="empty-state" style="display:none">
+<div class="icon">📊</div>
+<div>尚無練習紀錄，開始模擬考吧！</div>
+</div>
+<button class="btn btn-outline btn-sm mt-16" onclick="clearHistory()" style="display:none" id="clearHistoryBtn">清除所有紀錄</button>
+</div>
+
+</div>
+
+<script>
+const DIFFICULTIES = ['基礎','中等','進階'];
+const LETTERS = 'ABCDEFGHIJ';
+let QUESTIONS = [];
+let UNITS = [];
+
+async function loadQuestions() {
+  try {
+    const resp = await fetch('questions.json');
+    const data = await resp.json();
+    UNITS = data.units.map(u => u.name);
+    QUESTIONS = data.questions.map(q => {
+      const opts = q.options.map((o, i) => LETTERS[i] + ') ' + o);
+      let answer = q.answer;
+      if (typeof answer === 'number') answer = LETTERS[answer];
+      else if (Array.isArray(answer)) answer = answer.map(i => LETTERS[i]);
+      return {
+        id: q.id,
+        unit: q.unit,
+        difficulty: q.difficulty,
+        type: q.type,
+        question: q.question,
+        options: opts,
+        answer: answer,
+        explanation: q.explanation
+      };
+    });
+    initApp();
+  } catch (e) {
+    document.body.innerHTML = '<div style="padding:40px;text-align:center;font-size:20px;">⚠️ 無法載入題庫。<br>請確認 <strong>questions.json</strong> 與此檔案放在同一目錄。<br><br><small>錯誤: '+e.message+'</small></div>';
+  }
+}
+
+function getStore(k, def) {
+  try { const d=localStorage.getItem('chem_'+k); return d?JSON.parse(d):def; }catch(e){return def}
+}
+function setStore(k, v) { localStorage.setItem('chem_'+k, JSON.stringify(v)); }
+
+document.querySelectorAll('.nav-item').forEach(el => {
+  el.addEventListener('click', ()=>{
+    document.querySelectorAll('.nav-item').forEach(x=>x.classList.remove('active'));
+    el.classList.add('active');
+    document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+    document.getElementById('page-'+el.dataset.page).classList.add('active');
+    refreshPage(el.dataset.page);
+  });
+});
+
+function refreshPage(page) {
+  if (page==='home') refreshHome();
+  else if (page==='browse') { populateFilters(); applyFilters(); }
+  else if (page==='wrong') renderWrong();
+  else if (page==='fav') renderFav();
+  else if (page==='history') renderHistory();
+}
+
+function refreshHome() {
+  const wrongs = getStore('wrong', {});
+  const favs = getStore('fav', []);
+  const history = getStore('history', []);
+  const totalDone = new Set();
+  history.forEach(h => h.ids && h.ids.forEach(id => totalDone.add(id)));
+  let totalCorrect=0, totalQ=0;
+  history.forEach(h => { totalCorrect += h.correct||0; totalQ += h.total||0; });
+  const acc = totalQ>0 ? Math.round(totalCorrect/totalQ*100) : 0;
+  document.getElementById('statPracticed').textContent = history.length;
+  document.getElementById('statAccuracy').textContent = totalQ>0 ? acc+'%' : '--%';
+  document.getElementById('statFav').textContent = favs.length;
+  document.getElementById('homeWrongCount').textContent = Object.keys(wrongs).length;
+  document.getElementById('homeDoneCount').textContent = totalDone.size;
+  document.getElementById('homeFavCount').textContent = favs.length;
+  document.getElementById('statTotal').textContent = QUESTIONS.length;
+}
+
+function populateFilters() {
+  const fu = document.getElementById('filterUnit');
+  const fd = document.getElementById('filterDifficulty');
+  fu.innerHTML = '<option value="">全部單元</option>'+UNITS.map(u=>'<option value="'+u+'">'+u+'</option>').join('');
+  fd.innerHTML = '<option value="">全部難度</option>'+DIFFICULTIES.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
+  const mu = document.getElementById('mockUnitFilter');
+  const md = document.getElementById('mockDiffFilter');
+  if (mu) { mu.innerHTML = '<option value="">全部單元</option>'+UNITS.map(u=>'<option value="'+u+'">'+u+'</option>').join(''); }
+  if (md) { md.innerHTML = '<option value="">全部難度</option>'+DIFFICULTIES.map(d=>'<option value="'+d+'">'+d+'</option>').join(''); }
+}
+
+function applyFilters() {
+  const unit = document.getElementById('filterUnit').value;
+  const diff = document.getElementById('filterDifficulty').value;
+  const type = document.getElementById('filterType').value;
+  const tag = document.getElementById('filterTag').value;
+  const search = document.getElementById('filterSearch').value.trim().toLowerCase();
+  const tags = getStore('tags', {});
+  let list = QUESTIONS.filter(q => {
+    if (unit && q.unit!==unit) return false;
+    if (diff && q.difficulty!==diff) return false;
+    if (type && q.type!==type) return false;
+    if (tag && tags[q.id]!==tag) return false;
+    if (search && !q.question.toLowerCase().includes(search)) return false;
+    return true;
+  });
+  document.getElementById('filterResultCount').textContent = '共 '+list.length+' 題';
+  renderBrowse(list);
+}
+
+function resetFilters() {
+  document.getElementById('filterUnit').value='';
+  document.getElementById('filterDifficulty').value='';
+  document.getElementById('filterType').value='';
+  document.getElementById('filterTag').value='';
+  document.getElementById('filterSearch').value='';
+  applyFilters();
+}
+
+function renderBrowse(list) {
+  const container = document.getElementById('browseList');
+  const wrongs = getStore('wrong', {});
+  const favs = getStore('fav', []);
+  const tags = getStore('tags', {});
+  if (!list.length) {
+    container.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><div>沒有符合條件的題目</div></div>';
+    return;
+  }
+  container.innerHTML = list.map(q => {
+    const isFav = favs.includes(q.id);
+    const tag = tags[q.id]||'';
+    const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
+    const tagColors = {notyet:'#fce7f3;color:#9d174d',review:'#fef3c7;color:#92400e',done:'#d1fae5;color:#065f46'};
+    const w = wrongs[q.id];
+    return '<div class="card q-card fade-in" data-id="'+q.id+'">'+
+      '<div class="q-tags">'+
+        '<span class="q-tag '+q.unit+'">'+q.unit+'</span>'+
+        '<span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
+        '<span class="q-tag" style="background:#e8e2f0;color:#2d1b69">' + ({single:'單選',multiple:'多選',mixed:'混合'}[q.type]) + '</span>'+
+        (w?'<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯'+w.wrongCount+'次</span>':'')+
+        (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
+      '</div>'+
+      '<div class="q-text">' + q.question + '</div>'+
+      '<div class="q-options" id="opt-'+q.id+'">' +
+        (q.type==='multiple' ? q.options.map((o,i)=>'<label><input type="checkbox" disabled> '+o+'</label>').join('') :
+         q.options.map((o,i)=>'<label><input type="radio" disabled> '+o+'</label>').join('')) +
+      '</div>'+
+      '<div class="q-actions">'+
+        '<button class="btn-star '+(isFav?'fav':'')+'" onclick="toggleFav('+q.id+')" title="收藏">'+(isFav?'★':'☆')+'</button>'+
+        '<button class="btn btn-outline btn-sm" onclick="toggleExplanation('+q.id+')">顯示解答</button>'+
+        '<button class="btn btn-outline btn-sm" onclick="toggleTag('+q.id+')">標籤</button>'+
+      '</div>'+
+      '<div class="tag-select" id="tagselect-'+q.id+'" style="display:none">'+
+        '<span class="tag-btn'+(tag==='notyet'?' active-0':'')+'" onclick="setTag('+q.id+',\'notyet\')">還不會</span>'+
+        '<span class="tag-btn'+(tag==='review'?' active-1':'')+'" onclick="setTag('+q.id+',\'review\')">需複習</span>'+
+        '<span class="tag-btn'+(tag==='done'?' active-2':'')+'" onclick="setTag('+q.id+',\'done\')">已學會</span>'+
+        (tag?'<span class="tag-btn" onclick="setTag('+q.id+',\'\')">取消</span>':'')+
+      '</div>'+
+      '<div class="q-explanation" id="explain-'+q.id+'">'+q.explanation+'</div>'+
+    '</div>';
+  }).join('');
+}
+
+function toggleExplanation(id) {
+  const el = document.getElementById('explain-'+id);
+  if (el) el.classList.toggle('show');
+}
+
+function toggleTag(id) {
+  const el = document.getElementById('tagselect-'+id);
+  if (el) el.style.display = el.style.display==='none'?'flex':'none';
+}
+
+function setTag(id, val) {
+  const tags = getStore('tags', {});
+  if (val) tags[id] = val;
+  else delete tags[id];
+  setStore('tags', tags);
+  applyFilters();
+}
+
+function toggleFav(id) {
+  let favs = getStore('fav', []);
+  if (favs.includes(id)) favs = favs.filter(x=>x!==id);
+  else favs.push(id);
+  setStore('fav', favs);
+  applyFilters();
+}
+
+let mockState = null;
+
+function startMock() {
+  const count = parseInt(document.getElementById('mockCount').value)||18;
+  const minutes = parseInt(document.getElementById('mockTime').value)||80;
+  const unitF = document.getElementById('mockUnitFilter').value;
+  const diffF = document.getElementById('mockDiffFilter').value;
+  let pool = QUESTIONS.filter(q => {
+    if (unitF && q.unit!==unitF) return false;
+    if (diffF && q.difficulty!==diffF) return false;
+    return true;
+  });
+  if (pool.length < count) {
+    alert('符合篩選條件的題目僅 '+pool.length+' 題，請減少題數或放寬篩選。');
+    return;
+  }
+  const shuffled = [...pool].sort(()=>Math.random()-0.5).slice(0, count);
+  const ids = shuffled.map(q=>q.id);
+  const answers = {};
+  ids.forEach(id => { answers[id] = {}; });
+
+  mockState = {
+    ids, answers, timeLimit: minutes*60,
+    startTime: Date.now(),
+    timerInterval: null,
+    currentQ: 0
+  };
+
+  document.getElementById('mockSetup').style.display = 'none';
+  document.getElementById('mockExam').style.display = 'block';
+  document.getElementById('mockResult').style.display = 'none';
+  renderMockQuestions();
+  startMockTimer();
+}
+
+function renderMockQuestions() {
+  const container = document.getElementById('mockQuestions');
+  const ids = mockState.ids;
+  container.innerHTML = ids.map((id, idx) => {
+    const q = QUESTIONS.find(x=>x.id===id);
+    if (!q) return '';
+    const ans = mockState.answers[id]||{};
+    let opts = '';
+    if (q.type === 'multiple') {
+      opts = q.options.map((o, oi) => {
+        const val = String.fromCharCode(65+oi);
+        const checked = (ans.selected||[]).includes(val) ? 'checked' : '';
+        return '<label><input type="checkbox" name="mock-'+id+'" value="'+val+'" '+checked+' onchange="mockSelect('+id+',\''+val+'\')"> '+o+'</label>';
+      }).join('');
+    } else {
+      opts = q.options.map((o, oi) => {
+        const val = String.fromCharCode(65+oi);
+        const checked = ans.selected===val ? 'checked' : '';
+        return '<label><input type="radio" name="mock-'+id+'" value="'+val+'" '+checked+' onchange="mockSelect('+id+',\''+val+'\')"> '+o+'</label>';
+      }).join('');
+    }
+    return '<div class="card q-card fade-in" data-id="'+id+'">'+
+      '<div class="q-tags"><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span></div>'+
+      '<div class="q-text"><strong>'+(idx+1)+'.</strong> '+q.question+'</div>'+
+      '<div class="q-options">'+opts+'</div>'+
+    '</div>';
+  }).join('');
+}
+
+function mockSelect(id, val) {
+  if (!mockState) return;
+  const q = QUESTIONS.find(x=>x.id===id);
+  if (!q) return;
+  const ans = mockState.answers[id] || {};
+  if (q.type === 'multiple') {
+    if (!ans.selected) ans.selected = [];
+    if (ans.selected.includes(val)) ans.selected = ans.selected.filter(x=>x!==val);
+    else ans.selected.push(val);
+    ans.selected.sort();
+  } else {
+    if (ans.selected === val) ans.selected = '';
+    else ans.selected = val;
+  }
+  mockState.answers[id] = ans;
+}
+
+function startMockTimer() {
+  if (mockState.timerInterval) clearInterval(mockState.timerInterval);
+  const update = () => {
+    const elapsed = Math.floor((Date.now() - mockState.startTime) / 1000);
+    const remaining = Math.max(0, mockState.timeLimit - elapsed);
+    const min = Math.floor(remaining/60);
+    const sec = remaining%60;
+    const timerEl = document.getElementById('mockTimer');
+    timerEl.textContent = min+':'+(sec<10?'0':'')+sec;
+    timerEl.className = 'mock-timer' + (remaining<300?' warning':'');
+    const progress = (mockState.ids.length - mockState.ids.filter(id=>mockState.answers[id]&&mockState.answers[id].selected&&mockState.answers[id].selected.length>0).length)/mockState.ids.length;
+    document.getElementById('mockProgress').style.width = ((1-progress)*100)+'%';
+    if (remaining<=0) { clearInterval(mockState.timerInterval); submitMock(); }
+  };
+  update();
+  mockState.timerInterval = setInterval(update, 1000);
+}
+
+function submitMock() {
+  if (!mockState) return;
+  if (mockState.timerInterval) clearInterval(mockState.timerInterval);
+  const ids = mockState.ids;
+  let correct = 0;
+  const wrongIds = [];
+  ids.forEach(id => {
+    const q = QUESTIONS.find(x=>x.id===id);
+    if (!q) return;
+    const ans = mockState.answers[id]||{};
+    const userAns = ans.selected||'';
+    let isCorrect = false;
+    if (q.type === 'multiple') {
+      const correctSet = new Set(q.answer.split('').sort());
+      const userSet = new Set(userAns);
+      if (userSet.size===correctSet.size && [...userSet].every(v=>correctSet.has(v))) isCorrect = true;
+    } else {
+      isCorrect = userAns === q.answer;
+    }
+    if (isCorrect) correct++;
+    if (!isCorrect && userAns && userAns.length>0) {
+      const wrongs = getStore('wrong', {});
+      if (!wrongs[id]) wrongs[id] = {wrongCount:0, lastWrong:new Date().toISOString()};
+      wrongs[id].wrongCount++;
+      wrongs[id].lastWrong = new Date().toISOString();
+      setStore('wrong', wrongs);
+      wrongIds.push(id);
+    }
+    const card = document.querySelector('#mockQuestions .q-card[data-id="'+id+'"]');
+    if (card) { card.classList.add(isCorrect?'correct':'wrong'); }
+  });
+  const total = ids.length;
+  const accuracy = Math.round(correct/total*100);
+  const history = getStore('history', []);
+  history.unshift({
+    date: new Date().toISOString(),
+    total,
+    correct,
+    accuracy,
+    ids,
+    mockTime: mockState.timeLimit/60
+  });
+  setStore('history', history);
+  const el = document.getElementById('mockResult');
+  el.style.display = 'block';
+  el.innerHTML = '<div class="card-title">📊 測驗結果</div>'+
+    '<p style="font-size:18px;line-height:1.8">得分：<strong>'+correct+'</strong> / '+total+' 題（'+accuracy+'%）</p>'+
+    '<p style="color:#6b6390;font-size:14px;margin-top:8px">'+
+    (accuracy>=80?'🎉 表現優異！繼續保持！':accuracy>=60?'💪 不錯，錯題已記錄到錯題本！':'📖 建議複習錯題後再試一次。')+'</p>'+
+    '<button class="btn btn-primary mt-16" onclick="cancelMock()">返回設定</button>';
+  mockState = null;
+}
+
+function cancelMock() {
+  if (mockState && mockState.timerInterval) clearInterval(mockState.timerInterval);
+  mockState = null;
+  document.getElementById('mockSetup').style.display = 'block';
+  document.getElementById('mockExam').style.display = 'none';
+  document.getElementById('mockResult').style.display = 'none';
+}
+
+function renderWrong() {
+  const wrongs = getStore('wrong', {});
+  const ids = Object.keys(wrongs).map(Number).filter(id=>QUESTIONS.find(q=>q.id===id));
+  const container = document.getElementById('wrongList');
+  const empty = document.getElementById('wrongEmpty');
+  if (!ids.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  const favs = getStore('fav', []);
+  const tags = getStore('tags', {});
+  const tagColors = {notyet:'#fce7f3;color:#9d174d',review:'#fef3c7;color:#92400e',done:'#d1fae5;color:#065f46'};
+  const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
+  container.innerHTML = ids.map(id => {
+    const q = QUESTIONS.find(x=>x.id===id);
+    if (!q) return '';
+    const w = wrongs[id];
+    const isFav = favs.includes(id);
+    const tag = tags[id]||'';
+    return '<div class="card q-card wrong fade-in">'+
+      '<div class="q-tags"><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
+      (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
+      '<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯 '+w.wrongCount+' 次</span></div>'+
+      '<div class="q-text">'+q.question+'</div>'+
+      '<div class="q-options">'+
+        (q.type==='multiple' ? q.options.map(o=>'<label><input type="checkbox" disabled> '+o+'</label>').join('') :
+         q.options.map(o=>'<label><input type="radio" disabled> '+o+'</label>').join('')) +
+      '</div>'+
+      '<div class="q-actions">'+
+        '<button class="btn-star '+(isFav?'fav':'')+'" onclick="toggleFav('+id+')" title="收藏">'+(isFav?'★':'☆')+'</button>'+
+        '<button class="btn btn-outline btn-sm" onclick="toggleExplanation('+id+')">顯示解答</button>'+
+        '<button class="btn btn-danger btn-sm" onclick="clearWrong('+id+')">清除錯題</button>'+
+      '</div>'+
+      '<div class="q-explanation" id="explain-'+id+'">'+q.explanation+'</div>'+
+    '</div>';
+  }).join('');
+  container.innerHTML += '<div class="mt-16"><button class="btn btn-outline btn-sm" onclick="clearAllWrong()">清除所有錯題</button></div>';
+}
+
+function clearWrong(id) {
+  const wrongs = getStore('wrong', {});
+  delete wrongs[id];
+  setStore('wrong', wrongs);
+  renderWrong();
+}
+
+function clearAllWrong() {
+  if (!confirm('確定清除所有錯題紀錄？')) return;
+  setStore('wrong', {});
+  renderWrong();
+}
+
+function renderFav() {
+  const favs = getStore('fav', []);
+  const container = document.getElementById('favList');
+  const empty = document.getElementById('favEmpty');
+  if (!favs.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  const wrongs = getStore('wrong', {});
+  const tags = getStore('tags', {});
+  const tagColors = {notyet:'#fce7f3;color:#9d174d',review:'#fef3c7;color:#92400e',done:'#d1fae5;color:#065f46'};
+  const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
+  container.innerHTML = favs.map(id => {
+    const q = QUESTIONS.find(x=>x.id===id);
+    if (!q) return '';
+    const w = wrongs[id];
+    const tag = tags[id]||'';
+    return '<div class="card q-card fade-in">'+
+      '<div class="q-tags"><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
+      (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
+      (w?'<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯 '+w.wrongCount+' 次</span>':'')+'</div>'+
+      '<div class="q-text">'+q.question+'</div>'+
+      '<div class="q-options">'+
+        (q.type==='multiple' ? q.options.map(o=>'<label><input type="checkbox" disabled> '+o+'</label>').join('') :
+         q.options.map(o=>'<label><input type="radio" disabled> '+o+'</label>').join('')) +
+      '</div>'+
+      '<div class="q-actions">'+
+        '<button class="btn-star fav" onclick="toggleFav('+id+')" title="取消收藏">★</button>'+
+        '<button class="btn btn-outline btn-sm" onclick="toggleExplanation('+id+')">顯示解答</button>'+
+      '</div>'+
+      '<div class="q-explanation" id="explain-'+id+'">'+q.explanation+'</div>'+
+    '</div>';
+  }).join('');
+}
+
+function renderHistory() {
+  const history = getStore('history', []);
+  const container = document.getElementById('historyTableWrap');
+  const empty = document.getElementById('historyEmpty');
+  const clearBtn = document.getElementById('clearHistoryBtn');
+  if (!history.length) {
+    container.innerHTML = '';
+    empty.style.display = 'block';
+    clearBtn.style.display = 'none';
+    return;
+  }
+  empty.style.display = 'none';
+  clearBtn.style.display = 'inline-block';
+  const rows = history.map((h, i) => {
+    const d = new Date(h.date);
+    const ds = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()+' '+d.getHours()+':'+(d.getMinutes()<10?'0':'')+d.getMinutes();
+    return '<tr><td>'+(i+1)+'</td><td>'+ds+'</td><td>'+h.total+'</td><td>'+h.correct+'</td><td>'+h.accuracy+'%</td><td>'+h.mockTime+' 分</td></tr>';
+  }).join('');
+  container.innerHTML = '<table><tr><th>#</th><th>日期</th><th>題數</th><th>答對</th><th>正確率</th><th>時間</th></tr>'+rows+'</table>';
+}
+
+function clearHistory() {
+  if (!confirm('確定清除所有練習紀錄？')) return;
+  setStore('history', []);
+  renderHistory();
+}
+
+function initApp() {
+  document.getElementById('mockCount').max = QUESTIONS.length;
+  refreshHome();
+  populateFilters();
+  applyFilters();
+}
+
+(function(){
+  const btn=document.getElementById('themeToggle');
+  const root=document.documentElement;
+  const stored=localStorage.getItem('chem_theme');
+  const prefers=window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(stored==='dark'||(stored===null&&prefers)){root.setAttribute('data-theme','dark');btn.textContent='☀️ 淺色模式'}
+  else{root.setAttribute('data-theme','light');btn.textContent='🌙 深色模式'}
+  btn.addEventListener('click',()=>{
+    const isDark=root.getAttribute('data-theme')==='dark';
+    const t=isDark?'light':'dark';
+    root.setAttribute('data-theme',t);
+    btn.textContent=t==='dark'?'☀️ 淺色模式':'🌙 深色模式';
+    localStorage.setItem('chem_theme',t);
+  });
+})();
+
+const SUBSCRIBERS_KEY = 'chem_subscribers';
+
+function handleSubscribe() {
+  const input = document.getElementById('subscribeEmail');
+  const btn = document.getElementById('subscribeBtn');
+  const msg = document.getElementById('subscribeMsg');
+  const email = input.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  msg.className = 'subscribe-msg';
+  if (!email) { msg.textContent = '請輸入 Email'; msg.className += ' error'; return; }
+  if (!emailRegex.test(email)) { msg.textContent = 'Email 格式不正確'; msg.className += ' error'; return; }
+
+  let subs = getStore(SUBSCRIBERS_KEY, []);
+  if (subs.includes(email)) { msg.textContent = '你已經訂閱囉！'; msg.className += ' success'; return; }
+
+  subs.push(email);
+  setStore(SUBSCRIBERS_KEY, subs);
+  msg.textContent = '✅ 訂閱成功！歡迎加入！';
+  msg.className += ' success';
+  input.value = '';
+  updateSubscribeCount();
+}
+
+function updateSubscribeCount() {
+  const subs = getStore(SUBSCRIBERS_KEY, []);
+  const el = document.getElementById('subscribeCount');
+  if (subs.length > 0) el.textContent = '已有 ' + subs.length + ' 位同學訂閱';
+}
+
+updateSubscribeCount();
+loadQuestions();
+
+function exportSubscribers() {
+  const subs = getStore(SUBSCRIBERS_KEY, []);
+  if (!subs.length) { alert('尚無訂閱者'); return; }
+  const csv = 'Email\n' + subs.join('\n');
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = '理化題庫訂閱名單.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+
+<div class="footer">
+  🧪 國中理化題庫 &mdash; 免費線上學習平台 &nbsp;|&nbsp;
+  <a href="#" onclick="document.querySelector('.nav-item[data-page=home]').click();setTimeout(()=>document.getElementById('subscribeEmail').focus(),100);return false" style="color:var(--accent)">訂閱電子報</a>
+  &nbsp;|&nbsp;
+  <a href="#" onclick="exportSubscribers();return false" style="color:var(--text-muted);font-size:12px">匯出名單</a>
+</div>
+</body>
+</html>
