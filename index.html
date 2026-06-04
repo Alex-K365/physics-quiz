@@ -195,6 +195,7 @@ tr:nth-child(even){background:var(--card-bg)}
 <div class="page" id="page-browse">
 <h2>📚 題庫瀏覽</h2>
 <div class="filters">
+<select id="filterSubject"><option value="">全部科目</option></select>
 <select id="filterUnit"><option value="">全部單元</option></select>
 <select id="filterDifficulty"><option value="">全部難度</option></select>
 <select id="filterType"><option value="">全部題型</option><option value="single">單選題</option><option value="multiple">多選題</option><option value="mixed">混合題</option></select>
@@ -222,6 +223,7 @@ tr:nth-child(even){background:var(--card-bg)}
 <input type="number" id="mockTime" value="80" min="5" max="200"> <span style="font-size:14px">分鐘</span>
 </div>
 <div class="mock-settings">
+<select id="mockSubjectFilter"><option value="">全部科目</option></select>
 <select id="mockUnitFilter"><option value="">全部單元</option></select>
 <select id="mockDiffFilter"><option value="">全部難度</option></select>
 </div>
@@ -278,12 +280,14 @@ const DIFFICULTIES = ['基礎','中等','進階'];
 const LETTERS = 'ABCDEFGHIJ';
 let QUESTIONS = [];
 let UNITS = [];
+let SUBJECTS = [];
 
 async function loadQuestions() {
   try {
     const resp = await fetch('questions.json');
     const data = await resp.json();
     UNITS = data.units.map(u => u.name);
+    SUBJECTS = data.subjects ? data.subjects.map(s => s.name) : [];
     QUESTIONS = data.questions.map(q => {
       const opts = q.options.map((o, i) => LETTERS[i] + ') ' + o);
       let answer = q.answer;
@@ -292,6 +296,7 @@ async function loadQuestions() {
       return {
         id: q.id,
         unit: q.unit,
+        subject: q.subject || '理化',
         difficulty: q.difficulty,
         type: q.type,
         question: q.question,
@@ -348,17 +353,22 @@ function refreshHome() {
 }
 
 function populateFilters() {
+  const fs = document.getElementById('filterSubject');
   const fu = document.getElementById('filterUnit');
   const fd = document.getElementById('filterDifficulty');
+  if (fs) { fs.innerHTML = '<option value="">全部科目</option>'+SUBJECTS.map(s=>'<option value="'+s+'">'+s+'</option>').join(''); }
   fu.innerHTML = '<option value="">全部單元</option>'+UNITS.map(u=>'<option value="'+u+'">'+u+'</option>').join('');
   fd.innerHTML = '<option value="">全部難度</option>'+DIFFICULTIES.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
+  const ms = document.getElementById('mockSubjectFilter');
   const mu = document.getElementById('mockUnitFilter');
   const md = document.getElementById('mockDiffFilter');
+  if (ms) { ms.innerHTML = '<option value="">全部科目</option>'+SUBJECTS.map(s=>'<option value="'+s+'">'+s+'</option>').join(''); }
   if (mu) { mu.innerHTML = '<option value="">全部單元</option>'+UNITS.map(u=>'<option value="'+u+'">'+u+'</option>').join(''); }
   if (md) { md.innerHTML = '<option value="">全部難度</option>'+DIFFICULTIES.map(d=>'<option value="'+d+'">'+d+'</option>').join(''); }
 }
 
 function applyFilters() {
+  const subject = document.getElementById('filterSubject').value;
   const unit = document.getElementById('filterUnit').value;
   const diff = document.getElementById('filterDifficulty').value;
   const type = document.getElementById('filterType').value;
@@ -366,6 +376,7 @@ function applyFilters() {
   const search = document.getElementById('filterSearch').value.trim().toLowerCase();
   const tags = getStore('tags', {});
   let list = QUESTIONS.filter(q => {
+    if (subject && q.subject!==subject) return false;
     if (unit && q.unit!==unit) return false;
     if (diff && q.difficulty!==diff) return false;
     if (type && q.type!==type) return false;
@@ -378,6 +389,7 @@ function applyFilters() {
 }
 
 function resetFilters() {
+  document.getElementById('filterSubject').value='';
   document.getElementById('filterUnit').value='';
   document.getElementById('filterDifficulty').value='';
   document.getElementById('filterType').value='';
@@ -401,8 +413,10 @@ function renderBrowse(list) {
     const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
     const tagColors = {notyet:'#fce7f3;color:#9d174d',review:'#fef3c7;color:#92400e',done:'#d1fae5;color:#065f46'};
     const w = wrongs[q.id];
+    var subjColors = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
     return '<div class="card q-card fade-in" data-id="'+q.id+'">'+
       '<div class="q-tags">'+
+        '<span class="q-tag" style="background:'+(subjColors[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span>'+
         '<span class="q-tag '+q.unit+'">'+q.unit+'</span>'+
         '<span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
         '<span class="q-tag" style="background:#e8e2f0;color:#2d1b69">' + ({single:'單選',multiple:'多選',mixed:'混合'}[q.type]) + '</span>'+
@@ -461,9 +475,11 @@ let mockState = null;
 function startMock() {
   const count = parseInt(document.getElementById('mockCount').value)||18;
   const minutes = parseInt(document.getElementById('mockTime').value)||80;
+  const subjectF = document.getElementById('mockSubjectFilter').value;
   const unitF = document.getElementById('mockUnitFilter').value;
   const diffF = document.getElementById('mockDiffFilter').value;
   let pool = QUESTIONS.filter(q => {
+    if (subjectF && q.subject!==subjectF) return false;
     if (unitF && q.unit!==unitF) return false;
     if (diffF && q.difficulty!==diffF) return false;
     return true;
@@ -637,8 +653,9 @@ function renderWrong() {
     const w = wrongs[id];
     const isFav = favs.includes(id);
     const tag = tags[id]||'';
+    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
     return '<div class="card q-card wrong fade-in">'+
-      '<div class="q-tags"><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
+      '<div class="q-tags"><span class="q-tag" style="background:'+(subjC[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
       (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
       '<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯 '+w.wrongCount+' 次</span></div>'+
       '<div class="q-text">'+q.question+'</div>'+
@@ -689,8 +706,9 @@ function renderFav() {
     if (!q) return '';
     const w = wrongs[id];
     const tag = tags[id]||'';
+    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
     return '<div class="card q-card fade-in">'+
-      '<div class="q-tags"><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
+      '<div class="q-tags"><span class="q-tag" style="background:'+(subjC[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
       (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
       (w?'<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯 '+w.wrongCount+' 次</span>':'')+'</div>'+
       '<div class="q-text">'+q.question+'</div>'+
