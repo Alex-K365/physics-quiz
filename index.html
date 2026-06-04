@@ -814,6 +814,20 @@ function updateSubscribeCount() {
 updateSubscribeCount();
 loadQuestions();
 
+const ADMIN_PASSWORD = 'admin123';
+
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.shiftKey && e.key === 'E') {
+    e.preventDefault();
+    const pwd = prompt('請輸入管理員密碼：');
+    if (pwd === ADMIN_PASSWORD) {
+      exportSubscribers();
+    } else if (pwd !== null) {
+      alert('密碼錯誤');
+    }
+  }
+});
+
 function exportSubscribers() {
   const subs = getStore(SUBSCRIBERS_KEY, []);
   if (!subs.length) { alert('尚無訂閱者'); return; }
@@ -830,8 +844,6 @@ function exportSubscribers() {
 <div class="footer">
   🧪 國中理化題庫 &mdash; 免費線上學習平台 &nbsp;|&nbsp;
   <a href="#" onclick="document.querySelector('.nav-item[data-page=home]').click();setTimeout(()=>document.getElementById('subscribeEmail').focus(),100);return false" style="color:var(--accent)">訂閱電子報</a>
-  &nbsp;|&nbsp;
-  <a href="#" onclick="exportSubscribers();return false" style="color:var(--text-muted);font-size:12px">匯出名單</a>
 </div>
 </body>
 </html>
