@@ -182,10 +182,14 @@ tr:nth-child(even){background:var(--card-bg)}
 <div class="subscribe-card" id="subscribeSection">
 <h3>📬 每週收到精選理化題 + 解題技巧</h3>
 <p>免費訂閱電子報，每週一三五收到實戰題目與冷知識</p>
-<div class="subscribe-form">
-<input type="email" id="subscribeEmail" placeholder="請輸入 Email" required>
-<button id="subscribeBtn" onclick="handleSubscribe()">免費訂閱</button>
+<form class="subscribe-form" action="https://us5.list-manage.com/subscribe/post?u=21587eb750f9f24c0baf7d64e&amp;id=cbbdc8165d" method="post" target="mc-iframe" onsubmit="return handleSubscribe(this)">
+<input type="email" name="EMAIL" id="subscribeEmail" placeholder="請輸入 Email" required>
+<div style="position:absolute;left:-5000px" aria-hidden="true">
+<input type="text" name="b_21587eb750f9f24c0baf7d64e_cbbdc8165d" tabindex="-1">
 </div>
+<button id="subscribeBtn" type="submit">免費訂閱</button>
+</form>
+<iframe name="mc-iframe" id="mcIframe" style="display:none"></iframe>
 <div class="subscribe-msg" id="subscribeMsg"></div>
 <div class="subscribe-count" id="subscribeCount"></div>
 </div>
@@ -759,26 +763,46 @@ function initApp() {
 
 const SUBSCRIBERS_KEY = 'chem_subscribers';
 
-function handleSubscribe() {
-  const input = document.getElementById('subscribeEmail');
-  const btn = document.getElementById('subscribeBtn');
+function handleSubscribe(form) {
+  const input = form.querySelector('input[name=EMAIL]');
+  const btn = form.querySelector('button');
   const msg = document.getElementById('subscribeMsg');
   const email = input.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   msg.className = 'subscribe-msg';
-  if (!email) { msg.textContent = '請輸入 Email'; msg.className += ' error'; return; }
-  if (!emailRegex.test(email)) { msg.textContent = 'Email 格式不正確'; msg.className += ' error'; return; }
+  if (!email) { msg.textContent = '請輸入 Email'; msg.className += ' error'; return false; }
+  if (!emailRegex.test(email)) { msg.textContent = 'Email 格式不正確'; msg.className += ' error'; return false; }
+
+  btn.disabled = true;
+  btn.textContent = '送出中...';
 
   let subs = getStore(SUBSCRIBERS_KEY, []);
-  if (subs.includes(email)) { msg.textContent = '你已經訂閱囉！'; msg.className += ' success'; return; }
+  if (!subs.includes(email)) {
+    subs.push(email);
+    setStore(SUBSCRIBERS_KEY, subs);
+    updateSubscribeCount();
+  }
 
-  subs.push(email);
-  setStore(SUBSCRIBERS_KEY, subs);
-  msg.textContent = '✅ 訂閱成功！歡迎加入！';
-  msg.className += ' success';
-  input.value = '';
-  updateSubscribeCount();
+  document.getElementById('mcIframe').onload = function() {
+    msg.textContent = '✅ 訂閱成功！歡迎加入！';
+    msg.className += ' success';
+    input.value = '';
+    btn.disabled = false;
+    btn.textContent = '免費訂閱';
+  };
+
+  setTimeout(() => {
+    if (btn.disabled) {
+      msg.textContent = '✅ 訂閱成功！歡迎加入！';
+      msg.className += ' success';
+      input.value = '';
+      btn.disabled = false;
+      btn.textContent = '免費訂閱';
+    }
+  }, 5000);
+
+  return true;
 }
 
 function updateSubscribeCount() {
