@@ -8322,6 +8322,790 @@
                                       ],
                           "answer":  2,
                           "explanation":  "廢棄藥品應依實驗室規定分類回收。"
+                      },
+                      {
+                          "id":  516,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What is the opposite of \u0027happy\u0027?",
+                          "options":  [
+                                          "Glad",
+                                          "Sad",
+                                          "Joyful",
+                                          "Excited"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The opposite of happy is sad."
+                      },
+                      {
+                          "id":  517,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What does \u0027delicious\u0027 mean?",
+                          "options":  [
+                                          "Terrible",
+                                          "Very tasty",
+                                          "Bitter",
+                                          "Salty"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Delicious means very pleasant to taste, very tasty."
+                      },
+                      {
+                          "id":  518,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Which word means to protect someone or something?",
+                          "options":  [
+                                          "Attack",
+                                          "Defend",
+                                          "Ignore",
+                                          "Forget"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Defend means to protect from harm or danger."
+                      },
+                      {
+                          "id":  519,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does \u0027ancient\u0027 mean?",
+                          "options":  [
+                                          "New",
+                                          "Modern",
+                                          "Very old",
+                                          "Young"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ancient means belonging to the very distant past, very old."
+                      },
+                      {
+                          "id":  520,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word \u0027abundant\u0027 is closest in meaning to...",
+                          "options":  [
+                                          "Scarce",
+                                          "Plentiful",
+                                          "Rare",
+                                          "Limited"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Abundant means existing in large quantities, plentiful."
+                      },
+                      {
+                          "id":  521,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "What does \u0027reluctant\u0027 mean?",
+                          "options":  [
+                                          "Eager",
+                                          "Unwilling",
+                                          "Happy",
+                                          "Ready"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Reluctant means unwilling and hesitant to do something."
+                      },
+                      {
+                          "id":  522,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "I ___ a student at this school.",
+                          "options":  [
+                                          "am",
+                                          "is",
+                                          "are",
+                                          "be"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "I is always paired with \u0027am\u0027."
+                      },
+                      {
+                          "id":  523,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "They ___ playing basketball right now.",
+                          "options":  [
+                                          "is",
+                                          "am",
+                                          "are",
+                                          "was"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "They is plural and requires \u0027are\u0027 in present continuous tense."
+                      },
+                      {
+                          "id":  524,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "I have never ___ to Japan.",
+                          "options":  [
+                                          "go",
+                                          "went",
+                                          "gone",
+                                          "going"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Present perfect tense uses have/has + past participle. Go-gone-went."
+                      },
+                      {
+                          "id":  525,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "This is the book ___ I bought yesterday.",
+                          "options":  [
+                                          "who",
+                                          "which",
+                                          "whom",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Which is the correct relative pronoun for things (the book)."
+                      },
+                      {
+                          "id":  526,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "If I ___ rich, I would travel the world.",
+                          "options":  [
+                                          "am",
+                                          "was",
+                                          "were",
+                                          "be"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "In second conditional (unreal present), we use \u0027were\u0027 for all subjects."
+                      },
+                      {
+                          "id":  527,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She advised me ___ harder.",
+                          "options":  [
+                                          "study",
+                                          "studying",
+                                          "to study",
+                                          "studied"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Advise is followed by object + to-infinitive: advise someone to do something."
+                      },
+                      {
+                          "id":  528,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "Mary is a teacher. She works at a school near her home. She teaches English to young students. She loves her job very much.\n\nWhat does Mary do?",
+                          "options":  [
+                                          "Doctor",
+                                          "Teacher",
+                                          "Engineer",
+                                          "Nurse"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says \u0027Mary is a teacher\u0027."
+                      },
+                      {
+                          "id":  529,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "Birds can fly because they have wings and feathers. Most birds build nests to lay eggs and raise their babies. Some birds, like penguins, cannot fly but can swim very well.\n\nWhy can birds fly?",
+                          "options":  [
+                                          "Because they have legs",
+                                          "Because they have wings",
+                                          "Because they can swim",
+                                          "Because they are small"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says birds can fly because they have wings and feathers."
+                      },
+                      {
+                          "id":  530,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "The Internet is a global network that connects computers around the world. It allows people to share information, communicate, and access knowledge. The World Wide Web was invented by Tim Berners-Lee in 1989.\n\nWho invented the World Wide Web?",
+                          "options":  [
+                                          "Bill Gates",
+                                          "Tim Berners-Lee",
+                                          "Steve Jobs",
+                                          "Mark Zuckerberg"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says the World Wide Web was invented by Tim Berners-Lee in 1989."
+                      },
+                      {
+                          "id":  531,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Exercise is important for good health. It helps strengthen your heart, build muscles, and improve your mood. Doctors recommend at least 30 minutes of exercise every day.\n\nHow much exercise do doctors recommend daily?",
+                          "options":  [
+                                          "15 minutes",
+                                          "30 minutes",
+                                          "45 minutes",
+                                          "60 minutes"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says at least 30 minutes of exercise every day."
+                      },
+                      {
+                          "id":  532,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Photosynthesis is the process by which green plants make their own food. They use sunlight, water, and carbon dioxide to produce glucose and oxygen. This process is essential for life on Earth because it produces the oxygen we breathe.\n\nWhat do plants produce during photosynthesis?",
+                          "options":  [
+                                          "Only oxygen",
+                                          "Only glucose",
+                                          "Glucose and oxygen",
+                                          "Water and carbon dioxide"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Plants produce both glucose and oxygen during photosynthesis."
+                      },
+                      {
+                          "id":  533,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What color is the sky on a sunny day?",
+                          "options":  [
+                                          "Red",
+                                          "Blue",
+                                          "Green",
+                                          "Yellow"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The sky appears blue on a sunny day."
+                      },
+                      {
+                          "id":  534,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does \u0027expensive\u0027 mean?",
+                          "options":  [
+                                          "Very cheap",
+                                          "High priced",
+                                          "Free",
+                                          "Broken"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Expensive means costing a lot of money, high priced."
+                      },
+                      {
+                          "id":  535,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "We have been waiting ___ two hours.",
+                          "options":  [
+                                          "since",
+                                          "for",
+                                          "during",
+                                          "in"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "For is used with a duration of time (two hours). Since is used with a starting point."
+                      },
+                      {
+                          "id":  536,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "She ___ a beautiful dress yesterday.",
+                          "options":  [
+                                          "wear",
+                                          "wears",
+                                          "wore",
+                                          "wearing"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Yesterday indicates past tense, so we use \u0027wore\u0027."
+                      },
+                      {
+                          "id":  537,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Recycling is the process of converting waste materials into new products. It helps reduce pollution, save energy, and conserve natural resources. Common recyclable materials include paper, glass, plastic, and metal.\n\nWhich of the following is NOT mentioned as a recyclable material?",
+                          "options":  [
+                                          "Paper",
+                                          "Glass",
+                                          "Wood",
+                                          "Metal"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Wood is not mentioned. The text says paper, glass, plastic, and metal."
+                      },
+                      {
+                          "id":  538,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "What does \u0027temporary\u0027 mean?",
+                          "options":  [
+                                          "Permanent",
+                                          "Lasting for a short time",
+                                          "Forever",
+                                          "Eternal"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Temporary means lasting for only a limited period of time."
+                      },
+                      {
+                          "id":  539,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Not only ___ the exam, but she also got the highest score.",
+                          "options":  [
+                                          "she passed",
+                                          "did she pass",
+                                          "passed she",
+                                          "she did pass"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Not only at the beginning requires inversion: did she pass."
+                      },
+                      {
+                          "id":  540,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "實驗室中測量液體體積應使用哪種器材？",
+                          "options":  [
+                                          "天平",
+                                          "量筒",
+                                          "溫度計",
+                                          "酒精燈"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "量筒用於測量液體體積。天平測質量，溫度計測溫度。"
+                      },
+                      {
+                          "id":  541,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪個實驗操作順序是正確的？",
+                          "options":  [
+                                          "先點火再加熱",
+                                          "先加熱再點火",
+                                          "先通氣體再點火",
+                                          "先點火再通氣體"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "進行氣體燃燒實驗時，應先通氣體排空管內空氣後再點火，避免爆炸。"
+                      },
+                      {
+                          "id":  542,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "定量實驗中造成系統誤差的主要原因為何？",
+                          "options":  [
+                                          "操作者讀數偏差",
+                                          "儀器未校正",
+                                          "溫度變化",
+                                          "偶然因素"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "系統誤差通常來自儀器未校正或方法缺陷，會使結果有固定偏差。"
+                      },
+                      {
+                          "id":  543,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者是實驗室中常見的加熱器具？",
+                          "options":  [
+                                          "試管",
+                                          "燒杯",
+                                          "本生燈",
+                                          "漏斗"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "本生燈是實驗室常用的加熱器具。試管和燒杯是容器，漏斗是過濾器具。"
+                      },
+                      {
+                          "id":  544,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "使用顯微鏡觀察標本時，應先用哪個調節輪尋找物像？",
+                          "options":  [
+                                          "細調節輪",
+                                          "粗調節輪",
+                                          "光圈",
+                                          "反光鏡"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "先用粗調節輪找到物像，再用細調節輪使物像清晰。"
+                      },
+                      {
+                          "id":  545,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在滴定實驗中，到達當量點時指示劑的顏色變化應如何判斷？",
+                          "options":  [
+                                          "顏色開始變化時",
+                                          "顏色變化一半時",
+                                          "顏色穩定不再變化時",
+                                          "顏色變化前一刻"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "當量點判斷應以指示劑顏色穩定不再變化時為準。"
+                      },
+                      {
+                          "id":  546,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者屬於物理變化？",
+                          "options":  [
+                                          "鐵生鏽",
+                                          "木頭燃燒",
+                                          "冰塊融化",
+                                          "食物腐敗"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "冰塊融化是狀態改變，沒有新物質生成，屬於物理變化。"
+                      },
+                      {
+                          "id":  547,
+                          "unit":  "運動學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "速率和速度的主要差別為何？",
+                          "options":  [
+                                          "沒有差別",
+                                          "速率是向量，速度是純量",
+                                          "速率無方向，速度有方向",
+                                          "速率有單位，速度無單位"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "速率是純量（只有大小），速度是向量（有大小和方向）。"
+                      },
+                      {
+                          "id":  548,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪種能源轉換效率通常最高？",
+                          "options":  [
+                                          "火力發電",
+                                          "水力發電",
+                                          "太陽能發電",
+                                          "核能發電"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "水力發電的能源轉換效率可達 90% 以上，是效率最高的發電方式之一。"
+                      },
+                      {
+                          "id":  549,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "為什麼交通標誌上說保持安全距離很重要？",
+                          "options":  [
+                                          "避免罰單",
+                                          "車速越快煞車距離越長",
+                                          "增加油耗",
+                                          "讓車更美觀"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "車速越快，慣性越大，煞車距離越長，保持安全距離才能避免追撞。"
+                      },
+                      {
+                          "id":  550,
+                          "unit":  "物質組成",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一組物質的分類正確？",
+                          "options":  [
+                                          "元素：氧氣、水",
+                                          "化合物：食鹽、二氧化碳",
+                                          "混合物：空氣、純水",
+                                          "元素：黃金、鹽酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "食鹽（NaCl）和二氧化碳（CO2）都是化合物。水是化合物，純水是純物質。"
+                      },
+                      {
+                          "id":  551,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電線走火時，最先應該做的是什麼？",
+                          "options":  [
+                                          "用水澆滅",
+                                          "切斷電源",
+                                          "用棉被蓋住",
+                                          "趕快逃離"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電線走火應先切斷電源，再用乾粉滅火器滅火。不可用水，以免觸電。"
+                      },
+                      {
+                          "id":  552,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種液體的 pH 值最小？",
+                          "options":  [
+                                          "純水",
+                                          "檸檬汁",
+                                          "肥皂水",
+                                          "食鹽水"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "檸檬汁含檸檬酸，pH 約 2-3，酸性最強。純水和食鹽水為中性，肥皂水為鹼性。"
+                      },
+                      {
+                          "id":  553,
+                          "unit":  "熱學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "為什麼保溫杯可以保持飲料溫度？",
+                          "options":  [
+                                          "杯壁很厚",
+                                          "真空層隔熱",
+                                          "杯子很重",
+                                          "材質特殊"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "保溫杯的內外壁之間抽成真空，可防止熱量經由傳導和對流散失。"
+                      },
+                      {
+                          "id":  554,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "腳踏車下坡時即使不踩踏板也會越來越快，這是什麼能量轉換？",
+                          "options":  [
+                                          "動能轉位能",
+                                          "位能轉動能",
+                                          "化學能轉動能",
+                                          "熱能轉動能"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "下坡時重力位能逐漸轉換為動能，所以速度越來越快。"
+                      },
+                      {
+                          "id":  555,
+                          "unit":  "光學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "為什麼游泳池底部看起來比實際淺？",
+                          "options":  [
+                                          "光的反射",
+                                          "光的折射",
+                                          "水的顏色",
+                                          "池底髒汙"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "光從水進入空氣時發生折射，偏離法線，使池底的像看起來比實際淺。"
+                      },
+                      {
+                          "id":  556,
+                          "unit":  "聲波",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "在太空中兩個太空人即使很近也無法直接對話，為什麼？",
+                          "options":  [
+                                          "太空服太厚",
+                                          "聲音在真空中無法傳播",
+                                          "無線電干擾",
+                                          "太空溫度太低"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "聲音需要介質傳播，太空中為真空，沒有介質可以傳遞聲波。"
+                      },
+                      {
+                          "id":  557,
+                          "unit":  "磁學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種金屬可以被磁鐵吸引？",
+                          "options":  [
+                                          "鋁",
+                                          "銅",
+                                          "鐵",
+                                          "金"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "磁鐵只能吸引鐵、鈷、鎳等鐵磁性物質。鋁、銅、金不具鐵磁性。"
+                      },
+                      {
+                          "id":  558,
+                          "unit":  "氧化還原",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "蘋果切開後放置一段時間會變色，這是什麼原因？",
+                          "options":  [
+                                          "水分蒸發",
+                                          "氧化反應",
+                                          "細菌感染",
+                                          "糖分結晶"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "蘋果中的酚類物質與空氣中的氧氣發生氧化反應，使果肉變色。"
+                      },
+                      {
+                          "id":  559,
+                          "unit":  "有機化學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "石化燃料燃燒對環境最主要的影響為何？",
+                          "options":  [
+                                          "土壤酸化",
+                                          "增加大氣中二氧化碳濃度",
+                                          "水質優養化",
+                                          "臭氧層破壞"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "石化燃料燃燒產生大量二氧化碳，是造成全球暖化的主要原因。"
+                      },
+                      {
+                          "id":  560,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "為什麼船能在水面上漂浮而不沉沒？",
+                          "options":  [
+                                          "船很輕",
+                                          "船排開的水重等於船重",
+                                          "水的密度很大",
+                                          "船有馬達"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "根據浮力原理，船排開的水的重量等於船所受的浮力，當浮力等於船重時船就能漂浮。"
+                      },
+                      {
+                          "id":  561,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "太陽能熱水器是利用什麼原理將水加熱？",
+                          "options":  [
+                                          "太陽能板發電加熱",
+                                          "集熱板吸收太陽輻射熱",
+                                          "反射鏡聚焦陽光",
+                                          "風力驅動加熱"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "太陽能熱水器的集熱板吸收太陽輻射能轉換為熱能，加熱流經的水。"
+                      },
+                      {
+                          "id":  562,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "酸雨對環境的影響下列何者錯誤？",
+                          "options":  [
+                                          "腐蝕建築物",
+                                          "使土壤酸化",
+                                          "增加湖水 pH 值",
+                                          "損害植物生長"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "酸雨會降低湖水 pH 值（使其更酸），而不是增加。"
+                      },
+                      {
+                          "id":  563,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "為什麼電器外殼通常用塑膠製造？",
+                          "options":  [
+                                          "美觀",
+                                          "塑膠是絕緣體可防止觸電",
+                                          "成本較低",
+                                          "重量較輕"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "塑膠是良好的電絕緣體，可防止電器漏電時使用者觸電。"
+                      },
+                      {
+                          "id":  564,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "核能發電使用的是哪種核反應？",
+                          "options":  [
+                                          "核融合",
+                                          "核分裂",
+                                          "核衰變",
+                                          "核聚變"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "目前的核能發電廠都使用核分裂反應，將原子核分裂釋放的能量轉換為電能。"
                       }
                   ],
     "subjects":  [
