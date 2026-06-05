@@ -228,6 +228,10 @@ tr:nth-child(even){background:var(--card-bg)}
 
 <!-- BROWSE -->
 <div class="page" id="page-browse">
+<div style="background:linear-gradient(135deg,#06c755,#089c42);color:#fff;border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+<span style="font-size:14px;font-weight:600">💪 想加強特定科目？</span>
+<a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="background:#fff;color:#06c755;padding:8px 20px;border-radius:60px;text-decoration:none;font-size:13px;font-weight:700;transition:.2s">免費預約諮詢</a>
+</div>
 <h2>📚 題庫瀏覽</h2>
 <div class="subj-tabs" id="subjectTabs"></div>
 <div class="filters">
@@ -700,7 +704,12 @@ function submitMock() {
     '<p style="font-size:18px;line-height:1.8">得分：<strong>'+correct+'</strong> / '+total+' 題（'+accuracy+'%）</p>'+
     '<p style="color:#6b6390;font-size:14px;margin-top:8px">'+
     (accuracy>=80?'🎉 表現優異！繼續保持！':accuracy>=60?'💪 不錯，錯題已記錄到錯題本！':'📖 建議複習錯題後再試一次。')+'</p>'+
-    '<button class="btn btn-primary mt-16" onclick="cancelMock()">返回設定</button>';
+    '<div class="mock-result-extra" style="margin-top:16px;padding:16px;background:var(--tag-bg);border-radius:14px;text-align:center">'+
+    '<p style="font-size:14px;color:var(--text-secondary);margin-bottom:10px">📬 想收到個人化成績分析與書單推薦？</p>'+
+    '<div style="display:flex;gap:8px;max-width:360px;margin:0 auto"><input type="email" id="resultEmail" placeholder="輸入 Email" style="flex:1;padding:8px 14px;border:1px solid var(--card-border);border-radius:10px;font-size:13px;outline:none;background:var(--card-bg);color:var(--text-primary)"><button class="btn btn-primary btn-sm" onclick="sendResult(\''+correct+'\',\''+total+'\',\''+accuracy+'\')">寄送分析</button></div>'+
+    '<div id="resultSendMsg" style="font-size:13px;margin-top:8px"></div></div>'+
+    '<div style="margin-top:10px;text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">💬 免費預約一對一諮詢</a></div>'+
+    '<button class="btn btn-outline mt-16" onclick="cancelMock()">返回設定</button>';
   mockState = null;
 }
 
@@ -710,6 +719,23 @@ function cancelMock() {
   document.getElementById('mockSetup').style.display = 'block';
   document.getElementById('mockExam').style.display = 'none';
   document.getElementById('mockResult').style.display = 'none';
+}
+
+function sendResult(correct, total, accuracy) {
+  var email = document.getElementById('resultEmail').value.trim();
+  var msg = document.getElementById('resultSendMsg');
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email || !re.test(email)) { msg.textContent = '請輸入有效的 Email'; msg.style.color = '#dc2626'; return; }
+  var subs = getStore(SUBSCRIBERS_KEY, []);
+  if (!subs.includes(email)) { subs.push(email); setStore(SUBSCRIBERS_KEY, subs); updateSubscribeCount(); }
+  var params = new URLSearchParams();
+  params.append('u', '21587eb750f9f24c0baf7d64e');
+  params.append('id', 'cbbdc8165d');
+  params.append('EMAIL', email);
+  params.append('b_21587eb750f9f24c0baf7d64e_cbbdc8165d', '');
+  params.append('subscribe', 'Subscribe');
+  new Image().src = 'https://us5.list-manage.com/subscribe/post?' + params.toString();
+  msg.textContent = '✅ 已送出！請查看 Email 收取成績分析'; msg.style.color = '#059669';
 }
 
 function renderWrong() {
@@ -751,7 +777,8 @@ function renderWrong() {
       '<div class="q-explanation" id="explain-'+id+'">'+q.explanation+'</div>'+
     '</div>';
   }).join('');
-  container.innerHTML += '<div class="mt-16"><button class="btn btn-outline btn-sm" onclick="clearAllWrong()">清除所有錯題</button></div>';
+  container.innerHTML += '<div class="mt-16" style="text-align:center"><button class="btn btn-outline btn-sm" onclick="clearAllWrong()">清除所有錯題</button></div>'+
+    '<div class="mt-16" style="text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s;margin-top:8px">📞 這類題目常錯？Line 一對一教學</a></div>';
 }
 
 function clearWrong(id) {
