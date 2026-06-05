@@ -141,6 +141,15 @@ tr:nth-child(even){background:var(--card-bg)}
 .subscribe-msg.error{color:#fecaca}
 .subscribe-count{font-size:12px;opacity:.7;margin-top:6px}
 .footer{text-align:center;padding:20px 16px;font-size:13px;color:var(--text-muted);border-top:1px solid var(--card-border);margin-top:24px}
+.subj-tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.subj-tab{padding:6px 18px;border-radius:60px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--card-border);background:var(--card-bg);color:var(--text-muted);transition:.2s;backdrop-filter:blur(8px)}
+.subj-tab:hover{transform:scale(.96)}
+.subj-tab.active{color:#fff;border-color:transparent}
+.subj-tab.物理.active{background:#1e40af}
+.subj-tab.化學.active{background:#065f46}
+.subj-tab.英文.active{background:#92400e}
+.subj-tab.理化.active{background:#6b21a8}
+.subj-tab.全部.active{background:var(--accent)}
 </style>
 </head>
 <body>
@@ -194,6 +203,7 @@ tr:nth-child(even){background:var(--card-bg)}
 <!-- BROWSE -->
 <div class="page" id="page-browse">
 <h2>📚 題庫瀏覽</h2>
+<div class="subj-tabs" id="subjectTabs"></div>
 <div class="filters">
 <select id="filterSubject"><option value="">全部科目</option></select>
 <select id="filterUnit"><option value="">全部單元</option></select>
@@ -281,6 +291,7 @@ const LETTERS = 'ABCDEFGHIJ';
 let QUESTIONS = [];
 let UNITS = [];
 let SUBJECTS = [];
+let activeSubject = '';
 
 async function loadQuestions() {
   try {
@@ -352,11 +363,29 @@ function refreshHome() {
   document.getElementById('statTotal').textContent = QUESTIONS.length;
 }
 
+function renderSubjectTabs() {
+  const container = document.getElementById('subjectTabs');
+  if (!container) return;
+  const allSubjects = ['全部'].concat(SUBJECTS);
+  container.innerHTML = allSubjects.map(s => 
+    '<span class="subj-tab ' + s + (activeSubject === (s==='全部'?'':s) ? ' active' : '') + '" data-subj="' + (s==='全部'?'':s) + '" onclick="switchSubject(this)">' + s + '</span>'
+  ).join('');
+}
+
+function switchSubject(el) {
+  activeSubject = el.dataset.subj;
+  document.getElementById('filterSubject').value = activeSubject;
+  document.querySelectorAll('.subj-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  applyFilters();
+}
+
 function populateFilters() {
+  renderSubjectTabs();
   const fs = document.getElementById('filterSubject');
   const fu = document.getElementById('filterUnit');
   const fd = document.getElementById('filterDifficulty');
-  if (fs) { fs.innerHTML = '<option value="">全部科目</option>'+SUBJECTS.map(s=>'<option value="'+s+'">'+s+'</option>').join(''); }
+  if (fs) { fs.innerHTML = '<option value="">全部科目</option>'+SUBJECTS.map(s=>'<option value="'+s+'">'+s+'</option>').join(''); fs.value = activeSubject; }
   fu.innerHTML = '<option value="">全部單元</option>'+UNITS.map(u=>'<option value="'+u+'">'+u+'</option>').join('');
   fd.innerHTML = '<option value="">全部難度</option>'+DIFFICULTIES.map(d=>'<option value="'+d+'">'+d+'</option>').join('');
   const ms = document.getElementById('mockSubjectFilter');
@@ -389,12 +418,14 @@ function applyFilters() {
 }
 
 function resetFilters() {
+  activeSubject = '';
   document.getElementById('filterSubject').value='';
   document.getElementById('filterUnit').value='';
   document.getElementById('filterDifficulty').value='';
   document.getElementById('filterType').value='';
   document.getElementById('filterTag').value='';
   document.getElementById('filterSearch').value='';
+  renderSubjectTabs();
   applyFilters();
 }
 
@@ -413,7 +444,7 @@ function renderBrowse(list) {
     const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
     const tagColors = {notyet:'#fce7f3;color:#9d174d',review:'#fef3c7;color:#92400e',done:'#d1fae5;color:#065f46'};
     const w = wrongs[q.id];
-    var subjColors = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
+    var subjColors = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8', '英文':'#fef3c7;color:#92400e' };
     return '<div class="card q-card fade-in" data-id="'+q.id+'">'+
       '<div class="q-tags">'+
         '<span class="q-tag" style="background:'+(subjColors[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span>'+
@@ -653,7 +684,7 @@ function renderWrong() {
     const w = wrongs[id];
     const isFav = favs.includes(id);
     const tag = tags[id]||'';
-    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
+    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8', '英文':'#fef3c7;color:#92400e' };
     return '<div class="card q-card wrong fade-in">'+
       '<div class="q-tags"><span class="q-tag" style="background:'+(subjC[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
       (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+
@@ -706,7 +737,7 @@ function renderFav() {
     if (!q) return '';
     const w = wrongs[id];
     const tag = tags[id]||'';
-    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8' };
+    var subjC = { '物理':'#dbeafe;color:#1e40af', '化學':'#d1fae5;color:#065f46', '理化':'#f3e8ff;color:#6b21a8', '英文':'#fef3c7;color:#92400e' };
     return '<div class="card q-card fade-in">'+
       '<div class="q-tags"><span class="q-tag" style="background:'+(subjC[q.subject]||'#e8e2f0;color:#2d1b69')+'">'+q.subject+'</span><span class="q-tag '+q.unit+'">'+q.unit+'</span><span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span>'+
       (tag?'<span class="q-tag" style="background:'+tagColors[tag]+'">'+tagLabels[tag]+'</span>':'')+

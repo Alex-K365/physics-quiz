@@ -41,6 +41,15 @@
                   },
                   {
                       "name":  "實驗"
+                  },
+                  {
+                      "name":  "單字"
+                  },
+                  {
+                      "name":  "文法"
+                  },
+                  {
+                      "name":  "閱讀"
                   }
               ],
     "questions":  [
@@ -4627,6 +4636,486 @@
                                       ],
                           "answer":  1,
                           "explanation":  "活性大的金屬可置換活性小的金屬離子。Zn 活性大於 Cu，可置換 Cu2+。"
+                      },
+                      {
+                          "id":  286,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What is the meaning of abandon?",
+                          "options":  [
+                                          "To leave behind",
+                                          "To keep",
+                                          "To find",
+                                          "To build"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Abandon means to leave someone or something permanently or to give up."
+                      },
+                      {
+                          "id":  287,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What does brave mean?",
+                          "options":  [
+                                          "Frightened",
+                                          "Courageous",
+                                          "Lazy",
+                                          "Sad"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Brave means having courage to face danger or pain."
+                      },
+                      {
+                          "id":  288,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Which word means to make something better?",
+                          "options":  [
+                                          "Damage",
+                                          "Improve",
+                                          "Ignore",
+                                          "Destroy"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Improve means to make something better than before."
+                      },
+                      {
+                          "id":  289,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What is the opposite of hot?",
+                          "options":  [
+                                          "Warm",
+                                          "Cool",
+                                          "Cold",
+                                          "Fire"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "The opposite of hot is cold."
+                      },
+                      {
+                          "id":  290,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does enormous mean?",
+                          "options":  [
+                                          "Tiny",
+                                          "Very large",
+                                          "Medium",
+                                          "Heavy"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Enormous means very large or huge."
+                      },
+                      {
+                          "id":  291,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word ambiguous most nearly means...",
+                          "options":  [
+                                          "Clear",
+                                          "Unclear",
+                                          "Simple",
+                                          "Direct"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Ambiguous means having more than one possible meaning; unclear."
+                      },
+                      {
+                          "id":  292,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "She ___ to school every day.",
+                          "options":  [
+                                          "go",
+                                          "goes",
+                                          "going",
+                                          "went"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Third person singular (she) takes goes in simple present tense."
+                      },
+                      {
+                          "id":  293,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "There ___ many students in the classroom.",
+                          "options":  [
+                                          "is",
+                                          "are",
+                                          "was",
+                                          "have"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Students is plural, so we use are with there."
+                      },
+                      {
+                          "id":  294,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "I have ___ finished my homework.",
+                          "options":  [
+                                          "yet",
+                                          "already",
+                                          "still",
+                                          "never"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Already is used in positive sentences to mean before now. Yet is for questions or negatives."
+                      },
+                      {
+                          "id":  295,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "If it ___ tomorrow, we will stay home.",
+                          "options":  [
+                                          "rain",
+                                          "rains",
+                                          "raining",
+                                          "rained"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "In first conditional (if + present simple, will + base verb), we use rains."
+                      },
+                      {
+                          "id":  296,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She has been studying English ___ three years.",
+                          "options":  [
+                                          "since",
+                                          "for",
+                                          "during",
+                                          "from"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "For is used with a duration of time (three years). Since is used with a starting point."
+                      },
+                      {
+                          "id":  297,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The book ___ is on the table is mine.",
+                          "options":  [
+                                          "who",
+                                          "which",
+                                          "whom",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Which is used as a relative pronoun for things. Who is for people."
+                      },
+                      {
+                          "id":  298,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "Tommy is a student. He gets up at 6:30 every morning. He goes to school by bus. He likes math and science. What does Tommy do?",
+                          "options":  [
+                                          "Teacher",
+                                          "Student",
+                                          "Doctor",
+                                          "Driver"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The first sentence says Tommy is a student."
+                      },
+                      {
+                          "id":  299,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "There is a park near my house. It is very big and beautiful. Many children play there after school. There are many trees and flowers. Where is the park?",
+                          "options":  [
+                                          "Far away",
+                                          "Near my house",
+                                          "In the city",
+                                          "Next to school"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The first sentence says there is a park near my house."
+                      },
+                      {
+                          "id":  300,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Taiwan is an island in East Asia. The capital city is Taipei. The official language is Mandarin Chinese. Taiwan is famous for its night markets and beautiful mountains. What is the capital of Taiwan?",
+                          "options":  [
+                                          "Kaohsiung",
+                                          "Taichung",
+                                          "Taipei",
+                                          "Tainan"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "The text says the capital city is Taipei."
+                      },
+                      {
+                          "id":  301,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Water is very important for all living things. We need water to drink, to cook, and to clean. Plants also need water to grow. Without water, nothing can live. Why is water important?",
+                          "options":  [
+                                          "Only for drinking",
+                                          "For all living things",
+                                          "Only for plants",
+                                          "Only for cooking"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says water is important for all living things."
+                      },
+                      {
+                          "id":  302,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The Industrial Revolution began in Britain in the late 18th century. It changed how goods were produced, from handmade to machine-made. This led to the growth of factories and cities. When did the Industrial Revolution begin?",
+                          "options":  [
+                                          "17th century",
+                                          "18th century",
+                                          "19th century",
+                                          "20th century"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says late 18th century."
+                      },
+                      {
+                          "id":  303,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does generous mean?",
+                          "options":  [
+                                          "Selfish",
+                                          "Willing to give",
+                                          "Stingy",
+                                          "Rude"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Generous means willing to give more than expected, especially money or time."
+                      },
+                      {
+                          "id":  304,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word inevitable means...",
+                          "options":  [
+                                          "Avoidable",
+                                          "Certain to happen",
+                                          "Unlikely",
+                                          "Optional"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Inevitable means something that is certain to happen and cannot be avoided."
+                      },
+                      {
+                          "id":  305,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "He is ___ boy in the class.",
+                          "options":  [
+                                          "tall",
+                                          "taller",
+                                          "the tallest",
+                                          "most tall"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Superlative form: the tallest is used when comparing three or more."
+                      },
+                      {
+                          "id":  306,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "We ___ to the movie last night.",
+                          "options":  [
+                                          "go",
+                                          "goes",
+                                          "went",
+                                          "going"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Last night indicates past tense, so we use went."
+                      },
+                      {
+                          "id":  307,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "Which animal is called mans best friend?",
+                          "options":  [
+                                          "Cat",
+                                          "Dog",
+                                          "Bird",
+                                          "Fish"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Dogs are commonly called mans best friend because of their loyalty."
+                      },
+                      {
+                          "id":  308,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "John woke up late this morning. He quickly put on his clothes and ran to the bus stop. But the bus had already left. He had to walk to school. He was late for class. Why was John late?",
+                          "options":  [
+                                          "He missed the bus",
+                                          "He walked slowly",
+                                          "He was sick",
+                                          "He forgot the time"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "John missed the bus because it had already left when he arrived."
+                      },
+                      {
+                          "id":  309,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Global warming refers to the long-term rise in Earth average temperature. It is mainly caused by increased levels of carbon dioxide and other greenhouse gases. The main sources are burning fossil fuels and deforestation. What is the main cause of global warming according to the passage?",
+                          "options":  [
+                                          "Natural changes",
+                                          "Greenhouse gases",
+                                          "Volcanic eruptions",
+                                          "Ocean currents"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says global warming is mainly caused by increased levels of greenhouse gases."
+                      },
+                      {
+                          "id":  310,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "By the time we arrived, the movie ___.",
+                          "options":  [
+                                          "already starts",
+                                          "has already started",
+                                          "had already started",
+                                          "will already start"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Past perfect tense is used for an action completed before another past action."
+                      },
+                      {
+                          "id":  311,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Which word means to say sorry?",
+                          "options":  [
+                                          "Apologize",
+                                          "Thank",
+                                          "Congratulate",
+                                          "Invite"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Apologize means to express regret for something you did wrong."
+                      },
+                      {
+                          "id":  312,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "The sun rises in the east and sets in the west. It gives us light and heat. Plants use sunlight to make food. Where does the sun rise?",
+                          "options":  [
+                                          "West",
+                                          "South",
+                                          "North",
+                                          "East"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "The text says the sun rises in the east."
+                      },
+                      {
+                          "id":  313,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Would you like ___ coffee?",
+                          "options":  [
+                                          "some",
+                                          "any",
+                                          "many",
+                                          "few"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Some is used in offers and requests, even in questions."
+                      },
+                      {
+                          "id":  314,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "What does persevere mean?",
+                          "options":  [
+                                          "Give up",
+                                          "Continue despite difficulty",
+                                          "Ignore",
+                                          "Hesitate"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Persevere means to continue trying even when facing difficulties."
+                      },
+                      {
+                          "id":  315,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "My sister ___ a doctor.",
+                          "options":  [
+                                          "am",
+                                          "is",
+                                          "are",
+                                          "be"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Third person singular (my sister = she) takes is."
                       }
                   ],
     "subjects":  [
@@ -4638,6 +5127,9 @@
                      },
                      {
                          "name":  "理化"
+                     },
+                     {
+                         "name":  "英文"
                      }
                  ]
 }
