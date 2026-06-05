@@ -22805,6 +22805,470 @@
       ],
       "answer": 1,
       "explanation": "滴定時應注視錐形瓶中指示劑的顏色變化以判斷終點。不可用口吸（A），滴定前需排氣泡（C），廢液應回收（D）。"
+    },
+    {
+      "id": 1421,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What does \"generous\" mean?",
+      "options": [
+        "Selfish",
+        "Kind and giving",
+        "Angry",
+        "Shy"
+      ],
+      "answer": 1,
+      "explanation": "Generous means willing to give and share freely with others."
+    },
+    {
+      "id": 1422,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "Which word is closest in meaning to \"ancient\"?",
+      "options": [
+        "Modern",
+        "New",
+        "Very old",
+        "Young"
+      ],
+      "answer": 2,
+      "explanation": "Ancient means belonging to the very distant past, very old."
+    },
+    {
+      "id": 1423,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "What is the synonym of \"rapidly\"?",
+      "options": [
+        "Slowly",
+        "Carefully",
+        "Quickly",
+        "Quietly"
+      ],
+      "answer": 2,
+      "explanation": "Rapidly means quickly or at a fast speed."
+    },
+    {
+      "id": 1424,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The opposite of \"permanent\" is ___?",
+      "options": [
+        "Temporary",
+        "Constant",
+        "Forever",
+        "Stable"
+      ],
+      "answer": 0,
+      "explanation": "Permanent means lasting forever; its opposite is temporary (lasting for a limited time)."
+    },
+    {
+      "id": 1425,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "\"He was reluctant to join the team.\" What does \"reluctant\" mean?",
+      "options": [
+        "Excited",
+        "Unwilling / hesitant",
+        "Happy",
+        "Ready"
+      ],
+      "answer": 1,
+      "explanation": "Reluctant means unwilling and hesitant to do something."
+    },
+    {
+      "id": 1426,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Which word means \"to make something less painful or serious\"?",
+      "options": [
+        "Worsen",
+        "Alleviate",
+        "Ignore",
+        "Increase"
+      ],
+      "answer": 1,
+      "explanation": "Alleviate means to make something less severe or painful."
+    },
+    {
+      "id": 1427,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "She ___ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "going"
+      ],
+      "answer": 1,
+      "explanation": "Third person singular (she) in present simple tense takes \"goes\"."
+    },
+    {
+      "id": 1428,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "There ___ many students in the classroom.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "answer": 1,
+      "explanation": "\"Students\" is plural, so we use \"are\" in present tense."
+    },
+    {
+      "id": 1429,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I have lived in Taiwan ___ 2010.",
+      "options": [
+        "for",
+        "since",
+        "in",
+        "from"
+      ],
+      "answer": 1,
+      "explanation": "\"Since\" is used with a specific point in time (2010). \"For\" is used with a duration."
+    },
+    {
+      "id": 1430,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "If it ___ tomorrow, we will stay at home.",
+      "options": [
+        "rain",
+        "rains",
+        "rained",
+        "will rain"
+      ],
+      "answer": 1,
+      "explanation": "In a conditional sentence (if-clause), present simple is used for future possibility."
+    },
+    {
+      "id": 1431,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The book ___ by a famous author.",
+      "options": [
+        "wrote",
+        "was written",
+        "is writing",
+        "has written"
+      ],
+      "answer": 1,
+      "explanation": "Passive voice: the book \"was written\" (by someone)."
+    },
+    {
+      "id": 1432,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "She asked me where I ___ the day before.",
+      "options": [
+        "have gone",
+        "had gone",
+        "go",
+        "was going"
+      ],
+      "answer": 1,
+      "explanation": "Reported speech with backshift: \"Where did you go yesterday?\" becomes \"where I had gone the day before.\""
+    },
+    {
+      "id": 1433,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Not until he arrived ___ the truth.",
+      "options": [
+        "he knew",
+        "did he know",
+        "he knows",
+        "does he know"
+      ],
+      "answer": 1,
+      "explanation": "\"Not until\" at the beginning of a sentence triggers subject-auxiliary inversion."
+    },
+    {
+      "id": 1434,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "I wish I ___ harder for the exam.",
+      "options": [
+        "studied",
+        "had studied",
+        "study",
+        "would study"
+      ],
+      "answer": 1,
+      "explanation": "Wish + past perfect expresses regret about the past."
+    },
+    {
+      "id": 1435,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "A: Thank you for your help! B: ___",
+      "options": [
+        "Yes, please",
+        "You are welcome",
+        "I think so",
+        "Not yet"
+      ],
+      "answer": 1,
+      "explanation": "\"You are welcome\" is the standard polite response to \"thank you.\""
+    },
+    {
+      "id": 1436,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The movie was ___ boring that I fell asleep.",
+      "options": [
+        "so",
+        "such",
+        "too",
+        "very"
+      ],
+      "answer": 0,
+      "explanation": "\"So + adjective + that\" structure: so boring that..."
+    },
+    {
+      "id": 1437,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Neither Tom ___ his sister likes spicy food.",
+      "options": [
+        "or",
+        "and",
+        "nor",
+        "but"
+      ],
+      "answer": 2,
+      "explanation": "\"Neither...nor...\" is the correct correlative conjunction pair."
+    },
+    {
+      "id": 1438,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She spends most of her time ___ novels.",
+      "options": [
+        "to read",
+        "reading",
+        "read",
+        "reads"
+      ],
+      "answer": 1,
+      "explanation": "\"Spend time + V-ing\" is the correct pattern."
+    },
+    {
+      "id": 1439,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "The experiment, ___ results were surprising, won the science award.",
+      "options": [
+        "which",
+        "that",
+        "whose",
+        "whom"
+      ],
+      "answer": 2,
+      "explanation": "\"Whose\" shows possession: the experiment whose results..."
+    },
+    {
+      "id": 1440,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "It is essential that every student ___ the rules.",
+      "options": [
+        "follows",
+        "follow",
+        "followed",
+        "following"
+      ],
+      "answer": 1,
+      "explanation": "Subjunctive mood: \"It is essential that + subject + base verb.\""
+    },
+    {
+      "id": 1441,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "___ hard you try, you cannot lift that rock alone.",
+      "options": [
+        "No matter how",
+        "However",
+        "Although",
+        "Even"
+      ],
+      "answer": 0,
+      "explanation": "\"No matter how\" or \"However\" can be used. \"No matter how hard you try...\""
+    },
+    {
+      "id": 1442,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "mixed",
+      "question": "(Reading) Taipei 101 was once the tallest building in the world. It has 101 floors and stands 509 meters tall. The building has a special damper inside to protect it from earthquakes and typhoons. Visitors can take the fastest elevator in the world to the observation deck on the 89th floor.<br>(a) How tall is Taipei 101?<br>(b) What is the function of the damper?<br>(c) Which floor is the observation deck on?",
+      "options": [
+        "509 meters, To protect from earthquakes and typhoons, 89th floor",
+        "101 meters, To cool the building, 101st floor",
+        "509 feet, To generate electricity, 1st floor",
+        "200 meters, To clean the windows, 50th floor"
+      ],
+      "answer": 0,
+      "explanation": "(a) Taipei 101 is 509 meters tall. (b) The damper protects the building from earthquakes and typhoons. (c) The observation deck is on the 89th floor."
+    },
+    {
+      "id": 1443,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "mixed",
+      "question": "(Reading) In many countries, people celebrate New Year on January 1st. However, the Lunar New Year, also known as Chinese New Year, follows the lunar calendar. It usually falls between January 21 and February 20. During this festival, families gather for dinner, give red envelopes, and watch fireworks. Each year is associated with one of 12 zodiac animals.<br>(a) When does Lunar New Year usually occur?<br>(b) What do families do during this festival? (give two examples)<br>(c) How many zodiac animals are there?",
+      "options": [
+        "Between Jan 21 and Feb 20, Gather for dinner and give red envelopes, 12",
+        "On January 1st, Watch movies and sleep, 10",
+        "In March, Travel abroad and shop, 8",
+        "In December, Study and work, 6"
+      ],
+      "answer": 0,
+      "explanation": "(a) Lunar New Year falls between January 21 and February 20. (b) Families gather for dinner and give red envelopes (also watch fireworks). (c) There are 12 zodiac animals."
+    },
+    {
+      "id": 1444,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) Global warming is one of the biggest challenges facing our planet. Temperatures have risen by about 1.2°C since the Industrial Revolution. This is mainly caused by greenhouse gases like CO2 from burning fossil fuels. Scientists warn that if temperatures rise more than 1.5°C, the consequences will be severe—including more extreme weather, rising sea levels, and loss of biodiversity.<br>(a) How much have temperatures risen since the Industrial Revolution?<br>(b) What is the main cause of global warming?<br>(c) What are two possible consequences mentioned?",
+      "options": [
+        "1.2°C, Greenhouse gases from fossil fuels, Extreme weather and rising sea levels",
+        "2.0°C, Deforestation, Better agriculture",
+        "0.5°C, Volcanic eruptions, More rain",
+        "3.0°C, Ocean currents, New deserts"
+      ],
+      "answer": 0,
+      "explanation": "(a) Temperatures have risen by about 1.2°C. (b) Greenhouse gases (CO2) from burning fossil fuels. (c) Extreme weather, rising sea levels, and loss of biodiversity."
+    },
+    {
+      "id": 1445,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is the correct greeting for 10:00 AM?",
+      "options": [
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Good night"
+      ],
+      "answer": 0,
+      "explanation": "Good morning is used from morning until around noon (12 PM)."
+    },
+    {
+      "id": 1446,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "A: Would you like some coffee? B: ___, I prefer tea.",
+      "options": [
+        "No, thanks",
+        "Yes, please",
+        "Sure",
+        "Of course"
+      ],
+      "answer": 0,
+      "explanation": "\"No, thanks\" politely declines while saying preference for tea."
+    },
+    {
+      "id": 1447,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The teacher told us that practice ___ perfect.",
+      "options": [
+        "make",
+        "makes",
+        "made",
+        "making"
+      ],
+      "answer": 1,
+      "explanation": "The proverb is \"Practice makes perfect.\" Present simple expresses a general truth."
+    },
+    {
+      "id": 1448,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Only after finishing her homework ___ watch TV.",
+      "options": [
+        "she was allowed to",
+        "was she allowed to",
+        "she allowed to",
+        "allowed she to"
+      ],
+      "answer": 1,
+      "explanation": "\"Only after\" at the beginning causes inversion: \"was she allowed to.\""
+    },
+    {
+      "id": 1449,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "The number of students in this school ___ increasing every year.",
+      "options": [
+        "is",
+        "are",
+        "have been",
+        "were"
+      ],
+      "answer": 0,
+      "explanation": "\"The number of + plural noun\" takes a singular verb: \"the number... is increasing.\" (Compare: \"A number of students are...\")"
     }
   ],
   "subjects": [
@@ -22822,6 +23286,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1420
+    "totalQuestions": 1449
   }
 }
