@@ -13090,6 +13090,806 @@
                                       ],
                           "answer":  3,
                           "explanation":  "a=F/m=4/2=2 m/s2。v2=v02-2aS，0=100-4S，S=25 m。"
+                      },
+                      {
+                          "id":  814,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣高鐵列車時速 300 公里，若以等速率通過半徑 2.5 公里的彎道，列車的向心加速度約為重力加速度的幾倍？（g=10 m/s2）",
+                          "options":  [
+                                          "約 0.28 倍",
+                                          "約 0.56 倍",
+                                          "約 0.83 倍",
+                                          "約 1.11 倍"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "v=300 km/h=83.3 m/s，r=2500 m。a=v2/r=6944/2500=2.78 m/s2。a/g=2.78/10=0.278。"
+                      },
+                      {
+                          "id":  815,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "圖為臺灣某地區地震振動紀錄，P 波與 S 波的時間差為 12 秒。若 P 波速率 7 km/s、S 波速率 4 km/s，震源距離測站多遠？",
+                          "options":  [
+                                          "約 67 km",
+                                          "約 84 km",
+                                          "約 112 km",
+                                          "約 132 km"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "設距離 d，d/4-d/7=12，7d/28-4d/28=12，3d/28=12，d=112 km。"
+                      },
+                      {
+                          "id":  816,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "颱風來襲時，風速 50 m/s 吹向廣告招牌，招牌面積 3 m2，空氣密度 1.2 kg/m3，招牌所受風力約為？",
+                          "options":  [
+                                          "4500 N",
+                                          "6000 N",
+                                          "7500 N",
+                                          "9000 N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "F=ρAv2=1.2*3*2500=9000 N。但風撞擊後不會完全停止，通常取一半，約 4500 N。"
+                      },
+                      {
+                          "id":  817,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣某離岸風力發電機組，單機容量 8 MW，容量因數 40%，一年可發電約多少度？",
+                          "options":  [
+                                          "約 1400 萬度",
+                                          "約 2800 萬度",
+                                          "約 4200 萬度",
+                                          "約 5600 萬度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "年發電量=8*1000*24*365*0.4=28,032,000 度=約 2800 萬度。"
+                      },
+                      {
+                          "id":  818,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 2024 年太陽光電裝置容量約 12 GW，平均每天有效發電 3.5 小時，一天約可發電多少度？",
+                          "options":  [
+                                          "約 3.2 千萬度",
+                                          "約 4.2 千萬度",
+                                          "約 5.2 千萬度",
+                                          "約 6.2 千萬度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "12 GW=1.2*107 kW。日發電量=1.2*107*3.5=4.2*107 度=4200 萬度。"
+                      },
+                      {
+                          "id":  819,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣家庭用電 110 V，若同時使用 1500W 吹風機和 800W 電鍋，總電流為何？會超過 15A 的無熔絲開關嗎？",
+                          "options":  [
+                                          "約 20.9A，會超過",
+                                          "約 18.2A，會超過",
+                                          "約 13.6A，不會",
+                                          "約 10.5A，不會"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "I=(1500+800)/110=2300/110=20.9 A \u003e 15 A，會跳電。"
+                      },
+                      {
+                          "id":  820,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某智慧型手機電池容量 4000 mAh，電壓 3.8 V，充滿電儲存多少能量？",
+                          "options":  [
+                                          "約 15200 J",
+                                          "約 38400 J",
+                                          "約 54800 J",
+                                          "約 68500 J"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "E=3.8V*4Ah=15.2 Wh=15.2*3600=54720 J。"
+                      },
+                      {
+                          "id":  821,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "現代手機鏡頭採用多片鏡片組成，下列哪種現象是鏡頭設計時必須修正的？",
+                          "options":  [
+                                          "色散現象",
+                                          "全反射",
+                                          "光的干涉",
+                                          "光的繞射"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "不同色光折射率不同會造成色散（色差），鏡頭需用不同材質鏡片組合來修正。"
+                      },
+                      {
+                          "id":  822,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "夏天中午柏油路面溫度可達 60 度C，一旁草地約 35 度C。柏油比熱 0.8 J/g度C，草地土壤比熱 1.5 J/g度C。若兩者吸收相同熱量，柏油溫度上升為草地的幾倍？",
+                          "options":  [
+                                          "約 1.5 倍",
+                                          "約 1.88 倍",
+                                          "約 2.4 倍",
+                                          "約 3 倍"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "ΔT=H/mc，質量相同時 ΔT∝1/c。ΔT柏油/ΔT草地=c草地/c柏油=1.5/0.8=1.875。"
+                      },
+                      {
+                          "id":  823,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣水庫優養化主要與哪種物質過量有關？",
+                          "options":  [
+                                          "重金屬",
+                                          "有機磷農藥",
+                                          "氮和磷",
+                                          "塑膠微粒"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "水庫優養化主要因氮、磷等營養鹽過量，造成藻類大量繁殖。"
+                      },
+                      {
+                          "id":  824,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電動車鋰電池中，鋰離子在放電時從陽極移動到陰極。鋰的氧化數變化為何？",
+                          "options":  [
+                                          "0→+1",
+                                          "+1→0",
+                                          "0→-1",
+                                          "-1→0"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "鋰金屬（Li）氧化數 0，放電時失去電子變成 Li+，氧化數升為 +1。"
+                      },
+                      {
+                          "id":  825,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣酸雨監測顯示，北部酸雨 pH 值平均約 4.5。此酸度是純水的幾倍？",
+                          "options":  [
+                                          "約 3.2 倍",
+                                          "約 30 倍",
+                                          "約 316 倍",
+                                          "約 1000 倍"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "[H+]=10-4.5=3.16*10-5 M。純水[H+]=10-7 M。倍數=3.16*10-5/10-7=316 倍。"
+                      },
+                      {
+                          "id":  826,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "胃藥成分常含 Mg(OH)2或 Al(OH)3，其作用原理為何？",
+                          "options":  [
+                                          "氧化還原",
+                                          "酸鹼中和",
+                                          "分解反應",
+                                          "置換反應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Mg(OH)2 和 Al(OH)3 為鹼性，可中和胃酸（HCl），屬於酸鹼中和反應。"
+                      },
+                      {
+                          "id":  827,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "食品包裝中的脫氧劑（鐵粉）的除氧原理為何？",
+                          "options":  [
+                                          "鐵與氧氣反應生成氧化鐵",
+                                          "鐵吸收水分",
+                                          "鐵釋放二氧化碳",
+                                          "鐵吸附細菌"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "脫氧劑中的鐵粉與氧氣反應：4Fe+3O2→2Fe2O3，消耗包裝內的氧氣。"
+                      },
+                      {
+                          "id":  828,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "PLA（聚乳酸）環保吸管是由哪種天然單體聚合而成？",
+                          "options":  [
+                                          "乙烯",
+                                          "乳酸",
+                                          "葡萄糖",
+                                          "胺基酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "PLA 由乳酸（乳酸）單體聚合而成，為可生物降解的環保塑膠。"
+                      },
+                      {
+                          "id":  829,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "半導體材料矽的原子序 14，其電子排列為何？",
+                          "options":  [
+                                          "2,8,4",
+                                          "2,8,8",
+                                          "2,8,2",
+                                          "2,4,8"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "矽原子序 14，電子排列為 2,8,4，最外層 4 個電子。"
+                      },
+                      {
+                          "id":  830,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Taiwan is known ___ its night markets and friendly people.",
+                          "options":  [
+                                          "as",
+                                          "for",
+                                          "with",
+                                          "about"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Known for = famous because of something."
+                      },
+                      {
+                          "id":  831,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The government is trying to reduce plastic waste ___ promoting reusable bags.",
+                          "options":  [
+                                          "with",
+                                          "by",
+                                          "in",
+                                          "on"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "By + V-ing indicates the method or means of achieving something."
+                      },
+                      {
+                          "id":  832,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "More and more people are ___ about climate change.",
+                          "options":  [
+                                          "concern",
+                                          "concerned",
+                                          "concerns",
+                                          "concerning"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Be concerned about = worried about. \u0027Are concerned\u0027 is correct."
+                      },
+                      {
+                          "id":  833,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "___ the development of AI, many jobs will change in the future.",
+                          "options":  [
+                                          "Because",
+                                          "Because of",
+                                          "In spite",
+                                          "Although"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Because of + noun phrase (the development). Because + clause."
+                      },
+                      {
+                          "id":  834,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣護國神山台積電的晶圓廠中，晶圓需經過精密研磨。若研磨機以 3000 rpm 轉速運轉，角速度為何？",
+                          "options":  [
+                                          "約 100π rad/s",
+                                          "約 200π rad/s",
+                                          "約 300π rad/s",
+                                          "約 400π rad/s"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "ω=2πf=2π*(3000/60)=100π rad/s。"
+                      },
+                      {
+                          "id":  835,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 2024 年 0403 花蓮地震規模 7.2，釋放能量約為規模 6.2 地震的幾倍？（芮氏規模每差 1，能量差約 31.6 倍）",
+                          "options":  [
+                                          "約 5.6 倍",
+                                          "約 10 倍",
+                                          "約 31.6 倍",
+                                          "約 1000 倍"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "規模差 1，能量差 101.5=31.6 倍。"
+                      },
+                      {
+                          "id":  836,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 101 大樓的阻尼球質量 660 噸（6.6*105 kg），在強風中擺動週期約 6.28 秒，等效擺長約為？（g=10）",
+                          "options":  [
+                                          "約 5 m",
+                                          "約 8 m",
+                                          "約 10 m",
+                                          "約 12.5 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "T=2π√(L/g)，L=(T/(2π))2*g=(6.28/6.28)2*10=10 m。"
+                      },
+                      {
+                          "id":  837,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "臺灣一戶家庭平均每月用電約 400 度。\n(1) 平均每天用電約多少度？\n(2) 若每度電碳排 0.5 kg，每月碳排多少？",
+                          "options":  [
+                                          "(1)約13.3度 (2)200kg",
+                                          "(1)約13.3度 (2)400kg",
+                                          "(1)約20度 (2)200kg",
+                                          "(1)約20度 (2)400kg"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) 400/30=13.3 度/天。(2) 400*0.5=200 kg CO2/月。"
+                      },
+                      {
+                          "id":  838,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 2025 年預計電動車占新車銷售 30%。電動車充電功率 7 kW，每天行駛 50 km（耗電 8 kWh），每天充電需多久？",
+                          "options":  [
+                                          "約 0.87 小時",
+                                          "約 1.14 小時",
+                                          "約 1.5 小時",
+                                          "約 2 小時"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "t=8 kWh/7 kW=1.14 小時。"
+                      },
+                      {
+                          "id":  839,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "夏天冷氣設定 26 度C，室外 35 度C，冷氣效率 COP=4。若每小時移除 12000 kJ 熱量，冷氣消耗功率為何？",
+                          "options":  [
+                                          "約 600 W",
+                                          "約 700 W",
+                                          "約 833 W",
+                                          "約 1000 W"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "COP=Q冷/W，W=Q冷/COP=12000/4=3000 kJ/h=3000/3.6=833.3 W。"
+                      },
+                      {
+                          "id":  840,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "臺灣 2024 年淨零排放路徑中，預計 2030 年減碳 25%。\n(1) 若 2024 年碳排放 250 Mt，2030 年目標為何？\n(2) 減少的碳量需多種樹多少棵？（每棵樹年固碳 20 kg）",
+                          "options":  [
+                                          "(1)187.5Mt (2)31.3億棵",
+                                          "(1)200Mt (2)25億棵",
+                                          "(1)187.5Mt (2)3.13億棵",
+                                          "(1)200Mt (2)2.5億棵"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) 250*(1-0.25)=187.5 Mt。(2) 減量=62.5 Mt=6.25*1010 kg，需樹=6.25*1010/20=3.125*109 棵。"
+                      },
+                      {
+                          "id":  841,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣PM2.5來源中，硝酸鹽約佔 15%。硝酸鹽（NO3-）在空氣中如何形成？",
+                          "options":  [
+                                          "氮氣直接溶於水",
+                                          "NOx 溶於水氧化成硝酸",
+                                          "氨氣與鹽酸反應",
+                                          "有機物分解"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "NOx（氮氧化物）在空氣中氧化成 NO2，再與水反應生成 HNO3，形成硝酸鹽。"
+                      },
+                      {
+                          "id":  842,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電解水製氫是氫能的重要來源。電解水時，產生氧氣的是哪一極？",
+                          "options":  [
+                                          "正極（陽極）",
+                                          "負極（陰極）",
+                                          "兩極皆有",
+                                          "無法判斷"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "電解水時，陽極（正極）發生氧化反應產生 O2，陰極（負極）發生還原反應產生 H2。"
+                      },
+                      {
+                          "id":  843,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Taiwan is located ___ the western Pacific Ocean.",
+                          "options":  [
+                                          "on",
+                                          "in",
+                                          "at",
+                                          "to"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Located in + larger area (the Pacific Ocean)."
+                      },
+                      {
+                          "id":  844,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The number of tourists visiting Taiwan ___ increased significantly last year.",
+                          "options":  [
+                                          "has",
+                                          "have",
+                                          "are",
+                                          "were"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "The number of + noun takes singular verb (has)."
+                      },
+                      {
+                          "id":  845,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 YouBike 微笑單車，騎乘時車輪半徑 0.35 m，以 5 m/s 前進，車輪角速度為何？",
+                          "options":  [
+                                          "約 10.2 rad/s",
+                                          "約 12.5 rad/s",
+                                          "約 14.3 rad/s",
+                                          "約 16.8 rad/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "ω=v/r=5/0.35=14.29 rad/s。"
+                      },
+                      {
+                          "id":  846,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣山區常見小型水力發電，水頭高度 200 m，流量 0.5 m3/s，g=10，發電效率 80%，發電功率約為？",
+                          "options":  [
+                                          "約 400 kW",
+                                          "約 600 kW",
+                                          "約 800 kW",
+                                          "約 1000 kW"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "P=η*ρQgh=0.8*1000*0.5*10*200=800000 W=800 kW。"
+                      },
+                      {
+                          "id":  847,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "臺灣高鐵台北到高雄全長 350 km，直達車最快 1.5 小時。\n(1) 平均速率為何？\n(2) 若最高時速 300 km/h，加速段與減速段各需 4 分鐘，等速段時間多長？",
+                          "options":  [
+                                          "(1)233km/h (2)約82分鐘",
+                                          "(1)233km/h (2)約74分鐘",
+                                          "(1)250km/h (2)約82分鐘",
+                                          "(1)250km/h (2)約74分鐘"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) 350/1.5=233.3 km/h。(2) 加減速各 4 分=8 分，1.5h=90 分，等速段=90-8=82 分。"
+                      },
+                      {
+                          "id":  848,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣水庫中的藻華現象，主要與哪種元素過多有關？",
+                          "options":  [
+                                          "碳和氧",
+                                          "氮和磷",
+                                          "鈣和鎂",
+                                          "鐵和鋅"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "氮（N）和磷（P）是藻類生長的主要營養鹽，過量會造成藻華。"
+                      },
+                      {
+                          "id":  849,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣沿海養殖漁業常使用石灰調整水質，石灰（CaO）加入水中會使 pH 值如何變化？",
+                          "options":  [
+                                          "升高",
+                                          "降低",
+                                          "不變",
+                                          "先降後升"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "CaO 與水反應生成 Ca(OH)2，為鹼性，使 pH 值升高。"
+                      },
+                      {
+                          "id":  850,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "不鏽鋼不易生鏽是因為表面形成何種保護層？",
+                          "options":  [
+                                          "氧化鐵",
+                                          "氧化鉻",
+                                          "氧化鋁",
+                                          "氧化鎳"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "不鏽鋼中的鉻（Cr）在表面形成緻密的 Cr2O3 保護膜，防止進一步氧化。"
+                      },
+                      {
+                          "id":  851,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The high-speed rail system in Taiwan is known for its ___.",
+                          "options":  [
+                                          "punctuality",
+                                          "delay",
+                                          "slow",
+                                          "expensive"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Taiwan\u0027s HSR is famous for its punctuality (on-time performance)."
+                      },
+                      {
+                          "id":  852,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣玉山主峰高 3952 m，山頂大氣壓力約為海平面的多少？（每升高 100 m 氣壓降低約 1%）",
+                          "options":  [
+                                          "約 50%",
+                                          "約 60%",
+                                          "約 70%",
+                                          "約 80%"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "降低幅度=3952/100=39.52%，山頂壓力約為 100%-39.5%=60.5%。"
+                      },
+                      {
+                          "id":  853,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "潛水員在臺灣東部海域下潛 30 m，所受壓力約為海平面的幾倍？（海水密度 1030 kg/m3，大氣壓力 1.013*105 Pa）",
+                          "options":  [
+                                          "約 2 倍",
+                                          "約 3 倍",
+                                          "約 4 倍",
+                                          "約 5 倍"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "水壓=ρgh=1030*10*30=309000 Pa。總壓力=309000+101300=410300 Pa。倍數=410300/101300=4.05。"
+                      },
+                      {
+                          "id":  854,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "臺灣 2025 年太陽光電裝置容量 20 GW，年發電量約 280 億度。\n(1) 平均每日有效發電時數？\n(2) 若每戶家庭年用電 4800 度，可供應多少戶？",
+                          "options":  [
+                                          "(1)3.8h (2)約58萬戶",
+                                          "(1)3.8h (2)約580萬戶",
+                                          "(1)5.2h (2)約58萬戶",
+                                          "(1)5.2h (2)約580萬戶"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "(1) 年發電=280 億度=2.8*1010 kWh。kW=2*107。時數=2.8*1010/(2*107*365)=3.84 h。(2) 2.8*1010/4800=5.83*106 戶。"
+                      },
+                      {
+                          "id":  855,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣溫泉可分為碳酸氫鹽泉和硫酸鹽泉。碳酸氫鹽泉主要成分 NaHCO3，水溶液 pH 值約為？",
+                          "options":  [
+                                          "pH\u003c7",
+                                          "pH=7",
+                                          "pH\u003e7",
+                                          "不一定"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "NaHCO3 溶於水後 HCO3- 水解產生 OH-，水溶液呈弱鹼性（pH\u003e7）。"
+                      },
+                      {
+                          "id":  856,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "___ the increasing demand for semiconductors, TSMC continues to expand its factories.",
+                          "options":  [
+                                          "Due",
+                                          "Due to",
+                                          "Because",
+                                          "Since"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Due to + noun phrase (increasing demand). Because/since + clause."
+                      },
+                      {
+                          "id":  857,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "It is essential that the government ___ measures to protect the environment.",
+                          "options":  [
+                                          "take",
+                                          "takes",
+                                          "took",
+                                          "taking"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Subjunctive mood after \u0027essential that\u0027 requires the base form (take)."
+                      },
+                      {
+                          "id":  858,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣 921 地震（規模 7.3）釋放能量約為規模 5.3 地震的多少倍？（每差 1 級能量差 31.6 倍）",
+                          "options":  [
+                                          "約 100 倍",
+                                          "約 316 倍",
+                                          "約 1000 倍",
+                                          "約 3160 倍"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "差 2 級，能量倍數=31.62=1000 倍。"
+                      },
+                      {
+                          "id":  859,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣蘇花公路改善計畫（蘇花改）中，最長的谷風隧道長約 12.6 km，若以時速 60 km/h 通過，需時多久？",
+                          "options":  [
+                                          "約 10.5 分",
+                                          "約 12.6 分",
+                                          "約 13.5 分",
+                                          "約 15 分"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "t=12.6/60=0.21 h=12.6 分鐘。"
+                      },
+                      {
+                          "id":  860,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣水庫水質監測中，生化需氧量（BOD）主要表示什麼？",
+                          "options":  [
+                                          "水中溶氧量",
+                                          "有機物汙染程度",
+                                          "重金屬濃度",
+                                          "酸鹼度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "BOD 表示微生物分解水中有機物所需的氧量，數值越高表示有機汙染越嚴重。"
+                      },
+                      {
+                          "id":  861,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "工廠廢水 pH=2，排放前需中和至 pH=7。若廢水流量 100 L/min，需添加 0.5 M NaOH 多少 L/min？",
+                          "options":  [
+                                          "約 0.02 L/min",
+                                          "約 0.2 L/min",
+                                          "約 2 L/min",
+                                          "約 20 L/min"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "[H+]=0.01 M，H+ 莫耳數/分鐘=0.01*100=1 mol/min。需 NaOH 1 mol/min=1/0.5=2 L/min。"
+                      },
+                      {
+                          "id":  862,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The scenic spots in Taiwan attract millions of visitors ___ year.",
+                          "options":  [
+                                          "each",
+                                          "every",
+                                          "all",
+                                          "both"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Each year = per year. \u0027Each\u0027 can be used before singular nouns."
+                      },
+                      {
+                          "id":  863,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "臺灣媽祖遶境活動中，神轎質量約 50 kg，四人抬轎，每人施力約多少？（g=10）",
+                          "options":  [
+                                          "約 62.5 N",
+                                          "約 125 N",
+                                          "約 250 N",
+                                          "約 500 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "總重=500 N，四人分擔=500/4=125 N/人。"
                       }
                   ],
     "subjects":  [
