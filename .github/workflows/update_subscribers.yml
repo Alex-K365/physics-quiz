@@ -1,44 +1,36 @@
 name: Update Subscriber Count
-
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
-  workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch and update subscriber count via API
-        run: |
-          python3 -c "
+      - name: Update subscribers.json via API
+        run: python3 -c "
 import json, urllib.request, base64, os
 from datetime import datetime, timezone
-
 dc = os.environ['DC']
 list_id = os.environ['LIST_ID']
 api_key = os.environ['API_KEY']
 token = os.environ['GH_TOKEN']
 repo = os.environ['REPO']
-
-url = 'https://' + dc + '.api.mailchimp.com/3.0/lists/' + list_id
+url1 = 'https://' + dc + '.api.mailchimp.com/3.0/lists/' + list_id
 auth = base64.b64encode(('anystring:' + api_key).encode()).decode()
-req = urllib.request.Request(url, headers={'Authorization': 'Basic ' + auth})
+req = urllib.request.Request(url1, headers={'Authorization': 'Basic ' + auth})
 count = json.load(urllib.request.urlopen(req))['stats']['member_count']
 now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 content = json.dumps({'count': count, 'updated': now})
-
-url = 'https://api.github.com/repos/' + repo + '/contents/subscribers.json'
+url2 = 'https://api.github.com/repos/' + repo + '/contents/subscribers.json'
 headers = {'Authorization': 'Bearer ' + token, 'Accept': 'application/vnd.github.v3+json'}
-req = urllib.request.Request(url, headers=headers)
+req = urllib.request.Request(url2, headers=headers)
 sha = json.load(urllib.request.urlopen(req))['sha']
-
 data = json.dumps({'message': 'update subscriber count', 'content': base64.b64encode(content.encode()).decode(), 'sha': sha, 'branch': 'master'}).encode()
-req = urllib.request.Request(url, data=data, method='PUT', headers=headers)
-result = json.load(urllib.request.urlopen(req))
+req = urllib.request.Request(url2, data=data, method='PUT', headers=headers)
+json.load(urllib.request.urlopen(req))
 print('Updated count to ' + str(count))
 "
         env:
