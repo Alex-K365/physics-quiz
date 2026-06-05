@@ -1,0 +1,24 @@
+name: Update Subscriber Count
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch Mailchimp subscriber count
+        run: |
+          COUNT=$(curl -s "https://${{ secrets.MAILCHIMP_DC }}.api.mailchimp.com/3.0/lists/${{ secrets.MAILCHIMP_LIST_ID }}" \
+            -u "anystring:${{ secrets.MAILCHIMP_API_KEY }}" | jq '.stats.member_count')
+          echo "{\"count\": $COUNT, \"updated\": \"$(date -Iseconds -u)\"}" > subscribers.json
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add subscribers.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "update subscriber count"
+          git push

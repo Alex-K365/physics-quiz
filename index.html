@@ -969,9 +969,10 @@ function handleSubscribe(form) {
 }
 
 function updateSubscribeCount() {
-  const subs = getStore(SUBSCRIBERS_KEY, []);
-  const el = document.getElementById('subscribeCount');
-  if (subs.length > 0) el.textContent = '已有 ' + subs.length + ' 位同學訂閱';
+  fetch('subscribers.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){
+    var el = document.getElementById('subscribeCount');
+    if (el && d.count > 0) el.textContent = '已有 ' + d.count + ' 位同學訂閱';
+  }).catch(function(){});
 }
 
 updateSubscribeCount();
