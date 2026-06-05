@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Fetch and update subscriber count via API
         run: |
-          python3 << 'EOF'
+          cat > /tmp/update.py << 'HEREDOC'
 import json, urllib.request, base64
 from datetime import datetime, timezone
 
@@ -24,20 +24,17 @@ api_key = "${{ secrets.MAILCHIMP_API_KEY }}"
 token = "${{ secrets.PAT_TOKEN }}"
 repo = "${{ github.repository }}"
 
-# Fetch Mailchimp count
 url = f"https://{dc}.api.mailchimp.com/3.0/lists/{list_id}"
 req = urllib.request.Request(url, headers={"Authorization": f"Basic {base64.b64encode(('anystring:' + api_key).encode()).decode()}"})
 count = json.load(urllib.request.urlopen(req))["stats"]["member_count"]
 now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 content = json.dumps({"count": count, "updated": now})
 
-# Get current SHA
 url = f"https://api.github.com/repos/{repo}/contents/subscribers.json"
 headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github.v3+json"}
 req = urllib.request.Request(url, headers=headers)
 sha = json.load(urllib.request.urlopen(req))["sha"]
 
-# Update file
 data = json.dumps({
     "message": "update subscriber count",
     "content": base64.b64encode(content.encode()).decode(),
@@ -46,5 +43,6 @@ data = json.dumps({
 }).encode()
 req = urllib.request.Request(url, data=data, method="PUT", headers=headers)
 result = json.load(urllib.request.urlopen(req))
-print(f"Updated! Count: {count}, SHA: {result['content']['sha'][:8]}...")
-EOF
+print(f"Updated count to {count}")
+HEREDOC
+          python3 /tmp/update.py
