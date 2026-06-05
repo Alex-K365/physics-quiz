@@ -6722,6 +6722,806 @@
                                       ],
                           "answer":  1,
                           "explanation":  "熟石灰（Ca(OH)2）為鹼性，可與酸中和，是常用的酸性廢水處理方法。"
+                      },
+                      {
+                          "id":  416,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 m 的物體置於粗糙水平面上，受與水平成 37 度角的拉力 F 作用，物體以等速運動。若動摩擦係數為 u，則 F 與 u、m、g 的關係為何？(sin37=0.6, cos37=0.8)",
+                          "options":  [
+                                          "F = umg/(0.8+0.6u)",
+                                          "F = umg/0.8",
+                                          "F = umg",
+                                          "F = umg/0.6"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "水平方向：Fcos37 = f = uN。鉛直方向：N + Fsin37 = mg。N = mg - 0.6F。代入：0.8F = u(mg-0.6F)，0.8F + 0.6uF = umg，F(0.8+0.6u) = umg，F = umg/(0.8+0.6u)。"
+                      },
+                      {
+                          "id":  417,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "質量 1 kg 的物體從高 20 m 處自由落下，不計空氣阻力（g=10 m/s2）。\n(1) 落地速率為何？\n(2) 落地時的動能為何？\n(3) 若此物體落入沙中陷入 0.5 m 後停止，沙的平均阻力為何？",
+                          "options":  [
+                                          "(1)20m/s (2)200J (3)400N",
+                                          "(1)20m/s (2)200J (3)200N",
+                                          "(1)10m/s (2)100J (3)200N",
+                                          "(1)20m/s (2)400J (3)200N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) v = 根號(2gh) = 根號(400) = 20 m/s。(2) Ek = mgh = 200 J。(3) F*S = Ek，F*0.5 = 200，F = 400 N。"
+                      },
+                      {
+                          "id":  418,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "A、B、C 三物體質量分別為 1 kg、2 kg、3 kg，以細繩連接置於光滑水平面上，受 12 N 水平力拉 C 物體，則繩子張力 T1（A-B之間）與 T2（B-C之間）比值為何？",
+                          "options":  [
+                                          "1:3",
+                                          "1:5",
+                                          "3:5",
+                                          "5:3"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "系統加速度 a = 12/(1+2+3) = 2 m/s2。T1 = mA*a = 1*2 = 2 N。T2 = (mA+mB)*a = 3*2 = 6 N。T1:T2 = 2:6 = 1:3。"
+                      },
+                      {
+                          "id":  419,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "已知地球半徑 R，地表重力加速度 g。若太空衛星在距地表高度為 R 的圓形軌道上運行，其向心加速度為何？",
+                          "options":  [
+                                          "g/4",
+                                          "g/2",
+                                          "g/根號2",
+                                          "g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "距地心距離 = 2R。重力與距離平方成反比，g = g*(R/(2R))2 = g/4。"
+                      },
+                      {
+                          "id":  420,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "已知某星球質量為地球的 2 倍，半徑為地球的 3 倍，重力加速度為 g。\n(1) g 與地球 g0 的比值為何？\n(2) 在此星球上，單擺週期為地球上的幾倍？",
+                          "options":  [
+                                          "(1)2/9 (2)3/根號2",
+                                          "(1)2/3 (2)根號(3/2)",
+                                          "(1)2/9 (2)根號(3/2)",
+                                          "(1)2/3 (2)3/2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) g = GM/R2 = G*(2M0)/(3R0)2 = (2/9)*GM0/R02 = 2g0/9。(2) T/T0 = 根號(g0/g) = 根號(9/2) = 3/根號2。"
+                      },
+                      {
+                          "id":  421,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某人以 5 m/s 的速率向東走 200 m，再以 3 m/s 的速率向北走 150 m，則全程的平均速度大小為何？",
+                          "options":  [
+                                          "2.78 m/s",
+                                          "3.5 m/s",
+                                          "4 m/s",
+                                          "5 m/s"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "向東時間 = 200/5 = 40 s，向北時間 = 150/3 = 50 s。總位移 = 根號(2002+1502) = 250 m。總時間 = 90 s。平均速度 = 250/90 = 2.78 m/s。"
+                      },
+                      {
+                          "id":  422,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質點在 x 軸上運動，位置 x(t) = 6t - t3，則何時質點速度為零？",
+                          "options":  [
+                                          "t = 0 s 和 t = 根號2 s",
+                                          "t = 根號2 s 和 t = 負根號2 s",
+                                          "t = 2 s",
+                                          "t = 根號2 s"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "v(t) = dx/dt = 6 - 3t2。v=0 時 6 - 3t2 = 0，t2 = 2，t = 根號2 s。"
+                      },
+                      {
+                          "id":  423,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某人由甲地到乙地，前半段路程速率為 v1，後半段路程速率為 v2，則全程平均速率為何？",
+                          "options":  [
+                                          "(v1+v2)/2",
+                                          "2v1v2/(v1+v2)",
+                                          "根號(v1v2)",
+                                          "v1v2/(v1+v2)"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "設總路程 2S。前半時間 t1 = S/v1，後半 t2 = S/v2。平均速率 = 2S/(t1+t2) = 2S/(S/v1+S/v2) = 2/(1/v1+1/v2) = 2v1v2/(v1+v2)。"
+                      },
+                      {
+                          "id":  424,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一子彈質量 m、初速 v，穿過一塊厚度 d 的木板後速度減為 v/2，則穿過第二塊相同的木板後速度變為？",
+                          "options":  [
+                                          "0",
+                                          "v/4",
+                                          "v/根號2",
+                                          "v/2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "穿過一塊木板損失動能 = 1/2*m*v2 - 1/2*m*(v/2)2 = 3/8*m*v2。剩餘動能 = 1/8*m*v2，小於穿過一塊板的損失，故無法穿過第二塊。"
+                      },
+                      {
+                          "id":  425,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質量 m 的物體從半徑 R 的半球頂端無初速滑下，不計摩擦，物體離開球面時的高度為？",
+                          "options":  [
+                                          "R/3",
+                                          "R/2",
+                                          "2R/3",
+                                          "3R/4"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "設離開時徑向與鉛直夾角 theta，mg*cos(theta) = mv2/R（向心力），且 mgR(1-cos theta) = 1/2*mv2。聯立得 cos theta = 2/3，h = R*cos theta = 2R/3。"
+                      },
+                      {
+                          "id":  426,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "頻率 340 Hz 的音叉與頻率未知的音叉同時振動時，每秒產生 5 次拍音。若在未知音叉上黏一小塊膠帶後，拍頻變為 3 Hz，則未知音叉原頻率為何？",
+                          "options":  [
+                                          "335 Hz",
+                                          "337 Hz",
+                                          "343 Hz",
+                                          "345 Hz"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "原拍頻 5 Hz，未知頻率可能為 335 Hz 或 345 Hz。黏膠帶增加質量，頻率降低。若原為 345 Hz，降頻後更接近 340 Hz，拍頻減少（5→3）。若原為 335 Hz，降頻後離更遠，拍頻應增加。故原頻率 345 Hz。"
+                      },
+                      {
+                          "id":  427,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一薄凸透鏡焦距 10 cm，物體置於鏡前 25 cm 處，若將物體向透鏡移動 5 cm，像的移動距離為何？",
+                          "options":  [
+                                          "約 3.33 cm",
+                                          "5 cm",
+                                          "6.25 cm",
+                                          "7.5 cm"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "原物距 25 cm：1/25+1/q1=1/10，q1=50/3=16.67 cm。新物距 20 cm：1/20+1/q2=1/10，q2=20 cm。像移動 = 20-16.67 = 3.33 cm。"
+                      },
+                      {
+                          "id":  428,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "楊氏雙狹縫干涉實驗中，狹縫間距 d=0.2 mm，屏幕距離 L=2 m，使用波長 500 nm 的雷射光。\n(1) 相鄰亮紋間距為何？\n(2) 第 3 條亮紋距中央亮紋的距離為何？",
+                          "options":  [
+                                          "(1)5mm (2)10mm",
+                                          "(1)5mm (2)15mm",
+                                          "(1)2.5mm (2)7.5mm",
+                                          "(1)10mm (2)30mm"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "(1) delta y = lambda*L/d = 500*10^-9*2/(0.2*10^-3) = 5*10^-3 m = 5 mm。(2) 第 n 條亮紋距中央 = n*delta y = 3*5 = 15 mm。"
+                      },
+                      {
+                          "id":  429,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一電路包含電阻 R、電感 L 和交流電源 V(t)=V0*sin(omega*t)，電流與電壓的相位關係為何？",
+                          "options":  [
+                                          "電流領先電壓",
+                                          "電流落後電壓",
+                                          "同相",
+                                          "不一定"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電感 L 使電流落後電壓 90 度。tan(phi) = omega*L/R。"
+                      },
+                      {
+                          "id":  430,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電路中兩電阻 R1=10 Ω、R2=20 Ω 並聯後，再與 R3=15 Ω 串聯，接於 60 V 電源上。流經 R2 的電流為何？",
+                          "options":  [
+                                          "約 0.92 A",
+                                          "1.2 A",
+                                          "1.6 A",
+                                          "2 A"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "R1//R2：1/Rp = 1/10+1/20 = 3/20，Rp = 6.67 Ω。總電阻 = 6.67+15 = 21.67 Ω。總電流 = 60/21.67 = 2.77 A。R2 電流 = 總電流 * R1/(R1+R2) = 2.77*10/30 = 0.92 A。"
+                      },
+                      {
+                          "id":  431,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一長直導線（無限長）載有 10 A 電流，另一導線長 0.5 m 載有 5 A 電流，兩者平行相距 0.1 m，則第二條導線所受磁力大小為何？",
+                          "options":  [
+                                          "2*10^-5 N",
+                                          "5*10^-5 N",
+                                          "8*10^-5 N",
+                                          "10^-4 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "第一條導線在第二條處產生磁場 B = u0*I1/(2pi*r) = 2*10^-5 T。磁力 F = B*I2*L = 2*10^-5*5*0.5 = 5*10^-5 N。"
+                      },
+                      {
+                          "id":  432,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一矩形線圈面積 0.04 m2，電阻 5 Ω，置於磁場 0.2 T 中。若在 0.02 s 內將線圈從磁場中拉出，線圈中產生的感應電流為何？",
+                          "options":  [
+                                          "0.04 A",
+                                          "0.08 A",
+                                          "0.1 A",
+                                          "0.16 A"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "感應電動勢 = N*delta(BA)/deltat = 1*(0.2*0.04-0)/0.02 = 0.4 V。電流 I = V/R = 0.4/5 = 0.08 A。"
+                      },
+                      {
+                          "id":  433,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一氣球內有 2 莫耳的理想氣體，溫度 27 度C，壓力 1 atm。若加熱至 127 度C，壓力變為 1.5 atm，則氣球體積變化為何？",
+                          "options":  [
+                                          "不變",
+                                          "膨脹為 1.25 倍",
+                                          "膨脹為 1.33 倍",
+                                          "收縮為 0.89 倍"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "PV=nRT。V2/V1 = (T2/T1)*(P1/P2) = (400/300)*(1/1.5) = 1.33*0.67 = 0.89。體積縮小為 0.89 倍。"
+                      },
+                      {
+                          "id":  434,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "某元素 X 的原子序 20，質量數 40。\n(1) 原子內有幾個質子、中子、電子？\n(2) X 在週期表中的位置？",
+                          "options":  [
+                                          "(1)20p,20n,20e (2)第4週期第2族",
+                                          "(1)20p,20n,20e (2)第2週期第20族",
+                                          "(1)40p,20n,40e (2)第4週期第2族",
+                                          "(1)20p,40n,20e (2)第2週期第2族"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) 質子數=原子序=20，電子數=質子數=20，中子數=質量數-質子數=20。(2) 電子排列 2,8,8,2，第 4 週期第 2 族。"
+                      },
+                      {
+                          "id":  435,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在 500 mL 的溶液中，含有 0.2 mol 的 H2O2，其分解反應 2H2O2 產生 2H2O + O2，經過 100 秒後，測得 H2O2 濃度為 0.2 M。則此段時間內的平均反應速率（以 H2O2 消耗計）為何？",
+                          "options":  [
+                                          "0.001 M/s",
+                                          "0.002 M/s",
+                                          "0.003 M/s",
+                                          "0.004 M/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "初始[H2O2] = 0.2/0.5 = 0.4 M。100 秒後濃度為 0.2 M，消耗 0.2 M。平均速率 = 0.2/100 = 0.002 M/s。"
+                      },
+                      {
+                          "id":  436,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "反應 A + 2B 產生 3C 的速率定律為 R = k[A][B]2。若 A 濃度減半，B 濃度加倍，反應速率變為原來的幾倍？",
+                          "options":  [
+                                          "不變",
+                                          "2 倍",
+                                          "4 倍",
+                                          "6 倍"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "R = k([A]/2)(2[B])2 = k[A][B]2*(1/2*4) = 2R。速率變為 2 倍。"
+                      },
+                      {
+                          "id":  437,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "25 度C 時，0.1 M 的醋酸（CH3COOH）溶液之 pH 值約為？（Ka=1.8*10^-5）",
+                          "options":  [
+                                          "1.0",
+                                          "2.87",
+                                          "4.75",
+                                          "5.13"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "[H+] = 根號(Ka*C) = 根號(1.8*10^-6) = 1.34*10^-3 M。pH = -log(1.34*10^-3) = 2.87。"
+                      },
+                      {
+                          "id":  438,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.1 M 的 NaOH 溶液緩慢滴入 20 mL 的 0.1 M HCl 中，於當量點時，溶液的 pH 值為何？",
+                          "options":  [
+                                          "7",
+                                          "大於 7",
+                                          "小於 7",
+                                          "不一定"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "強酸（HCl）與強鹼（NaOH）中和，生成的 NaCl 為中性鹽，pH=7。"
+                      },
+                      {
+                          "id":  439,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.1 M KMnO4 溶液 25 mL 在酸性條件下與過量 FeSO4 反應：MnO4- + 5Fe2+ + 8H+ 產生 Mn2+ + 5Fe3+ + 4H2O。可氧化多少莫耳的 Fe2+？",
+                          "options":  [
+                                          "0.0025 mol",
+                                          "0.005 mol",
+                                          "0.0125 mol",
+                                          "0.025 mol"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "KMnO4 莫耳數 = 0.1*0.025 = 0.0025 mol。由係數比 MnO4- : Fe2+ = 1:5，Fe2+ 莫耳數 = 5*0.0025 = 0.0125 mol。"
+                      },
+                      {
+                          "id":  440,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "已知電動勢 E0(Zn2+/Zn) = -0.76 V，E0(Cu2+/Cu) = +0.34 V。鋅銅電池的標準電動勢為何？",
+                          "options":  [
+                                          "0.42 V",
+                                          "1.10 V",
+                                          "1.84 V",
+                                          "0.76 V"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "E0電池 = E0陰極 - E0陽極 = (Cu2+/Cu) - (Zn2+/Zn) = 0.34 - (-0.76) = 1.10 V。"
+                      },
+                      {
+                          "id":  441,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "分子式 C3H8O 的醇類有幾種異構物？",
+                          "options":  [
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "C3H8O 的醇類有正丙醇（1-丙醇）和異丙醇（2-丙醇）兩種異構物。"
+                      },
+                      {
+                          "id":  442,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者是乙烯（C2H4）的示性式？",
+                          "options":  [
+                                          "CH3-CH3",
+                                          "CH2=CH2",
+                                          "CH三CH",
+                                          "CH3-CH2-OH"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "乙烯含碳碳雙鍵，示性式為 CH2=CH2。"
+                      },
+                      {
+                          "id":  443,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "以 0.1 M 的 NaOH 滴定 25 mL 的未知濃度 HCl，當加入 20 mL NaOH 時，溶液 pH=7，則 HCl 的濃度為何？",
+                          "options":  [
+                                          "0.04 M",
+                                          "0.08 M",
+                                          "0.1 M",
+                                          "0.12 M"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "當量點時 HCl 莫耳數 = NaOH 莫耳數。CHCl*0.025 = 0.1*0.02，CHCl = 0.08 M。"
+                      },
+                      {
+                          "id":  444,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "欲配製 0.2 M 的 Na2CO3 溶液 250 mL。\n(1) 需要 Na2CO3 多少克？（Na=23, C=12, O=16）\n(2) 配製過程中應使用哪種定量器材？",
+                          "options":  [
+                                          "(1)5.3g (2)容量瓶",
+                                          "(1)10.6g (2)容量瓶",
+                                          "(1)5.3g (2)燒杯",
+                                          "(1)10.6g (2)量筒"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) Na2CO3 分子量 = 106。莫耳數 = 0.2*0.25 = 0.05 mol。質量 = 0.05*106 = 5.3 g。(2) 配製精確濃度溶液應使用容量瓶。"
+                      },
+                      {
+                          "id":  445,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "水管中水的流速 v，水管截面積 A，水密度 rho。若水柱撞擊垂直牆面後沿牆面流下（不反彈），則水對牆面的衝力為何？",
+                          "options":  [
+                                          "rho*A*v",
+                                          "rho*A*v2",
+                                          "1/2*rho*A*v2",
+                                          "2*rho*A*v2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "每秒撞擊牆面的水的質量 = rho*A*v。動量變化率 = (rho*A*v)*v = rho*A*v2。"
+                      },
+                      {
+                          "id":  446,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質點以角速度 omega 在半徑 R 的圓周上作等速圓周運動，其投影在直徑上的運動為何種運動？",
+                          "options":  [
+                                          "等速運動",
+                                          "等加速度運動",
+                                          "簡諧運動",
+                                          "拋物線運動"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "質點在圓周上等速運動，其在直徑上的投影位置 x = R*cos(omega*t)，為簡諧運動（SHM）。"
+                      },
+                      {
+                          "id":  447,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 m、速率 v 的電子（電量 e）進入均勻磁場 B（方向垂直電子運動方向），電子作圓周運動的半徑為何？",
+                          "options":  [
+                                          "mv/eB",
+                                          "eB/mv",
+                                          "m/eB",
+                                          "mv2/eB"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "磁力 F = evB 提供向心力：evB = mv2/r，r = mv/eB。"
+                      },
+                      {
+                          "id":  448,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一平行板電容器極板面積 A、間距 d，充電後極板間電位差 V。若將間距變為 2d（保持電荷不變），則電場強度變為原來的幾倍？",
+                          "options":  [
+                                          "不變",
+                                          "1/2",
+                                          "2 倍",
+                                          "4 倍"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "平行板電容器電場 E = sigma/epsilon0 = Q/(A*epsilon0)，與間距 d 無關。"
+                      },
+                      {
+                          "id":  449,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "2A + B 產生 C 反應中，經實驗測定，初始濃度與初始速率的數據如下。則此反應的速率定律為何？\n實驗1：[A]=0.1M [B]=0.1M 速率=0.02 M/s\n實驗2：[A]=0.2M [B]=0.1M 速率=0.04 M/s\n實驗3：[A]=0.1M [B]=0.2M 速率=0.08 M/s",
+                          "options":  [
+                                          "R=k[A][B]",
+                                          "R=k[A]2[B]",
+                                          "R=k[A][B]2",
+                                          "R=k[B]2"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "實驗1→2：[A]加倍，速率加倍，[A]一次方。實驗1→3：[B]加倍，速率變 4 倍，[B]二次方。R=k[A][B]2。"
+                      },
+                      {
+                          "id":  450,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "25 度C 時，純水的離子積 Kw = 10^-14。若某水溶液中 [H+] = 5.0*10^-6 M，則 [OH-] 為多少？",
+                          "options":  [
+                                          "2.0*10^-9 M",
+                                          "5.0*10^-9 M",
+                                          "2.0*10^-8 M",
+                                          "5.0*10^-8 M"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "[OH-] = Kw/[H+] = 10^-14/(5*10^-6) = 2*10^-9 M。"
+                      },
+                      {
+                          "id":  451,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一物體在光滑水平面上作水平圓周運動，若繩子突然斷裂，物體將如何運動？",
+                          "options":  [
+                                          "沿切線方向飛出",
+                                          "沿徑向向外飛出",
+                                          "沿螺旋線飛出",
+                                          "立即停止"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "牛頓第一定律：物體不受外力時會沿直線等速運動。繩斷瞬間物體速度方向為切線方向。"
+                      },
+                      {
+                          "id":  452,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一導體棒長 0.4 m，以 5 m/s 的速度在磁場 0.3 T 中垂直切割磁力線，則棒兩端產生的感應電動勢為何？",
+                          "options":  [
+                                          "0.2 V",
+                                          "0.4 V",
+                                          "0.6 V",
+                                          "0.8 V"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "epsilon = B*L*v = 0.3*0.4*5 = 0.6 V。"
+                      },
+                      {
+                          "id":  453,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "色層分析（層析法）是利用混合物中各成分的何種性質差異進行分離？",
+                          "options":  [
+                                          "粒徑大小",
+                                          "沸點高低",
+                                          "在固定相與移動相間的分配係數",
+                                          "溶解度"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "色層分析利用不同成分在固定相和移動相間的分配係數不同，造成移動速率不同而分離。"
+                      },
+                      {
+                          "id":  454,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "苯（C6H6）的凱庫勒結構中含有幾個碳碳雙鍵？",
+                          "options":  [
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "6"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "凱庫勒結構中苯為環狀共軛結構，含有三個交替的碳碳雙鍵。但實際上苯的鍵長完全相等。"
+                      },
+                      {
+                          "id":  455,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某元素第三層（M層）有 5 個電子，則此元素的原子序為？",
+                          "options":  [
+                                          "13",
+                                          "14",
+                                          "15",
+                                          "16"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "電子排列 2,8,5，原子序 = 15。"
+                      },
+                      {
+                          "id":  456,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "A、B 兩車從同一地點同時出發，A 車以 10 m/s 等速前進，B 車由靜止以 2 m/s2 等加速追趕。\n(1) B 車追上 A 車需時多少？\n(2) 追上時 B 車速率為何？",
+                          "options":  [
+                                          "(1)10s (2)20m/s",
+                                          "(1)5s (2)10m/s",
+                                          "(1)15s (2)30m/s",
+                                          "(1)8s (2)16m/s"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) A 車位置 = 10t，B 車位置 = 1/2*2*t2 = t2。追上時 10t = t2，t=10 s。(2) vB = a*t = 2*10 = 20 m/s。"
+                      },
+                      {
+                          "id":  457,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "一瀑布高 50 m，每秒有 2000 kg 的水流下。（g=10 m/s2）\n(1) 瀑布每秒損失的位能為何？\n(2) 若將這些能量全部轉為電能，功率為何？",
+                          "options":  [
+                                          "(1)10^6J (2)1000kW",
+                                          "(1)10^6J (2)1000W",
+                                          "(1)10^5J (2)100kW",
+                                          "(1)10^6J (2)100kW"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) 每秒位能損失 = mgh = 2000*10*50 = 10^6 J。(2) 功率 = 10^6 W = 1000 kW。"
+                      },
+                      {
+                          "id":  458,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一盞 110V、100W 的燈泡，若接在 55V 電源上，其實際功率為何？（燈泡電阻不變）",
+                          "options":  [
+                                          "12.5 W",
+                                          "25 W",
+                                          "50 W",
+                                          "100 W"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "燈泡電阻 R = Vn2/Pn = 12100/100 = 121 Ω。P = V2/R = 3025/121 = 25 W。"
+                      },
+                      {
+                          "id":  459,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在 27 度C、1 atm 下，2 L 的 CO2 氣體含有多少莫耳？（R=0.082）",
+                          "options":  [
+                                          "約 0.04 mol",
+                                          "約 0.08 mol",
+                                          "約 0.12 mol",
+                                          "約 0.16 mol"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "n = PV/RT = 1*2/(0.082*300) = 2/24.6 = 0.0813 mol。"
+                      },
+                      {
+                          "id":  460,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "pH=11 的 NaOH 溶液，其 [OH-] 為何？",
+                          "options":  [
+                                          "10^-11 M",
+                                          "10^-7 M",
+                                          "10^-3 M",
+                                          "10^-14 M"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "[OH-] = Kw/[H+] = 10^-14/10^-11 = 10^-3 M。"
+                      },
+                      {
+                          "id":  461,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質量 2 kg 的物體靜止於與水平成 30 度角的斜面上，靜摩擦係數為 0.6，則使物體開始下滑的最小力（平行斜面向上）為何？（sin30=0.5, cos30=0.87, g=10）",
+                          "options":  [
+                                          "0 N（已不會下滑）",
+                                          "約 4.4 N",
+                                          "約 6 N",
+                                          "約 10 N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "下滑力 = mg*sin30 = 20*0.5 = 10 N。正向力 = mg*cos30 = 17.4 N。最大靜摩擦力 = 0.6*17.4 = 10.44 N \u003e 10 N，物體不會下滑。"
+                      },
+                      {
+                          "id":  462,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "光由折射率 n1 的介質射入折射率 n2 的介質（n2 \u003e n1），若入射角為 theta1，則折射角 theta2 滿足？",
+                          "options":  [
+                                          "theta2 \u003c theta1",
+                                          "theta2 \u003e theta1",
+                                          "theta2 = theta1",
+                                          "n2*sin(theta2)=n1*sin(theta1)"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "斯涅爾定律：n1*sin(theta1) = n2*sin(theta2)。n2 \u003e n1 時，sin(theta2) \u003c sin(theta1)，theta2 \u003c theta1。"
+                      },
+                      {
+                          "id":  463,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 40 g、-20 度C 的冰塊加入 200 g、30 度C 的水中，不計熱量散失，達平衡時的溫度為何？（冰比熱 0.5，熔化熱 80 cal/g）",
+                          "options":  [
+                                          "0 度C（部分冰未熔）",
+                                          "5 度C",
+                                          "10 度C",
+                                          "15 度C"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "冰升溫至 0 度C 吸熱 = 40*0.5*20 = 400 cal。冰完全熔化吸熱 = 40*80 = 3200 cal。水降溫至 0 度C 放熱 = 200*1*30 = 6000 cal \u003e 3600 cal。剩餘熱量 = 2400 cal，240 g 水升溫 10 度C。平衡溫度 = 10 度C。"
+                      },
+                      {
+                          "id":  464,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "R1=5 Ω、R2=10 Ω 串聯，R3=15 Ω 與 R2 並聯，接於 30 V 電源。求 R3 消耗的功率。",
+                          "options":  [
+                                          "約 5.4 W",
+                                          "10 W",
+                                          "約 17.8 W",
+                                          "20 W"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "R2//R3：1/Rp = 1/10+1/15 = 1/6，Rp=6 Ω。總電阻 = 5+6=11 Ω。總電流 = 30/11=2.73 A。並聯端電壓 = 30-5*2.73=16.35 V。R3 功率 = 16.352/15 = 17.8 W。"
+                      },
+                      {
+                          "id":  465,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "兩物體質量分別為 m 和 2m，相距 d，萬有引力為 F。若將距離變為 d/2，且質量分別變為 2m 和 4m，則引力變為原來的幾倍？",
+                          "options":  [
+                                          "4 倍",
+                                          "8 倍",
+                                          "16 倍",
+                                          "32 倍"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "F = G*m1*m2/r2。F = G*(2m)*(4m)/(d/2)2 = G*8m2/(d2/4) = 32*G*m2/d2 = 32F。"
                       }
                   ],
     "subjects":  [
