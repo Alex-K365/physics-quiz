@@ -5919,6 +5919,809 @@
                                       ],
                           "answer":  1,
                           "explanation":  "The text says the wall was built to protect China from invasions."
+                      },
+                      {
+                          "id":  366,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "兩物體質量各為 3 kg 和 5 kg，以細繩連接跨過光滑定滑輪。放手後，繩子張力為多少牛頓？（g=10 m/s2）",
+                          "options":  [
+                                          "30 N",
+                                          "37.5 N",
+                                          "40 N",
+                                          "50 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "a = (5-3)*10/(5+3) = 20/8 = 2.5 m/s2。張力 T = m1(g+a) = 3*(10+2.5) = 37.5 N。"
+                      },
+                      {
+                          "id":  367,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "在光滑水平面上，質量 4 kg 的物體受到 12 N 的水平推力作用，2 秒後的速度為何？",
+                          "options":  [
+                                          "3 m/s",
+                                          "6 m/s",
+                                          "8 m/s",
+                                          "12 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "a = F/m = 12/4 = 3 m/s2。v = at = 3*2 = 6 m/s。"
+                      },
+                      {
+                          "id":  368,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種情況物體所受合力為零？",
+                          "options":  [
+                                          "自由落下",
+                                          "煞車減速",
+                                          "等速直線運動",
+                                          "圓周運動"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "等速直線運動時速度不變，加速度為零，合力為零（牛頓第一定律）。"
+                      },
+                      {
+                          "id":  369,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "小華體重 60 kg，站在電梯中的體重計上。\n(1) 電梯靜止時讀數？\n(2) 電梯以 3 m/s2 向下加速時讀數？\n(3) 電梯以等速上升時讀數？\n（g=10 m/s2）",
+                          "options":  [
+                                          "(1)600N (2)420N (3)600N",
+                                          "(1)600N (2)780N (3)600N",
+                                          "(1)600N (2)420N (3)420N",
+                                          "(1)600N (2)600N (3)420N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) N=mg=600N。(2) N=m(g-a)=60*(10-3)=420N。(3) 等速 N=mg=600N。"
+                      },
+                      {
+                          "id":  370,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "某物體由靜止以等加速度 4 m/s2 前進，第 4 秒內的位移為多少？",
+                          "options":  [
+                                          "10 m",
+                                          "12 m",
+                                          "14 m",
+                                          "16 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "第 n 秒內位移 = 1/2*a*(2n-1)。第 4 秒內位移 = 1/2*4*(7) = 14 m。"
+                      },
+                      {
+                          "id":  371,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一汽車以 54 km/h 行駛，發現前方 30 m 有障礙物，駕駛以 5 m/s2 煞車，是否會撞上？",
+                          "options":  [
+                                          "會，距離不足",
+                                          "不會，剛好停止",
+                                          "不會，剩 7.5 m",
+                                          "不會，剩 5 m"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "v0 = 54 km/h = 15 m/s。煞車距離 = v02/(2a) = 225/10 = 22.5 m \u003c 30 m，不會撞上，剩 7.5 m。"
+                      },
+                      {
+                          "id":  372,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "速度 108 km/h 等於多少 m/s？",
+                          "options":  [
+                                          "20 m/s",
+                                          "25 m/s",
+                                          "30 m/s",
+                                          "35 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "108 km/h = 108000/3600 = 30 m/s。"
+                      },
+                      {
+                          "id":  373,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質量 0.2 kg 的球以 30 m/s 水平射出，擊中目標後速度降為 10 m/s，球對目標作功多少？",
+                          "options":  [
+                                          "60 J",
+                                          "80 J",
+                                          "100 J",
+                                          "120 J"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "W = Ek變化 = 1/2*0.2*(302-102) = 0.1*(900-100) = 80 J。"
+                      },
+                      {
+                          "id":  374,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "multiple",
+                          "question":  "下列哪些屬於再生能源？（應選兩項）",
+                          "options":  [
+                                          "太陽能",
+                                          "天然氣",
+                                          "風能",
+                                          "核能"
+                                      ],
+                          "answer":  [
+                                         0,
+                                         2
+                                     ],
+                          "explanation":  "太陽能和風能可持續再生利用。天然氣和核能（鈾礦）為有限資源，不屬於再生能源。"
+                      },
+                      {
+                          "id":  375,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一種樂器是利用空氣柱振動發聲？",
+                          "options":  [
+                                          "吉他",
+                                          "鋼琴",
+                                          "直笛",
+                                          "鼓"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "直笛是靠吹氣使管內空氣柱振動發聲。吉他是弦振動，鋼琴是弦擊，鼓是膜振動。"
+                      },
+                      {
+                          "id":  376,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體置於焦距 20 cm 的凸透鏡前 30 cm 處，成像在何處？性質為何？",
+                          "options":  [
+                                          "鏡後 60 cm，倒立實像",
+                                          "鏡後 60 cm，正立虛像",
+                                          "鏡前 60 cm，倒立實像",
+                                          "鏡前 60 cm，正立虛像"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "1/30 + 1/q = 1/20，1/q = 1/60，q = 60 cm（正號表鏡後）。物距 \u003e 焦距，成倒立實像。"
+                      },
+                      {
+                          "id":  377,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "近視眼鏡應使用哪種鏡片？",
+                          "options":  [
+                                          "凸透鏡",
+                                          "凹透鏡",
+                                          "平面鏡",
+                                          "稜鏡"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "近視是因眼球太長，像落在視網膜前。凹透鏡使光線發散，讓像後移至視網膜上。"
+                      },
+                      {
+                          "id":  378,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一電熱水器標示 220V、2200W，若每天使用 1 小時，一個月（30 天）用電多少度？",
+                          "options":  [
+                                          "22 度",
+                                          "44 度",
+                                          "66 度",
+                                          "88 度"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "每月用電 = 2.2 kW * 1 h * 30 = 66 度。"
+                      },
+                      {
+                          "id":  379,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "兩電阻 6 Ω 和 3 Ω 並聯後再與 4 Ω 串聯，總電阻為？",
+                          "options":  [
+                                          "4 Ω",
+                                          "5 Ω",
+                                          "6 Ω",
+                                          "7 Ω"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "並聯部分：1/Rp = 1/6+1/3 = 1/2，Rp = 2 Ω。串聯總電阻 = 2+4 = 6 Ω。"
+                      },
+                      {
+                          "id":  380,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪種材料是良好的電導體？",
+                          "options":  [
+                                          "橡膠",
+                                          "塑膠",
+                                          "銅",
+                                          "玻璃"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "銅為金屬，擁有自由電子，是良好的電導體。橡膠、塑膠、玻璃均為絕緣體。"
+                      },
+                      {
+                          "id":  381,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "地球的磁場中，指南針的 N 極指向地理北極，這表示地理北極附近是地球的什麼磁極？",
+                          "options":  [
+                                          "N 極",
+                                          "S 極",
+                                          "沒有極性",
+                                          "不確定"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "異性相吸，指南針 N 極指北，表示地理北極附近是地磁 S 極。"
+                      },
+                      {
+                          "id":  382,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "長直導線載有 2 A 電流，在距離 0.05 m 處的磁場大小為？（u0 = 4pi*10^-7 T*m/A）",
+                          "options":  [
+                                          "4*10^-6 T",
+                                          "8*10^-6 T",
+                                          "1.2*10^-5 T",
+                                          "1.6*10^-5 T"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "B = u0*I/(2pi*r) = (4pi*10^-7*2)/(2pi*0.05) = (8pi*10^-7)/(0.1pi) = 8*10^-6 T。"
+                      },
+                      {
+                          "id":  383,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將質量相同、溫度不同的兩杯水混合，若不計熱量散失，平衡溫度為？",
+                          "options":  [
+                                          "高溫杯溫度減低溫杯溫度",
+                                          "兩者溫度的平均值",
+                                          "高溫杯溫度",
+                                          "低溫杯溫度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "質量相同的水混合，平衡溫度 = (T高 + T低)/2，即兩者溫度的平均值。"
+                      },
+                      {
+                          "id":  384,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 200 g、0 度C 的冰塊放入 500 g、40 度C 的水中，不計熱量散失，達平衡時還有多少冰未熔化？（冰熔化熱 80 cal/g）",
+                          "options":  [
+                                          "全部熔化",
+                                          "50 g",
+                                          "100 g",
+                                          "150 g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "水降溫至 0 度C 可放出熱量 = 500*1*40 = 20000 cal。全部冰熔化需熱量 = 200*80 = 16000 cal。水放出的熱量足夠熔化所有冰，且還有剩餘。"
+                      },
+                      {
+                          "id":  385,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某元素原子核外電子排列為 2,8,18,7，此元素在週期表中的位置是？",
+                          "options":  [
+                                          "第 3 週期第 17 族",
+                                          "第 4 週期第 17 族",
+                                          "第 4 週期第 7 族",
+                                          "第 3 週期第 7 族"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電子層數 4 = 第 4 週期。最外層電子數 7 = 第 17 族（鹵素）。"
+                      },
+                      {
+                          "id":  386,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "原子中質子、中子、電子的數量關係為何？",
+                          "options":  [
+                                          "質子數 = 電子數",
+                                          "中子數 = 電子數",
+                                          "質子數 = 中子數",
+                                          "質子數 = 電子數 + 中子數"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "中性原子中，質子數（正電荷）等於電子數（負電荷），原子不帶電。"
+                      },
+                      {
+                          "id":  387,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "已知反應 2NO + 2H2 產生 N2 + 2H2O，若反應速率可表示為 R = k[NO]2[H2]，當 NO 濃度加倍、H2 濃度不變時，反應速率變為？",
+                          "options":  [
+                                          "2 倍",
+                                          "3 倍",
+                                          "4 倍",
+                                          "8 倍"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "R = k[NO]2[H2]，[NO] 加倍，(2)2 = 4 倍。"
+                      },
+                      {
+                          "id":  388,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將 3 g 氫氣與 24 g 氧氣混合點燃，最多可產生多少 g 水？（H=1, O=16）",
+                          "options":  [
+                                          "18 g",
+                                          "24 g",
+                                          "27 g",
+                                          "30 g"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "H2 莫耳數 = 3/2 = 1.5 mol，O2 莫耳數 = 24/32 = 0.75 mol。2H2+O2→2H2O，H2 不足，產生 1.5 mol H2O = 1.5*18 = 27 g。"
+                      },
+                      {
+                          "id":  389,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.1 M 的 NaOH 溶液 25 mL 與 0.1 M 的 H2SO4 溶液 10 mL 混合，反應後溶液呈何性質？",
+                          "options":  [
+                                          "強酸性",
+                                          "弱酸性",
+                                          "中性",
+                                          "鹼性"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "OH- 莫耳數 = 0.1*0.025 = 0.0025 mol。H+ 莫耳數 = 0.1*0.01*2 = 0.002 mol。OH- 過量，溶液呈鹼性。"
+                      },
+                      {
+                          "id":  390,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "mixed",
+                          "question":  "將 pH=2 的鹽酸稀釋 10 倍，pH 值變為多少？再稀釋 100 倍後呢？",
+                          "options":  [
+                                          "3 和 5",
+                                          "4 和 5",
+                                          "3 和 4",
+                                          "2 和 3"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "稀釋 10 倍：[H+] 變 1/10，pH 從 2 變 3。再稀釋 100 倍：[H+] 再變 1/100，pH 從 3 變 5。"
+                      },
+                      {
+                          "id":  391,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪個反應中氫氣被氧化？",
+                          "options":  [
+                                          "H2 + Cl2 產生 2HCl",
+                                          "H2 + CuO 產生 Cu + H2O",
+                                          "2H2 + O2 產生 2H2O",
+                                          "H2 + S 產生 H2S"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "氧化數增加為氧化。在 H2 + Cl2 反應中，H 從 0 升到 +1（被氧化），Cl 從 0 降到 -1（被還原）。"
+                      },
+                      {
+                          "id":  392,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在半反應 MnO4- + 8H+ + 5e- 產生 Mn2+ + 4H2O 中，Mn 的氧化數變化為何？",
+                          "options":  [
+                                          "+7→+2",
+                                          "+6→+2",
+                                          "+7→+4",
+                                          "+4→+2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "MnO4- 中 Mn 氧化數 = +7（O 為 -2，4*(-2)+Mn = -1，Mn = +7）。Mn2+ 中 Mn 為 +2。"
+                      },
+                      {
+                          "id":  393,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪個分子式代表的不飽和烴？",
+                          "options":  [
+                                          "C2H6",
+                                          "C2H4",
+                                          "C3H8",
+                                          "CH4"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "C2H4（乙烯）含有碳碳雙鍵，為不飽和烴。C2H6、C3H8、CH4均為飽和烴（烷烴）。"
+                      },
+                      {
+                          "id":  394,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "耐綸（尼龍）是屬於哪一類聚合物？",
+                          "options":  [
+                                          "加成聚合物",
+                                          "縮合聚合物",
+                                          "熱塑性聚合物",
+                                          "彈性體"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "耐綸（尼龍）是由二元酸和二元胺經縮合聚合反應（脫水反應）而成的縮合聚合物。"
+                      },
+                      {
+                          "id":  395,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列何者不是正確的實驗室安全措施？",
+                          "options":  [
+                                          "穿戴護目鏡",
+                                          "長髮束起",
+                                          "將藥品帶回家",
+                                          "使用通風櫥"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "實驗室藥品不得帶離實驗室，這是基本安全規範。其他選項均為正確的安全措施。"
+                      },
+                      {
+                          "id":  396,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "配製 0.5 M 的 NaOH 溶液 250 mL，需要 NaOH 多少克？（Na=23, O=16, H=1）",
+                          "options":  [
+                                          "2.5 g",
+                                          "5.0 g",
+                                          "7.5 g",
+                                          "10.0 g"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "NaOH 分子量 = 23+16+1 = 40。莫耳數 = 0.5*0.25 = 0.125 mol。質量 = 0.125*40 = 5.0 g。"
+                      },
+                      {
+                          "id":  397,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Choose the correct sentence:",
+                          "options":  [
+                                          "She don\u0027t like coffee",
+                                          "She doesn\u0027t likes coffee",
+                                          "She doesn\u0027t like coffee",
+                                          "She not like coffee"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Third person singular negative: She doesn\u0027t (does not) + base verb."
+                      },
+                      {
+                          "id":  398,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What day comes after Wednesday?",
+                          "options":  [
+                                          "Tuesday",
+                                          "Thursday",
+                                          "Friday",
+                                          "Monday"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The days of the week in order: Monday, Tuesday, Wednesday, Thursday, Friday."
+                      },
+                      {
+                          "id":  399,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word \u0027beneficial\u0027 means...",
+                          "options":  [
+                                          "Harmful",
+                                          "Helpful",
+                                          "Useless",
+                                          "Difficult"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Beneficial means having a helpful or useful effect."
+                      },
+                      {
+                          "id":  400,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "I have lived in Taipei ___ 2015.",
+                          "options":  [
+                                          "since",
+                                          "for",
+                                          "from",
+                                          "in"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Since is used with a specific point in time (2015). For is used with duration."
+                      },
+                      {
+                          "id":  401,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 2 kg 的物體靜止於粗糙斜面上（傾角 37 度，sin37=0.6, cos37=0.8），斜面與物體的靜摩擦係數為 0.5，則物體所受摩擦力大小為何？（g=10 m/s2）",
+                          "options":  [
+                                          "8 N",
+                                          "10 N",
+                                          "12 N",
+                                          "16 N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "下滑力 = mg*sin37 = 20*0.6 = 12 N。正向力 = mg*cos37 = 20*0.8 = 16 N。最大靜摩擦力 = 0.5*16 = 8 N。下滑力 12 N \u003e 最大靜摩擦力 8 N，物體會下滑。"
+                      },
+                      {
+                          "id":  402,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "游泳時能前進主要是因為？",
+                          "options":  [
+                                          "水對人的推力",
+                                          "人對水的推力（反作用力）",
+                                          "浮力",
+                                          "重力"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "人用手向後推水（作用力），水同時向前推人（反作用力），使游泳者前進（牛頓第三定律）。"
+                      },
+                      {
+                          "id":  403,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 4 個相同的燈泡（每燈泡電阻 R）以串聯方式連接，總功率為 P。若改為並聯，總功率變為？",
+                          "options":  [
+                                          "P/4",
+                                          "P",
+                                          "4P",
+                                          "16P"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "串聯總電阻 = 4R，P = V2/(4R)。並聯總電阻 = R/4，P\u0027 = V2/(R/4) = 4V2/R。P\u0027/P = 16，並聯功率為串聯的 16 倍。"
+                      },
+                      {
+                          "id":  404,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "在化學反應式中，係數代表的意義是？",
+                          "options":  [
+                                          "質量比",
+                                          "莫耳數比",
+                                          "體積比",
+                                          "溫度比"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "化學反應式的係數代表各物質的莫耳數比，可用於計算反應物和生成物的量。"
+                      },
+                      {
+                          "id":  405,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一種鹽的水溶液呈酸性？",
+                          "options":  [
+                                          "NaCl",
+                                          "NH4Cl",
+                                          "CH3COONa",
+                                          "KNO3"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "NH4+ 在水中水解產生 H+，使溶液呈酸性。NaCl、KNO3 為中性鹽，CH3COONa 水解呈鹼性。"
+                      },
+                      {
+                          "id":  406,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "核能發電是將何種能量轉換為電能？",
+                          "options":  [
+                                          "化學能",
+                                          "核能→熱能→力學能→電能",
+                                          "光能",
+                                          "地熱能"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "核能發電：核分裂釋放核能→加熱水產生蒸氣（熱能）→推動渦輪機（力學能）→帶動發電機（電能）。"
+                      },
+                      {
+                          "id":  407,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某噪音強度為正常談話聲音的 10000 倍，則兩者分貝差為何？",
+                          "options":  [
+                                          "20 dB",
+                                          "30 dB",
+                                          "40 dB",
+                                          "50 dB"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "分貝差 = 10*log(I1/I2) = 10*log(10000) = 10*4 = 40 dB。"
+                      },
+                      {
+                          "id":  408,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某單色光在水中的速率為 2.25*10^8 m/s，則水的折射率為何？（c=3*10^8 m/s）",
+                          "options":  [
+                                          "1.25",
+                                          "1.33",
+                                          "1.5",
+                                          "1.67"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "n = c/v = 3*10^8 / 2.25*10^8 = 1.33。"
+                      },
+                      {
+                          "id":  409,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者為有機化合物？",
+                          "options":  [
+                                          "NaCl",
+                                          "CO2",
+                                          "C2H5OH",
+                                          "H2O"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "乙醇（C2H5OH）含有碳氫鍵，為有機化合物。CO2 雖含碳，但傳統歸類為無機物。"
+                      },
+                      {
+                          "id":  410,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者是雙原子分子？",
+                          "options":  [
+                                          "He",
+                                          "O2",
+                                          "Ne",
+                                          "Ar"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "氧氣（O2）由兩個氧原子組成，為雙原子分子。He、Ne、Ar 均為單原子分子。"
+                      },
+                      {
+                          "id":  411,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "用手壓彈簧使其縮短，此時手受到的力是？",
+                          "options":  [
+                                          "手對彈簧的壓力",
+                                          "彈簧對手的反作用力",
+                                          "重力",
+                                          "摩擦力"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "手壓彈簧（作用力），彈簧同時以大小相等、方向相反的力推手（反作用力）。"
+                      },
+                      {
+                          "id":  412,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一物體做等加速度運動，初速 10 m/s，加速度 -2 m/s2，則物體速度變為 0 時的位移為何？",
+                          "options":  [
+                                          "15 m",
+                                          "20 m",
+                                          "25 m",
+                                          "30 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "v2 = v02 + 2aS，0 = 100 + 2*( -2)*S，S = 100/4 = 25 m。"
+                      },
+                      {
+                          "id":  413,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "電燈泡的燈絲通常用什麼材料製成？",
+                          "options":  [
+                                          "銅",
+                                          "鐵",
+                                          "鎢",
+                                          "鋁"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "鎢的熔點極高（約 3422 度C），適合做燈絲在高溫下發光。"
+                      },
+                      {
+                          "id":  414,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個是吸熱反應？",
+                          "options":  [
+                                          "木炭燃燒",
+                                          "鐵生鏽",
+                                          "光合作用",
+                                          "酸鹼中和"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "光合作用需要吸收太陽能才能進行，為吸熱反應。燃燒、生鏽、中和均為放熱反應。"
+                      },
+                      {
+                          "id":  415,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪種方法可將酸性廢水中和？",
+                          "options":  [
+                                          "加水稀釋",
+                                          "加熟石灰",
+                                          "加食鹽",
+                                          "加酒精"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "熟石灰（Ca(OH)2）為鹼性，可與酸中和，是常用的酸性廢水處理方法。"
                       }
                   ],
     "subjects":  [
