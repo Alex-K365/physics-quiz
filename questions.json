@@ -2455,6 +2455,806 @@
                                       ],
                           "answer":  1,
                           "explanation":  "CaCO3 莫耳數 = 10/100 = 0.1 mol，產生的 CO2 莫耳數 = 0.1 mol，質量 = 0.1*44 = 4.4 g。"
+                      },
+                      {
+                          "id":  151,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一個是正確的力的單位換算？",
+                          "options":  [
+                                          "1 kgw = 9.8 N",
+                                          "1 N = 9.8 kgw",
+                                          "1 kgw = 1 N",
+                                          "1 N = 1 kg"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "1 公斤重 (kgw) = 9.8 牛頓 (N)，這是質量和力的換算關係。"
+                      },
+                      {
+                          "id":  152,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將體積 500 cm3、密度 0.8 g/cm3 的木塊放入水中，木塊露出水面的體積約為多少？（水的密度 1 g/cm3）",
+                          "options":  [
+                                          "100 cm3",
+                                          "200 cm3",
+                                          "300 cm3",
+                                          "400 cm3"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "木塊質量 = 500*0.8 = 400 g。浮力 = 重量 → 排開水量 = 400 g → 排開體積 = 400 cm3。露出體積 = 500-400 = 100 cm3。"
+                      },
+                      {
+                          "id":  153,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "兩物體質量比為 2:3，分別以 3:2 的速度運動，則兩者動能比為何？",
+                          "options":  [
+                                          "1:1",
+                                          "2:3",
+                                          "3:2",
+                                          "4:3"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ek1:Ek2 = (1/2*m1*v12):(1/2*m2*v22) = (2*32):(3*22) = 18:12 = 3:2。"
+                      },
+                      {
+                          "id":  154,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "手提 5 kg 的書包等速上樓，下列敘述何者正確？",
+                          "options":  [
+                                          "手對書包的力大於書包重力",
+                                          "手對書包的力等於書包重力",
+                                          "手對書包的力小於書包重力",
+                                          "書包只受重力作用"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "等速運動表示合力為零，手提力 = 書包重力。"
+                      },
+                      {
+                          "id":  155,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "腳踏車的煞車皮是利用何種原理來減速？",
+                          "options":  [
+                                          "減小摩擦力",
+                                          "增加摩擦力",
+                                          "減少正向力",
+                                          "增加速度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "煞車皮按壓輪圈增加摩擦力，摩擦力方向與運動方向相反，使車減速。"
+                      },
+                      {
+                          "id":  156,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "甲車速度 20 m/s，乙車速度 72 km/h，誰的速度較快？",
+                          "options":  [
+                                          "甲車較快",
+                                          "乙車較快",
+                                          "一樣快",
+                                          "無法比較"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "乙車速度 = 72 km/h = 72000/3600 = 20 m/s，兩者速度相同。"
+                      },
+                      {
+                          "id":  157,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "物體由靜止自由落下，第 1 秒末的速度為多少？（g=10 m/s2）",
+                          "options":  [
+                                          "5 m/s",
+                                          "10 m/s",
+                                          "15 m/s",
+                                          "20 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v = gt = 10*1 = 10 m/s。"
+                      },
+                      {
+                          "id":  158,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "以初速 20 m/s 鉛直上拋一物，物體上升過程中第幾秒時速度為 0？（g=10 m/s2）",
+                          "options":  [
+                                          "1 s",
+                                          "2 s",
+                                          "3 s",
+                                          "4 s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v = v0 - gt，0 = 20 - 10t，t = 2 s。"
+                      },
+                      {
+                          "id":  159,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "一物體做等加速度運動，初速 4 m/s，加速度 2 m/s2，則 3 秒內的位移多少？",
+                          "options":  [
+                                          "12 m",
+                                          "15 m",
+                                          "18 m",
+                                          "21 m"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "S = v0t + 1/2*at2 = 4*3 + 1/2*2*9 = 12 + 9 = 21 m。"
+                      },
+                      {
+                          "id":  160,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "一顆球質量 0.5 kg，從離地 5 m 高處自由落下，不計阻力，落地時速率約為？（g=10 m/s2）",
+                          "options":  [
+                                          "5 m/s",
+                                          "8 m/s",
+                                          "10 m/s",
+                                          "14 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "力學能守恆：mgh = 1/2*mv2 → v = 根號(2gh) = 根號(2*10*5) = 根號100 = 10 m/s。"
+                      },
+                      {
+                          "id":  161,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者不是能量的單位？",
+                          "options":  [
+                                          "焦耳",
+                                          "牛頓．公尺",
+                                          "瓦特",
+                                          "卡路里"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "瓦特（W）是功率的單位，不是能量單位。焦耳、牛頓．公尺、卡路里都是能量單位。"
+                      },
+                      {
+                          "id":  162,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一台功率 500 W 的電器，連續使用 2 小時，消耗的電能為多少度？",
+                          "options":  [
+                                          "0.5 度",
+                                          "1 度",
+                                          "2 度",
+                                          "4 度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "度 = kW*h = 0.5*2 = 1 度。"
+                      },
+                      {
+                          "id":  163,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "人耳可聽到的聲音頻率範圍約為？",
+                          "options":  [
+                                          "20-2000 Hz",
+                                          "20-20000 Hz",
+                                          "200-2000 Hz",
+                                          "200-20000 Hz"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "人耳可聽頻率範圍約為 20 Hz 到 20000 Hz。低於 20 Hz 為次聲波，高於 20000 Hz 為超聲波。"
+                      },
+                      {
+                          "id":  164,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "甲音叉和乙音叉同時振動時產生拍頻 5 Hz，若甲頻率 512 Hz，則乙頻率可能為？",
+                          "options":  [
+                                          "507 Hz 或 517 Hz",
+                                          "510 Hz 或 514 Hz",
+                                          "512 Hz 或 517 Hz",
+                                          "502 Hz 或 522 Hz"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "拍頻 = 兩頻率差的絕對值，|512 - f乙| = 5，f乙 = 507 Hz 或 517 Hz。"
+                      },
+                      {
+                          "id":  165,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在一端封閉的管中，產生共振時聲波波長與管長的關係為何？（L=管長）",
+                          "options":  [
+                                          "lambda = L",
+                                          "lambda = 2L",
+                                          "lambda = 4L",
+                                          "lambda = L/2"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "一端封閉管共振時，管長 L = lambda/4，所以波長 lambda = 4L。"
+                      },
+                      {
+                          "id":  166,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "光從水中斜射入空氣中，下列何者正確？",
+                          "options":  [
+                                          "偏向法線，速度變快",
+                                          "偏離法線，速度變快",
+                                          "偏向法線，速度變慢",
+                                          "偏離法線，速度變慢"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "光從水（光密介質）進入空氣（光疏介質）時，速度變快，且偏離法線。"
+                      },
+                      {
+                          "id":  167,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "影子的形成是因為光的什麼性質？",
+                          "options":  [
+                                          "反射",
+                                          "折射",
+                                          "直線前進",
+                                          "干涉"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "光在同一均勻介質中沿直線前進，遇到不透明物體時無法繞過，在後方形成影子。"
+                      },
+                      {
+                          "id":  168,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將物體放在凸透鏡 2 倍焦距處，成像性質為何？",
+                          "options":  [
+                                          "正立放大虛像",
+                                          "倒立等大實像",
+                                          "倒立縮小實像",
+                                          "正立縮小虛像"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "物體在凸透鏡 2 倍焦距（2f）處，成像在另一側 2f 處，為倒立、等大的實像。"
+                      },
+                      {
+                          "id":  169,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "電路中測量電流的儀器是什麼？使用時如何連接？",
+                          "options":  [
+                                          "電壓計，並聯",
+                                          "安培計，串聯",
+                                          "電壓計，串聯",
+                                          "安培計，並聯"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "安培計測量電流，需與待測元件串聯。電壓計測量電壓，需與待測元件並聯。"
+                      },
+                      {
+                          "id":  170,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "三個電阻均為 12 歐姆，兩個並聯後再與第三個串聯，總電阻為何？",
+                          "options":  [
+                                          "8 歐姆",
+                                          "12 歐姆",
+                                          "18 歐姆",
+                                          "24 歐姆"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "兩個 12 歐姆並聯：1/Rp = 1/12+1/12 = 1/6，Rp = 6 歐姆。再與第三個串聯：R總 = 6+12 = 18 歐姆。"
+                      },
+                      {
+                          "id":  171,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電阻 R1=10 歐姆與 R2=15 歐姆並聯後，通過 R1 的電流為 3 A，則通過 R2 的電流為何？",
+                          "options":  [
+                                          "1 A",
+                                          "2 A",
+                                          "3 A",
+                                          "4.5 A"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "並聯電壓相同。R1 兩端電壓 V = IR = 3*10 = 30 V。R2 電流 I2 = V/R2 = 30/15 = 2 A。"
+                      },
+                      {
+                          "id":  172,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪種方式可以改變電磁鐵的磁極方向？",
+                          "options":  [
+                                          "改變線圈圈數",
+                                          "改變電流大小",
+                                          "改變電流方向",
+                                          "改變鐵芯材質"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "電磁鐵的磁極方向由電流方向決定（安培右手定則），改變電流方向即可改變 N/S 極。"
+                      },
+                      {
+                          "id":  173,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "指南針的 N 極指向地理上的哪個方向？",
+                          "options":  [
+                                          "東方",
+                                          "西方",
+                                          "南方",
+                                          "北方"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "指南針 N 極指向地理北極（地磁南極），因為異性相吸。"
+                      },
+                      {
+                          "id":  174,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "同質量的鐵塊和木塊吸收相同的熱量後，哪個溫度上升較多？（比熱：鐵 0.45 J/g度C，木 1.8 J/g度C）",
+                          "options":  [
+                                          "鐵塊較多",
+                                          "木塊較多",
+                                          "一樣多",
+                                          "無法比較"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "H = m*s*deltaT，吸收相同熱量時，比熱越小升溫越多。鐵比熱小，升溫較多。"
+                      },
+                      {
+                          "id":  175,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "冬天用手摸鐵欄杆感覺比木頭冰冷，是因為鐵的什麼性質？",
+                          "options":  [
+                                          "溫度較低",
+                                          "比熱較小",
+                                          "導熱性較好",
+                                          "密度較大"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "鐵的導熱性比木頭好，手觸摸時熱量快速從手傳到鐵，因此感覺較冷。"
+                      },
+                      {
+                          "id":  176,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某元素 X 的原子序為 12，質量數為 24，則 X 原子內有幾個中子？",
+                          "options":  [
+                                          "12",
+                                          "24",
+                                          "36",
+                                          "48"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "中子數 = 質量數 - 原子序 = 24 - 12 = 12。"
+                      },
+                      {
+                          "id":  177,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列何者屬於「同素異形體」？",
+                          "options":  [
+                                          "水和冰",
+                                          "氧氣和臭氧",
+                                          "氫氣和氧氣",
+                                          "食鹽和糖"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "同素異形體是指同一元素組成的不同形態物質。氧氣（O2）和臭氧（O3）都是氧元素組成，為同素異形體。"
+                      },
+                      {
+                          "id":  178,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "何謂原子量？",
+                          "options":  [
+                                          "一顆原子的實際質量（g）",
+                                          "一莫耳原子的質量（g）",
+                                          "原子的質子數",
+                                          "原子的電子數"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "原子量是一莫耳原子的質量（克），也就是 6.02*10^23 個原子的質量。"
+                      },
+                      {
+                          "id":  179,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者為吸熱反應？",
+                          "options":  [
+                                          "碳燃燒",
+                                          "鐵生鏽",
+                                          "光合作用",
+                                          "酸鹼中和"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "光合作用需要吸收太陽能才能進行，為吸熱反應。燃燒、生鏽、中和均為放熱反應。"
+                      },
+                      {
+                          "id":  180,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "在反應 N2 + 3H2 產生 2NH3 中，若要產生 6 莫耳的氨氣，需要多少莫耳的氮氣？",
+                          "options":  [
+                                          "1 莫耳",
+                                          "2 莫耳",
+                                          "3 莫耳",
+                                          "6 莫耳"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "由係數比 N2:NH3 = 1:2，要產生 6 莫耳 NH3，需要 3 莫耳 N2。"
+                      },
+                      {
+                          "id":  181,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 6 g 碳（C）與 32 g 氧氣（O2）混合點燃，最多可產生多少 g 二氧化碳？（C=12, O=16）",
+                          "options":  [
+                                          "22 g",
+                                          "38 g",
+                                          "44 g",
+                                          "48 g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "C 莫耳數 = 6/12 = 0.5 mol，O2 莫耳數 = 32/32 = 1 mol。C + O2 → CO2，0.5 mol C 需 0.5 mol O2，產生 0.5 mol CO2 = 0.5*44 = 22 g。"
+                      },
+                      {
+                          "id":  182,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種物質的 pH 值最接近 7？",
+                          "options":  [
+                                          "檸檬汁",
+                                          "純水",
+                                          "肥皂水",
+                                          "鹽酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "純水的 pH 值為 7，呈中性。檸檬汁為酸性，肥皂水為鹼性，鹽酸為強酸性。"
+                      },
+                      {
+                          "id":  183,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一組物質混合後不會發生酸鹼中和？",
+                          "options":  [
+                                          "HCl + NaOH",
+                                          "H2SO4 + KOH",
+                                          "HCl + NH3",
+                                          "NaOH + NaCl"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "NaOH（鹼）和 NaCl（鹽）不會發生酸鹼中和，因為 NaCl 不是酸。中和反應需要酸和鹼。"
+                      },
+                      {
+                          "id":  184,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 20 mL 的 0.5 M HCl 與多少 mL 的 0.5 M NaOH 才能完全中和？",
+                          "options":  [
+                                          "10 mL",
+                                          "20 mL",
+                                          "30 mL",
+                                          "40 mL"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "HCl 莫耳數 = 0.5*0.02 = 0.01 mol，需要 0.01 mol NaOH 中和。NaOH 體積 = 0.01/0.5 = 0.02 L = 20 mL。"
+                      },
+                      {
+                          "id":  185,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一個是氧化還原反應？",
+                          "options":  [
+                                          "HCl + NaOH 產生 NaCl + H2O",
+                                          "2Na + Cl2 產生 2NaCl",
+                                          "NaCl + AgNO3 產生 AgCl + NaNO3",
+                                          "CaCO3 產生 CaO + CO2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "2Na + Cl2 產生 2NaCl 中，Na 失去電子被氧化（0→+1），Cl2 得到電子被還原（0→-1），是氧化還原反應。"
+                      },
+                      {
+                          "id":  186,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "光合作用中，下列何者被還原？",
+                          "options":  [
+                                          "水",
+                                          "二氧化碳",
+                                          "氧氣",
+                                          "葡萄糖"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "光合作用中，CO2 被還原成葡萄糖（C6H12O6），水被氧化成氧氣。"
+                      },
+                      {
+                          "id":  187,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一個有機化合物的分子式正確？",
+                          "options":  [
+                                          "甲烷：C2H6",
+                                          "乙醇：C2H5OH",
+                                          "葡萄糖：C12H22O11",
+                                          "醋酸：C3H5OH"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "乙醇（酒精）的分子式為 C2H5OH。甲烷為 CH4，蔗糖為 C12H22O11。"
+                      },
+                      {
+                          "id":  188,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者為再生能源？",
+                          "options":  [
+                                          "天然氣",
+                                          "石油",
+                                          "酒精",
+                                          "煤炭"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "酒精（乙醇）可由農作物發酵製得，屬於生質能源，為可再生。天然氣、石油、煤炭均為化石燃料，不可再生。"
+                      },
+                      {
+                          "id":  189,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者是蛋白質的基本組成單位？",
+                          "options":  [
+                                          "葡萄糖",
+                                          "胺基酸",
+                                          "脂肪酸",
+                                          "核苷酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "蛋白質由多個胺基酸以胜肽鍵連結而成的聚合物。葡萄糖是醣類單體，脂肪酸是脂質組成分。"
+                      },
+                      {
+                          "id":  190,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "在實驗室稀釋濃硫酸時，正確的操作方式為何？",
+                          "options":  [
+                                          "將水倒入濃硫酸",
+                                          "將濃硫酸倒入水中",
+                                          "將濃硫酸與水同時混合",
+                                          "順序無所謂"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "稀釋濃硫酸時，應將濃硫酸緩慢加入水中並攪拌。因為稀釋放熱量大，若水倒入酸中可能導致沸騰噴濺。"
+                      },
+                      {
+                          "id":  191,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "使用天平測量質量時，砝碼應放在哪一盤？",
+                          "options":  [
+                                          "左盤",
+                                          "右盤",
+                                          "都可以",
+                                          "視情況而定"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "使用天平時，物體放左盤，砝碼放右盤。讀數 = 砝碼總質量 + 游碼讀數。"
+                      },
+                      {
+                          "id":  192,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 2 kg 物體靜止於斜面（傾角 30 度），不計摩擦力，物體下滑的加速度為何？（g=10 m/s2）",
+                          "options":  [
+                                          "2 m/s2",
+                                          "5 m/s2",
+                                          "8 m/s2",
+                                          "10 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "沿斜面方向分力 = mg*sin30 = 2*10*0.5 = 10 N，a = F/m = 10/2 = 5 m/s2。"
+                      },
+                      {
+                          "id":  193,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "速率與速度的差別為何？",
+                          "options":  [
+                                          "沒有差別",
+                                          "速率無方向，速度有方向",
+                                          "速率有方向，速度無方向",
+                                          "速率是向量，速度是純量"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "速率是純量（只有大小），速度是向量（大小+方向），這是兩者最主要的差別。"
+                      },
+                      {
+                          "id":  194,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "家庭電路的插座是並聯還是串聯？為什麼？",
+                          "options":  [
+                                          "串聯，電流相同",
+                                          "並聯，各電器獨立",
+                                          "串聯，省電",
+                                          "並聯，省電線"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "家庭插座採用並聯，使各電器可在相同電壓下獨立運作，且開關互不影響。"
+                      },
+                      {
+                          "id":  195,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "催化劑對化學反應的影響為何？",
+                          "options":  [
+                                          "增加生成物",
+                                          "降低活化能",
+                                          "改變平衡狀態",
+                                          "增加反應熱"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "催化劑可降低反應的活化能，使反應更容易進行，加快反應速率，但本身不會被消耗。"
+                      },
+                      {
+                          "id":  196,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "胃酸過多的人服用胃藥（含 Al(OH)3），這是什麼反應？",
+                          "options":  [
+                                          "氧化還原",
+                                          "酸鹼中和",
+                                          "分解反應",
+                                          "置換反應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "胃酸含 HCl（鹽酸），胃藥 Al(OH)3 為鹼性，兩者發生酸鹼中和反應：3HCl + Al(OH)3 產生 AlCl3 + 3H2O。"
+                      },
+                      {
+                          "id":  197,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將 100 g 的水從 20 度C 加熱到 80 度C，需吸收多少卡熱量？（水的比熱 1 cal/g度C）",
+                          "options":  [
+                                          "2000 cal",
+                                          "4000 cal",
+                                          "6000 cal",
+                                          "8000 cal"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "H = m*s*deltaT = 100*1*(80-20) = 100*60 = 6000 cal。"
+                      },
+                      {
+                          "id":  198,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "潛水艇中的潛望鏡主要是利用什麼原理？",
+                          "options":  [
+                                          "光的折射",
+                                          "光的反射",
+                                          "光的色散",
+                                          "光的干涉"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "潛望鏡利用兩片平面鏡的反射原理，使光線經過兩次反射後進入觀察者眼睛。"
+                      },
+                      {
+                          "id":  199,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一種裝置是利用電磁感應原理發電？",
+                          "options":  [
+                                          "電風扇",
+                                          "電磁爐",
+                                          "發電機",
+                                          "電磁鐵"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "發電機利用線圈在磁場中轉動產生感應電流（電磁感應），將機械能轉換為電能。"
+                      },
+                      {
+                          "id":  200,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列何者是塑膠（聚乙烯）的單體？",
+                          "options":  [
+                                          "甲烷",
+                                          "乙烯",
+                                          "乙烷",
+                                          "乙醇"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "聚乙烯（PE）是由乙烯（C2H4）單體聚合而成的高分子化合物。"
                       }
                   ],
     "subjects":  [
