@@ -11490,6 +11490,806 @@
                                       ],
                           "answer":  2,
                           "explanation":  "電扶梯長度=4*30=120 m。相對地面速率=4+2=6 m/s。時間=120/6=20 s。"
+                      },
+                      {
+                          "id":  714,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將一彈簧懸掛，下端掛 100 g 砝碼時伸長 5 cm，若掛 250 g 砝碼，伸長量為何？（在彈性限度內）",
+                          "options":  [
+                                          "10 cm",
+                                          "12.5 cm",
+                                          "15 cm",
+                                          "17.5 cm"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "伸長量與質量成正比：5/100 = x/250，x = 12.5 cm。"
+                      },
+                      {
+                          "id":  715,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體質量 5 kg，以 20 N 水平力拉之，物體仍靜止不動，靜摩擦力為多少？最大可能靜摩擦力為 25 N。",
+                          "options":  [
+                                          "5 N",
+                                          "20 N",
+                                          "25 N",
+                                          "45 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "物體靜止，合力為零。水平方向：推力=靜摩擦力=20 N。"
+                      },
+                      {
+                          "id":  716,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 10 kg 物體以 40 N 水平力拉動，動摩擦係數 0.3，g=10，加速度為何？",
+                          "options":  [
+                                          "0.5 m/s2",
+                                          "1 m/s2",
+                                          "1.5 m/s2",
+                                          "2 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "f=0.3*10*10=30 N。合力=40-30=10 N。a=10/10=1 m/s2。"
+                      },
+                      {
+                          "id":  717,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "小傑體重 50 kg，站在體重計上。\n(1) 靜止時讀數？\n(2) 以 3 m/s2 向上加速時讀數？（g=10）",
+                          "options":  [
+                                          "(1)500N (2)650N",
+                                          "(1)500N (2)350N",
+                                          "(1)500N (2)500N",
+                                          "(1)500N (2)600N"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) N=mg=500 N。(2) N=m(g+a)=50*13=650 N。"
+                      },
+                      {
+                          "id":  718,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "汽車以 10 m/s 行駛，以 2 m/s2 煞車，停下來所需時間與距離？",
+                          "options":  [
+                                          "5 s、25 m",
+                                          "5 s、50 m",
+                                          "10 s、25 m",
+                                          "10 s、50 m"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "t=v/a=10/2=5 s。S=v2/(2a)=100/4=25 m。"
+                      },
+                      {
+                          "id":  719,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "從高處自由落下一物，最後 1 秒位移為全程的 7/16，總高度為何？（g=10）",
+                          "options":  [
+                                          "40 m",
+                                          "60 m",
+                                          "80 m",
+                                          "100 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "設總時間 t。最後 1 秒位移=1/2*g*t2-1/2*g*(t-1)2=5(2t-1)。全程=5t2。5(2t-1)=7/16*5t2→32t-16=7t2→7t2-32t+16=0→(7t-4)(t-4)=0→t=4 s。h=5*16=80 m。"
+                      },
+                      {
+                          "id":  720,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一質點位置 x=4t3-12t（x:m, t:s），t=2 s 時的加速度為何？",
+                          "options":  [
+                                          "36 m/s2",
+                                          "48 m/s2",
+                                          "60 m/s2",
+                                          "72 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v=dx/dt=12t2-12。a=dv/dt=24t。t=2 時 a=48 m/s2。"
+                      },
+                      {
+                          "id":  721,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 5 kg 物體等速提高 3 m，作功多少？g=10。",
+                          "options":  [
+                                          "15 J",
+                                          "50 J",
+                                          "100 J",
+                                          "150 J"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "W=mgh=5*10*3=150 J。"
+                      },
+                      {
+                          "id":  722,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "質量 2 kg 物體由靜止自由落下 4 m。\n(1) 重力作功多少？\n(2) 著地時速率為何？（g=10）",
+                          "options":  [
+                                          "(1)80J (2)約8.94m/s",
+                                          "(1)40J (2)約8.94m/s",
+                                          "(1)80J (2)約6.32m/s",
+                                          "(1)40J (2)約6.32m/s"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) W=mgh=2*10*4=80 J。(2) v=根號(2gh)=根號(80)=8.94 m/s。"
+                      },
+                      {
+                          "id":  723,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "回聲測距：某人面對懸崖大喊，2.5 秒後聽到回聲。若當天氣溫 15 度C（聲速 340 m/s），懸崖距離多遠？",
+                          "options":  [
+                                          "340 m",
+                                          "425 m",
+                                          "510 m",
+                                          "680 m"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "d = v*t/2 = 340*2.5/2 = 425 m。"
+                      },
+                      {
+                          "id":  724,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體置於凸透鏡前 40 cm 處，成像於鏡後 40 cm 處，此透鏡焦距為何？",
+                          "options":  [
+                                          "10 cm",
+                                          "15 cm",
+                                          "20 cm",
+                                          "25 cm"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "1/f = 1/40+1/40 = 2/40，f = 20 cm。"
+                      },
+                      {
+                          "id":  725,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "光從水（n=1.33）進入玻璃（n=1.5），若入射角 30 度，折射角約為？",
+                          "options":  [
+                                          "約 20 度",
+                                          "約 26 度",
+                                          "約 30 度",
+                                          "約 35 度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "1.33*sin30=1.5*sinθ，1.33*0.5=1.5*sinθ，sinθ=0.665/1.5=0.443，θ=26.3 度。"
+                      },
+                      {
+                          "id":  726,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 6 Ω 和 3 Ω 並聯後總電阻為何？",
+                          "options":  [
+                                          "0.5 Ω",
+                                          "2 Ω",
+                                          "3 Ω",
+                                          "4.5 Ω"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "1/R=1/6+1/3=1/6+2/6=1/2，R=2 Ω。"
+                      },
+                      {
+                          "id":  727,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電阻 R 消耗功率 100 W，若電壓變為原來的 1/2，功率變為？",
+                          "options":  [
+                                          "25 W",
+                                          "50 W",
+                                          "100 W",
+                                          "200 W"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "P=V2/R，V 減半則 P 變為原來的 1/4 = 25 W。"
+                      },
+                      {
+                          "id":  728,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "磁場中運動電荷所受磁力方向如何決定？",
+                          "options":  [
+                                          "右手開掌定則",
+                                          "佛萊明左手定則",
+                                          "安培右手定則",
+                                          "法拉第定律"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "佛萊明左手定則：拇指=力，食指=磁場，中指=電流（正電荷運動方向）。"
+                      },
+                      {
+                          "id":  729,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "100 g、20 度C 的水與 200 g、50 度C 的水混合，平衡溫度為何？（不計熱量散失）",
+                          "options":  [
+                                          "30 度C",
+                                          "35 度C",
+                                          "40 度C",
+                                          "45 度C"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "100*(T-20)=200*(50-T)，T-20=100-2T，3T=120，T=40 度C。"
+                      },
+                      {
+                          "id":  730,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "將 0 度C 的冰塊 50 g 放入 40 度C 的水 200 g 中，不計熱量散失。\n(1) 冰塊會全部熔化嗎？\n(2) 平衡溫度為何？（熔化熱 80 cal/g）",
+                          "options":  [
+                                          "(1)會 (2)約 8 度C",
+                                          "(1)會 (2)約 16.5 度C",
+                                          "(1)不會 (2)0 度C",
+                                          "(1)會 (2)約 12 度C"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "冰熔化需熱=50*80=4000 cal。水降至 0 度C 放熱=200*1*40=8000 cal \u003e 4000。剩餘 4000 cal 加熱總水 250 g，升溫 4000/250=16 度C。"
+                      },
+                      {
+                          "id":  731,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某原子有 11 個質子、12 個中子，其質量數與原子序為何？",
+                          "options":  [
+                                          "質量數 11、原子序 12",
+                                          "質量數 12、原子序 11",
+                                          "質量數 23、原子序 11",
+                                          "質量數 23、原子序 12"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "原子序=質子數=11。質量數=質子數+中子數=11+12=23。"
+                      },
+                      {
+                          "id":  732,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "平衡下列反應式：_Fe + _O2 → _Fe2O3，係數組合為何？",
+                          "options":  [
+                                          "4,3,2",
+                                          "2,3,2",
+                                          "3,2,1",
+                                          "4,2,2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "4Fe + 3O2 → 2Fe2O3。"
+                      },
+                      {
+                          "id":  733,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.5 mol 的 Na2CO3 溶於水，溶液中 Na+ 的莫耳數為何？",
+                          "options":  [
+                                          "0.25 mol",
+                                          "0.5 mol",
+                                          "0.75 mol",
+                                          "1.0 mol"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "Na2CO3 → 2Na+ + CO32-，每 1 mol Na2CO3 產生 2 mol Na+。0.5 mol 產生 1.0 mol Na+。"
+                      },
+                      {
+                          "id":  734,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 pH=12 的 NaOH 溶液稀釋 100 倍，pH 值約為？",
+                          "options":  [
+                                          "8",
+                                          "10",
+                                          "11",
+                                          "13"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "[OH-]=10-2 M，稀釋 100 倍變 10-4 M，pOH=4，pH=10。"
+                      },
+                      {
+                          "id":  735,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.1 M HCl 20 mL 與 0.2 M NaOH 15 mL 混合，溶液性質為何？",
+                          "options":  [
+                                          "強酸性",
+                                          "弱酸性",
+                                          "中性",
+                                          "鹼性"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "H+ 莫耳數=0.002。OH- 莫耳數=0.003。OH- 過量，呈鹼性。"
+                      },
+                      {
+                          "id":  736,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者不是氧化還原反應？",
+                          "options":  [
+                                          "2Mg+O2→2MgO",
+                                          "HCl+NaOH→NaCl+H2O",
+                                          "Zn+CuSO4→ZnSO4+Cu",
+                                          "Fe+S→FeS"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "HCl+NaOH→NaCl+H2O 為酸鹼中和，沒有氧化數變化。其他反應皆有氧化數改變。"
+                      },
+                      {
+                          "id":  737,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個化合物是酯類？",
+                          "options":  [
+                                          "CH3COOH",
+                                          "CH3COOC2H5",
+                                          "C2H5OH",
+                                          "CH3CHO"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "CH3COOC2H5（乙酸乙酯）含有酯基，具有水果香味。CH3COOH 是酸，C2H5OH 是醇。"
+                      },
+                      {
+                          "id":  738,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The company\u0027s profits have ___ over the past year.",
+                          "options":  [
+                                          "rose",
+                                          "risen",
+                                          "raised",
+                                          "arisen"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Rise (rose, risen) is intransitive. Profits have risen (increased)."
+                      },
+                      {
+                          "id":  739,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "This is the most interesting book ___ I have ever read.",
+                          "options":  [
+                                          "which",
+                                          "that",
+                                          "what",
+                                          "whom"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "After superlatives (the most interesting), we use \u0027that\u0027 as the relative pronoun."
+                      },
+                      {
+                          "id":  740,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "___ his illness, he attended the meeting.",
+                          "options":  [
+                                          "Despite",
+                                          "Although",
+                                          "Because of",
+                                          "In spite"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Despite + noun phrase (his illness). Although + clause."
+                      },
+                      {
+                          "id":  741,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "體重 60 kg 的人以 6 km/h 等速跑步，動能為何？",
+                          "options":  [
+                                          "約 62 J",
+                                          "約 83 J",
+                                          "約 125 J",
+                                          "約 250 J"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "6 km/h=1.67 m/s。Ek=1/2*60*(1.67)2=83.6 J。"
+                      },
+                      {
+                          "id":  742,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一車初速 8 m/s，以 2 m/s2 加速 6 s，末速為何？",
+                          "options":  [
+                                          "16 m/s",
+                                          "18 m/s",
+                                          "20 m/s",
+                                          "22 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "v=v0+at=8+2*6=20 m/s。"
+                      },
+                      {
+                          "id":  743,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 0.2 kg 的球以 15 m/s 飛行，動能為何？",
+                          "options":  [
+                                          "18.5 J",
+                                          "20 J",
+                                          "22.5 J",
+                                          "25 J"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ek=1/2*0.2*225=22.5 J。"
+                      },
+                      {
+                          "id":  744,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "110V 電源上接 550 W 電器，通過電流為何？",
+                          "options":  [
+                                          "2 A",
+                                          "3 A",
+                                          "4 A",
+                                          "5 A"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "I=P/V=550/110=5 A。"
+                      },
+                      {
+                          "id":  745,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 2.3 g 鈉投入足量水中，2Na+2H2O→2NaOH+H2，所得 NaOH 莫耳數？（Na=23）",
+                          "options":  [
+                                          "0.05 mol",
+                                          "0.1 mol",
+                                          "0.15 mol",
+                                          "0.2 mol"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Na 莫耳數=2.3/23=0.1 mol。NaOH 莫耳數=0.1 mol（係數比 1:1）。"
+                      },
+                      {
+                          "id":  746,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "欲中和 20 mL 0.5 M H2SO4，需 0.5 M NaOH 多少 mL？",
+                          "options":  [
+                                          "10 mL",
+                                          "20 mL",
+                                          "30 mL",
+                                          "40 mL"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "H+ 莫耳數=0.5*0.02*2=0.02。需 OH- 0.02 mol，NaOH 體積=0.02/0.5=0.04 L=40 mL。"
+                      },
+                      {
+                          "id":  747,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "鐵生鏽反應 4Fe+3O2→2Fe2O3，何者被氧化？",
+                          "options":  [
+                                          "Fe",
+                                          "O2",
+                                          "Fe2O3",
+                                          "O2和Fe"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Fe 從 0 升到 +3（被氧化），O2 從 0 降到 -2（被還原）。"
+                      },
+                      {
+                          "id":  748,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "By the time we arrived, the ceremony ___.",
+                          "options":  [
+                                          "already started",
+                                          "has already started",
+                                          "had already started",
+                                          "was already starting"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Past perfect (had started) is used for an action completed before another past action."
+                      },
+                      {
+                          "id":  749,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The manager, together with his staff, ___ present at the meeting.",
+                          "options":  [
+                                          "was",
+                                          "were",
+                                          "have been",
+                                          "are"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "The manager (singular) is the subject. Together with... is parenthetical. Use was."
+                      },
+                      {
+                          "id":  750,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "用 50 N 的水平力拉質量 10 kg 的木箱，動摩擦係數 0.2，g=10。\n(1) 摩擦力大小？\n(2) 加速度為何？",
+                          "options":  [
+                                          "(1)20N (2)3 m/s2",
+                                          "(1)10N (2)4 m/s2",
+                                          "(1)20N (2)5 m/s2",
+                                          "(1)10N (2)3 m/s2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) f=0.2*10*10=20 N。(2) a=(50-20)/10=3 m/s2。"
+                      },
+                      {
+                          "id":  751,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某人先以 6 m/s 向東走 2 分鐘，再以 4 m/s 向西走 3 分鐘，全程位移為何？",
+                          "options":  [
+                                          "0 m（回到原點）",
+                                          "向東 240 m",
+                                          "向西 240 m",
+                                          "向西 120 m"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "向東位移=6*120=720 m。向西位移=4*180=720 m。總位移=0 m。"
+                      },
+                      {
+                          "id":  752,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電荷量 20 庫侖通過導線需時 4 秒，電流為何？",
+                          "options":  [
+                                          "3 A",
+                                          "4 A",
+                                          "5 A",
+                                          "6 A"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "I=Q/t=20/4=5 A。"
+                      },
+                      {
+                          "id":  753,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "碳酸鈣加熱分解 CaCO3→CaO+CO2，100 g CaCO3 完全分解後，固體殘留物質量？（CaCO3=100, CaO=56）",
+                          "options":  [
+                                          "44 g",
+                                          "56 g",
+                                          "60 g",
+                                          "72 g"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "CaCO3 1 mol 產生 CaO 1 mol=56 g。"
+                      },
+                      {
+                          "id":  754,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 pH=1 的強酸 1 L 稀釋至 pH=3，需加水多少 L？",
+                          "options":  [
+                                          "9 L",
+                                          "99 L",
+                                          "999 L",
+                                          "100 L"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "pH=1 → [H+]=0.1 M。pH=3 → [H+]=0.001 M。稀釋 100 倍，最終體積 100 L，需加水 99 L。"
+                      },
+                      {
+                          "id":  755,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "質量 2 kg 物體以 6 m/s 運動，受阻力作用後減速至 4 m/s。\n(1) 動能變化多少？\n(2) 阻力作功多少？",
+                          "options":  [
+                                          "(1)-20J (2)20J",
+                                          "(1)-20J (2)-20J",
+                                          "(1)20J (2)-20J",
+                                          "(1)20J (2)20J"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) Ek=1/2*2*(16-36)=-20 J。(2) 阻力作功=動能變化=-20 J。"
+                      },
+                      {
+                          "id":  756,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "A 車在 B 車前方 50 m，A 車以 15 m/s，B 車以 20 m/s 同向行駛，B 車追上 A 車需時多少？",
+                          "options":  [
+                                          "8 s",
+                                          "10 s",
+                                          "12 s",
+                                          "15 s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "相對速度=20-15=5 m/s。t=50/5=10 s。"
+                      },
+                      {
+                          "id":  757,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 8 g 氫氧化鈉（NaOH=40）溶於水配成 500 mL 溶液，莫耳濃度為何？",
+                          "options":  [
+                                          "0.2 M",
+                                          "0.3 M",
+                                          "0.4 M",
+                                          "0.5 M"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "NaOH 莫耳數=8/40=0.2 mol。M=0.2/0.5=0.4 M。"
+                      },
+                      {
+                          "id":  758,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He was ___ tired that he fell asleep immediately.",
+                          "options":  [
+                                          "so",
+                                          "such",
+                                          "very",
+                                          "too"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "So + adjective + that (result clause). Such + noun phrase + that."
+                      },
+                      {
+                          "id":  759,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Which sentence is grammatically correct?",
+                          "options":  [
+                                          "I enjoy to swim",
+                                          "I enjoy swimming",
+                                          "I enjoy swim",
+                                          "I enjoy swam"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Enjoy is followed by V-ing (gerund): enjoy swimming."
+                      },
+                      {
+                          "id":  760,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "兩行星質量比 2:5，半徑比 1:2，表面重力加速度比為何？",
+                          "options":  [
+                                          "4:5",
+                                          "5:4",
+                                          "8:5",
+                                          "5:8"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "g=GM/R2。g1:g2 = (2M/12):(5M/22) = 2:5/4 = 8:5。"
+                      },
+                      {
+                          "id":  761,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "需要多少克 NaOH（M=40）才能配製 2 L、0.25 M 的 NaOH 溶液？",
+                          "options":  [
+                                          "10 g",
+                                          "15 g",
+                                          "20 g",
+                                          "25 g"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "莫耳數=0.25*2=0.5 mol。質量=0.5*40=20 g。"
+                      },
+                      {
+                          "id":  762,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在反應 CaCO3+2HCl→CaCl2+H2O+CO2 中，使用 50 g CaCO3（M=100）與足量 HCl，可產生 CO2 多少 g？（CO2=44）",
+                          "options":  [
+                                          "22 g",
+                                          "33 g",
+                                          "44 g",
+                                          "55 g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "CaCO3 莫耳數=50/100=0.5 mol。CO2 莫耳數=0.5 mol，質量=0.5*44=22 g。"
+                      },
+                      {
+                          "id":  763,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Scarcely ___ the station when the train left.",
+                          "options":  [
+                                          "I reached",
+                                          "had I reached",
+                                          "I had reached",
+                                          "reached I"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Scarcely at the beginning requires inversion. Scarcely had I reached..."
                       }
                   ],
     "subjects":  [
