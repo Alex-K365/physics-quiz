@@ -688,27 +688,68 @@ function submitMock() {
   });
   const total = ids.length;
   const accuracy = Math.round(correct/total*100);
+  var weakSubjects = {};
+  wrongIds.forEach(function(id) {
+    var q = QUESTIONS.find(function(x){return x.id===id});
+    if (q) { weakSubjects[q.subject] = (weakSubjects[q.subject]||0) + 1; }
+  });
+  var weakList = Object.keys(weakSubjects).sort(function(a,b){return weakSubjects[b]-weakSubjects[a]});
+  var analysisData = { total:total, correct:correct, accuracy:accuracy, weak:weakSubjects, weakList:weakList, date:new Date().toISOString() };
+  var analysisStr = encodeURIComponent(JSON.stringify(analysisData));
+  var weakHtml = '';
+  if (weakList.length > 0) {
+    weakHtml = '<div style="margin:12px 0;padding:12px;background:var(--wrong-bg);border-radius:12px">'+
+      '<p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:6px">⚠️ 需加強領域</p>'+
+      '<div style="display:flex;gap:6px;flex-wrap:wrap">'+
+      weakList.map(function(s){ return '<span style="padding:4px 12px;border-radius:40px;font-size:12px;font-weight:600;background:#fce7f3;color:#9d174d">'+s+' ('+weakSubjects[s]+'題錯)</span>' }).join('') +
+      '</div></div>';
+  }
+  var recHtml = '';
+  if (accuracy >= 80) {
+    recHtml = '✅ 基礎穩固！建議挑戰更多進階題，強化跨章節整合能力。';
+  } else if (accuracy >= 60) {
+    recHtml = '📚 建議回頭複習錯題本，針對弱科加強基礎觀念後再挑戰進階題。';
+  } else {
+    recHtml = '📖 建議先從「基礎」難度開始，建立正確觀念後再逐步提升。';
+  }
+  var books = {
+    '物理':['《國中理化觀念通》','《會考物理完勝》','《觀念物理》'],
+    '化學':['《國中理化觀念通》','《會考化學完勝》','《觀念化學》'],
+    '英文':['《國中會考英文字彙》','《文法大革命》'],
+    '理化':['《國中理化觀念通》','《會考理化完勝》']
+  };
+  var bookList = [];
+  weakList.forEach(function(s){ if (books[s]) { books[s].forEach(function(b){ if(bookList.indexOf(b)<0) bookList.push(b); }); } });
+  if (bookList.length === 0) bookList = ['《國中理化觀念通》','《會考自然科總複習》'];
+  var bookHtml = '<div style="margin:8px 0"><p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:4px">📖 推薦書單</p><p style="font-size:13px;color:var(--text-secondary)">'+bookList.join('、')+'</p></div>';
+
+  var messageBody = '理化題庫成績分析報告\n\n得分：'+correct+'/'+total+'（'+accuracy+'%）\n日期：'+new Date().toLocaleString('zh-TW')+'\n\n需加強科目：'+weakList.join(', ')+'\n\n學習建議：'+recHtml+'\n\n推薦書單：'+bookList.join(', ')+'\n\n---\n理化題庫 - 免費線上學習平台';
+
   const history = getStore('history', []);
   history.unshift({
     date: new Date().toISOString(),
-    total,
-    correct,
-    accuracy,
-    ids,
-    mockTime: mockState.timeLimit/60
+    total: total, correct: correct, accuracy: accuracy, ids: ids,
+    mockTime: mockState.timeLimit/60, analysis: analysisData
   });
   setStore('history', history);
+  var lastResult = { analysis: analysisData };
+  setStore('lastResult', lastResult);
   const el = document.getElementById('mockResult');
   el.style.display = 'block';
   el.innerHTML = '<div class="card-title">📊 測驗結果</div>'+
     '<p style="font-size:18px;line-height:1.8">得分：<strong>'+correct+'</strong> / '+total+' 題（'+accuracy+'%）</p>'+
-    '<p style="color:#6b6390;font-size:14px;margin-top:8px">'+
+    '<p style="font-size:14px;color:var(--text-secondary)">'+
     (accuracy>=80?'🎉 表現優異！繼續保持！':accuracy>=60?'💪 不錯，錯題已記錄到錯題本！':'📖 建議複習錯題後再試一次。')+'</p>'+
-    '<div class="mock-result-extra" style="margin-top:16px;padding:16px;background:var(--tag-bg);border-radius:14px;text-align:center">'+
-    '<p style="font-size:14px;color:var(--text-secondary);margin-bottom:10px">📬 想收到個人化成績分析與書單推薦？</p>'+
-    '<div style="display:flex;gap:8px;max-width:360px;margin:0 auto"><input type="email" id="resultEmail" placeholder="輸入 Email" style="flex:1;padding:8px 14px;border:1px solid var(--card-border);border-radius:10px;font-size:13px;outline:none;background:var(--card-bg);color:var(--text-primary)"><button class="btn btn-primary btn-sm" onclick="sendResult(\''+correct+'\',\''+total+'\',\''+accuracy+'\')">寄送分析</button></div>'+
-    '<div id="resultSendMsg" style="font-size:13px;margin-top:8px"></div></div>'+
-    '<div style="margin-top:10px;text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">💬 免費預約一對一諮詢</a></div>'+
+    weakHtml +
+    '<div style="padding:14px;background:var(--card-bg);border-radius:14px;margin:10px 0;border:1px solid var(--card-border)">'+
+    '<p style="font-size:14px;color:var(--text-secondary);line-height:1.7">💡 '+recHtml+'</p>'+
+    bookHtml + '</div>'+
+    '<div style="margin-top:12px;text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">💬 免費預約一對一諮詢</a></div>'+
+    '<div style="margin-top:12px;padding:16px;background:var(--tag-bg);border-radius:14px;text-align:center">'+
+    '<p style="font-size:14px;color:var(--text-secondary);margin-bottom:10px">📬 將成績分析寄到 Email</p>'+
+    '<div style="display:flex;gap:8px;max-width:360px;margin:0 auto"><input type="email" id="resultEmail" placeholder="輸入 Email" style="flex:1;padding:8px 14px;border:1px solid var(--card-border);border-radius:10px;font-size:13px;outline:none;background:var(--card-bg);color:var(--text-primary)"><button class="btn btn-primary btn-sm" onclick="sendResult()">寄送</button></div>'+
+    '<div id="resultSendMsg" style="font-size:13px;margin-top:8px;min-height:20px"></div>'+
+    '<div style="margin-top:8px"><a href="mailto:?subject=理化題庫成績分析報告&body='+encodeURIComponent(messageBody)+'" style="color:var(--accent);font-size:13px">📧 或用 Email 寄給自己</a></div></div>'+
     '<button class="btn btn-outline mt-16" onclick="cancelMock()">返回設定</button>';
   mockState = null;
 }
@@ -721,7 +762,7 @@ function cancelMock() {
   document.getElementById('mockResult').style.display = 'none';
 }
 
-function sendResult(correct, total, accuracy) {
+function sendResult() {
   var email = document.getElementById('resultEmail').value.trim();
   var msg = document.getElementById('resultSendMsg');
   var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -735,7 +776,7 @@ function sendResult(correct, total, accuracy) {
   params.append('b_21587eb750f9f24c0baf7d64e_cbbdc8165d', '');
   params.append('subscribe', 'Subscribe');
   new Image().src = 'https://us5.list-manage.com/subscribe/post?' + params.toString();
-  msg.textContent = '✅ 已送出！請查看 Email 收取成績分析'; msg.style.color = '#059669';
+  msg.textContent = '✅ 已將 Email 加入名單！可透過上方「寄給自己」立即收信'; msg.style.color = '#059669';
 }
 
 function renderWrong() {
