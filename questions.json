@@ -18645,6 +18645,806 @@
                                       ],
                           "answer":  2,
                           "explanation":  "產生新的物質（氣體）是化學變化的證據。體積、形狀、溫度改變也可能是物理變化。"
+                      },
+                      {
+                          "id":  1161,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一物體質量 6 kg，受 F=18 N 水平力拉動，動摩擦係數 0.2（g=10），加速度為何？",
+                          "options":  [
+                                          "1 m/s2",
+                                          "2 m/s2",
+                                          "3 m/s2",
+                                          "4 m/s2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "f=0.2*6*10=12 N。a=(18-12)/6=1 m/s2。"
+                      },
+                      {
+                          "id":  1162,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 2 kg 物體以 6 m/s 運動，受 4 N 阻力作用，多久停止？",
+                          "options":  [
+                                          "2 s",
+                                          "3 s",
+                                          "4 s",
+                                          "5 s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "a=4/2=2 m/s2。t=6/2=3 s。"
+                      },
+                      {
+                          "id":  1163,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "彈簧原長 30 cm，掛 300 g 後變 36 cm，掛 500 g 後變多少？（彈性限度內）",
+                          "options":  [
+                                          "38 cm",
+                                          "40 cm",
+                                          "42 cm",
+                                          "44 cm"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "每 300g 伸長 6 cm，每 100g 伸長 2 cm。500g 伸長 10 cm，總長=30+10=40 cm。"
+                      },
+                      {
+                          "id":  1164,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 1.5 kg 物體受 F1=6 N 向東、F2=8 N 向北，加速度大小？",
+                          "options":  [
+                                          "約 3.3 m/s2",
+                                          "約 6.7 m/s2",
+                                          "約 8.2 m/s2",
+                                          "約 10 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "合力=根號(62+82)=10 N。a=10/1.5=6.67 m/s2。"
+                      },
+                      {
+                          "id":  1165,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體自 80 m 高處自由落下，g=10，著地需時？",
+                          "options":  [
+                                          "3 s",
+                                          "4 s",
+                                          "5 s",
+                                          "6 s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "h=1/2*gt2，80=5t2，t=4 s。"
+                      },
+                      {
+                          "id":  1166,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體初速 4 m/s，以 2 m/s2 加速 5 s，位移？",
+                          "options":  [
+                                          "35 m",
+                                          "40 m",
+                                          "45 m",
+                                          "50 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "S=4*5+0.5*2*25=20+25=45 m。"
+                      },
+                      {
+                          "id":  1167,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "以 15 m/s 鉛直上拋，g=10，最大高度？",
+                          "options":  [
+                                          "8.25 m",
+                                          "10.25 m",
+                                          "11.25 m",
+                                          "12.25 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "h=v02/(2g)=225/20=11.25 m。"
+                      },
+                      {
+                          "id":  1168,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "小球由靜止以 4 m/s2 加速 3 s，接著等速 2 s，最後以 5 m/s2 減速至停止，全程位移？",
+                          "options":  [
+                                          "42.6 m",
+                                          "46.8 m",
+                                          "52.2 m",
+                                          "56.4 m"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "S1=0.5*4*9=18 m。v=12 m/s。S2=12*2=24 m。t3=12/5=2.4 s。S3=0.5*5*5.76=14.4 m。總=18+24+14.4=56.4 m。"
+                      },
+                      {
+                          "id":  1169,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 3 kg 物體以 8 m/s 運動，動能？",
+                          "options":  [
+                                          "64 J",
+                                          "72 J",
+                                          "80 J",
+                                          "96 J"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "Ek=0.5*3*64=96 J。"
+                      },
+                      {
+                          "id":  1170,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將質量 6 kg 等速提高 5 m，g=10，作功？",
+                          "options":  [
+                                          "100 J",
+                                          "200 J",
+                                          "250 J",
+                                          "300 J"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "W=mgh=6*10*5=300 J。"
+                      },
+                      {
+                          "id":  1171,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 6 Ω 和 12 Ω 並聯後總電阻？",
+                          "options":  [
+                                          "4 Ω",
+                                          "6 Ω",
+                                          "8 Ω",
+                                          "10 Ω"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "1/R=1/6+1/12=1/4，R=4 Ω。"
+                      },
+                      {
+                          "id":  1172,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "110V、550W 電器通過電流？",
+                          "options":  [
+                                          "3 A",
+                                          "4 A",
+                                          "5 A",
+                                          "6 A"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "I=P/V=550/110=5 A。"
+                      },
+                      {
+                          "id":  1173,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "電燈泡標示 110V、60W。\n(1) 正常電流？\n(2) 電阻？",
+                          "options":  [
+                                          "(1)0.55A (2)202Ω",
+                                          "(1)0.55A (2)150Ω",
+                                          "(1)0.45A (2)202Ω",
+                                          "(1)0.45A (2)150Ω"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) I=60/110=0.55 A。(2) R=1102/60=202 Ω。"
+                      },
+                      {
+                          "id":  1174,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電磁鐵的磁極方向取決於？",
+                          "options":  [
+                                          "電流大小",
+                                          "電流方向",
+                                          "線圈匝數",
+                                          "鐵芯粗細"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "安培右手定則：電流方向決定磁場方向。改變電流方向可改變 N/S 極。"
+                      },
+                      {
+                          "id":  1175,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 100 g、90 度C 的水與 200 g、15 度C 的水混合，平衡溫度？",
+                          "options":  [
+                                          "30 度C",
+                                          "35 度C",
+                                          "40 度C",
+                                          "45 度C"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "100*(90-T)=200*(T-15)，9000-100T=200T-3000，12000=300T，T=40 度C。"
+                      },
+                      {
+                          "id":  1176,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.3 mol 的 Na2CO3 與 0.5 mol 的 HCl 反應，產生 CO2 多少 mol？Na2CO3+2HCl→2NaCl+H2O+CO2",
+                          "options":  [
+                                          "0.2 mol",
+                                          "0.25 mol",
+                                          "0.3 mol",
+                                          "0.5 mol"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "需 HCl=0.6 mol，實際僅 0.5 mol，HCl 不足。CO2=0.5/2=0.25 mol。"
+                      },
+                      {
+                          "id":  1177,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 20 g 氫氧化鈉（NaOH=40）溶於水配成 250 mL 溶液，莫耳濃度？",
+                          "options":  [
+                                          "1 M",
+                                          "1.5 M",
+                                          "2 M",
+                                          "2.5 M"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "NaOH=0.5 mol，M=0.5/0.25=2 M。"
+                      },
+                      {
+                          "id":  1178,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 10 mL 0.5 M HCl 與 15 mL 0.5 M NaOH 混合，溶液呈？",
+                          "options":  [
+                                          "酸性",
+                                          "中性",
+                                          "鹼性",
+                                          "強酸性"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "H+=0.005 mol，OH-=0.0075 mol，OH- 過量呈鹼性。"
+                      },
+                      {
+                          "id":  1179,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "pH=11 的 NaOH 溶液稀釋 10 倍後 pH 約為？",
+                          "options":  [
+                                          "9",
+                                          "10",
+                                          "11",
+                                          "12"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "[OH-]=10-3 M，稀釋 10 倍變 10-4 M，pOH=4，pH=10。"
+                      },
+                      {
+                          "id":  1180,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在反應 Zn+2HCl→ZnCl2+H2 中，Zn 的氧化數變化？",
+                          "options":  [
+                                          "0→+1",
+                                          "0→+2",
+                                          "+2→0",
+                                          "+1→0"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Zn 從 0 升到 +2，失去電子被氧化。"
+                      },
+                      {
+                          "id":  1181,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者是蛋白質的構成單位？",
+                          "options":  [
+                                          "葡萄糖",
+                                          "胺基酸",
+                                          "脂肪酸",
+                                          "核苷酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "蛋白質由胺基酸聚合而成。"
+                      },
+                      {
+                          "id":  1182,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She practices the piano every day ___ she can improve.",
+                          "options":  [
+                                          "so that",
+                                          "such that",
+                                          "in order",
+                                          "for that"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "so that + 子句表示目的。「為了...」"
+                      },
+                      {
+                          "id":  1183,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The teacher asked us ___ talking during class.",
+                          "options":  [
+                                          "stop",
+                                          "to stop",
+                                          "stopping",
+                                          "stopped"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "ask + 人 + to V（要求某人做某事）。"
+                      },
+                      {
+                          "id":  1184,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I have no idea ___ she is angry.",
+                          "options":  [
+                                          "why",
+                                          "that",
+                                          "which",
+                                          "what"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "why 引導名詞子句：「我不知道她為什麼生氣」。"
+                      },
+                      {
+                          "id":  1185,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "This is the house ___ my grandfather was born.",
+                          "options":  [
+                                          "which",
+                                          "where",
+                                          "that",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "房子是地方，關係副詞用 where。"
+                      },
+                      {
+                          "id":  1186,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "___ you study hard, you will pass the exam.",
+                          "options":  [
+                                          "If",
+                                          "Unless",
+                                          "Although",
+                                          "Because"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "If 表條件「如果...」。Unless=if not。"
+                      },
+                      {
+                          "id":  1187,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He is not only a teacher ___ a writer.",
+                          "options":  [
+                                          "but also",
+                                          "and also",
+                                          "but as well",
+                                          "and"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "not only...but also... 固定搭配。"
+                      },
+                      {
+                          "id":  1188,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The exam was ___ difficult that few students passed.",
+                          "options":  [
+                                          "so",
+                                          "such",
+                                          "very",
+                                          "too"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "so + adj + that（如此...以致於）。"
+                      },
+                      {
+                          "id":  1189,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She ___ her homework before her mother came home.",
+                          "options":  [
+                                          "finishes",
+                                          "has finished",
+                                          "had finished",
+                                          "will finish"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "過去完成式：在媽媽回家之前已經完成作業。"
+                      },
+                      {
+                          "id":  1190,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Neither the manager ___ the employees knew about the change.",
+                          "options":  [
+                                          "or",
+                                          "and",
+                                          "nor",
+                                          "but"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Neither...nor 固定搭配。"
+                      },
+                      {
+                          "id":  1191,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Would you mind ___ the window?",
+                          "options":  [
+                                          "open",
+                                          "opening",
+                                          "to open",
+                                          "opened"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "mind + V-ing（介意做某事）。"
+                      },
+                      {
+                          "id":  1192,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The book is worth ___.",
+                          "options":  [
+                                          "read",
+                                          "reading",
+                                          "to read",
+                                          "reads"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "be worth + V-ing（值得...）。"
+                      },
+                      {
+                          "id":  1193,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I prefer tea ___ coffee.",
+                          "options":  [
+                                          "than",
+                                          "to",
+                                          "over",
+                                          "from"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "prefer A to B（偏好 A 勝於 B）。"
+                      },
+                      {
+                          "id":  1194,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "It was in Taipei ___ I met my wife.",
+                          "options":  [
+                                          "which",
+                                          "that",
+                                          "where",
+                                          "when"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "It is...that... 強調句型（不是關係子句）。"
+                      },
+                      {
+                          "id":  1195,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "___ the rain, the outdoor concert was canceled.",
+                          "options":  [
+                                          "Because of",
+                                          "Because",
+                                          "Even",
+                                          "Despite of"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Because of + 名詞片語。Because + 子句。"
+                      },
+                      {
+                          "id":  1196,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He asked me ___ I had finished the report.",
+                          "options":  [
+                                          "weather",
+                                          "whether",
+                                          "that",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "whether 引導間接問句（是否）。"
+                      },
+                      {
+                          "id":  1197,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The more you read, the ___ you will write.",
+                          "options":  [
+                                          "good",
+                                          "better",
+                                          "best",
+                                          "well"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "the + 比較級, the + 比較級。"
+                      },
+                      {
+                          "id":  1198,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I am looking for a person ___ can speak Japanese.",
+                          "options":  [
+                                          "which",
+                                          "who",
+                                          "whom",
+                                          "whose"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "先行詞是人（person），做主詞用 who。"
+                      },
+                      {
+                          "id":  1199,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He didn\u0027t study hard. ___, he failed the test.",
+                          "options":  [
+                                          "However",
+                                          "Therefore",
+                                          "Moreover",
+                                          "Otherwise"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Therefore = 因此（因果關係）。"
+                      },
+                      {
+                          "id":  1200,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "We have to finish the project ___. It\u0027s urgent.",
+                          "options":  [
+                                          "as soon as possible",
+                                          "as soon as possibly",
+                                          "as soon as possible as",
+                                          "as possible as soon"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "as soon as possible = 儘快。"
+                      },
+                      {
+                          "id":  1201,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I am used to ___ up early because of my job.",
+                          "options":  [
+                                          "get",
+                                          "gets",
+                                          "getting",
+                                          "got"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "be used to + V-ing（習慣於）。"
+                      },
+                      {
+                          "id":  1202,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "This is the most interesting book ___ I have ever read.",
+                          "options":  [
+                                          "which",
+                                          "that",
+                                          "what",
+                                          "who"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "最高級後用「that」為關係代名詞。"
+                      },
+                      {
+                          "id":  1203,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Seldom ___ such a beautiful sunset.",
+                          "options":  [
+                                          "I have seen",
+                                          "have I seen",
+                                          "I see",
+                                          "did I see"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Seldom 開頭要倒裝：have I seen。"
+                      },
+                      {
+                          "id":  1204,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The number of students in our school ___ increasing every year.",
+                          "options":  [
+                                          "is",
+                                          "are",
+                                          "have",
+                                          "were"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "The number of + 複數名詞 + 單數動詞（is）。"
+                      },
+                      {
+                          "id":  1205,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "潛水艇下潛時調整什麼來控制浮沉？",
+                          "options":  [
+                                          "體積",
+                                          "重量",
+                                          "形狀",
+                                          "密度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "潛水艇注水增加重量，使重力大於浮力而下潛。"
+                      },
+                      {
+                          "id":  1206,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "太陽能熱水器是利用什麼原理？",
+                          "options":  [
+                                          "太陽能板發電",
+                                          "集熱板吸收輻射熱",
+                                          "反射鏡聚焦",
+                                          "風力發電"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "集熱板吸收太陽輻射能轉換為熱能加熱水。"
+                      },
+                      {
+                          "id":  1207,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電器外殼用塑膠製造的主要原因是？",
+                          "options":  [
+                                          "美觀",
+                                          "塑膠是絕緣體",
+                                          "成本低",
+                                          "重量輕"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "塑膠是電絕緣體，可防止漏電觸電。"
+                      },
+                      {
+                          "id":  1208,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "稀釋濃硫酸時的正確操作？",
+                          "options":  [
+                                          "將水倒入濃硫酸",
+                                          "將濃硫酸緩緩倒入水中",
+                                          "兩者同時混合",
+                                          "順序無所謂"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "濃硫酸稀釋放大量熱，將酸加入水中可防止沸騰噴濺。"
+                      },
+                      {
+                          "id":  1209,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "使用顯微鏡時，視野太暗應調整？",
+                          "options":  [
+                                          "物鏡",
+                                          "目鏡",
+                                          "光圈",
+                                          "粗調節輪"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "光圈可調節進光量，暗時應調大。"
+                      },
+                      {
+                          "id":  1210,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪種方法可分離水和沙子的混合物？",
+                          "options":  [
+                                          "蒸餾",
+                                          "結晶",
+                                          "過濾",
+                                          "層析"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "過濾利用顆粒大小差異分離不溶物（沙子）與液體（水）。"
                       }
                   ],
     "subjects":  [
