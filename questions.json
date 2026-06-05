@@ -20565,6 +20565,326 @@
                                       ],
                           "answer":  1,
                           "explanation":  "銅與空氣中的氧氣、水蒸氣、二氧化碳反應生成銅綠。"
+                      },
+                      {
+                          "id":  1281,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 5 kg 物體受 30 N 水平拉力，摩擦係數 0.3（g=10），加速度？",
+                          "options":  [
+                                          "2 m/s2",
+                                          "3 m/s2",
+                                          "4 m/s2",
+                                          "5 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "f=0.3*5*10=15 N。a=(30-15)/5=3 m/s2。"
+                      },
+                      {
+                          "id":  1282,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "800 g 物體密度 4 g/cm3，浸入水中浮力？（g=10）",
+                          "options":  [
+                                          "1 N",
+                                          "2 N",
+                                          "3 N",
+                                          "4 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "體積=800/4=200 cm3=2*10-4 m3。浮力=2*10-4*1000*10=2 N。"
+                      },
+                      {
+                          "id":  1283,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 300 g、密度 0.6 g/cm3 木塊放入水中，需下壓多少力才能完全浸沒？（g=10）",
+                          "options":  [
+                                          "1 N",
+                                          "2 N",
+                                          "3 N",
+                                          "4 N"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "體積=300/0.6=500 cm3。浮力=0.5*10=5 N。重力=3 N。需加壓=5-3=2 N。"
+                      },
+                      {
+                          "id":  1284,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體質量 1.2 kg，以 10 m/s 運動，受 8 N 阻力多久停止？",
+                          "options":  [
+                                          "1 s",
+                                          "1.5 s",
+                                          "2 s",
+                                          "2.5 s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "a=8/1.2=6.67。t=10/6.67=1.5 s。"
+                      },
+                      {
+                          "id":  1285,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體初速 6 m/s，a=2 m/s2，第 4 秒末速度？",
+                          "options":  [
+                                          "12 m/s",
+                                          "13 m/s",
+                                          "14 m/s",
+                                          "15 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "v=6+2*4=14 m/s。"
+                      },
+                      {
+                          "id":  1286,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "從 80 m 高自由落下，g=10，最後 1 秒位移？",
+                          "options":  [
+                                          "35 m",
+                                          "40 m",
+                                          "45 m",
+                                          "50 m"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "總時間 t=√(2h/g)=4 s。第 4 秒內位移=0.5*10*(16-9)=35 m。"
+                      },
+                      {
+                          "id":  1287,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "甲車以 12 m/s 等速，乙車以 3 m/s2 由靜止追，追上瞬間乙車速率？",
+                          "options":  [
+                                          "20 m/s",
+                                          "22 m/s",
+                                          "24 m/s",
+                                          "26 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "12t=0.5*3*t2→t=8 s。v乙=3*8=24 m/s。"
+                      },
+                      {
+                          "id":  1288,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 0.4 kg 球以 5 m/s 撞牆以 3 m/s 反彈，動能損失？",
+                          "options":  [
+                                          "2.2 J",
+                                          "2.6 J",
+                                          "3.2 J",
+                                          "3.6 J"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ek初=0.5*0.4*25=5 J。Ek末=0.5*0.4*9=1.8 J。損失=5-1.8=3.2 J。"
+                      },
+                      {
+                          "id":  1289,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "瀑布高 60 m，每秒 3000 kg 水流下，g=10，每秒位能損失？",
+                          "options":  [
+                                          "1.5*106 J",
+                                          "1.8*106 J",
+                                          "2.1*106 J",
+                                          "2.4*106 J"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "3000*10*60=1.8*106 J/s。"
+                      },
+                      {
+                          "id":  1290,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 12 Ω、6 Ω 並聯後再與 4 Ω 串聯，總電阻？",
+                          "options":  [
+                                          "6 Ω",
+                                          "7 Ω",
+                                          "8 Ω",
+                                          "9 Ω"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "1/Rp=1/12+1/6=1/4，Rp=4。串聯 4→總=8 Ω。"
+                      },
+                      {
+                          "id":  1291,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "110V、1200W 吹風機。\n(1) 電阻？\n(2) 半小時耗電？",
+                          "options":  [
+                                          "(1)8.1Ω (2)0.6度",
+                                          "(1)10.1Ω (2)0.6度",
+                                          "(1)8.1Ω (2)0.3度",
+                                          "(1)10.1Ω (2)0.3度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "(1) R=1102/1200=10.1 Ω。(2) 1.2*0.5=0.6 度。"
+                      },
+                      {
+                          "id":  1292,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 180 g、90 度C 熱水與 120 g、20 度C 冷水混合，平衡溫度？",
+                          "options":  [
+                                          "54 度C",
+                                          "58 度C",
+                                          "62 度C",
+                                          "66 度C"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "180*(90-T)=120*(T-20)，16200-180T=120T-2400，18600=300T，T=62 度C。"
+                      },
+                      {
+                          "id":  1293,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.5 mol 的 BaCl2 與 0.3 mol 的 Na2SO4 混合，BaCl2+Na2SO4→BaSO4+2NaCl，沉澱 BaSO4 多少 g？（BaSO4=233）",
+                          "options":  [
+                                          "69.9 g",
+                                          "93.2 g",
+                                          "116.5 g",
+                                          "139.8 g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Na2SO4=0.3 mol（不足），BaSO4=0.3 mol=69.9 g。"
+                      },
+                      {
+                          "id":  1294,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.2 M HCl 15 mL 與 0.1 M Ba(OH)2 15 mL 混合，溶液？",
+                          "options":  [
+                                          "酸性",
+                                          "中性",
+                                          "鹼性",
+                                          "強鹼性"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "H+=0.2*0.015=0.003 mol。OH-=0.1*0.015*2=0.003 mol。完全中和，中性。"
+                      },
+                      {
+                          "id":  1295,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "By the time we got there, the movie ___.",
+                          "options":  [
+                                          "already started",
+                                          "has already started",
+                                          "had already started",
+                                          "will already start"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "過去完成式：got there 之前就已經開始了。"
+                      },
+                      {
+                          "id":  1296,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She is one of the students who ___ been selected.",
+                          "options":  [
+                                          "has",
+                                          "have",
+                                          "had",
+                                          "having"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "先行詞是 students（複數），who 用 have。"
+                      },
+                      {
+                          "id":  1297,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He insisted that she ___ the meeting.",
+                          "options":  [
+                                          "attend",
+                                          "attends",
+                                          "attended",
+                                          "attending"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "insist that + 虛擬語氣（原形動詞）。"
+                      },
+                      {
+                          "id":  1298,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪種操作可加快冰糖在水中的溶解？",
+                          "options":  [
+                                          "降低水溫",
+                                          "加入更多水",
+                                          "攪拌",
+                                          "靜止放置"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "攪拌可增加溶質與溶劑的接觸機會，加速溶解。"
+                      },
+                      {
+                          "id":  1299,
+                          "unit":  "物質組成",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電解水時，正極產生的氣體是？",
+                          "options":  [
+                                          "氫氣",
+                                          "氧氣",
+                                          "氮氣",
+                                          "二氧化碳"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電解水時正極產生氧氣，負極產生氫氣。"
+                      },
+                      {
+                          "id":  1300,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "能量不會憑空產生或消失，只會轉換形式，這是什麼定律？",
+                          "options":  [
+                                          "質量守恆",
+                                          "能量守恆",
+                                          "動量守恆",
+                                          "電荷守恆"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "能量守恆定律：能量只會轉換形式，不會憑空消滅。"
                       }
                   ],
     "subjects":  [
