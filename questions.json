@@ -3255,6 +3255,569 @@
                                       ],
                           "answer":  1,
                           "explanation":  "聚乙烯（PE）是由乙烯（C2H4）單體聚合而成的高分子化合物。"
+                      },
+                      {
+                          "id":  201,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個實驗操作是正確的？",
+                          "options":  [
+                                          "直接聞化學藥品的氣味",
+                                          "用嘴巴吹熄酒精燈",
+                                          "加熱試管時管口朝向無人處",
+                                          "用溫度計攪拌溶液"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "加熱試管時管口應朝向無人方向，避免液體噴濺傷人。其他選項均為危險操作。"
+                      },
+                      {
+                          "id":  202,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "使用顯微鏡觀察時，若視野太暗應調整哪個部分？",
+                          "options":  [
+                                          "目鏡",
+                                          "物鏡",
+                                          "光圈",
+                                          "粗調節輪"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "光圈可調節進光量，視野太暗時應調大光圈增加進光量。"
+                      },
+                      {
+                          "id":  203,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "定量分析實驗中，下列哪個步驟可能造成最大誤差？",
+                          "options":  [
+                                          "使用未校準的天平",
+                                          "讀取滴定管時視線偏離",
+                                          "用蒸餾水清洗錐形瓶",
+                                          "使用過量指示劑"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "讀取滴定管時視線應與液面最低處水平，偏離會造成讀數誤差，影響定量結果。"
+                      },
+                      {
+                          "id":  204,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一項是實驗室安全守則？",
+                          "options":  [
+                                          "可隨意混合化學藥品",
+                                          "實驗進行中可飲食",
+                                          "離開實驗室前要洗手",
+                                          "藥品可用手直接拿取"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "離開實驗室前洗手可避免化學藥品殘留。其他選項均為危險行為。"
+                      },
+                      {
+                          "id":  205,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "進行酸鹼滴定實驗時，最適合使用的指示劑是？",
+                          "options":  [
+                                          "石蕊試紙",
+                                          "酚酞",
+                                          "廣用試紙",
+                                          "藍色石蕊試紙"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "酚酞在 pH 8.2-10 之間變色，適合酸鹼滴定的終點判斷。石蕊試紙和廣用試紙適合粗略測量。"
+                      },
+                      {
+                          "id":  206,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "配置 0.1 M 的 NaCl 溶液 500 mL，需要 NaCl 多少克？（Na=23, Cl=35.5）",
+                          "options":  [
+                                          "2.925 g",
+                                          "5.85 g",
+                                          "11.7 g",
+                                          "29.25 g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "NaCl 分子量 = 58.5，0.1 M * 0.5 L = 0.05 mol，質量 = 0.05 * 58.5 = 2.925 g。"
+                      },
+                      {
+                          "id":  207,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "物質的三態變化中，下列哪個過程需要吸收熱量？",
+                          "options":  [
+                                          "凝固",
+                                          "凝結",
+                                          "熔化",
+                                          "昇華（氣態到固態）"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "熔化（固態→液態）需要吸收熱量（熔化熱）。凝固、凝結、昇華（氣→固）均為放熱過程。"
+                      },
+                      {
+                          "id":  208,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "用濾紙過濾泥水時，濾紙上會留下什麼？",
+                          "options":  [
+                                          "純水",
+                                          "泥沙",
+                                          "鹽分",
+                                          "色素"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "過濾是利用顆粒大小差異分離混合物，濾紙孔隙可留住泥沙顆粒，水則通過。"
+                      },
+                      {
+                          "id":  209,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "multiple",
+                          "question":  "下列哪些實驗操作可能會造成危險？（應選兩項）",
+                          "options":  [
+                                          "稀釋濃硫酸時將酸加入水中",
+                                          "加熱密閉容器中的液體",
+                                          "用溼布覆蓋著火的酒精燈",
+                                          "在通風櫥中進行有毒氣體實驗"
+                                      ],
+                          "answer":  [
+                                         1,
+                                         3
+                                     ],
+                          "explanation":  "加熱密閉容器可能因壓力過大爆炸。通風櫥是正確的安全操作。稀釋濃硫酸將酸加入水中是正確的。"
+                      },
+                      {
+                          "id":  210,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "在科學實驗中，為什麼要進行多次重複實驗？",
+                          "options":  [
+                                          "為了消耗時間",
+                                          "為了得到更可靠的數據",
+                                          "為了使用更多藥品",
+                                          "為了讓實驗看起來更專業"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "多次重複實驗並取平均值，可以減少隨機誤差，提高數據的可靠性和準確性。"
+                      },
+                      {
+                          "id":  211,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在一無摩擦的水平桌面上，質量 m 和 2m 的兩物體以細繩連接並跨過桌角的定滑輪，求系統加速度？（g=10 m/s2）",
+                          "options":  [
+                                          "g/3",
+                                          "g/2",
+                                          "2g/3",
+                                          "g"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "對 2m 物體：2mg - T = 2ma。對 m 物體：T = ma。聯立得 2mg - ma = 2ma，2mg = 3ma，a = 2g/3。"
+                      },
+                      {
+                          "id":  212,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一石頭由高塔自由落下，忽略空氣阻力，第 2 秒內的平均速度為多少？（g=10 m/s2）",
+                          "options":  [
+                                          "10 m/s",
+                                          "15 m/s",
+                                          "20 m/s",
+                                          "25 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "第 2 秒內位移 = 第 2 秒末位移 - 第 1 秒末位移 = 1/2*g*4 - 1/2*g*1 = 20-5 = 15 m。平均速度 = 15/1 = 15 m/s。"
+                      },
+                      {
+                          "id":  213,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "有一彈簧的力常數 k=100 N/m，將彈簧壓縮 0.2 m 後釋放，可將 0.5 kg 的物體彈射至多高？（不計能量損失，g=10 m/s2）",
+                          "options":  [
+                                          "0.2 m",
+                                          "0.4 m",
+                                          "0.6 m",
+                                          "0.8 m"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "彈力位能 = 1/2*k*x2 = 1/2*100*0.04 = 2 J。轉換為重力位能 mgh = 0.5*10*h = 2，h = 0.4 m。"
+                      },
+                      {
+                          "id":  214,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某聲波的強度為另一聲波的 100 倍，則兩者的分貝差為多少？",
+                          "options":  [
+                                          "10 dB",
+                                          "20 dB",
+                                          "50 dB",
+                                          "100 dB"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "分貝差 = 10*log(I1/I2) = 10*log(100) = 10*2 = 20 dB。"
+                      },
+                      {
+                          "id":  215,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "光在真空中的速率為 3*10^8 m/s，在某介質中的速率為 2*10^8 m/s，則該介質的折射率為何？",
+                          "options":  [
+                                          "0.67",
+                                          "1.0",
+                                          "1.5",
+                                          "2.0"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "折射率 n = c/v = 3*10^8 / 2*10^8 = 1.5。"
+                      },
+                      {
+                          "id":  216,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將一個電阻為 20 歐姆的電熱器接在 110 V 電源上，使用 30 分鐘產生多少熱量？（1 cal = 4.18 J）",
+                          "options":  [
+                                          "約 260 kcal",
+                                          "約 520 kcal",
+                                          "約 1040 kcal",
+                                          "約 2080 kcal"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "功率 P = V2/R = 1102/20 = 605 W。能量 = 605*1800 = 1089000 J。熱量 = 1089000/4.18 = 約 260526 cal = 約 260 kcal。"
+                      },
+                      {
+                          "id":  217,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "長直導線載有 5 A 電流，距離導線 0.1 m 處的磁場強度為何？（真空磁導率 u0 = 4pi*10^-7）",
+                          "options":  [
+                                          "10^-5 T",
+                                          "10^-6 T",
+                                          "10^-7 T",
+                                          "2*10^-5 T"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "B = u0*I/(2pi*r) = (4pi*10^-7*5)/(2pi*0.1) = (20*10^-7)/(0.2) = 10^-5 T。"
+                      },
+                      {
+                          "id":  218,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 50 g、-10 度C 的冰塊加熱成 50 度C 的水，總共需要吸收多少熱量？（冰比熱=0.5 cal/g度C，熔化熱=80 cal/g）",
+                          "options":  [
+                                          "3250 cal",
+                                          "4250 cal",
+                                          "5250 cal",
+                                          "6250 cal"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "H1 = 50*0.5*(0-(-10)) = 250 cal（冰升溫）。H2 = 50*80 = 4000 cal（熔化）。H3 = 50*1*(50-0) = 2500 cal（水升溫）。H總 = 250+4000+2500 = 6750 cal。"
+                      },
+                      {
+                          "id":  219,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某化合物含碳 40%、氫 6.67%、氧 53.33%，實驗式為何？（C=12, H=1, O=16）",
+                          "options":  [
+                                          "CH2O",
+                                          "C2H4O2",
+                                          "C3H6O3",
+                                          "C4H8O4"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "C:H:O 莫耳數比 = 40/12 : 6.67/1 : 53.33/16 = 3.33:6.67:3.33 = 1:2:1。實驗式為 CH2O。"
+                      },
+                      {
+                          "id":  220,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在反應 2SO2 + O2 產生 2SO3 中，若 SO2 的消耗速率為 0.4 M/s，則 O2 的消耗速率為何？",
+                          "options":  [
+                                          "0.2 M/s",
+                                          "0.4 M/s",
+                                          "0.8 M/s",
+                                          "1.6 M/s"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "由係數比 SO2:O2 = 2:1，O2 消耗速率 = SO2 消耗速率 / 2 = 0.4/2 = 0.2 M/s。"
+                      },
+                      {
+                          "id":  221,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "25 度C 時，0.01 M HCl 溶液的 pH 值為何？",
+                          "options":  [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "HCl 為強酸完全解離，[H+] = 0.01 M = 10^-2 M，pH = -log(10^-2) = 2。"
+                      },
+                      {
+                          "id":  222,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在反應 2KMnO4 + 5H2C2O4 + 3H2SO4 產生 2MnSO4 + 10CO2 + 8H2O + K2SO4 中，何者被還原？",
+                          "options":  [
+                                          "KMnO4中的Mn",
+                                          "H2C2O4中的C",
+                                          "H2SO4中的S",
+                                          "H2O中的O"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "KMnO4 中 Mn 的氧化數從 +7 降至 +2，得到電子被還原。H2C2O4 中 C 從 +3 升至 +4，被氧化。"
+                      },
+                      {
+                          "id":  223,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者為酯化反應的產物？",
+                          "options":  [
+                                          "醇 + 酸 產生 酯 + 水",
+                                          "醇 + 鹼 產生 鹽 + 水",
+                                          "酸 + 鹼 產生 鹽 + 水",
+                                          "烯 + 水 產生 醇"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "酯化反應是醇和羧酸在催化劑作用下，脫水生成酯和有機化合物的反應。"
+                      },
+                      {
+                          "id":  224,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者可以使正在運動的物體速度變慢？",
+                          "options":  [
+                                          "施加與運動同方向的力",
+                                          "施加與運動反方向的力",
+                                          "不施加任何力",
+                                          "施加垂直方向的力"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "施加與運動方向相反的力會產生負加速度，使物體速度減慢。"
+                      },
+                      {
+                          "id":  225,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "交通工具的輪胎表面有花紋，主要目的是？",
+                          "options":  [
+                                          "美觀",
+                                          "散熱",
+                                          "增加摩擦力",
+                                          "減少噪音"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "輪胎花紋可增加輪胎與地面間的摩擦力，防止打滑，提高行車安全。"
+                      },
+                      {
+                          "id":  226,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者不是純物質？",
+                          "options":  [
+                                          "蒸餾水",
+                                          "二氧化碳",
+                                          "牛奶",
+                                          "金塊"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "牛奶由水、蛋白質、脂肪等多種物質混合而成，為混合物。蒸餾水、二氧化碳、金塊均為純物質。"
+                      },
+                      {
+                          "id":  227,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "烤肉時用扇子搧風，火會更旺，這是因為？",
+                          "options":  [
+                                          "降低著火點",
+                                          "增加氧氣供應",
+                                          "帶走二氧化碳",
+                                          "降低溫度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "扇子搧風增加空氣流通，提供更多氧氣助燃，使燃燒更旺盛。"
+                      },
+                      {
+                          "id":  228,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者是酸性物質？",
+                          "options":  [
+                                          "小蘇打水",
+                                          "醋",
+                                          "氨水",
+                                          "肥皂水"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "醋含有醋酸，為酸性物質（pH 約 2-3）。小蘇打水、氨水、肥皂水均為鹼性。"
+                      },
+                      {
+                          "id":  229,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "電鍋將飯煮熟，主要是什麼能量轉換？",
+                          "options":  [
+                                          "電能→熱能",
+                                          "電能→光能",
+                                          "化學能→熱能",
+                                          "力學能→電能"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "電鍋利用電流通過電熱線產生熱量（電能轉為熱能），將飯煮熟。"
+                      },
+                      {
+                          "id":  230,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "彩虹的形成主要是因為光的什麼現象？",
+                          "options":  [
+                                          "反射",
+                                          "折射與色散",
+                                          "干涉",
+                                          "繞射"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "陽光穿過空氣中的水滴時，發生折射、反射和色散，將白光分散成七色光譜，形成彩虹。"
+                      },
+                      {
+                          "id":  231,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "保險絲在電路中的主要功能為何？",
+                          "options":  [
+                                          "省電",
+                                          "裝飾",
+                                          "過載保護",
+                                          "儲存電能"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "保險絲在電流過大時會熔斷，切斷電路，保護電器設備和避免電線走火。"
+                      },
+                      {
+                          "id":  232,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "鐵釘生鏽需要哪些條件？",
+                          "options":  [
+                                          "只需要水",
+                                          "只需要氧氣",
+                                          "需要水和氧氣",
+                                          "需要高溫"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "鐵生鏽是鐵與空氣中的氧氣和水共同作用的結果，化學式：4Fe + 3O2 + 2xH2O 產生 2Fe2O3*xH2O。"
+                      },
+                      {
+                          "id":  233,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個是向量？",
+                          "options":  [
+                                          "速率",
+                                          "質量",
+                                          "速度",
+                                          "溫度"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "速度同時具有大小和方向，為向量。速率、質量、溫度只有大小沒有方向，為純量。"
+                      },
+                      {
+                          "id":  234,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪種運動不是等加速度運動？",
+                          "options":  [
+                                          "自由落體",
+                                          "鉛直上拋",
+                                          "等速率圓周運動",
+                                          "斜面下滑（無摩擦）"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "等速率圓周運動的速率不變，但方向不斷改變，加速度方向也不斷改變，不是等加速度運動。"
+                      },
+                      {
+                          "id":  235,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "保溫杯能長時間保持溫度，主要是利用了哪種隔熱原理？",
+                          "options":  [
+                                          "傳導",
+                                          "對流",
+                                          "輻射",
+                                          "以上皆是"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "保溫杯利用真空層防止傳導和對流，內壁鍍銀反射熱輻射，綜合隔絕三種熱傳播方式。"
                       }
                   ],
     "subjects":  [
