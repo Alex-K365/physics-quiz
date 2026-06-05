@@ -17973,6 +17973,678 @@
                                       ],
                           "answer":  1,
                           "explanation":  "I=(800+500)/110=1300/110=11.8 A \u003c 15 A，不超過。"
+                      },
+                      {
+                          "id":  1119,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在進行電解水實驗時，加入少量硫酸的目的為何？",
+                          "options":  [
+                                          "增加水的導電性",
+                                          "催化反應",
+                                          "防止爆炸",
+                                          "產生顏色"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "純水幾乎不導電，加入硫酸可增加離子濃度，提高導電性。"
+                      },
+                      {
+                          "id":  1120,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個實驗操作可以分離酒精和水的混合物？",
+                          "options":  [
+                                          "過濾",
+                                          "蒸餾",
+                                          "結晶",
+                                          "層析"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "酒精和水的沸點不同，可用蒸餾分離。"
+                      },
+                      {
+                          "id":  1121,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "船從河水駛入海水，船的吃水深度會如何變化？（海水密度 \u003e 河水密度）",
+                          "options":  [
+                                          "變深",
+                                          "變淺",
+                                          "不變",
+                                          "不一定"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "海水密度較大，排開較少體積就可產生相同浮力，吃水變淺。"
+                      },
+                      {
+                          "id":  1122,
+                          "unit":  "運動學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "時速 36 公里的腳踏車，以 2 m/s2 煞車，停止需時多少？",
+                          "options":  [
+                                          "3 s",
+                                          "4 s",
+                                          "5 s",
+                                          "6 s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "v0=36 km/h=10 m/s。t=v0/a=10/2=5 s。"
+                      },
+                      {
+                          "id":  1123,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "水力發電是利用水的什麼能來發電？",
+                          "options":  [
+                                          "動能和位能",
+                                          "化學能",
+                                          "核能",
+                                          "熱能"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "水從高處落下，位能轉為動能衝擊水輪機，帶動發電機發電。"
+                      },
+                      {
+                          "id":  1124,
+                          "unit":  "聲波",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "蝙蝠在夜間飛行時是利用什麼來避開障礙物？",
+                          "options":  [
+                                          "視力",
+                                          "超聲波回聲定位",
+                                          "嗅覺",
+                                          "紅外線"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "蝙蝠發出超聲波，利用回聲判斷障礙物的位置和距離。"
+                      },
+                      {
+                          "id":  1125,
+                          "unit":  "光學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "水中的魚看起來比實際位置淺，這是因為光的什麼現象？",
+                          "options":  [
+                                          "反射",
+                                          "折射",
+                                          "全反射",
+                                          "繞射"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "光從水中進入空氣時發生折射，偏離法線，使魚的像看起來比實際淺。"
+                      },
+                      {
+                          "id":  1126,
+                          "unit":  "光學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪種鏡片可用來矯正近视？",
+                          "options":  [
+                                          "凸透鏡",
+                                          "凹透鏡",
+                                          "平面鏡",
+                                          "凹面鏡"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "近视眼球過長，像落在視網膜前，用凹透鏡使光線發散，讓像後移至視網膜。"
+                      },
+                      {
+                          "id":  1127,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電路中使用保險絲的目的是？",
+                          "options":  [
+                                          "省電",
+                                          "防止電路過載",
+                                          "增加電壓",
+                                          "儲存電能"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "保險絲在電流過大時熔斷，切斷電路，保護電器避免火災。"
+                      },
+                      {
+                          "id":  1128,
+                          "unit":  "磁學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電動機（馬達）是根據什麼原理製成的？",
+                          "options":  [
+                                          "電磁感應",
+                                          "載流導線在磁場中受力",
+                                          "電流的熱效應",
+                                          "靜電感應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電動機利用載流線圈在磁場中受力旋轉，將電能轉為力學能。"
+                      },
+                      {
+                          "id":  1129,
+                          "unit":  "熱學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "保溫杯的內壁鍍銀是為了減少哪種熱傳播方式？",
+                          "options":  [
+                                          "傳導",
+                                          "對流",
+                                          "輻射",
+                                          "以上皆是"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "鍍銀可反射熱輻射，減少輻射造成的熱量散失。"
+                      },
+                      {
+                          "id":  1130,
+                          "unit":  "物質組成",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個變化是物理變化？",
+                          "options":  [
+                                          "木炭燃燒",
+                                          "鐵釘生鏽",
+                                          "冰塊熔化",
+                                          "牛奶變酸"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "冰塊熔化只是狀態改變，沒有新物質生成，是物理變化。"
+                      },
+                      {
+                          "id":  1131,
+                          "unit":  "化學反應",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量守恆定律說明了什麼？",
+                          "options":  [
+                                          "物質不會消失也不會憑空產生",
+                                          "能量可以憑空消失",
+                                          "原子可以分裂",
+                                          "質量可以轉為能量"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "質量守恆定律：化學反應前後，參與反應的物質總質量不變。"
+                      },
+                      {
+                          "id":  1132,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "檸檬汁的 pH 值約為 2，表示它是？",
+                          "options":  [
+                                          "強鹼性",
+                                          "弱鹼性",
+                                          "中性",
+                                          "酸性"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "pH\u003c7 為酸性，pH=2 屬於強酸性。"
+                      },
+                      {
+                          "id":  1133,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "胃酸過多的人服用胃藥，這是利用什麼反應？",
+                          "options":  [
+                                          "氧化還原",
+                                          "酸鹼中和",
+                                          "分解反應",
+                                          "置換反應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "胃藥含鹼性成分（如 Mg(OH)2），可中和胃酸（HCl）。"
+                      },
+                      {
+                          "id":  1134,
+                          "unit":  "氧化還原",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將蘋果切開後放置會變色，是因為發生了什麼反應？",
+                          "options":  [
+                                          "氧化",
+                                          "還原",
+                                          "酸鹼中和",
+                                          "脫水"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "蘋果中的酚類物質與空氣中的氧氣發生氧化反應，產生褐色物質。"
+                      },
+                      {
+                          "id":  1135,
+                          "unit":  "有機化學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "塑膠（聚乙烯）是由下列哪個單體聚合而成？",
+                          "options":  [
+                                          "甲烷",
+                                          "乙烯",
+                                          "乙烷",
+                                          "乙醇"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "聚乙烯（PE）由乙烯（C2H4）單體經加成聚合反應生成。"
+                      },
+                      {
+                          "id":  1136,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪一項是實驗室中正確的安全措施？",
+                          "options":  [
+                                          "直接聞化學藥品的氣味",
+                                          "將廢液直接倒入水槽",
+                                          "在通風櫥中進行有毒實驗",
+                                          "用嘴巴吹熄酒精燈"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "有毒氣體實驗應在通風櫥中進行，避免吸入有害氣體。"
+                      },
+                      {
+                          "id":  1137,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "核能發電是利用哪種核反應？",
+                          "options":  [
+                                          "核融合",
+                                          "核分裂",
+                                          "核衰變",
+                                          "核聚變"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "目前的核能電廠都使用核分裂反應，將鈾原子核分裂釋放能量。"
+                      },
+                      {
+                          "id":  1138,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "鐵達尼號沉沒的主要原因是什麼？",
+                          "options":  [
+                                          "船體太重",
+                                          "船身進水後重力大於浮力",
+                                          "遇到大風浪",
+                                          "引擎故障"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "船身進水後總重量增加，當重力大於浮力時船就會下沉。"
+                      },
+                      {
+                          "id":  1139,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個不是簡單機械？",
+                          "options":  [
+                                          "槓桿",
+                                          "滑輪",
+                                          "斜面",
+                                          "電池"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "電池是能源裝置，不是簡單機械。槓桿、滑輪、斜面都是簡單機械。"
+                      },
+                      {
+                          "id":  1140,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Choose the best answer: I don\u0027t know ___ she will come or not.",
+                          "options":  [
+                                          "if",
+                                          "whether",
+                                          "weather",
+                                          "that"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Whether...or not 是固定搭配。if 不能直接接 or not。"
+                      },
+                      {
+                          "id":  1141,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The teacher told us that the earth ___ around the sun.",
+                          "options":  [
+                                          "move",
+                                          "moves",
+                                          "moved",
+                                          "moving"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "自然真理用現在式。the earth moves (第三人稱單數)。"
+                      },
+                      {
+                          "id":  1142,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She is ___ girl that everyone likes her.",
+                          "options":  [
+                                          "so a kind",
+                                          "such a kind",
+                                          "so kind",
+                                          "such kind"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "such + a/an + adj + that。so + adj + a/an + that。"
+                      },
+                      {
+                          "id":  1143,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "It was raining hard, ___ we decided to stay home.",
+                          "options":  [
+                                          "so",
+                                          "because",
+                                          "but",
+                                          "or"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "下雨→待在家，因果關係用 so。"
+                      },
+                      {
+                          "id":  1144,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "We have lived in this town ___ ten years.",
+                          "options":  [
+                                          "since",
+                                          "for",
+                                          "in",
+                                          "from"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "for + 一段時間（ten years）。since + 時間點。"
+                      },
+                      {
+                          "id":  1145,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She asked me what time ___.",
+                          "options":  [
+                                          "it is",
+                                          "is it",
+                                          "it was",
+                                          "was it"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "間接問句用陳述句語序，且時態一致（asked→過去式）。"
+                      },
+                      {
+                          "id":  1146,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Neither my parents ___ my brother likes spicy food.",
+                          "options":  [
+                                          "or",
+                                          "and",
+                                          "nor",
+                                          "but"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Neither...nor 為固定搭配。"
+                      },
+                      {
+                          "id":  1147,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He is used to ___ up early.",
+                          "options":  [
+                                          "get",
+                                          "gets",
+                                          "getting",
+                                          "got"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "be used to + V-ing（習慣於...）。"
+                      },
+                      {
+                          "id":  1148,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "This is the factory ___ my father works.",
+                          "options":  [
+                                          "which",
+                                          "that",
+                                          "where",
+                                          "who"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "工廠是地方，關係副詞用 where。"
+                      },
+                      {
+                          "id":  1149,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I would rather you ___ tomorrow.",
+                          "options":  [
+                                          "come",
+                                          "came",
+                                          "coming",
+                                          "to come"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "would rather + 假設語氣（過去式表示現在/未來）。"
+                      },
+                      {
+                          "id":  1150,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She spent all day ___ for the exam.",
+                          "options":  [
+                                          "prepare",
+                                          "preparing",
+                                          "to prepare",
+                                          "prepared"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "spend + time + V-ing（花時間做...）。"
+                      },
+                      {
+                          "id":  1151,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The book, ___ cover is red, belongs to me.",
+                          "options":  [
+                                          "which",
+                                          "that",
+                                          "whose",
+                                          "who"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "whose 表所有格（the book\u0027s cover = whose cover）。"
+                      },
+                      {
+                          "id":  1152,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "He speaks English ___ than anyone in his class.",
+                          "options":  [
+                                          "good",
+                                          "well",
+                                          "better",
+                                          "best"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "than 前面用比較級 better。"
+                      },
+                      {
+                          "id":  1153,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I will call you ___ I arrive at the station.",
+                          "options":  [
+                                          "as soon as",
+                                          "as well as",
+                                          "as far as",
+                                          "as long as"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "as soon as = 一...就..."
+                      },
+                      {
+                          "id":  1154,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She doesn\u0027t know ___ to cook or not.",
+                          "options":  [
+                                          "if",
+                                          "whether",
+                                          "that",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "whether to...or not 固定用法。"
+                      },
+                      {
+                          "id":  1155,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The more you practice, ___ you will become.",
+                          "options":  [
+                                          "fluent",
+                                          "more fluent",
+                                          "the more fluent",
+                                          "the most fluent"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "the + 比較級, the + 比較級 結構。"
+                      },
+                      {
+                          "id":  1156,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Taiwan is located in East Asia. The weather is warm and humid in summer. Many tourists visit Taiwan every year because of its night markets, hot springs, and beautiful scenery.\n\nWhy do many tourists visit Taiwan?",
+                          "options":  [
+                                          "Because of the cold weather",
+                                          "Because of night markets, hot springs, and scenery",
+                                          "Because it is very cheap",
+                                          "Because it is close to Japan"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "文中提到 because of its night markets, hot springs, and beautiful scenery。"
+                      },
+                      {
+                          "id":  1157,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Global warming is caused by greenhouse gases such as carbon dioxide. These gases trap heat in the atmosphere. The main sources of these gases are burning fossil fuels and deforestation.\n\nWhat is the main cause of global warming?",
+                          "options":  [
+                                          "Volcanic eruptions",
+                                          "Greenhouse gases",
+                                          "Solar activity",
+                                          "Ocean currents"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "文中說 Global warming is caused by greenhouse gases such as carbon dioxide。"
+                      },
+                      {
+                          "id":  1158,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪種方法可以加快食鹽在水中的溶解速率？",
+                          "options":  [
+                                          "降低水溫",
+                                          "將食鹽磨碎",
+                                          "減少水量",
+                                          "靜止不動"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "將食鹽磨碎可增加表面積，加快溶解速率。"
+                      },
+                      {
+                          "id":  1159,
+                          "unit":  "物質組成",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "冰、水、水蒸氣是由同一種分子組成的，它們之間的差異在於？",
+                          "options":  [
+                                          "分子種類不同",
+                                          "分子排列和運動方式不同",
+                                          "分子大小不同",
+                                          "化學性質不同"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "冰、水、水蒸氣都是 H2O 分子，差別在於分子的排列方式和運動自由度不同。"
+                      },
+                      {
+                          "id":  1160,
+                          "unit":  "化學反應",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個現象是化學變化的證據？",
+                          "options":  [
+                                          "體積改變",
+                                          "形狀改變",
+                                          "產生氣體",
+                                          "溫度改變"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "產生新的物質（氣體）是化學變化的證據。體積、形狀、溫度改變也可能是物理變化。"
                       }
                   ],
     "subjects":  [
