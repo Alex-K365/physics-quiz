@@ -230,7 +230,10 @@ tr:nth-child(even){background:var(--card-bg)}
 <div class="page" id="page-browse">
 <div style="background:linear-gradient(135deg,#06c755,#089c42);color:#fff;border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
 <span style="font-size:14px;font-weight:600">💪 想加強特定科目？</span>
+<div style="display:flex;align-items:center;gap:10px">
 <a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="background:#fff;color:#06c755;padding:8px 20px;border-radius:60px;text-decoration:none;font-size:13px;font-weight:700;transition:.2s">免費預約諮詢</a>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR" style="border-radius:8px;width:60px;height:60px;background:#fff;padding:4px">
+</div>
 </div>
 <h2>📚 題庫瀏覽</h2>
 <div class="subj-tabs" id="subjectTabs"></div>
@@ -744,12 +747,12 @@ function submitMock() {
     '<div style="padding:14px;background:var(--card-bg);border-radius:14px;margin:10px 0;border:1px solid var(--card-border)">'+
     '<p style="font-size:14px;color:var(--text-secondary);line-height:1.7">💡 '+recHtml+'</p>'+
     bookHtml + '</div>'+
-    '<div style="margin-top:12px;text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">💬 免費預約一對一諮詢</a></div>'+
+    '<div style="margin-top:12px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">💬 免費預約一對一諮詢</a><img src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR" style="border-radius:8px;width:70px;height:70px;background:#fff;padding:4px;border:1px solid #e0e0e0"></div>'+
     '<div style="margin-top:12px;padding:16px;background:var(--tag-bg);border-radius:14px;text-align:center">'+
     '<p style="font-size:14px;color:var(--text-secondary);margin-bottom:10px">📬 將成績分析寄到 Email</p>'+
-    '<div style="display:flex;gap:8px;max-width:360px;margin:0 auto"><input type="email" id="resultEmail" placeholder="輸入 Email" style="flex:1;padding:8px 14px;border:1px solid var(--card-border);border-radius:10px;font-size:13px;outline:none;background:var(--card-bg);color:var(--text-primary)"><button class="btn btn-primary btn-sm" onclick="sendResult()">寄送</button></div>'+
+    '<div style="display:flex;gap:8px;max-width:360px;margin:0 auto;flex-wrap:wrap;justify-content:center"><input type="email" id="resultEmail" placeholder="輸入 Email 存到名單" style="flex:1;min-width:160px;padding:8px 14px;border:1px solid var(--card-border);border-radius:10px;font-size:13px;outline:none;background:var(--card-bg);color:var(--text-primary)"><button class="btn btn-primary btn-sm" onclick="sendResult()">儲存名單</button></div>'+
     '<div id="resultSendMsg" style="font-size:13px;margin-top:8px;min-height:20px"></div>'+
-    '<div style="margin-top:8px"><a href="mailto:?subject=理化題庫成績分析報告&body='+encodeURIComponent(messageBody)+'" style="color:var(--accent);font-size:13px">📧 或用 Email 寄給自己</a></div></div>'+
+    '<div style="margin-top:10px"><a href="mailto:?subject=理化題庫成績分析報告&body='+encodeURIComponent(messageBody)+'" style="display:inline-flex;align-items:center;gap:4px;padding:8px 20px;background:var(--accent);color:#fff;border-radius:60px;text-decoration:none;font-size:13px;font-weight:600">📧 立即寄送成績分析</a></div></div>'+
     '<button class="btn btn-outline mt-16" onclick="cancelMock()">返回設定</button>';
   mockState = null;
 }
@@ -776,7 +779,7 @@ function sendResult() {
   params.append('b_21587eb750f9f24c0baf7d64e_cbbdc8165d', '');
   params.append('subscribe', 'Subscribe');
   new Image().src = 'https://us5.list-manage.com/subscribe/post?' + params.toString();
-  msg.textContent = '✅ 已將 Email 加入名單！可透過上方「寄給自己」立即收信'; msg.style.color = '#059669';
+  msg.textContent = '✅ Email 已存入名單！點下方按鈕立即寄送分析'; msg.style.color = '#059669';
 }
 
 function renderWrong() {
@@ -819,7 +822,7 @@ function renderWrong() {
     '</div>';
   }).join('');
   container.innerHTML += '<div class="mt-16" style="text-align:center"><button class="btn btn-outline btn-sm" onclick="clearAllWrong()">清除所有錯題</button></div>'+
-    '<div class="mt-16" style="text-align:center"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s;margin-top:8px">📞 這類題目常錯？Line 一對一教學</a></div>';
+    '<div class="mt-16" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><a href="https://line.me/ti/p/~edtechlab365" target="_blank" style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:#06c755;color:#fff;border-radius:60px;text-decoration:none;font-size:14px;font-weight:600;transition:.2s">📞 這類題目常錯？Line 一對一教學</a><img src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR" style="border-radius:8px;width:70px;height:70px;background:#fff;padding:4px;border:1px solid #e0e0e0"></div>';
 }
 
 function clearWrong(id) {
