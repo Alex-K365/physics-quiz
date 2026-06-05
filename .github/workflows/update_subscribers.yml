@@ -5,11 +5,14 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Fetch Mailchimp subscriber count
         run: |
           COUNT=$(curl -s "https://${{ secrets.MAILCHIMP_DC }}.api.mailchimp.com/3.0/lists/${{ secrets.MAILCHIMP_LIST_ID }}" \
