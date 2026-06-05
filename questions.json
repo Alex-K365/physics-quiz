@@ -20245,6 +20245,326 @@
                                       ],
                           "answer":  1,
                           "explanation":  "look forward to + V-ing。"
+                      },
+                      {
+                          "id":  1261,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一物體質量 0.8 kg，受 F=4 N 水平力，摩擦係數 0.3（g=10），加速度？",
+                          "options":  [
+                                          "1 m/s2",
+                                          "2 m/s2",
+                                          "3 m/s2",
+                                          "4 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "f=0.3*0.8*10=2.4 N。a=(4-2.4)/0.8=2 m/s2。"
+                      },
+                      {
+                          "id":  1262,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "體重 80 kg 人站在電梯中，電梯以 1.5 m/s2 向上減速，體重計讀數？（g=10）",
+                          "options":  [
+                                          "600 N",
+                                          "620 N",
+                                          "680 N",
+                                          "800 N"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "向上減速=向下加速。N=m(g-a)=80*8.5=680 N。"
+                      },
+                      {
+                          "id":  1263,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "火車長 250 m，以 15 m/s 通過長 350 m 的橋，車頭進橋到車尾離橋需時？",
+                          "options":  [
+                                          "30 s",
+                                          "35 s",
+                                          "40 s",
+                                          "45 s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "S=250+350=600 m。t=600/15=40 s。"
+                      },
+                      {
+                          "id":  1264,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體以 6 m/s 等速前進 4 s，再以 3 m/s2 加速 3 s，全程平均速率？",
+                          "options":  [
+                                          "約 7.9 m/s",
+                                          "約 8.9 m/s",
+                                          "約 9.9 m/s",
+                                          "約 10.9 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "S1=6*4=24 m。v=6+9=15，S2=6*3+0.5*3*9=18+13.5=31.5。總=55.5 m，t=7 s，平均=7.93 m/s。"
+                      },
+                      {
+                          "id":  1265,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量 0.3 kg 球以 15 m/s 水平射出，動能？",
+                          "options":  [
+                                          "28.75 J",
+                                          "31.75 J",
+                                          "33.75 J",
+                                          "35.75 J"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ek=0.5*0.3*225=33.75 J。"
+                      },
+                      {
+                          "id":  1266,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "6 kg 物體以 20 m/s 運動，受 15 N 阻力，多遠停止？",
+                          "options":  [
+                                          "60 m",
+                                          "70 m",
+                                          "80 m",
+                                          "90 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ek=0.5*6*400=1200 J。S=1200/15=80 m。"
+                      },
+                      {
+                          "id":  1267,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 8 Ω、12 Ω、24 Ω 三個並聯，總電阻？",
+                          "options":  [
+                                          "3 Ω",
+                                          "4 Ω",
+                                          "5 Ω",
+                                          "6 Ω"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "1/R=1/8+1/12+1/24=3/24+2/24+1/24=6/24=1/4，R=4 Ω。"
+                      },
+                      {
+                          "id":  1268,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "110V 電源並聯 500W 和 300W 電器。\n(1) 總電流？\n(2) 一小時耗電？",
+                          "options":  [
+                                          "(1)約7.3A (2)0.8度",
+                                          "(1)約7.3A (2)1.6度",
+                                          "(1)約5.5A (2)0.8度",
+                                          "(1)約5.5A (2)1.6度"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "(1) I=800/110=7.27 A。(2) 度=0.8*1=0.8。"
+                      },
+                      {
+                          "id":  1269,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "凹面鏡焦距 12 cm，物體在鏡前 20 cm，成像在？",
+                          "options":  [
+                                          "鏡前 30 cm",
+                                          "鏡後 30 cm",
+                                          "鏡前 45 cm",
+                                          "鏡後 45 cm"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "1/20+1/q=1/12，1/q=1/12-1/20=5/60-3/60=2/60=1/30，q=30 cm（正=鏡前實像）。"
+                      },
+                      {
+                          "id":  1270,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.6 mol NaOH 與 0.25 mol H3PO4 反應，H3PO4+3NaOH→Na3PO4+3H2O，何者過量？",
+                          "options":  [
+                                          "NaOH 過量 0.15 mol",
+                                          "H3PO4 過量 0.05 mol",
+                                          "NaOH 過量 0.05 mol",
+                                          "H3PO4 過量 0.15 mol"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "需 NaOH=0.25*3=0.75 mol，有 0.6 mol，NaOH不足。H3PO4過量 0.25-0.6/3=0.05 mol。"
+                      },
+                      {
+                          "id":  1271,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.2 mol 的 Al 與 0.4 mol 的 HCl 反應，2Al+6HCl→2AlCl3+3H2，何者為限量試劑？",
+                          "options":  [
+                                          "Al",
+                                          "HCl",
+                                          "兩者等量",
+                                          "無法判斷"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "需 HCl=0.2*3=0.6 mol，實際只有 0.4 mol，HCl 不足為限量試劑。Wait: 0.2 mol Al 需 0.6 mol HCl，HCl=0.4 不足，HCl 是限量。"
+                      },
+                      {
+                          "id":  1272,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將 0.1 M H2SO4 30 mL 與 0.2 M NaOH 20 mL 混合，溶液？",
+                          "options":  [
+                                          "酸性",
+                                          "中性",
+                                          "鹼性",
+                                          "強酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "H+=0.1*0.03*2=0.006 mol。OH-=0.2*0.02=0.004 mol。H+ 過量，酸性。"
+                      },
+                      {
+                          "id":  1273,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She didn\u0027t know ___ to stay or leave.",
+                          "options":  [
+                                          "if",
+                                          "whether",
+                                          "that",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "whether to...or not 固定用法。"
+                      },
+                      {
+                          "id":  1274,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "刀片磨得鋒利是為了增加？",
+                          "options":  [
+                                          "壓力",
+                                          "面積",
+                                          "摩擦力",
+                                          "重力"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "面積越小壓力越大，越容易切割。"
+                      },
+                      {
+                          "id":  1275,
+                          "unit":  "運動學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "煞車痕越長代表？",
+                          "options":  [
+                                          "車速越快",
+                                          "車速越慢",
+                                          "車子越重",
+                                          "路面越乾"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "車速越快，煞車距離越長，煞車痕也越長。"
+                      },
+                      {
+                          "id":  1276,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電風扇是將電能轉為？",
+                          "options":  [
+                                          "熱能",
+                                          "光能",
+                                          "力學能",
+                                          "化學能"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "電風扇的電能驅動馬達轉動扇葉，轉為力學能（動能）。"
+                      },
+                      {
+                          "id":  1277,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "將電線的銅絲裸露在外互相碰觸會造成？",
+                          "options":  [
+                                          "斷路",
+                                          "短路",
+                                          "通路",
+                                          "絕緣"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電線裸露碰觸會造成短路，電流過大可能引發火災。"
+                      },
+                      {
+                          "id":  1278,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "實驗室中聞化學藥品氣味的正確方式？",
+                          "options":  [
+                                          "直接聞瓶口",
+                                          "用手搧聞",
+                                          "深吸一口氣",
+                                          "將瓶子靠近鼻子"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "應用「搧聞法」：手在瓶口上方輕輕搧動，使少量氣體飄向鼻子。"
+                      },
+                      {
+                          "id":  1279,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列何者的水溶液可導電？",
+                          "options":  [
+                                          "糖水",
+                                          "酒精",
+                                          "食鹽水",
+                                          "蒸餾水"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "食鹽水含有 Na+ 和 Cl- 離子，可導電。"
+                      },
+                      {
+                          "id":  1280,
+                          "unit":  "氧化還原",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "銅器表面的銅綠（Cu2(OH)2CO3）是銅與什麼反應生成？",
+                          "options":  [
+                                          "氧氣和碳",
+                                          "氧氣、水和二氧化碳",
+                                          "氯化鈉",
+                                          "硫化物"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "銅與空氣中的氧氣、水蒸氣、二氧化碳反應生成銅綠。"
                       }
                   ],
     "subjects":  [
