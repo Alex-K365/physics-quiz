@@ -9106,6 +9106,790 @@
                                       ],
                           "answer":  1,
                           "explanation":  "目前的核能發電廠都使用核分裂反應，將原子核分裂釋放的能量轉換為電能。"
+                      },
+                      {
+                          "id":  565,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What does \u0027fast\u0027 mean?",
+                          "options":  [
+                                          "Slow",
+                                          "Quick",
+                                          "Heavy",
+                                          "Light"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Fast means moving or capable of moving at high speed, quick."
+                      },
+                      {
+                          "id":  566,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What is the opposite of \u0027big\u0027?",
+                          "options":  [
+                                          "Large",
+                                          "Huge",
+                                          "Small",
+                                          "Wide"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "The opposite of \u0027big\u0027 is \u0027small\u0027."
+                      },
+                      {
+                          "id":  567,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does \u0027fragile\u0027 mean?",
+                          "options":  [
+                                          "Strong",
+                                          "Easily broken",
+                                          "Heavy",
+                                          "Expensive"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Fragile means easily broken or damaged, delicate."
+                      },
+                      {
+                          "id":  568,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Which word means to tell someone something?",
+                          "options":  [
+                                          "Hide",
+                                          "Inform",
+                                          "Deny",
+                                          "Forget"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Inform means to tell someone about something, give information."
+                      },
+                      {
+                          "id":  569,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "What does \u0027compel\u0027 mean?",
+                          "options":  [
+                                          "Suggest",
+                                          "Force",
+                                          "Allow",
+                                          "Prevent"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Compel means to force or oblige someone to do something."
+                      },
+                      {
+                          "id":  570,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word \u0027superficial\u0027 is closest in meaning to...",
+                          "options":  [
+                                          "Deep",
+                                          "Shallow",
+                                          "Important",
+                                          "Complex"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Superficial means existing or occurring at or on the surface, shallow."
+                      },
+                      {
+                          "id":  571,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "___ you like ice cream?",
+                          "options":  [
+                                          "Does",
+                                          "Do",
+                                          "Is",
+                                          "Are"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "You takes \u0027do\u0027 as the auxiliary verb in questions."
+                      },
+                      {
+                          "id":  572,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "The cat is ___ the table.",
+                          "options":  [
+                                          "in",
+                                          "on",
+                                          "at",
+                                          "under"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "On indicates that something is on top of a surface."
+                      },
+                      {
+                          "id":  573,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "He is the ___ student in the class.",
+                          "options":  [
+                                          "good",
+                                          "better",
+                                          "best",
+                                          "well"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Superlative form \u0027best\u0027 is used when comparing three or more."
+                      },
+                      {
+                          "id":  574,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "They ___ to the park yesterday.",
+                          "options":  [
+                                          "go",
+                                          "goes",
+                                          "went",
+                                          "going"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Yesterday indicates past tense, so \u0027went\u0027 is correct."
+                      },
+                      {
+                          "id":  575,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "She asked me where I ___.",
+                          "options":  [
+                                          "live",
+                                          "lived",
+                                          "living",
+                                          "to live"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Indirect question requires backshift of tense: asked...where I lived."
+                      },
+                      {
+                          "id":  576,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "I wish I ___ fly like a bird.",
+                          "options":  [
+                                          "can",
+                                          "could",
+                                          "will",
+                                          "may"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Wish expresses unreal present, so we use \u0027could\u0027 (past form)."
+                      },
+                      {
+                          "id":  577,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "Tom likes animals. He has a dog and two cats. Every morning he walks his dog in the park. He feeds his cats before going to school.\n\nHow many cats does Tom have?",
+                          "options":  [
+                                          "One",
+                                          "Two",
+                                          "Three",
+                                          "Four"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says \u0027He has a dog and two cats\u0027."
+                      },
+                      {
+                          "id":  578,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "The weather today is sunny and warm. The temperature is about 28 degrees. It is a good day for swimming.\n\nWhat is the weather like?",
+                          "options":  [
+                                          "Rainy and cold",
+                                          "Sunny and warm",
+                                          "Cloudy and cool",
+                                          "Windy and cold"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says the weather is sunny and warm."
+                      },
+                      {
+                          "id":  579,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Coffee is one of the most popular drinks in the world. It is made from coffee beans. The beans are roasted and ground, then hot water is added. Many people drink coffee in the morning to help them wake up.\n\nHow is coffee made?",
+                          "options":  [
+                                          "Coffee beans are boiled in milk",
+                                          "Coffee beans are roasted, ground, and mixed with hot water",
+                                          "Coffee beans are eaten directly",
+                                          "Coffee beans are frozen and melted"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text describes the process of roasting, grinding, and adding hot water."
+                      },
+                      {
+                          "id":  580,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "The human body needs water to survive. We can live without food for weeks, but only about three days without water. Water helps digestion, regulates body temperature, and carries nutrients.\n\nHow long can humans live without water?",
+                          "options":  [
+                                          "One day",
+                                          "About three days",
+                                          "One week",
+                                          "Two weeks"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says we can only live about three days without water."
+                      },
+                      {
+                          "id":  581,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Artificial intelligence (AI) is technology that allows computers to simulate human intelligence. AI can learn from data, recognize patterns, and make decisions. It is used in many fields including healthcare, transportation, and entertainment.\n\nWhat can AI do according to the passage?",
+                          "options":  [
+                                          "Only play games",
+                                          "Learn, recognize patterns, and make decisions",
+                                          "Replace all human workers",
+                                          "Think like humans completely"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says AI can learn from data, recognize patterns, and make decisions."
+                      },
+                      {
+                          "id":  582,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "Climate change refers to long-term changes in temperature and weather patterns. Human activities, especially the burning of fossil fuels, are the main cause. The effects include rising sea levels, more extreme weather, and loss of biodiversity.\n\nWhat is the main cause of climate change according to the passage?",
+                          "options":  [
+                                          "Volcanic eruptions",
+                                          "Burning fossil fuels",
+                                          "Natural cycles",
+                                          "Ocean currents"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says human activities, especially burning fossil fuels, are the main cause."
+                      },
+                      {
+                          "id":  583,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What color do you get when you mix red and white?",
+                          "options":  [
+                                          "Blue",
+                                          "Pink",
+                                          "Green",
+                                          "Black"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Mixing red and white makes pink."
+                      },
+                      {
+                          "id":  584,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does \u0027ordinary\u0027 mean?",
+                          "options":  [
+                                          "Special",
+                                          "Unusual",
+                                          "Normal",
+                                          "Strange"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Ordinary means normal, not special or different."
+                      },
+                      {
+                          "id":  585,
+                          "unit":  "單字",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "What does \u0027vivid\u0027 mean?",
+                          "options":  [
+                                          "Dull",
+                                          "Bright and clear",
+                                          "Faint",
+                                          "Dark"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Vivid means producing powerful feelings or clear images in the mind, bright."
+                      },
+                      {
+                          "id":  586,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Neither my parents ___ my brother likes spicy food.",
+                          "options":  [
+                                          "or",
+                                          "and",
+                                          "nor",
+                                          "but"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Neither is paired with nor: neither...nor."
+                      },
+                      {
+                          "id":  587,
+                          "unit":  "文法",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "It is essential that everyone ___ on time.",
+                          "options":  [
+                                          "is",
+                                          "be",
+                                          "was",
+                                          "are"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The subjunctive mood after \u0027essential that\u0027 requires the base form (be)."
+                      },
+                      {
+                          "id":  588,
+                          "unit":  "閱讀",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Reading books has many benefits. It improves vocabulary, enhances imagination, and reduces stress. Experts recommend reading for at least 20 minutes every day.\n\nWhat is NOT mentioned as a benefit of reading?",
+                          "options":  [
+                                          "Improves vocabulary",
+                                          "Enhances imagination",
+                                          "Increases weight",
+                                          "Reduces stress"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "The text mentions vocabulary, imagination, and stress. Weight is not mentioned."
+                      },
+                      {
+                          "id":  589,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個不是力的單位？",
+                          "options":  [
+                                          "牛頓",
+                                          "公斤重",
+                                          "焦耳",
+                                          "達因"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "焦耳是能量和功的單位，不是力的單位。"
+                      },
+                      {
+                          "id":  590,
+                          "unit":  "運動學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "時速 90 公里的車子，以 2 m/s2 加速，5 秒後的速度約為多少？",
+                          "options":  [
+                                          "25 m/s",
+                                          "35 m/s",
+                                          "45 m/s",
+                                          "55 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v0 = 90 km/h = 25 m/s。v = 25 + 2*5 = 35 m/s。"
+                      },
+                      {
+                          "id":  591,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "電風扇運轉時的能量轉換順序為？",
+                          "options":  [
+                                          "電能→力學能→熱能",
+                                          "電能→熱能→力學能",
+                                          "電能→磁能→力學能",
+                                          "電能→光能→力學能"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "電流通過線圈產生磁場，帶動扇葉轉動。"
+                      },
+                      {
+                          "id":  592,
+                          "unit":  "聲波",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個樂器是利用弦的振動發聲？",
+                          "options":  [
+                                          "直笛",
+                                          "喇叭",
+                                          "吉他",
+                                          "鼓"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "吉他是弦振動發聲。直笛靠空氣柱，鼓靠膜振動。"
+                      },
+                      {
+                          "id":  593,
+                          "unit":  "光學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "為何從寒冷室外進入溫暖室內時，鏡片會起霧？",
+                          "options":  [
+                                          "鏡片熱漲冷縮",
+                                          "空氣中的水蒸氣遇冷凝結",
+                                          "灰塵附著",
+                                          "鏡片化學反應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "室內暖濕空氣遇冰冷鏡片，水蒸氣凝結成小水滴。"
+                      },
+                      {
+                          "id":  594,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "串聯兩個相同燈泡總功率 20 W，改為並聯後總功率為？",
+                          "options":  [
+                                          "20 W",
+                                          "40 W",
+                                          "60 W",
+                                          "80 W"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "串聯 2R，P=V2/(2R)=20。並聯 R/2，P=V2/(R/2)=4*20=80 W。"
+                      },
+                      {
+                          "id":  595,
+                          "unit":  "磁學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "電動機（馬達）的原理是什麼？",
+                          "options":  [
+                                          "電磁感應",
+                                          "載流導線在磁場中受力旋轉",
+                                          "靜電感應",
+                                          "電流的熱效應"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電動機利用載流線圈在磁場中受力轉動。"
+                      },
+                      {
+                          "id":  596,
+                          "unit":  "熱學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪種情況是熱對流？",
+                          "options":  [
+                                          "湯匙放入熱湯中變熱",
+                                          "陽光照射使地面升溫",
+                                          "熱水上升冷水下降",
+                                          "微波爐加熱食物"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "熱水上升冷水下降形成循環，為對流。"
+                      },
+                      {
+                          "id":  597,
+                          "unit":  "物質組成",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪個過程是化學變化？",
+                          "options":  [
+                                          "冰塊融化",
+                                          "糖溶於水",
+                                          "酒精揮發",
+                                          "麵包烤焦"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "麵包烤焦產生新的物質（碳化），為化學變化。"
+                      },
+                      {
+                          "id":  598,
+                          "unit":  "化學反應",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "質量守恆定律說明什麼？",
+                          "options":  [
+                                          "物質可以憑空消失",
+                                          "原子在化學反應中重新排列",
+                                          "能量可以憑空產生",
+                                          "反應後質量增加"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "化學反應前後原子重新排列，總質量不變。"
+                      },
+                      {
+                          "id":  599,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者是鹼性物質？",
+                          "options":  [
+                                          "可樂",
+                                          "醋",
+                                          "氨水",
+                                          "檸檬汁"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "氨水為弱鹼性。可樂、醋、檸檬汁均為酸性。"
+                      },
+                      {
+                          "id":  600,
+                          "unit":  "氧化還原",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "清洗銀飾時用鋁箔紙和小蘇打可去氧化物，這是什麼原理？",
+                          "options":  [
+                                          "酸鹼中和",
+                                          "氧化還原",
+                                          "電解",
+                                          "溶解"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "鋁比銀活潑，可置換銀的氧化物中的銀。"
+                      },
+                      {
+                          "id":  601,
+                          "unit":  "有機化學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "下列哪個是聚合物在日常生活中的應用？",
+                          "options":  [
+                                          "食鹽",
+                                          "塑膠袋",
+                                          "鐵鍋",
+                                          "玻璃杯"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "塑膠袋是聚乙烯（PE）聚合物製成。"
+                      },
+                      {
+                          "id":  602,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "蒸餾實驗中溫度計的水銀球應放在哪？",
+                          "options":  [
+                                          "溶液中",
+                                          "燒瓶底部",
+                                          "蒸餾頭支管口附近",
+                                          "冷凝管中"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "溫度計水銀球應位於蒸餾頭支管口附近測蒸氣溫度。"
+                      },
+                      {
+                          "id":  603,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "為什麼高空中的飛機需要加壓艙？",
+                          "options":  [
+                                          "高空溫度太低",
+                                          "高空氣壓太低無法呼吸",
+                                          "避免鳥擊",
+                                          "增加飛行速度"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "高空氣壓低氧氣稀薄，加壓艙維持適合呼吸的氣壓。"
+                      },
+                      {
+                          "id":  604,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "核融合和核分裂的主要差別？",
+                          "options":  [
+                                          "核融合釋放較少能量",
+                                          "核融合是結合成較重原子核",
+                                          "核融合需要較低溫度",
+                                          "核分裂不會產生輻射"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "核融合是輕核結合成重核，核分裂是重核分裂成輕核。"
+                      },
+                      {
+                          "id":  605,
+                          "unit":  "電學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "乾電池上標示 1.5 V 代表什麼？",
+                          "options":  [
+                                          "電池的電流",
+                                          "電池的電壓",
+                                          "電池的容量",
+                                          "電池的電阻"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "1.5 V 是電池的電壓。"
+                      },
+                      {
+                          "id":  606,
+                          "unit":  "運動學",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "物體由靜止以 5 m/s2 加速，前進 90 m 時的速度為何？",
+                          "options":  [
+                                          "20 m/s",
+                                          "25 m/s",
+                                          "30 m/s",
+                                          "35 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "v2 = 2aS = 2*5*90 = 900，v = 30 m/s。"
+                      },
+                      {
+                          "id":  607,
+                          "unit":  "光學",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "放大鏡是利用哪種鏡片？",
+                          "options":  [
+                                          "凹透鏡",
+                                          "凸透鏡",
+                                          "平面鏡",
+                                          "凹面鏡"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "放大鏡是凸透鏡，可將物體放大。"
+                      },
+                      {
+                          "id":  608,
+                          "unit":  "熱學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "0 度C 的冰和 0 度C 的水，哪個含較多熱量？",
+                          "options":  [
+                                          "冰",
+                                          "水",
+                                          "一樣多",
+                                          "無法比較"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "0 度C 的水比 0 度C 的冰多了熔化熱。"
+                      },
+                      {
+                          "id":  609,
+                          "unit":  "化學反應",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "為什麼不鏽鋼不易生鏽？",
+                          "options":  [
+                                          "不鏽鋼不含鐵",
+                                          "表面有氧化鉻保護層",
+                                          "不鏽鋼比較便宜",
+                                          "鐵比較堅硬"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "不鏽鋼含鉻，表面形成氧化鉻保護層防止氧化。"
+                      },
+                      {
+                          "id":  610,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "洗髮精 pH 值偏酸性是為了？",
+                          "options":  [
+                                          "增加泡沫",
+                                          "保護頭皮和頭髮",
+                                          "殺菌",
+                                          "增加香氣"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "頭皮 pH 約 4.5-5.5，偏酸性洗髮精可維持頭皮健康。"
+                      },
+                      {
+                          "id":  611,
+                          "unit":  "力學",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪種工具的使用原理屬於簡單機械？",
+                          "options":  [
+                                          "螺絲起子",
+                                          "滑輪",
+                                          "斜面",
+                                          "以上皆是"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "螺絲起子（輪軸）、滑輪、斜面都是簡單機械。"
+                      },
+                      {
+                          "id":  612,
+                          "unit":  "聲波",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "256 Hz 和 260 Hz 音叉同時敲擊，每秒聽到幾次大小變化？",
+                          "options":  [
+                                          "2 次",
+                                          "4 次",
+                                          "8 次",
+                                          "16 次"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "拍頻 = |256-260| = 4 Hz。"
+                      },
+                      {
+                          "id":  613,
+                          "unit":  "能量",
+                          "subject":  "理化",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "電燈泡將電能轉換為什麼？",
+                          "options":  [
+                                          "只有光能",
+                                          "只有熱能",
+                                          "光能和熱能",
+                                          "光能和動能"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "電燈泡將電能轉為光能（照明）和熱能。"
                       }
                   ],
     "subjects":  [
