@@ -5116,6 +5116,809 @@
                                       ],
                           "answer":  1,
                           "explanation":  "Third person singular (my sister = she) takes is."
+                      },
+                      {
+                          "id":  316,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "腳踏車鏈條有時會添加潤滑油，其主要目的為何？",
+                          "options":  [
+                                          "增加鏈條強度",
+                                          "減少摩擦力",
+                                          "防止生鏽",
+                                          "增加美觀"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "潤滑油可減少鏈條與齒輪間的摩擦力，使騎乘更省力並延長零件壽命。"
+                      },
+                      {
+                          "id":  317,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪種現象與大氣壓力有關？",
+                          "options":  [
+                                          "磁鐵吸鐵",
+                                          "吸管喝飲料",
+                                          "電風扇吹風",
+                                          "彈簧伸長"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "用吸管喝飲料時，吸管內氣壓減小，大氣壓力將飲料壓入吸管中。"
+                      },
+                      {
+                          "id":  318,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "一列火車長 200 m，以 30 m/s 等速通過一座長 400 m 的橋樑，從火車頭進橋到火車尾離橋共需多少時間？",
+                          "options":  [
+                                          "10 s",
+                                          "15 s",
+                                          "20 s",
+                                          "30 s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "總距離 = 橋長 + 車長 = 400 + 200 = 600 m，t = 600/30 = 20 s。"
+                      },
+                      {
+                          "id":  319,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "某物體做直線運動，其速度與時間的關係為 v(t) = 3t2 - 2t + 1（v:m/s, t:s），則第 2 秒時的瞬時加速度為何？",
+                          "options":  [
+                                          "6 m/s2",
+                                          "10 m/s2",
+                                          "12 m/s2",
+                                          "14 m/s2"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "a = dv/dt = 6t - 2，t=2 時 a = 6*2 - 2 = 10 m/s2。"
+                      },
+                      {
+                          "id":  320,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "一輛汽車以 30 m/s 行駛，司機發現前方障礙物後煞車，若煞車產生的阻力使汽車獲得 6 m/s2 的負加速度，則煞車距離為何？",
+                          "options":  [
+                                          "60 m",
+                                          "75 m",
+                                          "90 m",
+                                          "120 m"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v2 = v02 - 2aS，0 = 302 - 2*6*S，S = 900/12 = 75 m。"
+                      },
+                      {
+                          "id":  321,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種情況沒有作功？",
+                          "options":  [
+                                          "提起書包",
+                                          "推動物體",
+                                          "舉重",
+                                          "手提書包等速水平行走"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "功 = 力 * 位移，手提書包水平行走時，施力方向（向上）與位移方向（水平）垂直，不作功。"
+                      },
+                      {
+                          "id":  322,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "聲音在 0 度C 的空氣中傳播速度約 331 m/s，溫度每上升 1 度C，聲速增加 0.6 m/s，則 30 度C 時的聲速約為？",
+                          "options":  [
+                                          "343 m/s",
+                                          "349 m/s",
+                                          "355 m/s",
+                                          "361 m/s"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "v = 331 + 0.6*30 = 331 + 18 = 349 m/s。"
+                      },
+                      {
+                          "id":  323,
+                          "unit":  "聲波",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "multiple",
+                          "question":  "下列哪些關於聲音的敘述正確？（應選兩項）",
+                          "options":  [
+                                          "聲音是縱波",
+                                          "聲音在真空中傳播最快",
+                                          "聲音的響度與振幅有關",
+                                          "超聲波人耳可以聽見"
+                                      ],
+                          "answer":  [
+                                         0,
+                                         2
+                                     ],
+                          "explanation":  "聲音是縱波（介質振動方向與波傳播方向平行），響度由振幅決定。聲音不能在真空中傳播，超聲波頻率超過人耳可聽範圍。"
+                      },
+                      {
+                          "id":  324,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "物體置於平面鏡前 2 m 處，則物體與像之間的距離為多少？",
+                          "options":  [
+                                          "2 m",
+                                          "3 m",
+                                          "4 m",
+                                          "6 m"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "平面鏡成像，像距等於物距。物距 2 m，像距也 2 m，物體與像相距 4 m。"
+                      },
+                      {
+                          "id":  325,
+                          "unit":  "光學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪一種物品的主要原理是光的折射？",
+                          "options":  [
+                                          "望遠鏡",
+                                          "潛望鏡",
+                                          "化妝鏡",
+                                          "後視鏡"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "望遠鏡利用透鏡（折射）來放大遠處物體。潛望鏡、化妝鏡、後視鏡均利用反射原理。"
+                      },
+                      {
+                          "id":  326,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將一導線的長度拉長為原來的 2 倍（體積不變），其電阻變為原來的幾倍？",
+                          "options":  [
+                                          "不變",
+                                          "2 倍",
+                                          "3 倍",
+                                          "4 倍"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "R = rho*L/A，長度變 2 倍，截面積變 1/2，電阻變為 R\u0027 = rho*(2L)/(A/2) = 4*rho*L/A = 4R。"
+                      },
+                      {
+                          "id":  327,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在電路中，若將兩個 100W/110V 的燈泡串聯後接在 110V 電源上，總功率約為多少？",
+                          "options":  [
+                                          "25 W",
+                                          "50 W",
+                                          "100 W",
+                                          "200 W"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "每個燈泡電阻 R = V2/P = 12100/100 = 121 歐姆。串聯總電阻 = 242 歐姆。P = V2/R = 12100/242 = 50 W。"
+                      },
+                      {
+                          "id":  328,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪種方法可以增強環形線圈的磁場？",
+                          "options":  [
+                                          "減少線圈匝數",
+                                          "增大線圈半徑",
+                                          "增加通過的電流",
+                                          "使用銅芯代替鐵芯"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "線圈產生的磁場強度與電流大小和匝數成正比，增大電流可增強磁場。鐵芯可增強磁場，銅芯不行。"
+                      },
+                      {
+                          "id":  329,
+                          "unit":  "磁學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一線圈在磁場中轉動，下列何者會影響感應電動勢的大小？（應選兩項）",
+                          "options":  [
+                                          "線圈轉動的速度",
+                                          "線圈的面積",
+                                          "線圈的電阻",
+                                          "磁場的方向"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "感應電動勢 epsilon = NBA*omega*sin(omega*t)，與轉速和面積有關，與線圈電阻無關。"
+                      },
+                      {
+                          "id":  330,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將 500 g、80 度C 的鐵塊投入 200 g、20 度C 的水中，達熱平衡時溫度為 40 度C，求鐵的比熱？（水比熱 1 cal/g度C）",
+                          "options":  [
+                                          "0.1 cal/g度C",
+                                          "0.13 cal/g度C",
+                                          "0.2 cal/g度C",
+                                          "0.5 cal/g度C"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "H放 = H吸：500*S*(80-40) = 200*1*(40-20)，20000S = 4000，S = 0.2 cal/g度C。"
+                      },
+                      {
+                          "id":  331,
+                          "unit":  "熱學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "吃火鍋時，鍋中的湯汁會不斷冒出白煙，這些白煙是什麼？",
+                          "options":  [
+                                          "水蒸氣",
+                                          "小水滴",
+                                          "空氣",
+                                          "二氧化碳"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "白煙是水蒸氣遇到冷的空氣凝結成的小水滴。水蒸氣本身是無色的。"
+                      },
+                      {
+                          "id":  332,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一種變化是物理變化？",
+                          "options":  [
+                                          "木材燃燒",
+                                          "鐵生鏽",
+                                          "水結冰",
+                                          "消化食物"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "水結冰是狀態改變（液態→固態），沒有產生新物質，屬於物理變化。"
+                      },
+                      {
+                          "id":  333,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "已知元素 X 的電子排列為 2,8,4，下列敘述何者正確？",
+                          "options":  [
+                                          "X 是金屬元素",
+                                          "X 的原子序為 14",
+                                          "X 在週期表第 2 週期",
+                                          "X 的化學性質穩定"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電子排列 2,8,4 表示原子序 14（矽 Si），位於第 3 週期第 14 族，為類金屬。"
+                      },
+                      {
+                          "id":  334,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪個反應是「置換反應」？",
+                          "options":  [
+                                          "2H2 + O2 產生 2H2O",
+                                          "Zn + H2SO4 產生 ZnSO4 + H2",
+                                          "CaCO3 產生 CaO + CO2",
+                                          "HCl + NaOH 產生 NaCl + H2O"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "置換反應是一種元素取代化合物中的另一種元素。Zn 取代 H2SO4 中的 H。"
+                      },
+                      {
+                          "id":  335,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在平衡反應式 aFe2O3 + bCO 產生 cFe + dCO2 中，a、b、c、d 的係數組合為何？",
+                          "options":  [
+                                          "1,3,2,3",
+                                          "2,3,4,3",
+                                          "1,2,2,3",
+                                          "2,1,4,2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "Fe2O3 + 3CO 產生 2Fe + 3CO2，a=1, b=3, c=2, d=3。"
+                      },
+                      {
+                          "id":  336,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪兩者混合後 pH 值會接近 7？",
+                          "options":  [
+                                          "鹽酸 + 食鹽水",
+                                          "醋酸 + 氨水",
+                                          "氫氧化鈉 + 食鹽水",
+                                          "鹽酸 + 糖水"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "醋酸（弱酸）和氨水（弱鹼）發生酸鹼中和反應，產物為醋酸銨，pH 值接近 7。"
+                      },
+                      {
+                          "id":  337,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "用 NaOH 滴定未知濃度的 HCl，當達到當量點時，溶液呈什麼顏色（使用酚酞指示劑）？",
+                          "options":  [
+                                          "無色變紅色",
+                                          "紅色變無色",
+                                          "藍色變黃色",
+                                          "黃色變藍色"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "酚酞在酸性中無色，鹼性中呈紅色。滴定 HCl 時，NaOH 滴入後當量點前溶液仍為酸性（無色），達到當量點後微過量 NaOH 使溶液變鹼性（紅色）。"
+                      },
+                      {
+                          "id":  338,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "下列哪一個物質中的 Mn 氧化數最高？",
+                          "options":  [
+                                          "MnCl2",
+                                          "MnO2",
+                                          "KMnO4",
+                                          "MnSO4"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "KMnO4 中 Mn 為 +7 價。MnCl2 中 Mn 為 +2，MnO2 中 Mn 為 +4，MnSO4 中 Mn 為 +2。"
+                      },
+                      {
+                          "id":  339,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在反應 2FeCl3 + 2KI 產生 2FeCl2 + 2KCl + I2 中，何者為氧化劑？",
+                          "options":  [
+                                          "FeCl3",
+                                          "KI",
+                                          "FeCl2",
+                                          "I2"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "FeCl3 中的 Fe 從 +3 降至 +2（被還原），使 I- 氧化為 I2，故 FeCl3 為氧化劑。"
+                      },
+                      {
+                          "id":  340,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "酒精與哪種物質反應可產生乙酸乙酯（水果香味的酯類）？",
+                          "options":  [
+                                          "醋酸",
+                                          "鹽酸",
+                                          "硫酸",
+                                          "氫氧化鈉"
+                                      ],
+                          "answer":  0,
+                          "explanation":  "乙醇（酒精）與醋酸在催化劑作用下發生酯化反應，生成乙酸乙酯和水。"
+                      },
+                      {
+                          "id":  341,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "分子式 C5H12 有幾種結構異構物？",
+                          "options":  [
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "C5H12（戊烷）有三種異構物：正戊烷、異戊烷、新戊烷。"
+                      },
+                      {
+                          "id":  342,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "進行結晶實驗時，下列哪種方法可以加快結晶速率？",
+                          "options":  [
+                                          "降低溶液溫度",
+                                          "增加溶劑量",
+                                          "攪拌溶液",
+                                          "加入更多溶質"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "攪拌可增加溶質分子碰撞機會，加速結晶過程。降低溫度雖然也可促進結晶，但速度較慢。"
+                      },
+                      {
+                          "id":  343,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "在定量分析中，下列哪個操作可能導入系統誤差？",
+                          "options":  [
+                                          "讀取滴定管時視線偏低",
+                                          "天平未校正",
+                                          "溫度變化導致體積變化",
+                                          "忘記添加指示劑"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "天平未校正會使每次測量都有固定偏差，屬於系統誤差。讀取誤差和溫度變化屬隨機誤差。"
+                      },
+                      {
+                          "id":  344,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Choose the correct sentence:",
+                          "options":  [
+                                          "He go to school yesterday",
+                                          "He went to school yesterday",
+                                          "He goes to school yesterday",
+                                          "He going to school yesterday"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Yesterday indicates past tense, so went (past tense of go) is correct."
+                      },
+                      {
+                          "id":  345,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "What does the word curious mean?",
+                          "options":  [
+                                          "Not interested",
+                                          "Eager to learn",
+                                          "Bored",
+                                          "Tired"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Curious means eager to learn or know something."
+                      },
+                      {
+                          "id":  346,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "How many days are in a week?",
+                          "options":  [
+                                          "Five",
+                                          "Six",
+                                          "Seven",
+                                          "Eight"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "There are seven days in a week: Monday to Sunday."
+                      },
+                      {
+                          "id":  347,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The word sustainable is closest in meaning to...",
+                          "options":  [
+                                          "Temporary",
+                                          "Wasteful",
+                                          "Renewable",
+                                          "Expensive"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "Sustainable means able to be maintained at a certain level or rate, often related to renewable resources."
+                      },
+                      {
+                          "id":  348,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "Neither the teacher nor the students ___ in the classroom.",
+                          "options":  [
+                                          "is",
+                                          "are",
+                                          "was",
+                                          "has"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "With neither...nor, the verb agrees with the subject closest to it. Students is plural, so are is correct."
+                      },
+                      {
+                          "id":  349,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "What color is the sky on a clear day?",
+                          "options":  [
+                                          "Green",
+                                          "Red",
+                                          "Blue",
+                                          "Yellow"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "The sky appears blue on a clear day due to scattering of sunlight."
+                      },
+                      {
+                          "id":  350,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "She is ___ at math than her brother.",
+                          "options":  [
+                                          "good",
+                                          "better",
+                                          "best",
+                                          "well"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Comparative form (than) requires better, not good."
+                      },
+                      {
+                          "id":  351,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "The novel, ___ was published in 1925, is considered a classic.",
+                          "options":  [
+                                          "who",
+                                          "which",
+                                          "whom",
+                                          "what"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "Which is the correct relative pronoun for things (the novel)."
+                      },
+                      {
+                          "id":  352,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者不是力的三要素之一？",
+                          "options":  [
+                                          "大小",
+                                          "方向",
+                                          "作用點",
+                                          "速度"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "力的三要素是大小、方向、作用點。速度不是力的要素，而是運動狀態的描述。"
+                      },
+                      {
+                          "id":  353,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "將體重 60 公斤的人以 2 m/s2 的加速度向上拉升所需的力約為多少牛頓？（g=10 m/s2）",
+                          "options":  [
+                                          "480 N",
+                                          "600 N",
+                                          "720 N",
+                                          "840 N"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "F = m(g+a) = 60*(10+2) = 720 N。"
+                      },
+                      {
+                          "id":  354,
+                          "unit":  "化學反應",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者會影響化學反應速率？",
+                          "options":  [
+                                          "溫度",
+                                          "壓力",
+                                          "催化劑",
+                                          "以上皆是"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "溫度、壓力、濃度、催化劑、接觸面積等都會影響化學反應速率。"
+                      },
+                      {
+                          "id":  355,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "酸雨的主要成分是什麼？",
+                          "options":  [
+                                          "鹽酸",
+                                          "硫酸和硝酸",
+                                          "碳酸",
+                                          "醋酸"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "酸雨主要由二氧化硫（SO2）和氮氧化物（NOx）溶於水形成的硫酸和硝酸造成。"
+                      },
+                      {
+                          "id":  356,
+                          "unit":  "能量",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "瓦斯爐將食物煮熟，是將何種能量轉換為熱能？",
+                          "options":  [
+                                          "電能",
+                                          "化學能",
+                                          "光能",
+                                          "核能"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "瓦斯（天然氣/液化石油氣）含有化學能，燃燒時釋放為熱能。"
+                      },
+                      {
+                          "id":  357,
+                          "unit":  "電學",
+                          "subject":  "物理",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "家用電器使用三孔插座（含接地線）的主要目的是？",
+                          "options":  [
+                                          "增加電壓",
+                                          "防止觸電",
+                                          "省電",
+                                          "增加電流"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "接地線可將漏電導入地面，避免電器外殼帶電造成觸電危險。"
+                      },
+                      {
+                          "id":  358,
+                          "unit":  "有機化學",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者是化石燃料？",
+                          "options":  [
+                                          "酒精",
+                                          "天然氣",
+                                          "氫氣",
+                                          "生質柴油"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "天然氣是古代生物遺體經地層作用形成的化石燃料。酒精、生質柴油屬於生質能源。"
+                      },
+                      {
+                          "id":  359,
+                          "unit":  "運動學",
+                          "subject":  "物理",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列哪個物理量是向量？",
+                          "options":  [
+                                          "質量",
+                                          "溫度",
+                                          "位移",
+                                          "速率"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "位移有大小和方向，是向量。質量、溫度、速率只有大小，是純量。"
+                      },
+                      {
+                          "id":  360,
+                          "unit":  "力學",
+                          "subject":  "物理",
+                          "difficulty":  "進階",
+                          "type":  "single",
+                          "question":  "一水管截面積在粗處為 10 cm2，細處為 4 cm2，水在粗處的流速為 2 m/s，則在細處的流速為何？",
+                          "options":  [
+                                          "3 m/s",
+                                          "4 m/s",
+                                          "5 m/s",
+                                          "6 m/s"
+                                      ],
+                          "answer":  2,
+                          "explanation":  "連續方程式：A1*v1 = A2*v2，10*2 = 4*v2，v2 = 20/4 = 5 m/s。"
+                      },
+                      {
+                          "id":  361,
+                          "unit":  "酸鹼鹽",
+                          "subject":  "化學",
+                          "difficulty":  "基礎",
+                          "type":  "single",
+                          "question":  "下列何者的 pH 值最小（酸性最強）？",
+                          "options":  [
+                                          "汽水",
+                                          "胃酸",
+                                          "檸檬汁",
+                                          "食醋"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "胃酸含鹽酸（HCl），pH 約為 1-2，酸性最強。汽水 pH 約 3-4，檸檬汁 pH 約 2-3，食醋 pH 約 2.5-3。"
+                      },
+                      {
+                          "id":  362,
+                          "unit":  "實驗",
+                          "subject":  "理化",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "用本生燈加熱試管中的液體時，試管內液體體積不應超過試管容積的多少？",
+                          "options":  [
+                                          "1/2",
+                                          "1/3",
+                                          "2/3",
+                                          "3/4"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "加熱試管液體時，液體體積不應超過試管容積的 1/3，以免液體沸騰時噴出。"
+                      },
+                      {
+                          "id":  363,
+                          "unit":  "物質組成",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "若某原子有 17 個質子、18 個中子和 17 個電子，則此原子的質量數為何？",
+                          "options":  [
+                                          "17",
+                                          "18",
+                                          "34",
+                                          "35"
+                                      ],
+                          "answer":  3,
+                          "explanation":  "質量數 = 質子數 + 中子數 = 17 + 18 = 35。"
+                      },
+                      {
+                          "id":  364,
+                          "unit":  "氧化還原",
+                          "subject":  "化學",
+                          "difficulty":  "中等",
+                          "type":  "single",
+                          "question":  "電池放電時，下列何者正確？",
+                          "options":  [
+                                          "電能→化學能",
+                                          "化學能→電能",
+                                          "光能→電能",
+                                          "熱能→電能"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "電池放電時，內部發生自發氧化還原反應，將化學能轉換為電能。"
+                      },
+                      {
+                          "id":  365,
+                          "unit":  "英文",
+                          "subject":  "英文",
+                          "difficulty":  "進階",
+                          "type":  "mixed",
+                          "question":  "Read the passage and answer: The Great Wall of China is one of the Seven Wonders of the World. It was built over many centuries by different Chinese dynasties. The wall was originally built to protect China from invasions. Today it is a famous tourist attraction.\n\nQ: Why was the Great Wall originally built?",
+                          "options":  [
+                                          "For tourism",
+                                          "For protection",
+                                          "For trade",
+                                          "For religion"
+                                      ],
+                          "answer":  1,
+                          "explanation":  "The text says the wall was built to protect China from invasions."
                       }
                   ],
     "subjects":  [

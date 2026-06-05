@@ -141,6 +141,10 @@ tr:nth-child(even){background:var(--card-bg)}
 .subscribe-msg.error{color:#fecaca}
 .subscribe-count{font-size:12px;opacity:.7;margin-top:6px}
 .footer{text-align:center;padding:20px 16px;font-size:13px;color:var(--text-muted);border-top:1px solid var(--card-border);margin-top:24px}
+.pagination{display:flex;justify-content:center;gap:4px;margin-top:20px;flex-wrap:wrap}
+.page-btn{padding:6px 14px;border-radius:10px;font-size:14px;cursor:pointer;background:var(--card-bg);border:1px solid var(--card-border);color:var(--text-primary);transition:.15s}
+.page-btn:hover{background:var(--accent);color:#fff}
+.page-btn.active{background:var(--accent);color:#fff;font-weight:700}
 .subj-tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
 .subj-tab{padding:6px 18px;border-radius:60px;font-size:13px;font-weight:600;cursor:pointer;border:1.5px solid var(--card-border);background:var(--card-bg);color:var(--text-muted);transition:.2s;backdrop-filter:blur(8px)}
 .subj-tab:hover{transform:scale(.96)}
@@ -288,10 +292,12 @@ tr:nth-child(even){background:var(--card-bg)}
 <script>
 const DIFFICULTIES = ['基礎','中等','進階'];
 const LETTERS = 'ABCDEFGHIJ';
+const PAGE_SIZE = 30;
 let QUESTIONS = [];
 let UNITS = [];
 let SUBJECTS = [];
 let activeSubject = '';
+let currentPage = 1;
 
 async function loadQuestions() {
   try {
@@ -413,6 +419,7 @@ function applyFilters() {
     if (search && !q.question.toLowerCase().includes(search)) return false;
     return true;
   });
+  currentPage = 1;
   document.getElementById('filterResultCount').textContent = '共 '+list.length+' 題';
   renderBrowse(list);
 }
@@ -438,7 +445,11 @@ function renderBrowse(list) {
     container.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><div>沒有符合條件的題目</div></div>';
     return;
   }
-  container.innerHTML = list.map(q => {
+  const totalPages = Math.ceil(list.length / PAGE_SIZE);
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageItems = list.slice(start, start + PAGE_SIZE);
+  container.innerHTML = pageItems.map(q => {
     const isFav = favs.includes(q.id);
     const tag = tags[q.id]||'';
     const tagLabels = {notyet:'還不會',review:'需複習',done:'已學會'};
@@ -473,6 +484,22 @@ function renderBrowse(list) {
       '<div class="q-explanation" id="explain-'+q.id+'">'+q.explanation+'</div>'+
     '</div>';
   }).join('');
+  container.innerHTML += '<div class="pagination">' + renderPagination(totalPages) + '</div>';
+}
+
+function renderPagination(totalPages) {
+  if (totalPages <= 1) return '';
+  var html = '<span class="page-btn" onclick="goPage(' + (currentPage-1) + ')" style="' + (currentPage<=1?'visibility:hidden':'') + '">◀</span>';
+  for (var i = 1; i <= totalPages; i++) {
+    html += '<span class="page-btn' + (i===currentPage?' active':'') + '" onclick="goPage(' + i + ')">' + i + '</span>';
+  }
+  html += '<span class="page-btn" onclick="goPage(' + (currentPage+1) + ')" style="' + (currentPage>=totalPages?'visibility:hidden':'') + '">▶</span>';
+  return html;
+}
+
+function goPage(p) {
+  currentPage = p;
+  applyFilters();
 }
 
 function toggleExplanation(id) {
