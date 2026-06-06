@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>化學元素週期表 - 理化題庫</title>
+<style>
+:root{--bg:#f0f4fa;--card:rgba(255,255,255,0.75);--text:#1a2c3e;--text2:#4a627a;--border:rgba(255,255,255,0.45);--shadow:0 8px 32px rgba(0,0,0,0.08);--input-bg:#fff;--accent:#1f6392}
+[data-theme=dark]{--bg:#0b1120;--card:rgba(18,25,45,0.8);--text:#f0f3fa;--text2:#9aaec9;--border:rgba(72,92,128,0.4);--shadow:0 12px 40px rgba(0,0,0,0.4);--input-bg:rgba(18,25,45,0.6);--accent:#7ab7d4}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC','Microsoft JhengHei',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:.3s;padding:20px}
+.table-wrap{max-width:1200px;margin:0 auto}
+h1{font-size:24px;font-weight:800;margin-bottom:6px;background:linear-gradient(135deg,var(--accent),#c9a227);background-clip:text;-webkit-background-clip:text;color:transparent}
+.sub{font-size:13px;color:var(--text2);margin-bottom:16px}
+.top-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.search{flex:1;min-width:160px;padding:8px 14px;border:1px solid var(--border);border-radius:12px;font-size:14px;background:var(--input-bg);color:var(--text);outline:none;font-family:inherit}
+.btn{padding:7px 18px;border:none;border-radius:60px;font-size:13px;font-weight:600;cursor:pointer;background:var(--card);color:var(--text);border:1px solid var(--border);transition:.2s}
+.btn:hover{background:var(--accent);color:#fff}
+.btn.active{background:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(18,1fr);gap:2px;margin-bottom:12px}
+.el{aspect-ratio:1;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;font-size:9px;font-weight:600;transition:.15s;position:relative;min-height:38px;border:1px solid transparent}
+.el:hover{transform:scale(1.25);z-index:10;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.el .sym{font-size:13px;font-weight:700;line-height:1.1}
+.el .num{font-size:7px;opacity:.7;position:absolute;top:2px;left:3px}
+.el.empty{background:transparent!important;cursor:default}
+.el.empty:hover{transform:none;box-shadow:none}
+.detail{display:none;background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:20px;border:1px solid var(--border);box-shadow:var(--shadow);margin-top:12px;transition:.3s}
+.detail.show{display:block}
+.detail h2{font-size:28px;font-weight:800}
+.detail .subtitle{font-size:14px;color:var(--text2);margin-bottom:12px}
+.detail table{width:100%;border-collapse:collapse;font-size:13px}
+.detail td{padding:6px 12px;border-bottom:1px solid var(--border)}
+.detail td:first-child{font-weight:600;width:100px;color:var(--text2)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;font-size:11px}
+.legend-item{display:flex;align-items:center;gap:4px}
+.legend-dot{width:14px;height:14px;border-radius:3px}
+.ft{text-align:center;font-size:12px;color:var(--text2);margin-top:16px}
+.ft a{color:var(--accent)}
+
+/* Element colors */
+.alkali{background:#ff6b6b;color:#fff}
+.alkaline{background:#ff9f43;color:#fff}
+.transition{background:#54a0ff;color:#fff}
+.post-transition{background:#5f27cd;color:#fff}
+.metalloid{background:#00d2d3;color:#000}
+.nonmetal{background:#1dd1a1;color:#000}
+.halogen{background:#f368e0;color:#fff}
+.noble{background:#8395a7;color:#fff} 
+.lanthanide{background:#ff9ff3;color:#000}
+.actinide{background:#c44569;color:#fff}
+.unknown{background:#bbb;color:#fff}
+</style>
+</head>
+<body>
+
+<div class="table-wrap">
+<div class="top-bar">
+<div><h1>🧪 元素週期表</h1><div class="sub">點擊元素查看詳細資訊</div></div>
+<input class="search" id="search" placeholder="搜尋元素名稱或符號..." oninput="filterElements()">
+<button class="btn" onclick="toggleTheme()">🌙 深色</button>
+<a href="index.html" class="btn">← 回題庫</a>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="legend" id="legend"></div>
+<div class="detail" id="detail"></div>
+<div class="ft">資料來源：IUPAC | <a href="index.html">理化題庫</a></div>
+</div>
+
+<script>
+const ELEMENTS = [
+{sym:"H",num:1,name:"氫",en:"Hydrogen",mass:"1.008",cat:"nonmetal",per:1,grp:1,cfg:"1s¹",mp:"-259°C",bp:"-253°C",dens:"0.00009 g/cm³",disc:"1766"},
+{sym:"He",num:2,name:"氦",en:"Helium",mass:"4.003",cat:"noble",per:1,grp:18,cfg:"1s²",mp:"-272°C",bp:"-269°C",dens:"0.00018 g/cm³",disc:"1895"},
+{sym:"Li",num:3,name:"鋰",en:"Lithium",mass:"6.94",cat:"alkali",per:2,grp:1,cfg:"[He]2s¹",mp:"180°C",bp:"1342°C",dens:"0.53 g/cm³",disc:"1817"},
+{sym:"Be",num:4,name:"鈹",en:"Beryllium",mass:"9.012",cat:"alkaline",per:2,grp:2,cfg:"[He]2s²",mp:"1287°C",bp:"2471°C",dens:"1.85 g/cm³",disc:"1798"},
+{sym:"B",num:5,name:"硼",en:"Boron",mass:"10.81",cat:"metalloid",per:2,grp:13,cfg:"[He]2s²2p¹",mp:"2076°C",bp:"3927°C",dens:"2.34 g/cm³",disc:"1808"},
+{sym:"C",num:6,name:"碳",en:"Carbon",mass:"12.011",cat:"nonmetal",per:2,grp:14,cfg:"[He]2s²2p²",mp:"3550°C",bp:"4827°C",dens:"2.26 g/cm³",disc:"Ancient"},
+{sym:"N",num:7,name:"氮",en:"Nitrogen",mass:"14.007",cat:"nonmetal",per:2,grp:15,cfg:"[He]2s²2p³",mp:"-210°C",bp:"-196°C",dens:"0.00125 g/cm³",disc:"1772"},
+{sym:"O",num:8,name:"氧",en:"Oxygen",mass:"16.00",cat:"nonmetal",per:2,grp:16,cfg:"[He]2s²2p⁴",mp:"-218°C",bp:"-183°C",dens:"0.00143 g/cm³",disc:"1774"},
+{sym:"F",num:9,name:"氟",en:"Fluorine",mass:"19.00",cat:"halogen",per:2,grp:17,cfg:"[He]2s²2p⁵",mp:"-220°C",bp:"-188°C",dens:"0.0017 g/cm³",disc:"1886"},
+{sym:"Ne",num:10,name:"氖",en:"Neon",mass:"20.180",cat:"noble",per:2,grp:18,cfg:"[He]2s²2p⁶",mp:"-249°C",bp:"-246°C",dens:"0.0009 g/cm³",disc:"1898"},
+{sym:"Na",num:11,name:"鈉",en:"Sodium",mass:"22.990",cat:"alkali",per:3,grp:1,cfg:"[Ne]3s¹",mp:"98°C",bp:"883°C",dens:"0.97 g/cm³",disc:"1807"},
+{sym:"Mg",num:12,name:"鎂",en:"Magnesium",mass:"24.305",cat:"alkaline",per:3,grp:2,cfg:"[Ne]3s²",mp:"650°C",bp:"1090°C",dens:"1.74 g/cm³",disc:"1755"},
+{sym:"Al",num:13,name:"鋁",en:"Aluminium",mass:"26.982",cat:"post-transition",per:3,grp:13,cfg:"[Ne]3s²3p¹",mp:"660°C",bp:"2467°C",dens:"2.70 g/cm³",disc:"1825"},
+{sym:"Si",num:14,name:"矽",en:"Silicon",mass:"28.085",cat:"metalloid",per:3,grp:14,cfg:"[Ne]3s²3p²",mp:"1414°C",bp:"3265°C",dens:"2.33 g/cm³",disc:"1824"},
+{sym:"P",num:15,name:"磷",en:"Phosphorus",mass:"30.974",cat:"nonmetal",per:3,grp:15,cfg:"[Ne]3s²3p³",mp:"44°C",bp:"280°C",dens:"1.82 g/cm³",disc:"1669"},
+{sym:"S",num:16,name:"硫",en:"Sulfur",mass:"32.06",cat:"nonmetal",per:3,grp:16,cfg:"[Ne]3s²3p⁴",mp:"115°C",bp:"445°C",dens:"2.07 g/cm³",disc:"Ancient"},
+{sym:"Cl",num:17,name:"氯",en:"Chlorine",mass:"35.45",cat:"halogen",per:3,grp:17,cfg:"[Ne]3s²3p⁵",mp:"-101°C",bp:"-34°C",dens:"0.0032 g/cm³",disc:"1774"},
+{sym:"Ar",num:18,name:"氬",en:"Argon",mass:"39.948",cat:"noble",per:3,grp:18,cfg:"[Ne]3s²3p⁶",mp:"-189°C",bp:"-186°C",dens:"0.0018 g/cm³",disc:"1894"},
+{sym:"K",num:19,name:"鉀",en:"Potassium",mass:"39.098",cat:"alkali",per:4,grp:1,cfg:"[Ar]4s¹",mp:"63°C",bp:"759°C",dens:"0.86 g/cm³",disc:"1807"},
+{sym:"Ca",num:20,name:"鈣",en:"Calcium",mass:"40.078",cat:"alkaline",per:4,grp:2,cfg:"[Ar]4s²",mp:"839°C",bp:"1484°C",dens:"1.55 g/cm³",disc:"1808"},
+{sym:"Sc",num:21,name:"鈧",en:"Scandium",mass:"44.956",cat:"transition",per:4,grp:3,cfg:"[Ar]3d¹4s²",mp:"1541°C",bp:"2831°C",dens:"2.99 g/cm³",disc:"1879"},
+{sym:"Ti",num:22,name:"鈦",en:"Titanium",mass:"47.867",cat:"transition",per:4,grp:4,cfg:"[Ar]3d²4s²",mp:"1668°C",bp:"3287°C",dens:"4.51 g/cm³",disc:"1791"},
+{sym:"V",num:23,name:"釩",en:"Vanadium",mass:"50.942",cat:"transition",per:4,grp:5,cfg:"[Ar]3d³4s²",mp:"1910°C",bp:"3407°C",dens:"6.11 g/cm³",disc:"1801"},
+{sym:"Cr",num:24,name:"鉻",en:"Chromium",mass:"52.00",cat:"transition",per:4,grp:6,cfg:"[Ar]3d⁵4s¹",mp:"1857°C",bp:"2672°C",dens:"7.15 g/cm³",disc:"1797"},
+{sym:"Mn",num:25,name:"錳",en:"Manganese",mass:"54.938",cat:"transition",per:4,grp:7,cfg:"[Ar]3d⁵4s²",mp:"1246°C",bp:"2061°C",dens:"7.21 g/cm³",disc:"1774"},
+{sym:"Fe",num:26,name:"鐵",en:"Iron",mass:"55.845",cat:"transition",per:4,grp:8,cfg:"[Ar]3d⁶4s²",mp:"1538°C",bp:"2861°C",dens:"7.87 g/cm³",disc:"Ancient"},
+{sym:"Co",num:27,name:"鈷",en:"Cobalt",mass:"58.933",cat:"transition",per:4,grp:9,cfg:"[Ar]3d⁷4s²",mp:"1495°C",bp:"2870°C",dens:"8.86 g/cm³",disc:"1735"},
+{sym:"Ni",num:28,name:"鎳",en:"Nickel",mass:"58.693",cat:"transition",per:4,grp:10,cfg:"[Ar]3d⁸4s²",mp:"1455°C",bp:"2732°C",dens:"8.91 g/cm³",disc:"1751"},
+{sym:"Cu",num:29,name:"銅",en:"Copper",mass:"63.546",cat:"transition",per:4,grp:11,cfg:"[Ar]3d¹⁰4s¹",mp:"1085°C",bp:"2562°C",dens:"8.96 g/cm³",disc:"Ancient"},
+{sym:"Zn",num:30,name:"鋅",en:"Zinc",mass:"65.38",cat:"transition",per:4,grp:12,cfg:"[Ar]3d¹⁰4s²",mp:"420°C",bp:"907°C",dens:"7.13 g/cm³",disc:"Ancient"},
+{sym:"Ga",num:31,name:"鎵",en:"Gallium",mass:"69.723",cat:"post-transition",per:4,grp:13,cfg:"[Ar]3d¹⁰4s²4p¹",mp:"30°C",bp:"2204°C",dens:"5.91 g/cm³",disc:"1875"},
+{sym:"Ge",num:32,name:"鍺",en:"Germanium",mass:"72.63",cat:"metalloid",per:4,grp:14,cfg:"[Ar]3d¹⁰4s²4p²",mp:"938°C",bp:"2830°C",dens:"5.32 g/cm³",disc:"1886"},
+{sym:"As",num:33,name:"砷",en:"Arsenic",mass:"74.922",cat:"metalloid",per:4,grp:15,cfg:"[Ar]3d¹⁰4s²4p³",mp:"817°C",bp:"614°C",dens:"5.73 g/cm³",disc:"Ancient"},
+{sym:"Se",num:34,name:"硒",en:"Selenium",mass:"78.971",cat:"nonmetal",per:4,grp:16,cfg:"[Ar]3d¹⁰4s²4p⁴",mp:"221°C",bp:"685°C",dens:"4.81 g/cm³",disc:"1817"},
+{sym:"Br",num:35,name:"溴",en:"Bromine",mass:"79.904",cat:"halogen",per:4,grp:17,cfg:"[Ar]3d¹⁰4s²4p⁵",mp:"-7°C",bp:"59°C",dens:"3.12 g/cm³",disc:"1826"},
+{sym:"Kr",num:36,name:"氪",en:"Krypton",mass:"83.798",cat:"noble",per:4,grp:18,cfg:"[Ar]3d¹⁰4s²4p⁶",mp:"-157°C",bp:"-153°C",dens:"0.0037 g/cm³",disc:"1898"},
+{sym:"Rb",num:37,name:"銣",en:"Rubidium",mass:"85.468",cat:"alkali",per:5,grp:1,cfg:"[Kr]5s¹",mp:"39°C",bp:"688°C",dens:"1.53 g/cm³",disc:"1861"},
+{sym:"Sr",num:38,name:"鍶",en:"Strontium",mass:"87.62",cat:"alkaline",per:5,grp:2,cfg:"[Kr]5s²",mp:"777°C",bp:"1382°C",dens:"2.63 g/cm³",disc:"1790"},
+{sym:"Y",num:39,name:"釔",en:"Yttrium",mass:"88.906",cat:"transition",per:5,grp:3,cfg:"[Kr]4d¹5s²",mp:"1526°C",bp:"3336°C",dens:"4.47 g/cm³",disc:"1794"},
+{sym:"Zr",num:40,name:"鋯",en:"Zirconium",mass:"91.224",cat:"transition",per:5,grp:4,cfg:"[Kr]4d²5s²",mp:"1852°C",bp:"4377°C",dens:"6.51 g/cm³",disc:"1789"},
+{sym:"Nb",num:41,name:"鈮",en:"Niobium",mass:"92.906",cat:"transition",per:5,grp:5,cfg:"[Kr]4d⁴5s¹",mp:"2477°C",bp:"4744°C",dens:"8.57 g/cm³",disc:"1801"},
+{sym:"Mo",num:42,name:"鉬",en:"Molybdenum",mass:"95.95",cat:"transition",per:5,grp:6,cfg:"[Kr]4d⁵5s¹",mp:"2623°C",bp:"4639°C",dens:"10.22 g/cm³",disc:"1778"},
+{sym:"Tc",num:43,name:"鎝",en:"Technetium",mass:"[98]",cat:"transition",per:5,grp:7,cfg:"[Kr]4d⁵5s²",mp:"2157°C",bp:"4265°C",dens:"11.5 g/cm³",disc:"1937"},
+{sym:"Ru",num:44,name:"釕",en:"Ruthenium",mass:"101.07",cat:"transition",per:5,grp:8,cfg:"[Kr]4d⁷5s¹",mp:"2334°C",bp:"4150°C",dens:"12.37 g/cm³",disc:"1844"},
+{sym:"Rh",num:45,name:"銠",en:"Rhodium",mass:"102.91",cat:"transition",per:5,grp:9,cfg:"[Kr]4d⁸5s¹",mp:"1964°C",bp:"3695°C",dens:"12.41 g/cm³",disc:"1803"},
+{sym:"Pd",num:46,name:"鈀",en:"Palladium",mass:"106.42",cat:"transition",per:5,grp:10,cfg:"[Kr]4d¹⁰",mp:"1555°C",bp:"2963°C",dens:"12.02 g/cm³",disc:"1803"},
+{sym:"Ag",num:47,name:"銀",en:"Silver",mass:"107.87",cat:"transition",per:5,grp:11,cfg:"[Kr]4d¹⁰5s¹",mp:"962°C",bp:"2162°C",dens:"10.49 g/cm³",disc:"Ancient"},
+{sym:"Cd",num:48,name:"鎘",en:"Cadmium",mass:"112.41",cat:"transition",per:5,grp:12,cfg:"[Kr]4d¹⁰5s²",mp:"321°C",bp:"767°C",dens:"8.65 g/cm³",disc:"1817"},
+{sym:"In",num:49,name:"銦",en:"Indium",mass:"114.82",cat:"post-transition",per:5,grp:13,cfg:"[Kr]4d¹⁰5s²5p¹",mp:"157°C",bp:"2072°C",dens:"7.31 g/cm³",disc:"1863"},
+{sym:"Sn",num:50,name:"錫",en:"Tin",mass:"118.71",cat:"post-transition",per:5,grp:14,cfg:"[Kr]4d¹⁰5s²5p²",mp:"232°C",bp:"2602°C",dens:"7.31 g/cm³",disc:"Ancient"},
+{sym:"Sb",num:51,name:"銻",en:"Antimony",mass:"121.76",cat:"metalloid",per:5,grp:15,cfg:"[Kr]4d¹⁰5s²5p³",mp:"631°C",bp:"1587°C",dens:"6.68 g/cm³",disc:"Ancient"},
+{sym:"Te",num:52,name:"碲",en:"Tellurium",mass:"127.60",cat:"metalloid",per:5,grp:16,cfg:"[Kr]4d¹⁰5s²5p⁴",mp:"449°C",bp:"988°C",dens:"6.24 g/cm³",disc:"1782"},
+{sym:"I",num:53,name:"碘",en:"Iodine",mass:"126.90",cat:"halogen",per:5,grp:17,cfg:"[Kr]4d¹⁰5s²5p⁵",mp:"114°C",bp:"184°C",dens:"4.93 g/cm³",disc:"1811"},
+{sym:"Xe",num:54,name:"氙",en:"Xenon",mass:"131.29",cat:"noble",per:5,grp:18,cfg:"[Kr]4d¹⁰5s²5p⁶",mp:"-112°C",bp:"-108°C",dens:"0.0059 g/cm³",disc:"1898"},
+{sym:"Cs",num:55,name:"銫",en:"Caesium",mass:"132.91",cat:"alkali",per:6,grp:1,cfg:"[Xe]6s¹",mp:"28°C",bp:"671°C",dens:"1.93 g/cm³",disc:"1860"},
+{sym:"Ba",num:56,name:"鋇",en:"Barium",mass:"137.33",cat:"alkaline",per:6,grp:2,cfg:"[Xe]6s²",mp:"727°C",bp:"1805°C",dens:"3.59 g/cm³",disc:"1808"},
+{sym:"La",num:57,name:"鑭",en:"Lanthanum",mass:"138.91",cat:"lanthanide",per:6,grp:3,cfg:"[Xe]5d¹6s²",mp:"920°C",bp:"3454°C",dens:"6.15 g/cm³",disc:"1839"},
+{sym:"Ce",num:58,name:"鈰",en:"Cerium",mass:"140.12",cat:"lanthanide",per:8,grp:4,cfg:"[Xe]4f¹5d¹6s²",mp:"795°C",bp:"3443°C",dens:"6.77 g/cm³",disc:"1803"},
+{sym:"Pr",num:59,name:"鐠",en:"Praseodymium",mass:"140.91",cat:"lanthanide",per:8,grp:5,cfg:"[Xe]4f³6s²",mp:"931°C",bp:"3520°C",dens:"6.77 g/cm³",disc:"1885"},
+{sym:"Nd",num:60,name:"釹",en:"Neodymium",mass:"144.24",cat:"lanthanide",per:8,grp:6,cfg:"[Xe]4f⁴6s²",mp:"1010°C",bp:"3127°C",dens:"7.01 g/cm³",disc:"1885"},
+{sym:"Pm",num:61,name:"鉕",en:"Promethium",mass:"[145]",cat:"lanthanide",per:8,grp:7,cfg:"[Xe]4f⁵6s²",mp:"1042°C",bp:"3000°C",dens:"7.26 g/cm³",disc:"1945"},
+{sym:"Sm",num:62,name:"釤",en:"Samarium",mass:"150.36",cat:"lanthanide",per:8,grp:8,cfg:"[Xe]4f⁶6s²",mp:"1072°C",bp:"1794°C",dens:"7.52 g/cm³",disc:"1879"},
+{sym:"Eu",num:63,name:"銪",en:"Europium",mass:"152.00",cat:"lanthanide",per:8,grp:9,cfg:"[Xe]4f⁷6s²",mp:"822°C",bp:"1529°C",dens:"5.24 g/cm³",disc:"1901"},
+{sym:"Gd",num:64,name:"釓",en:"Gadolinium",mass:"157.25",cat:"lanthanide",per:8,grp:10,cfg:"[Xe]4f⁷5d¹6s²",mp:"1312°C",bp:"3273°C",dens:"7.90 g/cm³",disc:"1880"},
+{sym:"Tb",num:65,name:"鋱",en:"Terbium",mass:"158.93",cat:"lanthanide",per:8,grp:11,cfg:"[Xe]4f⁹6s²",mp:"1356°C",bp:"3230°C",dens:"8.23 g/cm³",disc:"1843"},
+{sym:"Dy",num:66,name:"鏑",en:"Dysprosium",mass:"162.50",cat:"lanthanide",per:8,grp:12,cfg:"[Xe]4f¹⁰6s²",mp:"1412°C",bp:"2567°C",dens:"8.55 g/cm³",disc:"1886"},
+{sym:"Ho",num:67,name:"鈥",en:"Holmium",mass:"164.93",cat:"lanthanide",per:8,grp:13,cfg:"[Xe]4f¹¹6s²",mp:"1474°C",bp:"2700°C",dens:"8.80 g/cm³",disc:"1878"},
+{sym:"Er",num:68,name:"鉺",en:"Erbium",mass:"167.26",cat:"lanthanide",per:8,grp:14,cfg:"[Xe]4f¹²6s²",mp:"1529°C",bp:"2868°C",dens:"9.07 g/cm³",disc:"1843"},
+{sym:"Tm",num:69,name:"銩",en:"Thulium",mass:"168.93",cat:"lanthanide",per:8,grp:15,cfg:"[Xe]4f¹³6s²",mp:"1545°C",bp:"1950°C",dens:"9.32 g/cm³",disc:"1879"},
+{sym:"Yb",num:70,name:"鐿",en:"Ytterbium",mass:"173.04",cat:"lanthanide",per:8,grp:16,cfg:"[Xe]4f¹⁴6s²",mp:"819°C",bp:"1196°C",dens:"6.90 g/cm³",disc:"1878"},
+{sym:"Lu",num:71,name:"鎦",en:"Lutetium",mass:"174.97",cat:"lanthanide",per:8,grp:17,cfg:"[Xe]4f¹⁴5d¹6s²",mp:"1663°C",bp:"3402°C",dens:"9.84 g/cm³",disc:"1907"},
+{sym:"Hf",num:72,name:"鉿",en:"Hafnium",mass:"178.49",cat:"transition",per:6,grp:4,cfg:"[Xe]4f¹⁴5d²6s²",mp:"2233°C",bp:"4603°C",dens:"13.31 g/cm³",disc:"1923"},
+{sym:"Ta",num:73,name:"鉭",en:"Tantalum",mass:"180.95",cat:"transition",per:6,grp:5,cfg:"[Xe]4f¹⁴5d³6s²",mp:"3017°C",bp:"5458°C",dens:"16.65 g/cm³",disc:"1802"},
+{sym:"W",num:74,name:"鎢",en:"Tungsten",mass:"183.84",cat:"transition",per:6,grp:6,cfg:"[Xe]4f¹⁴5d⁴6s²",mp:"3422°C",bp:"5555°C",dens:"19.25 g/cm³",disc:"1781"},
+{sym:"Re",num:75,name:"錸",en:"Rhenium",mass:"186.21",cat:"transition",per:6,grp:7,cfg:"[Xe]4f¹⁴5d⁵6s²",mp:"3180°C",bp:"5627°C",dens:"21.02 g/cm³",disc:"1925"},
+{sym:"Os",num:76,name:"鋨",en:"Osmium",mass:"190.23",cat:"transition",per:6,grp:8,cfg:"[Xe]4f¹⁴5d⁶6s²",mp:"3033°C",bp:"5012°C",dens:"22.59 g/cm³",disc:"1803"},
+{sym:"Ir",num:77,name:"銥",en:"Iridium",mass:"192.22",cat:"transition",per:6,grp:9,cfg:"[Xe]4f¹⁴5d⁷6s²",mp:"2446°C",bp:"4428°C",dens:"22.56 g/cm³",disc:"1803"},
+{sym:"Pt",num:78,name:"鉑",en:"Platinum",mass:"195.08",cat:"transition",per:6,grp:10,cfg:"[Xe]4f¹⁴5d⁹6s¹",mp:"1768°C",bp:"3825°C",dens:"21.45 g/cm³",disc:"Ancient"},
+{sym:"Au",num:79,name:"金",en:"Gold",mass:"196.97",cat:"transition",per:6,grp:11,cfg:"[Xe]4f¹⁴5d¹⁰6s¹",mp:"1064°C",bp:"2856°C",dens:"19.32 g/cm³",disc:"Ancient"},
+{sym:"Hg",num:80,name:"汞",en:"Mercury",mass:"200.59",cat:"transition",per:6,grp:12,cfg:"[Xe]4f¹⁴5d¹⁰6s²",mp:"-39°C",bp:"357°C",dens:"13.53 g/cm³",disc:"Ancient"},
+{sym:"Tl",num:81,name:"鉈",en:"Thallium",mass:"204.38",cat:"post-transition",per:6,grp:13,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p¹",mp:"304°C",bp:"1473°C",dens:"11.85 g/cm³",disc:"1861"},
+{sym:"Pb",num:82,name:"鉛",en:"Lead",mass:"207.2",cat:"post-transition",per:6,grp:14,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p²",mp:"327°C",bp:"1749°C",dens:"11.34 g/cm³",disc:"Ancient"},
+{sym:"Bi",num:83,name:"鉍",en:"Bismuth",mass:"208.98",cat:"post-transition",per:6,grp:15,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p³",mp:"271°C",bp:"1564°C",dens:"9.78 g/cm³",disc:"Ancient"},
+{sym:"Po",num:84,name:"釙",en:"Polonium",mass:"[209]",cat:"post-transition",per:6,grp:16,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p⁴",mp:"254°C",bp:"962°C",dens:"9.32 g/cm³",disc:"1898"},
+{sym:"At",num:85,name:"砈",en:"Astatine",mass:"[210]",cat:"halogen",per:6,grp:17,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p⁵",mp:"302°C",bp:"337°C",dens:"8.91 g/cm³",disc:"1940"},
+{sym:"Rn",num:86,name:"氡",en:"Radon",mass:"[222]",cat:"noble",per:6,grp:18,cfg:"[Xe]4f¹⁴5d¹⁰6s²6p⁶",mp:"-71°C",bp:"-62°C",dens:"0.0097 g/cm³",disc:"1900"},
+{sym:"Fr",num:87,name:"鍅",en:"Francium",mass:"[223]",cat:"alkali",per:7,grp:1,cfg:"[Rn]7s¹",mp:"27°C",bp:"677°C",dens:"1.87 g/cm³",disc:"1939"},
+{sym:"Ra",num:88,name:"鐳",en:"Radium",mass:"[226]",cat:"alkaline",per:7,grp:2,cfg:"[Rn]7s²",mp:"700°C",bp:"1140°C",dens:"5.5 g/cm³",disc:"1898"},
+{sym:"Ac",num:89,name:"錒",en:"Actinium",mass:"[227]",cat:"actinide",per:7,grp:3,cfg:"[Rn]6d¹7s²",mp:"1050°C",bp:"3200°C",dens:"10.07 g/cm³",disc:"1899"},
+{sym:"Th",num:90,name:"釷",en:"Thorium",mass:"232.04",cat:"actinide",per:9,grp:4,cfg:"[Rn]6d²7s²",mp:"1750°C",bp:"4790°C",dens:"11.72 g/cm³",disc:"1828"},
+{sym:"Pa",num:91,name:"鏷",en:"Protactinium",mass:"231.04",cat:"actinide",per:9,grp:5,cfg:"[Rn]5f²6d¹7s²",mp:"1572°C",bp:"4027°C",dens:"15.37 g/cm³",disc:"1913"},
+{sym:"U",num:92,name:"鈾",en:"Uranium",mass:"238.03",cat:"actinide",per:9,grp:6,cfg:"[Rn]5f³6d¹7s²",mp:"1132°C",bp:"4131°C",dens:"18.95 g/cm³",disc:"1789"},
+{sym:"Np",num:93,name:"錼",en:"Neptunium",mass:"[237]",cat:"actinide",per:9,grp:7,cfg:"[Rn]5f⁴6d¹7s²",mp:"637°C",bp:"4170°C",dens:"20.45 g/cm³",disc:"1940"},
+{sym:"Pu",num:94,name:"鈽",en:"Plutonium",mass:"[244]",cat:"actinide",per:9,grp:8,cfg:"[Rn]5f⁶7s²",mp:"640°C",bp:"3228°C",dens:"19.84 g/cm³",disc:"1940"},
+{sym:"Am",num:95,name:"鋂",en:"Americium",mass:"[243]",cat:"actinide",per:9,grp:9,cfg:"[Rn]5f⁷7s²",mp:"994°C",bp:"2607°C",dens:"13.69 g/cm³",disc:"1944"},
+{sym:"Cm",num:96,name:"鋦",en:"Curium",mass:"[247]",cat:"actinide",per:9,grp:10,cfg:"[Rn]5f⁷6d¹7s²",mp:"1340°C",bp:"3110°C",dens:"13.51 g/cm³",disc:"1944"},
+{sym:"Bk",num:97,name:"鉳",en:"Berkelium",mass:"[247]",cat:"actinide",per:9,grp:11,cfg:"[Rn]5f⁹7s²",mp:"986°C",bp:"2627°C",dens:"14.78 g/cm³",disc:"1949"},
+{sym:"Cf",num:98,name:"鉲",en:"Californium",mass:"[251]",cat:"actinide",per:9,grp:12,cfg:"[Rn]5f¹⁰7s²",mp:"900°C",bp:"1265°C",dens:"15.1 g/cm³",disc:"1950"},
+{sym:"Es",num:99,name:"鑀",en:"Einsteinium",mass:"[252]",cat:"actinide",per:9,grp:13,cfg:"[Rn]5f¹¹7s²",mp:"860°C",bp:"996°C",dens:"13.5 g/cm³",disc:"1952"},
+{sym:"Fm",num:100,name:"鐨",en:"Fermium",mass:"[257]",cat:"actinide",per:9,grp:14,cfg:"[Rn]5f¹²7s²",mp:"1527°C",bp:"2607°C",dens:"13.5 g/cm³",disc:"1952"},
+{sym:"Md",num:101,name:"鍆",en:"Mendelevium",mass:"[258]",cat:"actinide",per:9,grp:15,cfg:"[Rn]5f¹³7s²",mp:"827°C",bp:"2607°C",dens:"13.5 g/cm³",disc:"1955"},
+{sym:"No",num:102,name:"鍩",en:"Nobelium",mass:"[259]",cat:"actinide",per:9,grp:16,cfg:"[Rn]5f¹⁴7s²",mp:"827°C",bp:"2607°C",dens:"13.5 g/cm³",disc:"1958"},
+{sym:"Lr",num:103,name:"鐒",en:"Lawrencium",mass:"[266]",cat:"actinide",per:9,grp:17,cfg:"[Rn]5f¹⁴7s²7p¹",mp:"1627°C",bp:"2607°C",dens:"13.5 g/cm³",disc:"1961"},
+{sym:"Rf",num:104,name:"鑪",en:"Rutherfordium",mass:"[267]",cat:"transition",per:7,grp:4,cfg:"[Rn]5f¹⁴6d²7s²",mp:"2100°C",bp:"5300°C",dens:"23.2 g/cm³",disc:"1964"},
+{sym:"Db",num:105,name:"𨧀",en:"Dubnium",mass:"[268]",cat:"transition",per:7,grp:5,cfg:"[Rn]5f¹⁴6d³7s²",mp:"1900°C",bp:"5300°C",dens:"29.3 g/cm³",disc:"1967"},
+{sym:"Sg",num:106,name:"𨭎",en:"Seaborgium",mass:"[269]",cat:"transition",per:7,grp:6,cfg:"[Rn]5f¹⁴6d⁴7s²",mp:"1900°C",bp:"5300°C",dens:"35.0 g/cm³",disc:"1974"},
+{sym:"Bh",num:107,name:"𨨏",en:"Bohrium",mass:"[270]",cat:"transition",per:7,grp:7,cfg:"[Rn]5f¹⁴6d⁵7s²",mp:"1900°C",bp:"5300°C",dens:"37.0 g/cm³",disc:"1976"},
+{sym:"Hs",num:108,name:"𨭆",en:"Hassium",mass:"[269]",cat:"transition",per:7,grp:8,cfg:"[Rn]5f¹⁴6d⁶7s²",mp:"1900°C",bp:"5300°C",dens:"41.0 g/cm³",disc:"1984"},
+{sym:"Mt",num:109,name:"䥑",en:"Meitnerium",mass:"[278]",cat:"unknown",per:7,grp:9,cfg:"[Rn]5f¹⁴6d⁷7s²",mp:"-",bp:"-",dens:"-",disc:"1982"},
+{sym:"Ds",num:110,name:"鐽",en:"Darmstadtium",mass:"[281]",cat:"unknown",per:7,grp:10,cfg:"[Rn]5f¹⁴6d⁸7s²",mp:"-",bp:"-",dens:"-",disc:"1994"},
+{sym:"Rg",num:111,name:"錀",en:"Roentgenium",mass:"[282]",cat:"unknown",per:7,grp:11,cfg:"[Rn]5f¹⁴6d¹⁰7s¹",mp:"-",bp:"-",dens:"-",disc:"1994"},
+{sym:"Cn",num:112,name:"鎶",en:"Copernicium",mass:"[285]",cat:"transition",per:7,grp:12,cfg:"[Rn]5f¹⁴6d¹⁰7s²",mp:"6°C",bp:"62°C",dens:"23.7 g/cm³",disc:"1996"},
+{sym:"Nh",num:113,name:"鉨",en:"Nihonium",mass:"[286]",cat:"unknown",per:7,grp:13,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p¹",mp:"-",bp:"-",dens:"-",disc:"2003"},
+{sym:"Fl",num:114,name:"鈇",en:"Flerovium",mass:"[289]",cat:"unknown",per:7,grp:14,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p²",mp:"-",bp:"-",dens:"-",disc:"1998"},
+{sym:"Mc",num:115,name:"鏌",en:"Moscovium",mass:"[290]",cat:"unknown",per:7,grp:15,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p³",mp:"-",bp:"-",dens:"-",disc:"2003"},
+{sym:"Lv",num:116,name:"鉝",en:"Livermorium",mass:"[293]",cat:"unknown",per:7,grp:16,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p⁴",mp:"-",bp:"-",dens:"-",disc:"2000"},
+{sym:"Ts",num:117,name:"鿬",en:"Tennessine",mass:"[294]",cat:"unknown",per:7,grp:17,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p⁵",mp:"-",bp:"-",dens:"-",disc:"2010"},
+{sym:"Og",num:118,name:"鿫",en:"Oganesson",mass:"[294]",cat:"unknown",per:7,grp:18,cfg:"[Rn]5f¹⁴6d¹⁰7s²7p⁶",mp:"-",bp:"-",dens:"-",disc:"2002"},
+];
+
+const CATS = {alkali:"鹼金屬",alkaline:"鹼土金屬",transition:"過渡金屬","post-transition":"貧金屬",metalloid:"類金屬",nonmetal:"非金屬",halogen:"鹵素",noble:"貴氣體",lanthanide:"鑭系元素",actinide:"錒系元素",unknown:"未知性質"};
+const CAT_COLORS = {alkali:"#ff6b6b",alkaline:"#ff9f43",transition:"#54a0ff","post-transition":"#5f27cd",metalloid:"#00d2d3",nonmetal:"#1dd1a1",halogen:"#f368e0",noble:"#8395a7",lanthanide:"#ff9ff3",actinide:"#c44569",unknown:"#bbb"};
+
+function renderGrid(filter=""){
+  const grid=document.getElementById("grid");
+  const f=filter.toLowerCase();
+  let html="";
+  const positions={};
+  ELEMENTS.forEach(el=>{
+    const key=el.per+"-"+el.grp;
+    positions[key]=el;
+  });
+  // Lanthanide/Actinide rows
+  const lanAct={};
+  ELEMENTS.filter(e=>e.per>=8).forEach(e=>lanAct[e.grp]=e);
+  
+  for(let r=1;r<=7;r++){
+    for(let c=1;c<=18;c++){
+      const key=r+"-"+c;
+      const el=positions[key];
+      if(el){
+        const match=!f||el.name.includes(f)||el.sym.toLowerCase().includes(f)||el.en.toLowerCase().includes(f);
+        const catClass=el.cat;
+        html+=`<div class="el ${catClass}" onclick="showDetail(${el.num})" style="${match?'':'display:none'}"><span class="num">${el.num}</span><span class="sym">${el.sym}</span></div>`;
+      } else if((r===6||r===7)&&c>=4&&c<=18){
+        const extraKey=(r===6?"lan":"act")+"-"+c;
+        const el2=lanAct[c];
+        if(el2){
+          const match=!f||el2.name.includes(f)||el2.sym.toLowerCase().includes(f)||el2.en.toLowerCase().includes(f);
+          html+=`<div class="el ${el2.cat}" onclick="showDetail(${el2.num})" style="${match?'':'display:none'}"><span class="num">${el2.num}</span><span class="sym">${el2.sym}</span></div>`;
+        } else html+=`<div class="el empty"></div>`;
+      } else html+=`<div class="el empty"></div>`;
+    }
+  }
+  grid.innerHTML=html;
+}
+
+function renderLegend(){
+  const leg=document.getElementById("legend");
+  leg.innerHTML=Object.keys(CATS).map(k=>`<span class="legend-item"><span class="legend-dot" style="background:${CAT_COLORS[k]}"></span>${CATS[k]}</span>`).join("");
+}
+
+let currentEl=null;
+function showDetail(num){
+  const el=ELEMENTS.find(e=>e.num===num);
+  if(!el)return;
+  currentEl=el;
+  const d=document.getElementById("detail");
+  const massVal=el.mass.startsWith("[")?el.mass+"（放射性）":el.mass;
+  d.innerHTML=`
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+      <div style="width:56px;height:56px;border-radius:12px;background:${CAT_COLORS[el.cat]};display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;color:#fff">
+        <div style="font-size:22px">${el.sym}</div>
+        <div style="font-size:9px;opacity:.8">${el.num}</div>
+      </div>
+      <div>
+        <h2>${el.name} <span style="font-size:14px;font-weight:400;color:var(--text2)">${el.en}</span></h2>
+        <div style="font-size:13px;color:var(--text2)">${CATS[el.cat]} | 第${el.per}週期 · 第${el.grp}族</div>
+      </div>
+    </div>
+    <table>
+      <tr><td>原子序</td><td>${el.num}</td></tr>
+      <tr><td>原子量</td><td>${massVal}</td></tr>
+      <tr><td>電子組態</td><td>${el.cfg}</td></tr>
+      <tr><td>熔點</td><td>${el.mp}</td></tr>
+      <tr><td>沸點</td><td>${el.bp}</td></tr>
+      <tr><td>密度</td><td>${el.dens}</td></tr>
+      <tr><td>發現年份</td><td>${el.disc}</td></tr>
+    </table>`;
+  d.classList.add("show");
+}
+
+function filterElements(){
+  const val=document.getElementById("search").value;
+  renderGrid(val);
+}
+
+let dark=false;
+function toggleTheme(){
+  dark=!dark;
+  document.documentElement.setAttribute("data-theme",dark?"dark":"light");
+}
+
+renderGrid();
+renderLegend();
+showDetail(1);
+</script>
+</body>
+</html>

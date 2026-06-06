@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>理化公式計算機 - 理化題庫</title>
+<style>
+:root{--bg:#f0f4fa;--card:rgba(255,255,255,0.75);--text:#1a2c3e;--text2:#4a627a;--border:rgba(255,255,255,0.45);--shadow:0 8px 32px rgba(0,0,0,0.08);--input-bg:#fff;--accent:#1f6392;--accent2:#c9a227}
+[data-theme=dark]{--bg:#0b1120;--card:rgba(18,25,45,0.8);--text:#f0f3fa;--text2:#9aaec9;--border:rgba(72,92,128,0.4);--shadow:0 12px 40px rgba(0,0,0,0.4);--input-bg:rgba(18,25,45,0.6);--accent:#7ab7d4;--accent2:#e8b830}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans TC','Microsoft JhengHei',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:.3s;padding:20px}
+.wrap{max-width:800px;margin:0 auto}
+h1{font-size:24px;font-weight:800;margin-bottom:4px;background:linear-gradient(135deg,var(--accent),var(--accent2));background-clip:text;-webkit-background-clip:text;color:transparent}
+.sub{font-size:13px;color:var(--text2);margin-bottom:16px}
+.top-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.btn{padding:7px 18px;border:none;border-radius:60px;font-size:13px;font-weight:600;cursor:pointer;background:var(--card);color:var(--text);border:1px solid var(--border);transition:.2s;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.btn:hover{background:var(--accent);color:#fff}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.tab{padding:8px 18px;border-radius:60px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--text2);transition:.2s}
+.tab:hover{background:var(--accent);color:#fff}
+.tab.active{background:var(--accent);color:#fff}
+.formula-card{background:var(--card);backdrop-filter:blur(14px);border-radius:20px;padding:18px 20px;margin-bottom:12px;border:1px solid var(--border);box-shadow:var(--shadow);display:none}
+.formula-card.show{display:block}
+.formula-card h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.formula-card .eq{font-size:18px;font-weight:600;text-align:center;padding:10px;margin-bottom:10px;background:var(--input-bg);border-radius:12px;font-family:'Times New Roman',serif;font-style:italic}
+.formula-card .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.formula-card .field{flex:1;min-width:120px}
+.formula-card label{display:block;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:3px}
+.formula-card input{width:100%;padding:8px 12px;border:1px solid var(--border);border-radius:10px;font-size:14px;background:var(--input-bg);color:var(--text);outline:none;font-family:inherit}
+.formula-card input:focus{border-color:var(--accent)}
+.formula-card .calc-btn{padding:8px 24px;border:none;border-radius:60px;font-size:14px;font-weight:700;cursor:pointer;background:var(--accent);color:#fff;transition:.2s;margin-top:6px}
+.formula-card .calc-btn:hover{opacity:.85}
+.formula-card .result{padding:10px 14px;background:var(--input-bg);border-radius:12px;margin-top:8px;font-size:15px;font-weight:600;text-align:center;min-height:20px}
+.formula-card .result span{color:var(--accent2)}
+.formula-card .note{font-size:12px;color:var(--text2);margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top-bar">
+<div><h1>📐 理化公式計算機</h1><div class="sub">輸入已知值，自動計算未知值</div></div>
+<button class="btn" onclick="toggleTheme()">🌙 深色</button>
+<a href="index.html" class="btn">← 回題庫</a>
+</div>
+
+<div class="tabs" id="tabs"></div>
+<div id="formulas"></div>
+<div style="text-align:center;font-size:12px;color:var(--text2);margin-top:20px"><a href="index.html" style="color:var(--accent)">理化題庫</a> | <a href="periodic-table.html" style="color:var(--accent)">元素週期表</a></div>
+</div>
+
+<script>
+const FORMULAS = [
+{cat:"phys",name:"歐姆定律 V=IR",fields:[
+  {label:"電壓 V (伏特)",key:"v"},
+  {label:"電流 I (安培)",key:"i"},
+  {label:"電阻 R (歐姆)",key:"r"}
+],calc:(v,i,r)=>{
+  if(v&&i&&!r) return {v,r:null,result:`R = V/I = ${v}/${i} = ${(v/i).toFixed(3)} Ω`};
+  if(v&&r&&!i) return {v,i:null,result:`I = V/R = ${v}/${r} = ${(v/r).toFixed(3)} A`};
+  if(i&&r&&!v) return {v:null,result:`V = I×R = ${i}×${r} = ${(i*r).toFixed(3)} V`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"功率 P=IV",fields:[
+  {label:"功率 P (瓦特)",key:"p"},
+  {label:"電流 I (安培)",key:"i"},
+  {label:"電壓 V (伏特)",key:"v"}
+],calc:(p,i,v)=>{
+  if(p&&i&&!v) return {v:null,result:`V = P/I = ${p}/${i} = ${(p/i).toFixed(3)} V`};
+  if(p&&v&&!i) return {i:null,result:`I = P/V = ${p}/${v} = ${(p/v).toFixed(3)} A`};
+  if(i&&v&&!p) return {p:null,result:`P = I×V = ${i}×${v} = ${(i*v).toFixed(3)} W`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"牛頓第二定律 F=ma",fields:[
+  {label:"力 F (牛頓)",key:"f"},
+  {label:"質量 m (公斤)",key:"m"},
+  {label:"加速度 a (m/s²)",key:"a"}
+],calc:(f,m,a)=>{
+  if(f&&m&&!a) return {a:null,result:`a = F/m = ${f}/${m} = ${(f/m).toFixed(3)} m/s²`};
+  if(f&&a&&!m) return {m:null,result:`m = F/a = ${f}/${a} = ${(f/a).toFixed(3)} kg`};
+  if(m&&a&&!f) return {f:null,result:`F = m×a = ${m}×${a} = ${(m*a).toFixed(3)} N`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"動能 Ek=½mv²",fields:[
+  {label:"動能 Ek (焦耳)",key:"ek"},
+  {label:"質量 m (公斤)",key:"m"},
+  {label:"速度 v (m/s)",key:"v"}
+],calc:(ek,m,v)=>{
+  if(m&&v&&!ek) return {ek:null,result:`Ek = ½×${m}×${v}² = ${(0.5*m*v*v).toFixed(3)} J`};
+  if(ek&&m&&!v) return {v:null,result:`v = √(2Ek/m) = √(${2*ek/m}) = ${Math.sqrt(2*ek/m).toFixed(3)} m/s`};
+  if(ek&&v&&!m) return {m:null,result:`m = 2Ek/v² = ${2*ek}/(${v*v}) = ${(2*ek/(v*v)).toFixed(3)} kg`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"重力位能 U=mgh",fields:[
+  {label:"位能 U (焦耳)",key:"u"},
+  {label:"質量 m (公斤)",key:"m"},
+  {label:"高度 h (公尺)",key:"h"},
+  {label:"重力 g (預設 10)",key:"g",def:10}
+],calc:(u,m,h,g)=>{
+  g=g||10;
+  if(m&&h&&!u) return {u:null,result:`U = ${m}×${g}×${h} = ${(m*g*h).toFixed(3)} J`};
+  if(u&&m&&!h) return {h:null,result:`h = U/(mg) = ${u}/(${m}×${g}) = ${(u/(m*g)).toFixed(3)} m`};
+  if(u&&h&&!m) return {m:null,result:`m = U/(gh) = ${u}/(${g}×${h}) = ${(u/(g*h)).toFixed(3)} kg`};
+  return {result:"請輸入其中兩個值 (質量+高度 或 位能+其一)"};
+}},
+{cat:"phys",name:"速度 v=at",fields:[
+  {label:"末速 v (m/s)",key:"v"},
+  {label:"加速度 a (m/s²)",key:"a"},
+  {label:"時間 t (秒)",key:"t"}
+],calc:(v,a,t)=>{
+  if(a&&t&&!v) return {v:null,result:`v = ${a}×${t} = ${(a*t).toFixed(3)} m/s`};
+  if(v&&t&&!a) return {a:null,result:`a = v/t = ${v}/${t} = ${(v/t).toFixed(3)} m/s²`};
+  if(v&&a&&!t) return {t:null,result:`t = v/a = ${v}/${a} = ${(v/a).toFixed(3)} s`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"壓力 P=F/A",fields:[
+  {label:"壓力 P (Pa)",key:"p"},
+  {label:"力 F (牛頓)",key:"f"},
+  {label:"面積 A (m²)",key:"a"}
+],calc:(p,f,a)=>{
+  if(f&&a&&!p) return {p:null,result:`P = ${f}/${a} = ${(f/a).toFixed(3)} Pa`};
+  if(p&&a&&!f) return {f:null,result:`F = ${p}×${a} = ${(p*a).toFixed(3)} N`};
+  if(p&&f&&!a) return {a:null,result:`A = ${f}/${p} = ${(f/p).toFixed(6)} m²`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"密度 ρ=m/V",fields:[
+  {label:"密度 ρ (g/cm³)",key:"d"},
+  {label:"質量 m (公克)",key:"m"},
+  {label:"體積 V (cm³)",key:"v"}
+],calc:(d,m,v)=>{
+  if(m&&v&&!d) return {d:null,result:`ρ = ${m}/${v} = ${(m/v).toFixed(3)} g/cm³`};
+  if(d&&v&&!m) return {m:null,result:`m = ${d}×${v} = ${(d*v).toFixed(3)} g`};
+  if(d&&m&&!v) return {v:null,result:`V = ${m}/${d} = ${(m/d).toFixed(3)} cm³`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"浮力 B=ρVg",fields:[
+  {label:"浮力 B (牛頓)",key:"b"},
+  {label:"液體密度 ρ (kg/m³)",key:"d"},
+  {label:"排開體積 V (m³)",key:"v"},
+  {label:"重力 g (預設 10)",key:"g",def:10}
+],calc:(b,d,v,g)=>{
+  g=g||10;
+  if(d&&v&&!b) return {b:null,result:`B = ${d}×${v}×${g} = ${(d*v*g).toFixed(3)} N`};
+  if(b&&v&&!d) return {d:null,result:`ρ = B/(Vg) = ${b}/(${v}×${g}) = ${(b/(v*g)).toFixed(3)} kg/m³`};
+  if(b&&d&&!v) return {v:null,result:`V = B/(ρg) = ${b}/(${d}×${g}) = ${(b/(d*g)).toFixed(6)} m³`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"波速 v=fλ",fields:[
+  {label:"波速 v (m/s)",key:"v"},
+  {label:"頻率 f (Hz)",key:"f"},
+  {label:"波長 λ (m)",key:"l"}
+],calc:(v,f,l)=>{
+  if(f&&l&&!v) return {v:null,result:`v = ${f}×${l} = ${(f*l).toFixed(3)} m/s`};
+  if(v&&l&&!f) return {f:null,result:`f = v/λ = ${v}/${l} = ${(v/l).toFixed(3)} Hz`};
+  if(v&&f&&!l) return {l:null,result:`λ = v/f = ${v}/${f} = ${(v/f).toFixed(3)} m`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"phys",name:"功 W=Fd",fields:[
+  {label:"功 W (焦耳)",key:"w"},
+  {label:"力 F (牛頓)",key:"f"},
+  {label:"位移 d (公尺)",key:"d"}
+],calc:(w,f,d)=>{
+  if(f&&d&&!w) return {w:null,result:`W = ${f}×${d} = ${(f*d).toFixed(3)} J`};
+  if(w&&d&&!f) return {f:null,result:`F = W/d = ${w}/${d} = ${(w/d).toFixed(3)} N`};
+  if(w&&f&&!d) return {d:null,result:`d = W/F = ${w}/${f} = ${(w/f).toFixed(3)} m`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"chem",name:"莫耳數 n=m/M",fields:[
+  {label:"莫耳數 n (mol)",key:"n"},
+  {label:"質量 m (公克)",key:"m"},
+  {label:"分子量 M (g/mol)",key:"M"}
+],calc:(n,m,M)=>{
+  if(m&&M&&!n) return {n:null,result:`n = ${m}/${M} = ${(m/M).toFixed(4)} mol`};
+  if(n&&M&&!m) return {m:null,result:`m = ${n}×${M} = ${(n*M).toFixed(3)} g`};
+  if(n&&m&&!M) return {M:null,result:`M = ${m}/${n} = ${(m/n).toFixed(3)} g/mol`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"chem",name:"濃度 C=n/V",fields:[
+  {label:"濃度 C (M)",key:"c"},
+  {label:"莫耳數 n (mol)",key:"n"},
+  {label:"體積 V (公升)",key:"v"}
+],calc:(c,n,v)=>{
+  if(n&&v&&!c) return {c:null,result:`C = ${n}/${v} = ${(n/v).toFixed(4)} M`};
+  if(c&&v&&!n) return {n:null,result:`n = ${c}×${v} = ${(c*v).toFixed(4)} mol`};
+  if(c&&n&&!v) return {v:null,result:`V = ${n}/${c} = ${(n/c).toFixed(4)} L`};
+  return {result:"請輸入其中兩個值"};
+}},
+{cat:"chem",name:"理想氣體 PV=nRT",fields:[
+  {label:"壓力 P (atm)",key:"p"},
+  {label:"體積 V (L)",key:"v"},
+  {label:"莫耳數 n (mol)",key:"n"},
+  {label:"溫度 T (K)",key:"t"}
+],calc:(p,v,n,t)=>{
+  const R=0.0821;
+  if(p&&v&&n&&!t) return {t:null,result:`T = PV/(nR) = ${p}×${v}/(${n}×${R}) = ${(p*v/(n*R)).toFixed(1)} K`};
+  if(p&&v&&t&&!n) return {n:null,result:`n = PV/(RT) = ${p}×${v}/(${R}×${t}) = ${(p*v/(R*t)).toFixed(4)} mol`};
+  if(n&&v&&t&&!p) return {p:null,result:`P = nRT/V = ${n}×${R}×${t}/${v} = ${(n*R*t/v).toFixed(3)} atm`};
+  if(p&&n&&t&&!v) return {v:null,result:`V = nRT/P = ${n}×${R}×${t}/${p} = ${(n*R*t/p).toFixed(3)} L`};
+  return {result:"請輸入其中三個值"};
+}},
+{cat:"chem",name:"pH = -log[H⁺]",fields:[
+  {label:"pH 值",key:"ph"},
+  {label:"H⁺ 濃度 (M)",key:"h"}
+],calc:(ph,h)=>{
+  if(h&&!ph) return {ph:null,result:`pH = -log(${h}) = ${(-Math.log10(h)).toFixed(2)}`};
+  if(ph&&!h) return {h:null,result:`[H⁺] = 10^(${-ph}) = ${(10**-ph).toExponential(3)} M`};
+  return {result:"請輸入 pH 值或 H⁺ 濃度"};
+}},
+{cat:"phys",name:"電度數 kWh",fields:[
+  {label:"功率 P (瓦特)",key:"p"},
+  {label:"時間 t (小時)",key:"t"},
+  {label:"電費單價 (元/度，預設 3)",key:"c",def:3}
+],calc:(p,t,c)=>{
+  c=c||3;
+  if(p&&t) return {result:`用電度數 = ${p/1000}×${t} = ${(p*t/1000).toFixed(3)} 度<br>電費 = ${(p*t/1000*c).toFixed(2)} 元`};
+  return {result:"請輸入功率和時間"};
+}},
+];
+
+const CAT_NAMES = {phys:"⚡ 物理公式",chem:"🧪 化學公式"};
+
+function init(){
+  const tabs=document.getElementById("tabs");
+  const fdiv=document.getElementById("formulas");
+  const cats=[...new Set(FORMULAS.map(f=>f.cat))];
+  tabs.innerHTML=cats.map(c=>`<div class="tab${c===cats[0]?' active':''}" onclick="switchCat('${c}')">${CAT_NAMES[c]}</div>`).join("");
+  
+  fdiv.innerHTML=FORMULAS.map((f,i)=>{
+    const fields=f.fields.map(fd=>`
+      <div class="field">
+        <label>${fd.label}</label>
+        <input type="number" id="f${i}_${fd.key}" step="any" ${fd.def!==undefined?`value="${fd.def}"`:""} oninput="calc(${i})">
+      </div>`).join("");
+    return `<div class="formula-card${cats[0]===f.cat?' show':''}" data-cat="${f.cat}" id="card${i}">
+      <h3>${f.name}</h3>
+      <div class="eq">${f.name.split(" ").slice(1).join(" ")}</div>
+      <div class="row">${fields}</div>
+      <button class="calc-btn" onclick="calc(${i})">計算</button>
+      <div class="result" id="res${i}"></div>
+    </div>`;
+  }).join("");
+}
+
+function switchCat(cat){
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t.textContent.includes(cat)));
+  document.querySelectorAll(".formula-card").forEach(c=>c.classList.toggle("show",c.dataset.cat===cat));
+}
+
+function calc(i){
+  const f=FORMULAS[i];
+  const vals={};
+  f.fields.forEach(fd=>{
+    const inp=document.getElementById(`f${i}_${fd.key}`);
+    vals[fd.key]=inp.value?parseFloat(inp.value):null;
+  });
+  const res=f.calc(vals.v,vals.i,vals.r,vals.p,vals.m,vals.a,vals.ek,vals.u,vals.h,vals.g,vals.f,vals.d,vals.l,vals.w,vals.n,vals.M,vals.c,vals.t,vals.b,vals.ph,vals.b||vals.h);
+  document.getElementById(`res${i}`).innerHTML=res.result?`<span>${res.result}</span>`:"";
+}
+
+let dark=false;
+function toggleTheme(){
+  dark=!dark;
+  document.documentElement.setAttribute("data-theme",dark?"dark":"light");
+}
+
+init();
+</script>
+</body>
+</html>
