@@ -28869,6 +28869,630 @@
       "answer": 1,
       "explanation": "碳足跡指活動或產品直接間接造成的碳排放量。",
       "id": 1799
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種力是超距力？",
+      "options": [
+        "摩擦力",
+        "重力",
+        "彈力",
+        "阻力"
+      ],
+      "answer": 1,
+      "explanation": "重力不需要接觸即可作用（超距力）。",
+      "id": 1800
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量 60 kg 的人在地球上重量約為？",
+      "options": [
+        "6 N",
+        "60 N",
+        "600 N",
+        "6000 N"
+      ],
+      "answer": 2,
+      "explanation": "W=mg=60×10=600 N。",
+      "id": 1801
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "繞地球作等速率圓周運動的衛星，其加速度方向？",
+      "options": [
+        "沿切線方向",
+        "指向圓心",
+        "遠離圓心",
+        "垂直軌道"
+      ],
+      "answer": 1,
+      "explanation": "向心加速度指向圓心，改變速度方向。",
+      "id": 1802
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "速度 10 m/s 等於時速多少公里？",
+      "options": [
+        "10 km/h",
+        "36 km/h",
+        "60 km/h",
+        "100 km/h"
+      ],
+      "answer": 1,
+      "explanation": "10×3600/1000=36 km/h。",
+      "id": 1803
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體加速度 5 m/s²，10 秒內速度從 0 增至？",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "25 m/s",
+        "50 m/s"
+      ],
+      "answer": 3,
+      "explanation": "v=at=5×10=50 m/s。",
+      "id": 1804
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者不具有能量？",
+      "options": [
+        "運動的汽車",
+        "高處的石頭",
+        "壓縮的彈簧",
+        "靜止在地面的書"
+      ],
+      "answer": 3,
+      "explanation": "靜止在地面的書無動能也無相對位能。",
+      "id": 1805
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一石頭質量 0.5 kg，高 20 m，重力位能約為？（g=10）",
+      "options": [
+        "50 J",
+        "100 J",
+        "150 J",
+        "200 J"
+      ],
+      "answer": 1,
+      "explanation": "U=mgh=0.5×10×20=100 J。",
+      "id": 1806
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電路中造成觸電危險的是？",
+      "options": [
+        "電壓",
+        "電流",
+        "電阻",
+        "功率"
+      ],
+      "answer": 1,
+      "explanation": "通過人體的電流過大造成傷害。",
+      "id": 1807
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為電池的串聯連接效果？",
+      "options": [
+        "電壓不變時間加倍",
+        "電壓加倍容量不變",
+        "電壓容量皆加倍",
+        "電壓容量皆減半"
+      ],
+      "answer": 1,
+      "explanation": "電池串聯：電壓相加，總電容量不變。",
+      "id": 1808
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為光的波動性證明？",
+      "options": [
+        "影子",
+        "反射",
+        "干涉",
+        "光電效應"
+      ],
+      "answer": 2,
+      "explanation": "光的干涉和繞射證明波動性。光電效應證明粒子性。",
+      "id": 1809
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "太陽眼鏡利用何種原理減少強光？",
+      "options": [
+        "反射",
+        "吸收",
+        "偏光",
+        "折射"
+      ],
+      "answer": 2,
+      "explanation": "偏光鏡片過濾特定方向的光波，減少眩光。",
+      "id": 1810
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪個裝置不用磁鐵？",
+      "options": [
+        "喇叭",
+        "麥克風",
+        "電燈泡",
+        "馬達"
+      ],
+      "answer": 2,
+      "explanation": "電燈泡利用電流的熱效應發光，不需磁鐵。",
+      "id": 1811
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "熱對流發生在？",
+      "options": [
+        "固體",
+        "液體和氣體",
+        "真空",
+        "所有物質"
+      ],
+      "answer": 1,
+      "explanation": "對流發生在流體（液體和氣體）中。",
+      "id": 1812
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "固體受熱膨脹是因為？",
+      "options": [
+        "分子變大",
+        "分子運動加劇間距增大",
+        "分子數量增加",
+        "分子質量增加"
+      ],
+      "answer": 1,
+      "explanation": "溫度升高分子動能增加，振動幅度增大，分子間距增加。",
+      "id": 1813
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "噪音對人體的影響不包括？",
+      "options": [
+        "聽力受損",
+        "睡眠干擾",
+        "提高專注力",
+        "心理壓力"
+      ],
+      "answer": 2,
+      "explanation": "噪音會降低而非提高專注力。",
+      "id": 1814
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "冰塊浮在水面上，露出水面體積佔總體積的多少？（冰密度 0.9 g/cm³）",
+      "options": [
+        "1/10",
+        "1/5",
+        "1/3",
+        "1/2"
+      ],
+      "answer": 0,
+      "explanation": "浮體：沉入比例=密度比=0.9/1=9/10，露出=1/10。",
+      "id": 1815
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者由原子直接構成？",
+      "options": [
+        "水",
+        "食鹽",
+        "鐵",
+        "氧氣"
+      ],
+      "answer": 2,
+      "explanation": "金屬鐵由鐵原子直接構成。水、食鹽、氧氣為分子。",
+      "id": 1816
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "NaCl 的水溶液可導電，因為含有？",
+      "options": [
+        "自由電子",
+        "自由移動的離子",
+        "自由中子",
+        "原子"
+      ],
+      "answer": 1,
+      "explanation": "NaCl 在水中解離為 Na⁺ 和 Cl⁻ 離子，可導電。",
+      "id": 1817
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "硫酸（H₂SO₄）與氫氧化鈉（NaOH）中和，需要多少莫耳 NaOH 中和 1 莫耳 H₂SO₄？",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "H₂SO₄+2NaOH→Na₂SO₄+2H₂O，需 2 莫耳 NaOH。",
+      "id": 1818
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "實驗室製備氧氣常用？",
+      "options": [
+        "加熱 KClO₃（二氧化錳催化）",
+        "電解水",
+        "加熱 CaCO₃",
+        "燃燒鎂帶"
+      ],
+      "answer": 0,
+      "explanation": "2KClO₃→2KCl+3O₂（MnO₂催化）。",
+      "id": 1819
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "碳酸飲料呈酸性是因為溶有？",
+      "options": [
+        "氧氣",
+        "二氧化碳",
+        "氮氣",
+        "氫氣"
+      ],
+      "answer": 1,
+      "explanation": "CO₂ 溶於水形成碳酸（H₂CO₃），呈弱酸性。",
+      "id": 1820
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "酸鹼滴定中，酚酞的顏色變化在 pH？",
+      "options": [
+        "pH 3-5",
+        "pH 5-7",
+        "pH 7-9",
+        "pH 9-11"
+      ],
+      "answer": 2,
+      "explanation": "酚酞在 pH 8.2~10 由無色變粉紅。",
+      "id": 1821
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "維生素 C 具有還原性，可用來？",
+      "options": [
+        "防止食物氧化",
+        "促進氧化",
+        "中和酸",
+        "催化反應"
+      ],
+      "answer": 0,
+      "explanation": "維生素 C（抗氧化劑）可防止食物中的成分被氧化。",
+      "id": 1822
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "石蕊試紙的顏色來自？",
+      "options": [
+        "合成染料",
+        "天然植物萃取",
+        "金屬離子",
+        "酸鹼指示劑"
+      ],
+      "answer": 1,
+      "explanation": "石蕊試紙從地衣植物萃取而來。",
+      "id": 1823
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "尼龍屬於？",
+      "options": [
+        "天然聚合物",
+        "合成聚合物",
+        "金屬",
+        "陶瓷"
+      ],
+      "answer": 1,
+      "explanation": "尼龍為合成聚合物（聚醯胺）。",
+      "id": 1824
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is your name? My name ___ Tom.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 1,
+      "explanation": "'My name is' + name.",
+      "id": 1825
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I have two ___.",
+      "options": [
+        "child",
+        "childs",
+        "children",
+        "childrens"
+      ],
+      "answer": 2,
+      "explanation": "Irregular plural: child → children.",
+      "id": 1826
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Neither the manager nor his assistants ___ here.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "answer": 1,
+      "explanation": "With 'neither...nor', verb agrees with closest subject (assistants → plural).",
+      "id": 1827
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Fast' means moving at ___ speed.",
+      "options": [
+        "low",
+        "high",
+        "medium",
+        "no"
+      ],
+      "answer": 1,
+      "explanation": "Fast means moving at high speed.",
+      "id": 1828
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The antonym of 'deep' is ___?",
+      "options": [
+        "High",
+        "Low",
+        "Shallow",
+        "Wide"
+      ],
+      "answer": 2,
+      "explanation": "Deep (深) and shallow (淺) are opposites.",
+      "id": 1829
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "He ___ to school on foot yesterday.",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "going"
+      ],
+      "answer": 2,
+      "explanation": "Yesterday → past tense: went.",
+      "id": 1830
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "An eclipse occurs when one celestial body blocks light from reaching another. What is an eclipse?",
+      "options": [
+        "A weather event",
+        "A blocking of light",
+        "A new star",
+        "A type of rain"
+      ],
+      "answer": 1,
+      "explanation": "An eclipse occurs when light is blocked.",
+      "id": 1831
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "The word 'photosynthesis' comes from Greek words meaning 'light' and 'putting together.' What does photosynthesis literally mean?",
+      "options": [
+        "Light and putting together",
+        "Plant growth",
+        "Sun energy",
+        "Green color"
+      ],
+      "answer": 0,
+      "explanation": "Photo = light, synthesis = putting together.",
+      "id": 1832
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "酒精燈的火焰哪部分溫度最高？",
+      "options": [
+        "外焰",
+        "內焰",
+        "焰心",
+        "三者相同"
+      ],
+      "answer": 0,
+      "explanation": "外焰燃燒最完全，溫度最高。",
+      "id": 1833
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "分離沙子和食鹽的混合物可用？",
+      "options": [
+        "過濾後蒸發",
+        "蒸餾",
+        "層析",
+        "電解"
+      ],
+      "answer": 0,
+      "explanation": "水溶鹽→過濾分離沙子→蒸發得鹽。",
+      "id": 1834
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "定量分析中，誤差可分為隨機誤差和？",
+      "options": [
+        "系統誤差",
+        "人為誤差",
+        "環境誤差",
+        "儀器誤差"
+      ],
+      "answer": 0,
+      "explanation": "誤差分為系統誤差（偏誤）和隨機誤差（精密度）。",
+      "id": 1835
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "太陽能屬於？",
+      "options": [
+        "一次能源且再生能源",
+        "二次能源",
+        "化石能源",
+        "核能"
+      ],
+      "answer": 0,
+      "explanation": "太陽能為一次能源（直接來自自然）且為再生能源。",
+      "id": 1836
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "生質能源的碳排放被認為是？",
+      "options": [
+        "碳中和",
+        "高碳",
+        "零碳",
+        "無關"
+      ],
+      "answer": 0,
+      "explanation": "生質能源燃燒排放的 CO₂ 來自光合作用吸收的大氣 CO₂，屬碳中和。",
+      "id": 1837
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電動車比燃油車環保的主要原因是？",
+      "options": [
+        "無廢氣排放",
+        "速度更快",
+        "更安靜",
+        "外型好看"
+      ],
+      "answer": 0,
+      "explanation": "電動車行駛時零廢氣排放。",
+      "id": 1838
     }
   ],
   "subjects": [
@@ -28886,6 +29510,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1799
+    "totalQuestions": 1838
   }
 }
