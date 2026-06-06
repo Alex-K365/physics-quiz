@@ -30133,6 +30133,822 @@
       "answer": 0,
       "explanation": "超抽地下水導致含水層壓縮，地層下陷。",
       "id": 1878
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "力可以改變物體的？",
+      "options": [
+        "顏色",
+        "溫度",
+        "形狀或運動狀態",
+        "質量"
+      ],
+      "answer": 2,
+      "explanation": "力的兩種效應：改變形狀、改變運動狀態。",
+      "id": 1879
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "兩個 10 N 的力作用於同一點，夾角 0 度，合力為？",
+      "options": [
+        "0 N",
+        "10 N",
+        "20 N",
+        "100 N"
+      ],
+      "answer": 2,
+      "explanation": "同向合力相加：10+10=20 N。",
+      "id": 1880
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "某人在地球上能舉起 60 kg 物體，在月球上能舉起多少 kg？（月球 g 為地球 1/6）",
+      "options": [
+        "10 kg",
+        "60 kg",
+        "360 kg",
+        "60 N"
+      ],
+      "answer": 2,
+      "explanation": "月球 g 較小，相同的力可舉起質量為 6 倍的物體。",
+      "id": 1881
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "1 m/s 等於時速多少？",
+      "options": [
+        "0.36 km/h",
+        "3.6 km/h",
+        "36 km/h",
+        "360 km/h"
+      ],
+      "answer": 1,
+      "explanation": "1×3600/1000=3.6 km/h。",
+      "id": 1882
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "A 車時速 60 km，B 車時速 20 m/s，何者較快？",
+      "options": [
+        "A",
+        "B",
+        "一樣快",
+        "無法比較"
+      ],
+      "answer": 1,
+      "explanation": "B=20×3.6=72 km/h > 60 km/h。",
+      "id": 1883
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "鉛直上拋達最高點時，下列何者正確？",
+      "options": [
+        "速度零、加速度零",
+        "速度零、加速度 g",
+        "速度 g、加速度零",
+        "速度 g、加速度 g"
+      ],
+      "answer": 1,
+      "explanation": "最高點瞬間速度零，但加速度仍為 g（重力加速度）。",
+      "id": 1884
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "核能發電與火力發電的主要差異在？",
+      "options": [
+        "能量來源",
+        "發電機",
+        "渦輪機",
+        "電線"
+      ],
+      "answer": 0,
+      "explanation": "核能用核分裂熱能，火力用燃料燃燒熱能。",
+      "id": 1885
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電功率 1000 W 的電器使用 2 小時，消耗能量？",
+      "options": [
+        "2 kWh",
+        "2 J",
+        "2000 J",
+        "7200 J"
+      ],
+      "answer": 0,
+      "explanation": "1000 W=1 kW，1×2=2 kWh（度）。",
+      "id": 1886
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "物體由高處自由落下，不計阻力，著地速度 v，若從 4 倍高度落下，著地速度變為？",
+      "options": [
+        "v",
+        "2v",
+        "4v",
+        "16v"
+      ],
+      "answer": 1,
+      "explanation": "v∝√h，h 變 4 倍→v 變 2 倍。",
+      "id": 1887
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "導體內自由電荷的定向移動形成？",
+      "options": [
+        "電流",
+        "電壓",
+        "電阻",
+        "電場"
+      ],
+      "answer": 0,
+      "explanation": "電流為電荷的定向移動。",
+      "id": 1888
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電阻色碼紅紅棕代表多少 Ω？",
+      "options": [
+        "22 Ω",
+        "220 Ω",
+        "2200 Ω",
+        "22000 Ω"
+      ],
+      "answer": 1,
+      "explanation": "紅=2，紅=2，棕=×10，=220 Ω。",
+      "id": 1889
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "省電燈泡的發光效率比白熾燈泡高，是因為？",
+      "options": [
+        "較少電能轉為熱能",
+        "電壓較低",
+        "電流較小",
+        "電阻較大"
+      ],
+      "answer": 0,
+      "explanation": "省電燈泡（螢光燈/LED）將較多電能轉為光能。",
+      "id": 1890
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者會發生光的全反射？",
+      "options": [
+        "光從空氣到水",
+        "光從水到空氣（入射角大於臨界角）",
+        "光垂直入射",
+        "光通過玻璃"
+      ],
+      "answer": 1,
+      "explanation": "光從光密到光疏介質，入射角大於臨界角時發生全反射。",
+      "id": 1891
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "近視雷射手術是改變？",
+      "options": [
+        "角膜曲率",
+        "水晶體厚度",
+        "眼軸長度",
+        "視網膜位置"
+      ],
+      "answer": 0,
+      "explanation": "雷射改變角膜曲率，矯正屈光不正。",
+      "id": 1892
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "磁鐵靠近電視螢幕會？",
+      "options": [
+        "使畫面扭曲",
+        "增強訊號",
+        "改善畫質",
+        "無影響"
+      ],
+      "answer": 0,
+      "explanation": "磁場會干擾 CRT 螢幕電子束路徑。",
+      "id": 1893
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "汽機車的發電機原理為？",
+      "options": [
+        "電磁感應",
+        "電流磁效應",
+        "化學反應",
+        "熱電效應"
+      ],
+      "answer": 0,
+      "explanation": "發電機利用線圈在磁場中轉動產生感應電流。",
+      "id": 1894
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "保暖衣物利用空氣的何種性質？",
+      "options": [
+        "導熱性差",
+        "比熱大",
+        "密度小",
+        "透明"
+      ],
+      "answer": 0,
+      "explanation": "空氣為不良導體，夾層空氣減少熱傳導。",
+      "id": 1895
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "兩個相同質量的鐵塊，溫度分別為 80°C 和 20°C，接觸後平衡溫度為？",
+      "options": [
+        "30°C",
+        "40°C",
+        "50°C",
+        "60°C"
+      ],
+      "answer": 2,
+      "explanation": "相同質量和比熱，(80+20)/2=50°C。",
+      "id": 1896
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者頻率最低？",
+      "options": [
+        "雷聲",
+        "蟬鳴",
+        "蚊子聲",
+        "狗笛"
+      ],
+      "answer": 0,
+      "explanation": "雷聲為低頻，蟬鳴和蚊子聲較高頻。",
+      "id": 1897
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲波為？",
+      "options": [
+        "橫波",
+        "縱波",
+        "電磁波",
+        "表面波"
+      ],
+      "answer": 1,
+      "explanation": "聲波為縱波（疏密波），介質振動方向與波前進方向平行。",
+      "id": 1898
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "液體壓力公式 P=hd 中 d 代表？",
+      "options": [
+        "深度",
+        "密度",
+        "直徑",
+        "距離"
+      ],
+      "answer": 1,
+      "explanation": "P=h×d，d 為液體密度。",
+      "id": 1899
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "原子序數決定於？",
+      "options": [
+        "質子數",
+        "中子數",
+        "電子數",
+        "質量數"
+      ],
+      "answer": 0,
+      "explanation": "原子序=質子數。",
+      "id": 1900
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "同位素具有相同的？",
+      "options": [
+        "質子數不同中子數",
+        "質子數相同中子數不同",
+        "電子數不同中子數相同",
+        "質量數相同"
+      ],
+      "answer": 1,
+      "explanation": "同位素：質子數相同、中子數不同。",
+      "id": 1901
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "光合作用的反應物為？",
+      "options": [
+        "CO₂ 和 H₂O",
+        "O₂ 和 CO₂",
+        "葡萄糖和 O₂",
+        "H₂O 和 O₂"
+      ],
+      "answer": 0,
+      "explanation": "6CO₂+6H₂O→C₆H₁₂O₆+6O₂。",
+      "id": 1902
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "化學式中，係數表示？",
+      "options": [
+        "分子數比",
+        "質量比",
+        "體積比",
+        "密度比"
+      ],
+      "answer": 0,
+      "explanation": "係數比=分子數比=莫耳數比。",
+      "id": 1903
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "胃藥通常含何種成分中和胃酸？",
+      "options": [
+        "酸",
+        "鹼",
+        "鹽",
+        "水"
+      ],
+      "answer": 1,
+      "explanation": "胃藥含鹼性成分（如 Mg(OH)₂、Al(OH)₃）中和鹽酸。",
+      "id": 1904
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "酸鹼中和反應為？",
+      "options": [
+        "放熱反應",
+        "吸熱反應",
+        "不變",
+        "不一定"
+      ],
+      "answer": 0,
+      "explanation": "酸鹼中和為放熱反應。",
+      "id": 1905
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "水果切開後變色是因為？",
+      "options": [
+        "氧化",
+        "還原",
+        "中和",
+        "發酵"
+      ],
+      "answer": 0,
+      "explanation": "水果中的酚類物質被空氣氧化而褐變。",
+      "id": 1906
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "氧氣在氧化還原反應中通常作為？",
+      "options": [
+        "氧化劑",
+        "還原劑",
+        "催化劑",
+        "電解質"
+      ],
+      "answer": 0,
+      "explanation": "O₂ 易得到電子，為氧化劑。",
+      "id": 1907
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "蛋白質的組成元素包含？",
+      "options": [
+        "C、H、O、N",
+        "C、H、O",
+        "C、H、O、Na",
+        "C、H、N、Cl"
+      ],
+      "answer": 0,
+      "explanation": "蛋白質主要含 C、H、O、N，部分含 S。",
+      "id": 1908
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為飽和碳氫化合物？",
+      "options": [
+        "乙烯 C₂H₄",
+        "乙烷 C₂H₆",
+        "乙炔 C₂H₂",
+        "苯 C₆H₆"
+      ],
+      "answer": 1,
+      "explanation": "乙烷（C₂H₆）為烷烴，碳間單鍵飽和。",
+      "id": 1909
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "The opposite of \"hot\" is ___?",
+      "options": [
+        "Warm",
+        "Cold",
+        "Cool",
+        "Mild"
+      ],
+      "answer": 1,
+      "explanation": "Hot and cold are direct opposites.",
+      "id": 1910
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "\"Frequent\" means happening ___?",
+      "options": [
+        "Rarely",
+        "Often",
+        "Never",
+        "Sometimes"
+      ],
+      "answer": 1,
+      "explanation": "Frequent means happening often.",
+      "id": 1911
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "They ___ playing soccer now.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "answer": 1,
+      "explanation": "'They' plural takes 'are'. Present continuous: are playing.",
+      "id": 1912
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I called her while she ___ dinner.",
+      "options": [
+        "cooks",
+        "was cooking",
+        "has cooked",
+        "will cook"
+      ],
+      "answer": 1,
+      "explanation": "Past continuous for background action: was cooking.",
+      "id": 1913
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "How many days are in a week?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "There are 7 days in a week.",
+      "id": 1914
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "My father is ___ engineer.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "explanation": "'Engineer' starts with vowel sound → 'an'.",
+      "id": 1915
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Hurricanes are powerful storms with strong winds. What are hurricanes?",
+      "options": [
+        "Snowstorms",
+        "Powerful storms",
+        "Earthquakes",
+        "Floods"
+      ],
+      "answer": 1,
+      "explanation": "Hurricanes are powerful tropical storms.",
+      "id": 1916
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "加熱燒杯時應墊？",
+      "options": [
+        "石棉網",
+        "報紙",
+        "塑膠墊",
+        "木板"
+      ],
+      "answer": 0,
+      "explanation": "石棉網使燒杯受熱均勻。",
+      "id": 1917
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "過濾時漏斗下端應？",
+      "options": [
+        "靠著燒杯壁",
+        "懸空",
+        "插入液面",
+        "朝上"
+      ],
+      "answer": 0,
+      "explanation": "漏斗下端靠燒杯壁，使濾液沿壁流下。",
+      "id": 1918
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "定量濾紙的孔徑約？",
+      "options": [
+        "11 μm",
+        "1 mm",
+        "0.1 mm",
+        "0.01 μm"
+      ],
+      "answer": 0,
+      "explanation": "定量濾紙孔徑約 11 μm，可濾除沉澱。",
+      "id": 1919
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "省水標章產品可？",
+      "options": [
+        "節約水資源",
+        "增加水壓",
+        "淨化水質",
+        "加熱水"
+      ],
+      "answer": 0,
+      "explanation": "省水標章表示產品符合節水標準。",
+      "id": 1920
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "綠色建築的設計理念為？",
+      "options": [
+        "節能環保",
+        "豪華美觀",
+        "造價最低",
+        "最大空間"
+      ],
+      "answer": 0,
+      "explanation": "綠色建築強調節能、環保、永續。",
+      "id": 1921
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣發展離岸風力發電的優勢為？",
+      "options": [
+        "風況佳且不受地形限制",
+        "成本最低",
+        "技術最成熟",
+        "無環境影響"
+      ],
+      "answer": 0,
+      "explanation": "臺灣海峽風力強勁穩定，離岸風場不受陸地地形限制。",
+      "id": 1922
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "爬樓梯時主要克服？",
+      "options": [
+        "摩擦力",
+        "重力",
+        "空氣阻力",
+        "正向力"
+      ],
+      "answer": 1,
+      "explanation": "爬樓梯克服重力作功。",
+      "id": 1923
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "飛機起飛時加速跑道長度與起飛速度的平方成？",
+      "options": [
+        "正比",
+        "反比",
+        "無關",
+        "等比"
+      ],
+      "answer": 0,
+      "explanation": "v²=2aS，S∝v²。",
+      "id": 1924
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "能量不滅定律又稱？",
+      "options": [
+        "能量守恆",
+        "動量守恆",
+        "電荷守恆",
+        "質量守恆"
+      ],
+      "answer": 0,
+      "explanation": "能量守恆定律。",
+      "id": 1925
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電路中電阻越大，在相同電壓下電流越？",
+      "options": [
+        "大",
+        "小",
+        "不變",
+        "不一定"
+      ],
+      "answer": 1,
+      "explanation": "V=IR，R↑→I↓。",
+      "id": 1926
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "透鏡的中間厚邊緣薄稱為？",
+      "options": [
+        "凸透鏡",
+        "凹透鏡",
+        "平面鏡",
+        "三稜鏡"
+      ],
+      "answer": 0,
+      "explanation": "凸透鏡（會聚透鏡）中間厚邊緣薄。",
+      "id": 1927
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "汽水的 pH 值約為？",
+      "options": [
+        "2-4",
+        "6-7",
+        "8-10",
+        "11-13"
+      ],
+      "answer": 0,
+      "explanation": "汽水含碳酸，pH 約 2-4。",
+      "id": 1928
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "葡萄糖的化學式為？",
+      "options": [
+        "C₆H₁₂O₆",
+        "C₁₂H₂₂O₁₁",
+        "C₆H₁₀O₅",
+        "C₂H₅OH"
+      ],
+      "answer": 0,
+      "explanation": "葡萄糖為 C₆H₁₂O₆。",
+      "id": 1929
     }
   ],
   "subjects": [
@@ -30150,6 +30966,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1878
+    "totalQuestions": 1929
   }
 }
