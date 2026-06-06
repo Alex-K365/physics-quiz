@@ -28197,6 +28197,678 @@
       "answer": 1,
       "explanation": "2H₂O→2H₂+O₂，體積比 H₂:O₂=2:1。",
       "id": 1757
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "牛頓第二定律的公式為？",
+      "options": [
+        "F=ma",
+        "F=mv",
+        "F=m/t",
+        "F=v/m"
+      ],
+      "answer": 0,
+      "explanation": "F=ma，力=質量×加速度。",
+      "id": 1758
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "腳踏車前進時，輪胎與地面的摩擦力方向？",
+      "options": [
+        "向前",
+        "向後",
+        "向上",
+        "向下"
+      ],
+      "answer": 0,
+      "explanation": "輪胎向後推地面→地面向前推輪胎（前進）。",
+      "id": 1759
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一物體質量 5 kg，以 20 m/s 速度運動，欲在 4 秒內停止，需施力多少？",
+      "options": [
+        "10 N",
+        "15 N",
+        "20 N",
+        "25 N"
+      ],
+      "answer": 3,
+      "explanation": "a=(0-20)/4=-5 m/s²，F=ma=5×5=25 N。",
+      "id": 1760
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "位置－時間圖的斜率代表？",
+      "options": [
+        "速度",
+        "加速度",
+        "位移",
+        "路徑長"
+      ],
+      "answer": 0,
+      "explanation": "x-t 圖斜率=速度。v-t 圖斜率=加速度。",
+      "id": 1761
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一個自由落體第 1 秒下落約 5 m，第 2 秒下落約？",
+      "options": [
+        "5 m",
+        "10 m",
+        "15 m",
+        "20 m"
+      ],
+      "answer": 2,
+      "explanation": "第 1 秒：½g×1=5m，第 2 秒：½g×4-5=20-5=15m。",
+      "id": 1762
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "物體以 30 m/s 鉛直上拋，可達最大高度約為？（g=10）",
+      "options": [
+        "15 m",
+        "30 m",
+        "45 m",
+        "60 m"
+      ],
+      "answer": 2,
+      "explanation": "v²=v₀²-2gh→0=900-20h→h=45 m。",
+      "id": 1763
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "發電機將何種能轉換為電能？",
+      "options": [
+        "化學能",
+        "機械能",
+        "光能",
+        "核能"
+      ],
+      "answer": 1,
+      "explanation": "發電機利用電磁感應將機械能→電能。",
+      "id": 1764
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體在光滑斜面由靜止滑下，高度下降 3 m，末速約為？（g=10）",
+      "options": [
+        "4.5 m/s",
+        "6 m/s",
+        "7.7 m/s",
+        "9 m/s"
+      ],
+      "answer": 2,
+      "explanation": "v=√(2gh)=√(2×10×3)=√60≈7.7 m/s。",
+      "id": 1765
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電路上畫的開關符號表示可以？",
+      "options": [
+        "切斷或接通電路",
+        "改變電壓",
+        "調整電流",
+        "保護電路"
+      ],
+      "answer": 0,
+      "explanation": "開關控制電路的通斷。",
+      "id": 1766
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "延長線使用過多電器可能導致？",
+      "options": [
+        "電壓升高",
+        "過載起火",
+        "電阻變大",
+        "電流變小"
+      ],
+      "answer": 1,
+      "explanation": "超過額定功率導致電線過熱起火。",
+      "id": 1767
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "物體在平面鏡中的像距等於？",
+      "options": [
+        "物距的一半",
+        "物距",
+        "物距兩倍",
+        "零"
+      ],
+      "answer": 1,
+      "explanation": "平面鏡成像：像距=物距。",
+      "id": 1768
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "光纖通訊利用光的何種原理？",
+      "options": [
+        "反射",
+        "折射",
+        "全反射",
+        "散射"
+      ],
+      "answer": 2,
+      "explanation": "光纖利用光的全反射傳遞訊號。",
+      "id": 1769
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電磁鐵斷電後磁性？",
+      "options": [
+        "立即消失",
+        "保持不變",
+        "逐漸減弱",
+        "增強"
+      ],
+      "answer": 0,
+      "explanation": "電磁鐵斷電後磁性消失（軟鐵芯）。",
+      "id": 1770
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "變壓器利用何種原理改變電壓？",
+      "options": [
+        "電流磁效應",
+        "電磁感應",
+        "電流的熱效應",
+        "化學效應"
+      ],
+      "answer": 1,
+      "explanation": "變壓器利用電磁感應：交流電產生變化磁場→感應電動勢。",
+      "id": 1771
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "物質從液態變為固態稱為？",
+      "options": [
+        "熔化",
+        "凝固",
+        "汽化",
+        "凝結"
+      ],
+      "answer": 1,
+      "explanation": "液→固為凝固（放熱）。固→液為熔化（吸熱）。",
+      "id": 1772
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "水在 100°C 時沸騰，繼續加熱溫度會？",
+      "options": [
+        "持續上升",
+        "保持 100°C",
+        "下降",
+        "不一定"
+      ],
+      "answer": 1,
+      "explanation": "沸騰時溫度維持不變（100°C 1 atm）。",
+      "id": 1773
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "撥動吉他弦，弦的振動產生？",
+      "options": [
+        "光",
+        "聲音",
+        "電",
+        "熱"
+      ],
+      "answer": 1,
+      "explanation": "弦振動使周圍空氣振動，傳出聲波。",
+      "id": 1774
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "在空氣中，聲速約為光速的？",
+      "options": [
+        "一樣快",
+        "約百萬分之一",
+        "約一半",
+        "約兩倍"
+      ],
+      "answer": 1,
+      "explanation": "聲速 340 m/s，光速 3×10⁸ m/s，聲速約為光速的百萬分之一。",
+      "id": 1775
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "水壺與壺嘴構成？",
+      "options": [
+        "連通管",
+        "虹吸管",
+        "U 形管",
+        "毛細管"
+      ],
+      "answer": 0,
+      "explanation": "水壺與壺嘴為連通管應用，液面等高。",
+      "id": 1776
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "阿基米德原理的發現與下列何者有關？",
+      "options": [
+        "洗澡溢出",
+        "蘋果掉落",
+        "蒸氣推蓋",
+        "風車轉動"
+      ],
+      "answer": 0,
+      "explanation": "阿基米德從洗澡水溢出發現浮力原理。",
+      "id": 1777
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為混合物？",
+      "options": [
+        "蒸餾水",
+        "海水",
+        "冰塊",
+        "純金"
+      ],
+      "answer": 1,
+      "explanation": "海水含多種鹽類和雜質，為混合物。",
+      "id": 1778
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "原子中佔據大部分空間的是？",
+      "options": [
+        "原子核",
+        "電子雲",
+        "質子",
+        "中子"
+      ],
+      "answer": 1,
+      "explanation": "電子在原子核外高速運動，形成電子雲佔據大部分空間。",
+      "id": 1779
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鐵生鏽需要何種物質？",
+      "options": [
+        "水和二氧化碳",
+        "水和氧氣",
+        "氧氣和氮氣",
+        "二氧化碳和水"
+      ],
+      "answer": 1,
+      "explanation": "鐵生鏽：4Fe+3O₂+2xH₂O→2Fe₂O₃·xH₂O。",
+      "id": 1780
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鹽酸和碳酸鈣反應的產物不包括？",
+      "options": [
+        "CaCl₂",
+        "CO₂",
+        "H₂O",
+        "CaCO₃"
+      ],
+      "answer": 3,
+      "explanation": "CaCO₃+2HCl→CaCl₂+CO₂+H₂O。CaCO₃為反應物。",
+      "id": 1781
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為強鹼？",
+      "options": [
+        "氨水",
+        "氫氧化鈉",
+        "碳酸鈉",
+        "醋酸鈉"
+      ],
+      "answer": 1,
+      "explanation": "NaOH 氫氧化鈉為強鹼（完全解離）。",
+      "id": 1782
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "pH=2 的溶液酸性是 pH=4 的幾倍？",
+      "options": [
+        "2 倍",
+        "10 倍",
+        "100 倍",
+        "1000 倍"
+      ],
+      "answer": 2,
+      "explanation": "pH 每差 1 酸度差 10 倍，pH 差 2→100 倍。",
+      "id": 1783
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鎂帶燃燒的現象為？",
+      "options": [
+        "發出白光",
+        "紅色火焰",
+        "藍色火焰",
+        "黃色火焰"
+      ],
+      "answer": 0,
+      "explanation": "鎂帶燃燒發出耀眼白光，生成 MgO。",
+      "id": 1784
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "漂白水殺菌的主要原理是？",
+      "options": [
+        "氧化",
+        "還原",
+        "中和",
+        "吸附"
+      ],
+      "answer": 0,
+      "explanation": "漂白水（次氯酸鈉）具強氧化性，氧化細菌結構。",
+      "id": 1785
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "石油是？",
+      "options": [
+        "純物質",
+        "混合物",
+        "化合物",
+        "元素"
+      ],
+      "answer": 1,
+      "explanation": "石油為多種碳氫化合物的混合物。",
+      "id": 1786
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "食物中的油脂屬於？",
+      "options": [
+        "碳水化合物",
+        "脂質",
+        "蛋白質",
+        "維生素"
+      ],
+      "answer": 1,
+      "explanation": "油脂（脂肪）為脂質，提供能量。",
+      "id": 1787
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Huge' means ___?",
+      "options": [
+        "Small",
+        "Very large",
+        "Tiny",
+        "Narrow"
+      ],
+      "answer": 1,
+      "explanation": "Huge means extremely large.",
+      "id": 1788
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "\"Please proceed\" means please ___?",
+      "options": [
+        "Stop",
+        "Continue",
+        "Wait",
+        "Leave"
+      ],
+      "answer": 1,
+      "explanation": "Proceed means to continue or go forward.",
+      "id": 1789
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "My sister ___ a doctor.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 1,
+      "explanation": "'My sister' is singular → 'is'.",
+      "id": 1790
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "___ you like some coffee?",
+      "options": [
+        "Do",
+        "Would",
+        "Are",
+        "Have"
+      ],
+      "answer": 1,
+      "explanation": "'Would you like' is a polite offer.",
+      "id": 1791
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "How many months are there in a year?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": 2,
+      "explanation": "There are 12 months in a year.",
+      "id": 1792
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The weather today is ___ than yesterday.",
+      "options": [
+        "hot",
+        "hotter",
+        "hottest",
+        "more hot"
+      ],
+      "answer": 1,
+      "explanation": "Comparative form for short adjectives: hot→hotter.",
+      "id": 1793
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The Amazon is the largest rainforest in the world. What is the Amazon?",
+      "options": [
+        "A river",
+        "A desert",
+        "A rainforest",
+        "A mountain"
+      ],
+      "answer": 2,
+      "explanation": "The Amazon is the world's largest rainforest.",
+      "id": 1794
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "A tsunami is a series of ocean waves caused by earthquakes under the sea. What causes a tsunami?",
+      "options": [
+        "Wind",
+        "Underwater earthquakes",
+        "Rain",
+        "Tides"
+      ],
+      "answer": 1,
+      "explanation": "Tsunamis are caused by underwater earthquakes.",
+      "id": 1795
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "熱帶雨林被稱為「地球之肺」的原因是？",
+      "options": [
+        "產生大量氧氣",
+        "吸收二氧化碳",
+        "調節氣候",
+        "以上皆是"
+      ],
+      "answer": 3,
+      "explanation": "熱帶雨林行光合作用產氧、吸 CO₂、調節氣候。",
+      "id": 1796
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "焚化爐產生電能是將？",
+      "options": [
+        "熱能→機械能→電能",
+        "化學能→光能→電能",
+        "動能→位能→電能",
+        "核能→熱能→電能"
+      ],
+      "answer": 0,
+      "explanation": "垃圾燃燒（化學能→熱能）→鍋爐（熱能→機械能）→發電機。",
+      "id": 1797
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "全球暖化主要因為大氣中何種氣體增加？",
+      "options": [
+        "氧氣",
+        "二氧化碳",
+        "氮氣",
+        "氫氣"
+      ],
+      "answer": 1,
+      "explanation": "CO₂ 為主要溫室氣體，來自化石燃料燃燒。",
+      "id": 1798
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "何謂碳足跡？",
+      "options": [
+        "腳印大小",
+        "碳排放量",
+        "碳的價格",
+        "碳的顏色"
+      ],
+      "answer": 1,
+      "explanation": "碳足跡指活動或產品直接間接造成的碳排放量。",
+      "id": 1799
     }
   ],
   "subjects": [
@@ -28214,6 +28886,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1757
+    "totalQuestions": 1799
   }
 }
