@@ -176,31 +176,37 @@ tr:nth-child(even){background:var(--card-bg)}
 }
 @media(max-width:400px){.stats-grid{grid-template-columns:1fr}}
 
-/* ===== Review page ===== */
-.review-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px}
-.review-stats{display:flex;gap:20px;flex-wrap:wrap}
-.review-stat{text-align:center;padding:12px 18px;background:var(--card-bg);border-radius:16px;border:1px solid var(--card-border)}
-.review-stat .num{font-size:24px;font-weight:800;color:var(--accent)}
-.review-stat .lbl{font-size:11px;color:var(--text-muted)}
-.review-card{perspective:1200px;min-height:360px;margin-bottom:16px}
-.review-card-inner{position:relative;width:100%;min-height:360px;transition:transform .6s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
-.review-card.flipped .review-card-inner{transform:rotateY(180deg)}
-.review-card-front,.review-card-back{position:absolute;top:0;left:0;width:100%;min-height:360px;backface-visibility:hidden;background:var(--card-bg);backdrop-filter:blur(16px);border-radius:20px;padding:24px;border:1px solid var(--card-border);box-shadow:var(--card-shadow)}
-.review-card-back{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:space-between}
-.review-card .q-tag{font-size:12px}
-.review-progress{height:6px;background:var(--border-light);border-radius:6px;margin-bottom:16px;overflow:hidden}
-.review-progress-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c9a227);border-radius:6px;transition:width .5s}
-.rate-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}
-.rate-btn{padding:12px 20px;border:none;border-radius:60px;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;flex:1;min-width:80px;text-align:center}
-.rate-btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-.rate-btn-1{background:#fecaca;color:#dc2626}
-.rate-btn-2{background:#fed7aa;color:#c2410c}
-.rate-btn-3{background:#bbf7d0;color:#15803d}
-.rate-btn-4{background:#bfdbfe;color:#1e40af}
-.review-done{text-align:center;padding:40px 20px}
-.review-done .big{font-size:64px;margin-bottom:12px}
-.review-done h3{font-size:22px;font-weight:700;margin-bottom:8px}
-.streak-fire{font-size:28px}
+/* ===== SRS Daily Review ===== */
+.srs-card-wrap{perspective:1200px;min-height:380px;margin-bottom:16px}
+.srs-card{position:relative;width:100%;min-height:380px;transition:transform .6s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d;cursor:pointer}
+.srs-card.flipped{transform:rotateY(180deg)}
+.srs-front,.srs-back{position:absolute;top:0;left:0;width:100%;min-height:380px;backface-visibility:hidden;background:var(--card-bg);backdrop-filter:blur(16px);border-radius:20px;padding:28px 24px;border:1px solid var(--card-border);box-shadow:var(--card-shadow);display:flex;flex-direction:column}
+.srs-back{transform:rotateY(180deg)}
+.srs-front .q-text{flex:1;display:flex;align-items:center;justify-content:center;font-size:17px;line-height:1.9;padding:20px 0;text-align:center}
+.srs-flip-btn{padding:14px 32px;border:none;border-radius:60px;font-size:15px;font-weight:700;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--accent-light));color:#fff;transition:all .2s;margin-top:auto}
+.srs-flip-btn:hover{transform:scale(1.03);box-shadow:0 8px 24px var(--accent-glow)}
+.srs-rate-wrap{display:flex;gap:8px;margin-top:auto;padding-top:16px}
+.srs-rate-btn{flex:1;padding:14px 10px;border:none;border-radius:14px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;text-align:center;min-width:0}
+.srs-rate-btn:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.srs-rate-1{background:#fee2e2;color:#dc2626}
+.srs-rate-2{background:#ffedd5;color:#c2410c}
+.srs-rate-3{background:#d1fae5;color:#15803d}
+.srs-rate-4{background:#dbeafe;color:#1e40af}
+.srs-ans-badge{padding:12px 16px;border-radius:12px;margin:8px 0;font-size:16px;font-weight:700;text-align:center}
+.srs-ans-badge.correct{background:#d1fae5;color:#15803d}
+.srs-ans-badge.wrong{background:#fee2e2;color:#dc2626}
+.srs-explain{padding:12px 16px;border-radius:12px;border:1px dashed var(--accent);background:var(--card-bg);font-size:13px;line-height:1.7;color:var(--text-secondary);margin:8px 0;flex:1;overflow-y:auto}
+.srs-progress{height:6px;background:var(--border-light);border-radius:6px;margin-bottom:16px;overflow:hidden}
+.srs-progress-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c9a227);border-radius:6px;transition:width .4s}
+.srs-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+.srs-stats{display:flex;gap:16px;flex-wrap:wrap}
+.srs-stat{text-align:center;padding:10px 16px;background:var(--card-bg);border-radius:14px;border:1px solid var(--card-border)}
+.srs-stat .num{font-size:22px;font-weight:800;color:var(--accent)}
+.srs-stat .lbl{font-size:11px;color:var(--text-muted)}
+.srs-countdown{font-size:13px;color:var(--text-muted);text-align:center;margin-bottom:12px}
+.srs-done{text-align:center;padding:40px 20px}
+.srs-done .big{font-size:64px;margin-bottom:12px}
+.srs-done h3{font-size:22px;font-weight:700;margin-bottom:8px}
 .streak-dots{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin-top:8px}
 .streak-dot{width:14px;height:14px;border-radius:50%;background:var(--border-light)}
 .streak-dot.active{background:var(--accent);box-shadow:0 0 8px var(--accent-glow)}
@@ -255,6 +261,14 @@ tr:nth-child(even){background:var(--card-bg)}
 <div class="stat-card"><div class="stat-num" id="statAccuracy">--%</div><div class="stat-label">正確率</div></div>
 <div class="stat-card"><div class="stat-num" id="statFav">0</div><div class="stat-label">收藏題數</div></div>
 </div>
+<div class="card" id="srsDashboard" style="background:linear-gradient(135deg,var(--accent),#2d7da0);color:#fff;border:none;cursor:pointer" onclick="document.querySelector('.nav-item[data-page=review]').click()">
+<div class="card-title" style="color:#fff">🔥 今日待複習</div>
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+<div><span style="font-size:42px;font-weight:800" id="dueTodayCount">0</span><span style="font-size:16px;opacity:.8"> 題到期</span></div>
+<div style="text-align:right"><div style="font-size:13px;opacity:.8">🔥 連續 <span id="homeStreakCount" style="font-weight:700">0</span> 天</div><div style="font-size:11px;opacity:.6;margin-top:2px">點擊開始複習 →</div></div>
+</div>
+</div>
+
 <div class="card">
 <div class="card-title">📊 學習概況</div>
 <p style="color:var(--text-secondary);font-size:14px;line-height:1.8">
@@ -367,13 +381,13 @@ tr:nth-child(even){background:var(--card-bg)}
 <button class="btn btn-outline btn-sm mt-16" onclick="clearHistory()" style="display:none" id="clearHistoryBtn">清除所有紀錄</button>
 </div>
 
-<!-- REVIEW -->
+<!-- SRS DAILY REVIEW -->
 <div class="page" id="page-review">
-<div class="review-header">
-<div><h2>📝 每日複習</h2><div class="sub" style="font-size:13px;color:var(--text-muted)">間隔重複法 · 鞏固長期記憶</div></div>
-<div class="review-stats">
-<div class="review-stat"><div class="num" id="reviewStreak">0</div><div class="lbl">🔥 連續天數</div></div>
-<div class="review-stat"><div class="num" id="reviewProgress">0/0</div><div class="lbl">今日完成</div></div>
+<div class="srs-header">
+<div><h2>📝 每日複習</h2><div class="sub" style="font-size:13px;color:var(--text-muted)">間隔重複 · 鞏固長期記憶</div></div>
+<div class="srs-stats">
+<div class="srs-stat"><div class="num" id="reviewStreak">0</div><div class="lbl">🔥 連續天數</div></div>
+<div class="srs-stat"><div class="num" id="reviewProgress">0/0</div><div class="lbl">今日完成</div></div>
 </div>
 </div>
 <div id="reviewContent"></div>
@@ -463,6 +477,7 @@ function refreshHome() {
   document.getElementById('homeDoneCount').textContent = totalDone.size;
   document.getElementById('homeFavCount').textContent = favs.length;
   document.getElementById('statTotal').textContent = QUESTIONS.length;
+  refreshSRSDashboard();
 }
 
 function renderSubjectTabs() {
@@ -1107,10 +1122,299 @@ updateSubscribeCount();
 })();
 
 // ============================
-// SM-2 Spaced Repetition
+// SRS Fixed-Interval Algorithm
 // ============================
-function getReviewStore() {
-  return getStore('review_state', {});
+const SRS_INTERVALS = [0, 1, 3, 7, 15, 30, 60];
+
+function getSRS() { return getStore('srs_card_states', {}); }
+function setSRS(s) { setStore('srs_card_states', s); }
+function getStreak() { return getStore('srs_streak', {current:0,longest:0,lastDate:'',dates:[]}); }
+function setStreak(s) { setStore('srs_streak', s); }
+function todayStr() {
+  var d = new Date();
+  return d.getFullYear()+'-'+(d.getMonth()+1).toString().padStart(2,'0')+'-'+d.getDate().toString().padStart(2,'0');
+}
+function yesterdayStr(ds) {
+  var d = new Date(ds); d.setDate(d.getDate()-1);
+  return d.getFullYear()+'-'+(d.getMonth()+1).toString().padStart(2,'0')+'-'+d.getDate().toString().padStart(2,'0');
+}
+function daysLater(ds, n) {
+  var d = new Date(ds); d.setDate(d.getDate()+n);
+  return d.getFullYear()+'-'+(d.getMonth()+1).toString().padStart(2,'0')+'-'+d.getDate().toString().padStart(2,'0');
+}
+
+function updateStreak() {
+  var today = todayStr();
+  var s = getStreak();
+  if (s.lastDate === today) return s;
+  if (s.lastDate && s.lastDate === yesterdayStr(today)) { s.current++; }
+  else { s.current = 1; }
+  s.longest = Math.max(s.longest, s.current);
+  if (!s.dates.includes(today)) s.dates.push(today);
+  s.lastDate = today;
+  setStreak(s);
+  return s;
+}
+
+function getDueCount() {
+  var today = todayStr();
+  var srs = getSRS();
+  var count = 0;
+  for (var id in srs) {
+    if (srs[id].due <= today && srs[id].due !== '0') count++;
+  }
+  return count;
+}
+
+function playDing() {
+  try {
+    var ctx = new (window.AudioContext||window.webkitAudioContext)();
+    var osc = ctx.createOscillator();
+    var gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    osc.frequency.setValueAtTime(1180, ctx.currentTime+0.06);
+    osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime+0.12);
+    gain.gain.setValueAtTime(0.25, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime+0.35);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime+0.35);
+  } catch(e){}
+}
+
+// ============================
+// SRS Review Engine
+// ============================
+let srsSession = null;
+
+function refreshSRSDashboard() {
+  var el = document.getElementById('srsDashboard');
+  if (!el) return;
+  var today = todayStr();
+  var srs = getSRS();
+  var due = getDueCount();
+  document.getElementById('dueTodayCount').textContent = due;
+  var s = getStreak();
+  document.getElementById('homeStreakCount').textContent = s.current;
+}
+
+function getSRSDefault() {
+  return { level:0, due:todayStr(), totalReviews:0, correctCount:0 };
+}
+
+function getTodayReviewList(limit) {
+  var today = todayStr();
+  var srs = getSRS();
+  var wrongs = getStore('wrong', {});
+  
+  // 1. Due cards from SRS
+  var dueMap = {};
+  for (var id in srs) {
+    if (srs[id].due <= today) dueMap[Number(id)] = srs[id];
+  }
+  
+  // 2. Wrong questions not yet in SRS
+  for (var id in wrongs) {
+    var nid = Number(id);
+    if (!srs[nid] && QUESTIONS.find(function(q){return q.id===nid})) {
+      dueMap[nid] = getSRSDefault();
+    }
+  }
+  
+  // 3. Fill with random if needed
+  var ids = Object.keys(dueMap).map(Number);
+  if (ids.length < limit) {
+    var shuffled = QUESTIONS.sort(function(){return Math.random()-0.5});
+    for (var i=0; i<shuffled.length && ids.length<limit; i++) {
+      if (ids.indexOf(shuffled[i].id)<0) ids.push(shuffled[i].id);
+    }
+  }
+  
+  ids.sort(function(){return Math.random()-0.5});
+  var list = [];
+  for (var i=0; i<ids.length && list.length<limit; i++) {
+    var q = QUESTIONS.find(function(x){return x.id===ids[i]});
+    if (q) list.push(q);
+  }
+  return list;
+}
+
+function renderReview() {
+  var container = document.getElementById('reviewContent');
+  var s = getStreak();
+  document.getElementById('reviewStreak').textContent = s.current;
+  
+  if (!QUESTIONS.length) {
+    container.innerHTML = '<div class="card" style="text-align:center;padding:40px"><div class="empty-state"><div class="icon">📚</div><div>題庫載入中...</div></div></div>';
+    return;
+  }
+  
+  // Resume existing session
+  var sess = getStore('srs_session', null);
+  if (sess && sess.date === todayStr() && !sess.done && sess.queue && sess.queue.length > 0) {
+    srsSession = sess;
+    showSRSCard(container);
+    return;
+  }
+  if (sess && sess.done) {
+    srsSession = sess;
+    showSRSDone(container);
+    return;
+  }
+  
+  var dueList = getTodayReviewList(20);
+  if (!dueList.length) {
+    container.innerHTML = '<div class="card" style="text-align:center;padding:40px"><div class="empty-state"><div class="icon">🎉</div><div>目前沒有待複習的題目！<br>多做模擬考或題庫瀏覽來累積複習題。</div></div></div>';
+    return;
+  }
+  
+  var html = '<div class="card"><div class="card-title">📋 今日待複習</div><p style="font-size:14px;color:var(--text-secondary);margin-bottom:16px">根據間隔重複演算法，以下 ' + dueList.length + ' 題今天到期：</p>';
+  dueList.forEach(function(q,i){
+    html += '<div style="padding:8px 12px;border-bottom:1px solid var(--border-light);font-size:13px;display:flex;align-items:center;gap:8px">'+
+      '<span style="background:var(--accent);color:#fff;border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0">'+(i+1)+'</span>'+
+      '<span>' + q.subject + ' · ' + q.unit + '</span>'+
+      '<span style="margin-left:auto;font-size:11px;color:var(--text-muted)">' + q.difficulty + '</span></div>';
+  });
+  html += '<div class="text-center mt-16"><button class="btn btn-primary" onclick="startSRS()">開始今日修煉 (' + dueList.length + ' 題)</button></div></div>';
+  container.innerHTML = html;
+}
+
+function startSRS() {
+  var dueList = getTodayReviewList(20);
+  srsSession = { date:todayStr(), queue:dueList.map(function(q){return q.id}), current:0, done:false, correct:0, total:dueList.length };
+  setStore('srs_session', srsSession);
+  showSRSCard(document.getElementById('reviewContent'));
+}
+
+function showSRSCard(container) {
+  if (!srsSession || srsSession.done || srsSession.current >= srsSession.queue.length) {
+    finishSRS(); return;
+  }
+  var id = srsSession.queue[srsSession.current];
+  var q = QUESTIONS.find(function(x){return x.id===id});
+  if (!q) { srsSession.current++; showSRSCard(container); return; }
+  
+  document.getElementById('reviewProgress').textContent = srsSession.current + '/' + srsSession.total;
+  var pct = (srsSession.current / srsSession.total * 100);
+  
+  var ansStr = Array.isArray(q.answer) ? q.answer.join(', ') : q.answer;
+  
+  html = '<div class="srs-progress"><div class="srs-progress-bar" style="width:'+pct+'%"></div></div>';
+  html += '<div class="srs-countdown">第 '+(srsSession.current+1)+' / '+srsSession.total+' 題</div>';
+  
+  // Card
+  html += '<div class="srs-card-wrap"><div class="srs-card" id="srsCard" onclick="flipSRS()">';
+  
+  // Front
+  html += '<div class="srs-front"><div class="q-tags" style="margin-bottom:10px">'+
+    '<span class="q-tag" style="background:#dbeafe;color:#1e40af">'+q.subject+'</span>'+
+    '<span class="q-tag">'+q.unit+'</span>'+
+    '<span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span></div>'+
+    '<div class="q-text">'+q.question+'</div>'+
+    '<div style="padding:8px 0">'+
+    (q.type==='multiple' ? q.options.map(function(o,i){return '<span style="display:block;padding:3px 0;font-size:14px">'+String.fromCharCode(65+i)+') '+o+'</span>'}).join('') :
+     q.options.map(function(o,i){return '<span style="display:block;padding:3px 0;font-size:14px">'+String.fromCharCode(65+i)+') '+o+'</span>'}).join('')) +
+    '</div>'+
+    '<button class="srs-flip-btn" onclick="event.stopPropagation();flipSRS()">👀 顯示解答</button></div>';
+  
+  // Back
+  html += '<div class="srs-back"><div class="q-tags" style="margin-bottom:10px">'+
+    '<span class="q-tag" style="background:#dbeafe;color:#1e40af">'+q.subject+'</span>'+
+    '<span class="q-tag">'+q.unit+'</span>'+
+    '<span class="q-tag '+q.difficulty+'">'+q.difficulty+'</span></div>'+
+    '<div class="srs-ans-badge correct">✅ 正確答案：'+ansStr+'</div>'+
+    '<div class="srs-explain">'+q.explanation+'</div>'+
+    '<div class="srs-rate-wrap">'+
+    '<button class="srs-rate-btn srs-rate-1" onclick="event.stopPropagation();rateSRS(1)">😵 忘記</button>'+
+    '<button class="srs-rate-btn srs-rate-2" onclick="event.stopPropagation();rateSRS(2)">😅 困難</button>'+
+    '<button class="srs-rate-btn srs-rate-3" onclick="event.stopPropagation();rateSRS(3)">🙂 良好</button>'+
+    '<button class="srs-rate-btn srs-rate-4" onclick="event.stopPropagation();rateSRS(4)">😎 簡單</button></div></div>';
+  
+  html += '</div></div>';
+  
+  container.innerHTML = html;
+  
+  // Start fully zoomed in, question-focused
+  var el = document.getElementById('srsCard');
+  if (el) el.classList.remove('flipped');
+}
+
+function flipSRS() {
+  var el = document.getElementById('srsCard');
+  if (el) el.classList.toggle('flipped');
+}
+
+function rateSRS(score) {
+  if (!srsSession) return;
+  var id = srsSession.queue[srsSession.current];
+  var srs = getSRS();
+  if (!srs[id]) srs[id] = getSRSDefault();
+  var card = srs[id];
+  
+  var today = todayStr();
+  
+  if (score === 1) { // 忘記 → 等級歸零,明天再來
+    card.level = 0;
+    card.due = daysLater(today, 1);
+  } else if (score === 2) { // 困難 → 等級不變,縮短間隔
+    card.due = daysLater(today, Math.max(1, SRS_INTERVALS[Math.min(card.level, SRS_INTERVALS.length-1)]));
+  } else if (score === 3) { // 良好 → 等級+1,正常間隔
+    card.level = Math.min(card.level+1, SRS_INTERVALS.length-1);
+    card.due = daysLater(today, SRS_INTERVALS[card.level]);
+    srsSession.correct++;
+    playDing();
+  } else if (score === 4) { // 簡單 → 等級+2,跳級
+    card.level = Math.min(card.level+2, SRS_INTERVALS.length-1);
+    card.due = daysLater(today, SRS_INTERVALS[card.level]);
+    srsSession.correct++;
+    playDing();
+  }
+  
+  card.totalReviews = (card.totalReviews||0) + 1;
+  if (score >= 3) card.correctCount = (card.correctCount||0) + 1;
+  setSRS(srs);
+  
+  srsSession.current++;
+  if (srsSession.current >= srsSession.queue.length) {
+    finishSRS();
+  } else {
+    setStore('srs_session', srsSession);
+    showSRSCard(document.getElementById('reviewContent'));
+  }
+}
+
+function finishSRS() {
+  if (!srsSession) return;
+  srsSession.done = true;
+  setStore('srs_session', srsSession);
+  updateStreak();
+  showSRSDone(document.getElementById('reviewContent'));
+}
+
+function showSRSDone(container) {
+  var s = getStreak();
+  var total = srsSession ? srsSession.total : 0;
+  var correct = srsSession ? srsSession.correct : 0;
+  var pct = total ? Math.round(correct/total*100) : 0;
+  
+  document.getElementById('reviewProgress').textContent = total + '/' + total;
+  
+  var html = '<div class="srs-done">';
+  html += '<div class="big">🎉</div>';
+  html += '<h3>今日修煉完成！</h3>';
+  html += '<p style="color:var(--text-secondary);margin-bottom:16px">答對 '+correct+' / '+total+' 題（'+pct+'%）</p>';
+  html += '<div class="streak-dots" style="margin-bottom:6px">';
+  for (var i=13; i>=0; i--) {
+    var d = new Date(); d.setDate(d.getDate()-i);
+    var ds = d.getFullYear()+'-'+(d.getMonth()+1).toString().padStart(2,'0')+'-'+d.getDate().toString().padStart(2,'0');
+    html += '<div class="streak-dot'+(s.dates&&s.dates.includes(ds)?' active':'')+'" title="'+ds+'"></div>';
+  }
+  html += '</div>';
+  html += '<div style="font-size:13px;color:var(--text-muted);margin-bottom:4px">🔥 連續 '+s.current+' 天</div>';
+  html += '<div style="font-size:11px;color:var(--text-muted);margin-bottom:16px">最近 14 天打卡</div>';
+  html += '<button class="btn btn-outline" onclick="renderReview()">📊 查看統計</button></div>';
+  container.innerHTML = html;
 }
 function setReviewStore(s) { setStore('review_state', s); }
 function getStreak() { return getStore('streak', {current:0,longest:0,lastDate:'',dates:[]}); }
