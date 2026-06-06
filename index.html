@@ -1603,52 +1603,40 @@ loadQuestions();
 
 
 
-// Fetch latest blog posts from Blogger RSS
+// Fetch latest blog posts from Blogger via JSONP (bypass CORS)
 function loadBlogPosts() {
-  var url = 'https://edtechlab365.blogspot.com/feeds/posts/default?alt=json&max-results=5';
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        try {
-          var data = JSON.parse(xhr.responseText);
-          var entries = data.feed.entry || [];
-          var html = '<ul class="blog-list">';
-          for (var i = 0; i < Math.min(entries.length, 5); i++) {
-            var e = entries[i];
-            var title = e.title.$t;
-            var link = e.link.find(function(l) { return l.rel === 'alternate'; });
-            var href = link ? link.href : '#';
-            var published = e.published.$t;
-            var date = published ? published.slice(0, 10) : '';
-            var labels = '';
-            if (e.category) {
-              var cats = e.category.map(function(c) { return c.term; }).slice(0, 3);
-              if (cats.length) labels = '<span style="font-size:11px;color:var(--accent)">#' + cats.join(' #') + '</span>';
-            }
-            html += '<li class="blog-item">' +
-              '<div class="blog-icon">📄</div>' +
-              '<div class="blog-info">' +
-              '<a class="blog-title" href="' + href + '" target="_blank" rel="noopener">' + title + '</a>' +
-              '<div class="blog-meta">' + date + (labels ? ' &middot; ' + labels : '') + '</div>' +
-              '</div></li>';
-          }
-          html += '</ul>';
-          html += '<div style="text-align:right;margin-top:8px"><a href="https://edtechlab365.blogspot.com/" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none">更多文章 →</a></div>';
-          document.getElementById('blogContent').innerHTML = html;
-        } catch(e) {
-          document.getElementById('blogContent').innerHTML = '<div class="blog-error">無法載入文章</div>';
-        }
-      } else {
-        document.getElementById('blogContent').innerHTML = '<div class="blog-error">無法載入文章</div>';
-      }
-    }
-  };
-  xhr.send();
+  var s = document.createElement('script');
+  s.src = 'https://edtechlab365.blogspot.com/feeds/posts/default?alt=json-in-script&callback=handleBlogFeed&max-results=5';
+  document.body.appendChild(s);
 }
 
-// Delay load to not block initial render
+function handleBlogFeed(data) {
+  var entries = data.feed.entry || [];
+  var html = '<ul class="blog-list">';
+  for (var i = 0; i < Math.min(entries.length, 5); i++) {
+    var e = entries[i];
+    var title = e.title.$t;
+    var link = e.link.find(function(l) { return l.rel === 'alternate'; });
+    var href = link ? link.href : '#';
+    var published = e.published.$t;
+    var date = published ? published.slice(0, 10) : '';
+    var labels = '';
+    if (e.category) {
+      var cats = e.category.map(function(c) { return c.term; }).slice(0, 3);
+      if (cats.length) labels = '<span style="font-size:11px;color:var(--accent)">#' + cats.join(' #') + '</span>';
+    }
+    html += '<li class="blog-item">' +
+      '<div class="blog-icon">📄</div>' +
+      '<div class="blog-info">' +
+      '<a class="blog-title" href="' + href + '" target="_blank" rel="noopener">' + title + '</a>' +
+      '<div class="blog-meta">' + date + (labels ? ' &middot; ' + labels : '') + '</div>' +
+      '</div></li>';
+  }
+  html += '</ul>';
+  html += '<div style="text-align:right;margin-top:8px"><a href="https://edtechlab365.blogspot.com/" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none">更多文章 →</a></div>';
+  document.getElementById('blogContent').innerHTML = html;
+}
+
 setTimeout(loadBlogPosts, 1000);
 </script>
 
