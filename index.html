@@ -206,21 +206,21 @@ tr:nth-child(even){background:var(--card-bg)}
 .streak-dot.active{background:var(--accent);box-shadow:0 0 8px var(--accent-glow)}
 
 /* ===== Print ===== */
-#print-area{display:none}
+#print-area{position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden}
 @media print{
-  body *{visibility:hidden !important}
-  #print-area,#print-area *{visibility:visible !important}
-  #print-area{display:block !important;position:fixed;top:0;left:0;width:100%;padding:0.5in;font-size:12pt;line-height:1.6;color:#000;background:#fff}
-  #print-area h1{font-size:20pt;margin-bottom:4pt;color:#1a2c3e}
-  #print-area .print-meta{font-size:10pt;color:#666;margin-bottom:16pt}
-  #print-area .print-q{border-bottom:1pt solid #ddd;padding:10pt 0;page-break-inside:avoid}
-  #print-area .print-q .pq-header{font-size:10pt;color:#666;margin-bottom:4pt}
-  #print-area .print-q .pq-text{font-size:12pt;margin:6pt 0}
-  #print-area .print-q .pq-opts{font-size:11pt;margin:4pt 0;padding-left:12pt}
-  #print-area .print-q .pq-answer{font-size:11pt;color:#059669;font-weight:700;margin-top:4pt}
-  #print-area .print-q .pq-explain{font-size:10pt;color:#333;margin-top:4pt;padding:6pt 10pt;background:#f5f5f5;border-radius:4pt}
-  #print-area .print-footer{text-align:center;margin-top:20pt;padding-top:12pt;border-top:1pt solid #ddd;font-size:9pt;color:#888}
-  #print-area .print-footer img{width:60px;height:60px;vertical-align:middle;margin:4pt}
+  body *{visibility:hidden !important;display:none !important}
+  #print-area,#print-area *{display:block !important;visibility:visible !important}
+  #print-area{position:fixed;top:0;left:0;width:100%;height:auto;overflow:visible;padding:20px 0.5in;font-size:12pt;line-height:1.6;color:#000;background:#fff}
+  #print-area .print-q{visibility:visible !important;display:block !important;border-bottom:1pt solid #ddd;padding:10pt 0;page-break-inside:avoid}
+  #print-area .print-q .pq-header{display:block !important;font-size:10pt;color:#666;margin-bottom:4pt}
+  #print-area .print-q .pq-text{display:block !important;font-size:12pt;margin:6pt 0}
+  #print-area .print-q .pq-opts{display:block !important;font-size:11pt;margin:4pt 0;padding-left:12pt}
+  #print-area .print-q .pq-answer{display:block !important;font-size:11pt;color:#059669;font-weight:700;margin-top:4pt}
+  #print-area .print-q .pq-explain{display:block !important;font-size:10pt;color:#333;margin-top:4pt;padding:6pt 10pt;background:#f5f5f5;border-radius:4pt}
+  #print-area .print-footer{display:block !important;text-align:center;margin-top:20pt;padding-top:12pt;border-top:1pt solid #ddd;font-size:9pt;color:#888}
+  #print-area .print-footer img{display:inline !important;width:60px;height:60px;vertical-align:middle;margin:4pt}
+  #print-area h1{display:block !important;font-size:20pt;margin-bottom:4pt;color:#1a2c3e}
+  #print-area .print-meta{display:block !important;font-size:10pt;color:#666;margin-bottom:16pt}
   .no-print{display:none !important}
 }
 </style>
@@ -1200,18 +1200,29 @@ function applySM2(state, score) {
   return state;
 }
 
+let _audioCtx = null;
+function getAudioCtx() {
+  if (!_audioCtx) {
+    try { _audioCtx = new (window.AudioContext||window.webkitAudioContext)(); } catch(e) { return null; }
+  }
+  if (_audioCtx.state === 'suspended') _audioCtx.resume();
+  return _audioCtx;
+}
 function playDing() {
   try {
-    const ctx = new (window.AudioContext||window.webkitAudioContext)();
+    const ctx = getAudioCtx();
+    if (!ctx) return;
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     osc.connect(gain); gain.connect(ctx.destination);
+    osc.type = 'sine';
     osc.frequency.setValueAtTime(880, ctx.currentTime);
-    osc.frequency.setValueAtTime(1100, ctx.currentTime + 0.08);
-    gain.gain.setValueAtTime(0.3, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+    osc.frequency.setValueAtTime(1180, ctx.currentTime + 0.06);
+    osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.12);
+    gain.gain.setValueAtTime(0.25, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
     osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.3);
+    osc.stop(ctx.currentTime + 0.35);
   } catch(e) {}
 }
 
@@ -1436,7 +1447,7 @@ function exportWrongPDF() {
     const q = QUESTIONS.find(x => x.id === id);
     if (!q) return;
     const w = wrongs[id];
-    const ansStr = q.type === 'multiple' ? q.answer.join(', ') : q.answer;
+    const ansStr = q.type === 'multiple' ? (Array.isArray(q.answer)?q.answer.join(', '):q.answer) : q.answer;
     
     html += '<div class="print-q">';
     html += '<div class="pq-header">第 ' + (idx+1) + ' 題  [' + q.subject + '·' + q.unit + '] [' + q.difficulty + ']  錯 ' + (w.wrongCount||0) + ' 次</div>';
@@ -1452,7 +1463,6 @@ function exportWrongPDF() {
     html += '</div>';
   });
   
-  // Footer with LINE info
   html += '<div class="print-footer">';
   html += '<div>📱 LINE ID: @edtechlab365</div>';
   html += '<img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR">';
@@ -1460,8 +1470,11 @@ function exportWrongPDF() {
   html += '<div style="margin-top:8px;font-size:8pt">理化題庫 - 免費線上學習平台</div>';
   html += '</div>';
   
-  document.getElementById('print-area').innerHTML = html;
-  setTimeout(() => { window.print(); }, 200);
+  const pa = document.getElementById('print-area');
+  pa.innerHTML = html;
+  // Force browser to render print content before opening dialog
+  pa.offsetHeight; // trigger reflow
+  setTimeout(function() { window.print(); }, 300);
 }
 
 loadQuestions();
