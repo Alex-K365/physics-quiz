@@ -1440,64 +1440,65 @@ function exportWrongPDF() {
     return;
   }
   
-  var lines = [];
-  lines.push('<html><head><meta charset="utf-8"><title>理化題庫 - 錯題本</title>');
-  lines.push('<style>');
-  lines.push('body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;padding:0.5in;font-size:12pt;line-height:1.6;color:#000}');
-  lines.push('h1{font-size:20pt;margin-bottom:2pt;color:#1a2c3e}');
-  lines.push('.meta{font-size:10pt;color:#666;margin-bottom:16pt}');
-  lines.push('.q{border-bottom:1pt solid #ddd;padding:10pt 0;page-break-inside:avoid}');
-  lines.push('.q .hdr{font-size:10pt;color:#666;margin-bottom:4pt}');
-  lines.push('.q .txt{font-size:12pt;margin:6pt 0}');
-  lines.push('.q .opts{font-size:11pt;margin:4pt 0;padding-left:12pt}');
-  lines.push('.q .ans{font-size:11pt;color:#059669;font-weight:700;margin-top:4pt}');
-  lines.push('.q .exp{font-size:10pt;color:#333;margin-top:4pt;padding:6pt 10pt;background:#f5f5f5;border-radius:4pt}');
-  lines.push('.footer{text-align:center;margin-top:20pt;padding-top:12pt;border-top:1pt solid #ddd;font-size:9pt;color:#888}');
-  lines.push('.footer img{width:60px;height:60px;vertical-align:middle;margin:4pt}');
-  lines.push('@media print{body{padding:0.3in}}');
-  lines.push('</style></head><body>');
+  var html = '<html><head><meta charset="utf-8"><title>理化題庫 - 錯題本</title></head><body>';
+  html += '<div id="printWrap"></div></body></html>';
   
-  lines.push('<h1>理化題庫 — 錯題本</h1>');
-  lines.push('<div class="meta">匯出日期：' + todayStr() + ' ｜ 共 ' + ids.length + ' 題</div>');
+  var f = document.createElement('iframe');
+  f.style.cssText = 'position:fixed;top:0;left:-9999px;width:800px;height:600px';
+  document.body.appendChild(f);
+  var doc = f.contentDocument || f.contentWindow.document;
+  doc.open(); doc.write(html); doc.close();
   
+  var qhtml = '';
   ids.forEach(function(id, idx) {
-    const q = QUESTIONS.find(function(x) { return x.id === id; });
+    var q = QUESTIONS.find(function(x) { return x.id === id; });
     if (!q) return;
-    const w = wrongs[id];
+    var w = wrongs[id];
     var ansStr = q.answer;
     if (Array.isArray(q.answer)) ansStr = q.answer.join(', ');
-    
-    lines.push('<div class="q">');
-    lines.push('<div class="hdr">第 ' + (idx+1) + ' 題  [' + q.subject + '·' + q.unit + '] [' + q.difficulty + ']  錯 ' + (w.wrongCount||0) + ' 次</div>');
-    lines.push('<div class="txt">' + q.question + '</div>');
-    lines.push('<div class="opts">');
+    var optsHtml = '';
     q.options.forEach(function(o, oi) {
-      lines.push(String.fromCharCode(65 + oi) + ') ' + o + '<br>');
+      optsHtml += String.fromCharCode(65 + oi) + ') ' + o + '<br>';
     });
-    lines.push('</div>');
-    lines.push('<div class="ans">✅ 正確答案：' + ansStr + '</div>');
-    lines.push('<div class="exp">📖 ' + q.explanation + '</div>');
-    lines.push('</div>');
+    qhtml += '<div class="q">' +
+      '<div class="hdr">第 ' + (idx+1) + ' 題  [' + q.subject + '·' + q.unit + '] [' + q.difficulty + ']  錯 ' + (w.wrongCount||0) + ' 次</div>' +
+      '<div class="txt">' + q.question + '</div>' +
+      '<div class="opts">' + optsHtml + '</div>' +
+      '<div class="ans">\u2705 \u6b63\u786e\u7b54\u6848\uff1a' + ansStr + '</div>' +
+      '<div class="exp">' + q.explanation + '</div></div>';
   });
   
-  lines.push('<div class="footer">');
-  lines.push('<div>📱 LINE ID: @edtechlab365</div>');
-  lines.push('<img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR">');
-  lines.push('<div>免費預約諮詢 · 理化學習問題歡迎聊聊</div>');
-  lines.push('<div style="margin-top:8px;font-size:8pt">理化題庫 - 免費線上學習平台</div>');
-  lines.push('</div>');
+  var full = '<div class="noprint" style="text-align:center;margin:10px">' +
+    '<button onclick="window.print()" style="padding:10px 30px;font-size:16px;cursor:pointer">\ud83d\udcc4 \u5217\u5370 / \u5c0e\u51fa PDF</button>' +
+    '<span style="margin-left:10px;color:#888;font-size:13px">\u7136\u5f8c\u9078\u300c\u53e6\u5b58 PDF\u300d</span></div>' +
+    '<h1>\u7406\u5316\u984c\u5eab \u2014 \u932f\u984c\u672c</h1>' +
+    '<div class="meta">\u532f\u51fa\u65e5\u671f\uff1a' + todayStr() + ' \uff5c \u5171 ' + ids.length + ' \u984c</div>' +
+    qhtml +
+    '<div class="footer">' +
+    '<div>\ud83d\udcf1 LINE ID: @edtechlab365</div>' +
+    '<img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://line.me/ti/p/~edtechlab365" alt="LINE QR">' +
+    '<div>\u514d\u8cbb\u9810\u7d04\u8aee\u8a62 \u00b7 \u7406\u5316\u5b78\u7fd2\u554f\u984c\u6b61\u8fce\u804a\u804a</div>' +
+    '<div style="margin-top:6px;font-size:8pt">\u7406\u5316\u984c\u5eab - \u514d\u8cbb\u7dda\u4e0a\u5b78\u7fd2\u5e73\u53f0</div></div>';
   
-  lines.push('</body></html>');
+  var s = doc.createElement('style');
+  s.textContent = 'body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;padding:20px 0.5in;font-size:12pt;color:#000}' +
+    'h1{font-size:20pt;color:#1a2c3e;margin-bottom:2pt}.meta{font-size:10pt;color:#666;margin-bottom:16pt}' +
+    '.q{border-bottom:1pt solid #ddd;padding:10pt 0;page-break-inside:avoid}.hdr{font-size:10pt;color:#666;margin-bottom:4pt}' +
+    '.txt{font-size:12pt;margin:6pt 0}.opts{font-size:11pt;margin:4pt 0;padding-left:12pt}' +
+    '.ans{font-size:11pt;color:#059669;font-weight:700;margin-top:4pt}' +
+    '.exp{font-size:10pt;color:#333;margin-top:4pt;padding:6pt 10pt;background:#f5f5f5;border-radius:4pt}' +
+    '.footer{text-align:center;margin-top:20pt;padding-top:12pt;border-top:1pt solid #ddd;font-size:9pt;color:#888}' +
+    '.footer img{width:60px;height:60px;vertical-align:middle;margin:4pt}' +
+    '@media print{.noprint{display:none!important}body{padding:0.3in}}';
+  doc.head.appendChild(s);
   
-  var w = window.open('', '_blank');
-  if (w) {
-    w.document.write(lines.join('\n'));
-    w.document.close();
-    w.focus();
-    setTimeout(function() { w.print(); }, 500);
-  } else {
-    alert('請允許彈出視窗以導出 PDF。');
-  }
+  doc.getElementById('printWrap').innerHTML = full;
+  
+  setTimeout(function() {
+    f.contentWindow.focus();
+    f.contentWindow.print();
+    setTimeout(function() { document.body.removeChild(f); }, 1000);
+  }, 500);
 }
 
 loadQuestions();
