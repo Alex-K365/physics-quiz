@@ -27541,6 +27541,662 @@
       "answer": 0,
       "explanation": "HCl+NaOH→NaCl+H₂O，蒸乾得食鹽。",
       "id": 1716
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "重量 50 kgw 的物體，質量為多少公斤？",
+      "options": [
+        "5 kg",
+        "10 kg",
+        "50 kg",
+        "500 kg"
+      ],
+      "answer": 2,
+      "explanation": "重量=mg，kgw 即公斤重。50 kgw 質量=50 kg。",
+      "id": 1717
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量 10 kg 的物體靜止於水平面，受 30 N 水平拉力（最大靜摩擦 25 N），則摩擦力為？",
+      "options": [
+        "20 N",
+        "25 N",
+        "30 N",
+        "10 N"
+      ],
+      "answer": 1,
+      "explanation": "拉力 30 N > 最大靜摩擦 25 N，物體運動。動摩擦力約等於最大靜摩擦。",
+      "id": 1718
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一小球作圓周運動，半徑 0.5 m，速率 2 m/s，向心加速度為？",
+      "options": [
+        "2 m/s²",
+        "4 m/s²",
+        "8 m/s²",
+        "16 m/s²"
+      ],
+      "answer": 2,
+      "explanation": "a=v²/r=4/0.5=8 m/s²。",
+      "id": 1719
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "煞車時乘客身體前傾是因為？",
+      "options": [
+        "慣性",
+        "摩擦力",
+        "重力",
+        "向心力"
+      ],
+      "answer": 0,
+      "explanation": "車減速時身體因慣性維持原速度而前傾。",
+      "id": 1720
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鉛直上拋物體的上升時間與下降時間？",
+      "options": [
+        "上升較長",
+        "下降較長",
+        "相等",
+        "不一定"
+      ],
+      "answer": 2,
+      "explanation": "不計阻力時，上升時間=下降時間。",
+      "id": 1721
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "某物體初速 0，加速度 4 m/s²，第 3 秒內的位移為？",
+      "options": [
+        "8 m",
+        "10 m",
+        "12 m",
+        "14 m"
+      ],
+      "answer": 1,
+      "explanation": "第3秒內：½×4×9−½×4×4=18−8=10 m。",
+      "id": 1722
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電池將何種能轉換為電能？",
+      "options": [
+        "熱能",
+        "化學能",
+        "光能",
+        "核能"
+      ],
+      "answer": 1,
+      "explanation": "電池為化學能→電能。",
+      "id": 1723
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體作自由落體時，力學能？",
+      "options": [
+        "增加",
+        "減少",
+        "守恆",
+        "先增後減"
+      ],
+      "answer": 2,
+      "explanation": "不計阻力時，力學能守恆（位能+動能=定值）。",
+      "id": 1724
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一子彈質量 10 g，速度 400 m/s，動能為？",
+      "options": [
+        "400 J",
+        "600 J",
+        "800 J",
+        "1000 J"
+      ],
+      "answer": 2,
+      "explanation": "Ek=½×0.01×160000=800 J。",
+      "id": 1725
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電路短路時會發生什麼？",
+      "options": [
+        "電流過大",
+        "電流過小",
+        "電壓過大",
+        "電阻過大"
+      ],
+      "answer": 0,
+      "explanation": "短路時電阻趨近 0，電流極大。",
+      "id": 1726
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為電流的熱效應應用？",
+      "options": [
+        "電動機",
+        "電鍋",
+        "發電機",
+        "變壓器"
+      ],
+      "answer": 1,
+      "explanation": "電鍋利用電流通過電熱線產生熱。",
+      "id": 1727
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "110V 電源連接 500W 電器，使用 3 小時消耗多少度電？",
+      "options": [
+        "0.5 度",
+        "1.5 度",
+        "2.5 度",
+        "3.5 度"
+      ],
+      "answer": 1,
+      "explanation": "度數=0.5×3=1.5 度。",
+      "id": 1728
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為光的直進現象？",
+      "options": [
+        "日月食",
+        "彩虹",
+        "海市蜃樓",
+        "筷子彎折"
+      ],
+      "answer": 0,
+      "explanation": "日月食因光直線前進，被月球或地球擋住陽光形成。",
+      "id": 1729
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "照相機的鏡頭相當於何種透鏡？",
+      "options": [
+        "凹透鏡",
+        "凸透鏡",
+        "平面鏡",
+        "凹面鏡"
+      ],
+      "answer": 1,
+      "explanation": "相機鏡頭為凸透鏡，將景物成像於底片（感光元件）上。",
+      "id": 1730
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "永久磁鐵的磁性來自於？",
+      "options": [
+        "電流",
+        "原子內部電子自旋",
+        "外來磁場",
+        "溫度"
+      ],
+      "answer": 1,
+      "explanation": "鐵磁性物質的原子中，電子自旋方向一致產生磁性。",
+      "id": 1731
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "安培定律說明了電流與何者的關係？",
+      "options": [
+        "電壓",
+        "電阻",
+        "磁場",
+        "電荷"
+      ],
+      "answer": 2,
+      "explanation": "安培定律：電流產生磁場（電流的磁效應）。",
+      "id": 1732
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "冬天摸鐵製品比摸木製品感覺更冷是因為？",
+      "options": [
+        "鐵溫度較低",
+        "鐵導熱較快",
+        "鐵比熱較小",
+        "鐵密度較大"
+      ],
+      "answer": 1,
+      "explanation": "鐵導熱係數大，熱量從手快速傳走，感覺更冷。",
+      "id": 1733
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "地面輻射冷卻形成霧發生在？",
+      "options": [
+        "白天晴天",
+        "夜晚無雲",
+        "雨天",
+        "陰天"
+      ],
+      "answer": 1,
+      "explanation": "夜晚無雲時地面輻射散熱快，氣溫下降水氣凝結成霧。",
+      "id": 1734
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鋼琴、吉他等弦樂器調音是調整弦的？",
+      "options": [
+        "長短粗細（張力）",
+        "材質",
+        "顏色",
+        "形狀"
+      ],
+      "answer": 0,
+      "explanation": "調整弦的張力、長度或粗細可以改變音調。",
+      "id": 1735
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "將空氣打入輪胎時，輪胎內氣體？",
+      "options": [
+        "分子增加",
+        "壓力增加",
+        "體積增加",
+        "以上皆是"
+      ],
+      "answer": 3,
+      "explanation": "打氣增加氣體分子數，壓力增大，輪胎膨脹。",
+      "id": 1736
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "潛水艇浮沉是調整？",
+      "options": [
+        "重量",
+        "體積",
+        "形狀",
+        "材質"
+      ],
+      "answer": 0,
+      "explanation": "潛水艇改變艙內水量（重量）來控制浮沉。",
+      "id": 1737
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為化合物？",
+      "options": [
+        "氫氣",
+        "氧氣",
+        "水",
+        "氮氣"
+      ],
+      "answer": 2,
+      "explanation": "水（H₂O）由氫氧元素組成。氫氣、氧氣、氮氣為元素。",
+      "id": 1738
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "CO₂ 的分子量約為？",
+      "options": [
+        "28",
+        "32",
+        "44",
+        "56"
+      ],
+      "answer": 2,
+      "explanation": "C=12，O×2=32，CO₂=44。",
+      "id": 1739
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為放熱反應？",
+      "options": [
+        "光合作用",
+        "燃燒",
+        "水電解",
+        "碳酸氫鈉受熱"
+      ],
+      "answer": 1,
+      "explanation": "燃燒為放熱反應。光合作用為吸熱，電解需輸入電能。",
+      "id": 1740
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電解水時陰極產生的氣體可使？",
+      "options": [
+        "澄清石灰水變白濁",
+        "線香復燃",
+        "火柴爆鳴聲",
+        "溼潤石蕊變藍"
+      ],
+      "answer": 2,
+      "explanation": "陰極產生氫氣（可燃，爆鳴聲）。陽極氧氣（助燃）。",
+      "id": 1741
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "純水在 25°C 時的 pH 值為？",
+      "options": [
+        "0",
+        "7",
+        "14",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "純水中性 pH=7。",
+      "id": 1742
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "酸和鹼的強弱由下列何者決定？",
+      "options": [
+        "pH 值",
+        "解離度",
+        "濃度",
+        "顏色"
+      ],
+      "answer": 1,
+      "explanation": "強酸/強鹼完全解離；弱酸/弱鹼部分解離。",
+      "id": 1743
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "以下哪個過程涉及氧化？",
+      "options": [
+        "鐵生鏽",
+        "冰融化",
+        "糖溶解",
+        "水沸騰"
+      ],
+      "answer": 0,
+      "explanation": "鐵生鏽為氧化（Fe→Fe₂O₃）。",
+      "id": 1744
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電池放電時，負極發生何種反應？",
+      "options": [
+        "氧化",
+        "還原",
+        "中和",
+        "電解"
+      ],
+      "answer": 0,
+      "explanation": "電池負極（陽極）發生氧化反應，失去電子。",
+      "id": 1745
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為碳水化合物？",
+      "options": [
+        "蛋白質",
+        "澱粉",
+        "脂肪",
+        "礦物質"
+      ],
+      "answer": 1,
+      "explanation": "澱粉為碳水化合物（C₆H₁₀O₅）ₙ。",
+      "id": 1746
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "塑膠廢棄物燃燒可能產生？",
+      "options": [
+        "有機肥料",
+        "有毒氣體",
+        "金屬",
+        "玻璃"
+      ],
+      "answer": 1,
+      "explanation": "燃燒塑膠可能產生戴奧辛等有毒氣體。",
+      "id": 1747
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Beautiful' means ___?",
+      "options": [
+        "Ugly",
+        "Pretty",
+        "Angry",
+        "Sad"
+      ],
+      "answer": 1,
+      "explanation": "Beautiful means pleasing to the eye; pretty is a synonym.",
+      "id": 1748
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Please ___ the door when you leave.",
+      "options": [
+        "open",
+        "close",
+        "clean",
+        "paint"
+      ],
+      "answer": 1,
+      "explanation": "Close the door = shut the door.",
+      "id": 1749
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "This book is ___ than that one.",
+      "options": [
+        "good",
+        "better",
+        "best",
+        "well"
+      ],
+      "answer": 1,
+      "explanation": "Comparative: good - better - best.",
+      "id": 1750
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "If I ___ you, I would study harder.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "be"
+      ],
+      "answer": 2,
+      "explanation": "Subjunctive: If I were you (unreal conditional).",
+      "id": 1751
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "Thank you very much!",
+      "options": [
+        "Not at all",
+        "Your welcome",
+        "You are welcome",
+        "You welcome"
+      ],
+      "answer": 2,
+      "explanation": "'You are welcome' is the correct response.",
+      "id": 1752
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She has ___ lived in Taipei for 5 years.",
+      "options": [
+        "been",
+        "being",
+        "be",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "Present perfect continuous: has been living.",
+      "id": 1753
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Biodiversity' refers to the variety of life on Earth. What does biodiversity mean?",
+      "options": [
+        "Variety of species",
+        "Weather patterns",
+        "Ocean currents",
+        "Rock formations"
+      ],
+      "answer": 0,
+      "explanation": "Biodiversity = biological diversity = variety of life.",
+      "id": 1754
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列哪個現象同時涉及物理和化學變化？",
+      "options": [
+        "蠟燭燃燒",
+        "冰塊融化",
+        "玻璃破碎",
+        "食鹽溶解"
+      ],
+      "answer": 0,
+      "explanation": "蠟燭燃燒：蠟受熱熔化（物理）＋蠟與氧反應（化學）。",
+      "id": 1755
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "核能發電是將何種能轉換為電能？",
+      "options": [
+        "化學能",
+        "核能→熱能→機械能→電能",
+        "光能",
+        "位能"
+      ],
+      "answer": 1,
+      "explanation": "核分裂→熱能→水蒸氣→渦輪機→發電機。",
+      "id": 1756
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電解水產生的氫氣和氧氣體積比約為？",
+      "options": [
+        "1:1",
+        "2:1",
+        "1:2",
+        "3:1"
+      ],
+      "answer": 1,
+      "explanation": "2H₂O→2H₂+O₂，體積比 H₂:O₂=2:1。",
+      "id": 1757
     }
   ],
   "subjects": [
@@ -27558,6 +28214,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1716
+    "totalQuestions": 1757
   }
 }
