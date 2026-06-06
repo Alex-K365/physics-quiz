@@ -25221,6 +25221,598 @@
       "answer": 0,
       "explanation": "(a) Convert light energy into chemical energy. (b) Oxygen (O₂). (c) It produces both food and oxygen.",
       "id": 1571
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "力的作用效應不包括下列何者？",
+      "options": [
+        "改變物體形狀",
+        "改變物體運動狀態",
+        "改變物體溫度",
+        "改變物體速度"
+      ],
+      "answer": 2,
+      "explanation": "力的效應：改變物體形狀或運動狀態。改變溫度為熱的效應。",
+      "id": 1572
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體在無摩擦水平面上受 10 N 的水平推力，質量 2 kg，則加速度為？",
+      "options": [
+        "2 m/s²",
+        "5 m/s²",
+        "10 m/s²",
+        "20 m/s²"
+      ],
+      "answer": 1,
+      "explanation": "a=F/m=10/2=5 m/s²。",
+      "id": 1573
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "地球半徑約 6400 km，一物體在地表重 100 N。若將其移至離地心 12800 km 處，重量變為多少？",
+      "options": [
+        "25 N",
+        "50 N",
+        "100 N",
+        "200 N"
+      ],
+      "answer": 0,
+      "explanation": "萬有引力與距離平方成反比。距離變 2 倍→重量變 1/4=25 N。",
+      "id": 1574
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "時速 72 km/h 相當於每秒多少公尺？",
+      "options": [
+        "10 m/s",
+        "15 m/s",
+        "20 m/s",
+        "25 m/s"
+      ],
+      "answer": 2,
+      "explanation": "72 km/h = 72×1000/3600 = 20 m/s。",
+      "id": 1575
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一車初速 20 m/s，以 -2 m/s² 加速，5 秒後速度為？",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "15 m/s",
+        "30 m/s"
+      ],
+      "answer": 1,
+      "explanation": "v=u+at=20+(-2)×5=10 m/s。",
+      "id": 1576
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "鉛直上拋物體回到原高度時，下列何者正確？",
+      "options": [
+        "位移為零，速度為零",
+        "位移為零，速度不為零",
+        "位移不為零，速度為零",
+        "位移不為零，速度不為零"
+      ],
+      "answer": 1,
+      "explanation": "回到原點位移=0，但速度方向向下，大小與初速相同（不計阻力）。",
+      "id": 1577
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "腳踏車下坡時不踩踏板仍越跑越快，是因為？",
+      "options": [
+        "動能→位能",
+        "位能→動能",
+        "動能→熱能",
+        "化學能→動能"
+      ],
+      "answer": 1,
+      "explanation": "高度降低→重力位能減少→動能增加。",
+      "id": 1578
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將 2 kg 物體以 10 m/s 鉛直上拋，最高點的重力位能約為多少？（g=10）",
+      "options": [
+        "50 J",
+        "100 J",
+        "150 J",
+        "200 J"
+      ],
+      "answer": 1,
+      "explanation": "最高點動能全部轉為位能：Ek=½×2×100=100 J→位能=100 J。",
+      "id": 1579
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一輛 1000 kg 的汽車以 20 m/s 行駛，煞車後在 5 秒內停止。煞車平均功率為？",
+      "options": [
+        "20 kW",
+        "40 kW",
+        "60 kW",
+        "80 kW"
+      ],
+      "answer": 1,
+      "explanation": "Ek=½×1000×400=200,000 J，P=200,000/5=40,000 W=40 kW。",
+      "id": 1580
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電路中測量電流的儀器應如何連接？",
+      "options": [
+        "串聯",
+        "並聯",
+        "串並聯皆可",
+        "不須連接"
+      ],
+      "answer": 0,
+      "explanation": "安培計串聯於待測電路，使電流通過。",
+      "id": 1581
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "三相用電為 220V，下列何者為電功率的正確公式？",
+      "options": [
+        "P=IR",
+        "P=IV",
+        "P=V/R",
+        "P=I²V"
+      ],
+      "answer": 1,
+      "explanation": "電功率 P=IV（瓦特）。P=I²R 和 P=V²/R 亦可。",
+      "id": 1582
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一度電的電費約 3 元。使用 110V、1100W 的電器 5 小時，電費約為？",
+      "options": [
+        "15 元",
+        "16.5 元",
+        "33 元",
+        "55 元"
+      ],
+      "answer": 1,
+      "explanation": "度數=1.1 kW×5 h=5.5 度，電費=5.5×3=16.5 元。",
+      "id": 1583
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "近視眼鏡使用何種透鏡？",
+      "options": [
+        "凸透鏡",
+        "凹透鏡",
+        "平面鏡",
+        "三稜鏡"
+      ],
+      "answer": 1,
+      "explanation": "近視用凹透鏡矯正（光線發散）。遠視用凸透鏡。",
+      "id": 1584
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體在平面鏡中的像具有下列何種性質？",
+      "options": [
+        "倒立實像",
+        "正立虛像",
+        "倒立虛像",
+        "正立實像"
+      ],
+      "answer": 1,
+      "explanation": "平面鏡成像為正立虛像，左右相反，像距=物距。",
+      "id": 1585
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "光從水斜射入空氣中，折射光線會？",
+      "options": [
+        "偏向法線",
+        "偏離法線",
+        "沿原方向前進",
+        "發生全反射"
+      ],
+      "answer": 1,
+      "explanation": "光從水（光密）→空氣（光疏），折射偏離法線。",
+      "id": 1586
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者可以產生感應電流？",
+      "options": [
+        "磁鐵靜止在線圈中",
+        "磁鐵在線圈中來回運動",
+        "線圈靜止在穩定磁場中",
+        "斷路中的線圈"
+      ],
+      "answer": 1,
+      "explanation": "線圈內磁場變化（磁鐵運動）產生感應電流（電磁感應）。",
+      "id": 1587
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物質的三態變化中，吸熱的變化為何？",
+      "options": [
+        "凝固、凝結",
+        "熔化、汽化",
+        "凝固、熔化",
+        "凝結、汽化"
+      ],
+      "answer": 1,
+      "explanation": "熔化（固→液）和汽化（液→氣）需要吸熱。凝固和凝結放熱。",
+      "id": 1588
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "50 g、100°C 的水蒸氣凝結為 100°C 的水，放出的熱量約為？（水氣化熱 540 cal/g）",
+      "options": [
+        "540 cal",
+        "2700 cal",
+        "5400 cal",
+        "27000 cal"
+      ],
+      "answer": 3,
+      "explanation": "H=m×Lv=50×540=27000 cal。",
+      "id": 1589
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列哪一種樂器是運用空氣柱振動發聲？",
+      "options": [
+        "吉他",
+        "鋼琴",
+        "直笛",
+        "鼓"
+      ],
+      "answer": 2,
+      "explanation": "直笛利用管內空氣柱振動發聲。吉他靠弦振動，鼓靠膜振動。",
+      "id": 1590
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "連通管內的液面高度會？",
+      "options": [
+        "粗管較高",
+        "細管較高",
+        "兩管等高一",
+        "左管較高"
+      ],
+      "answer": 2,
+      "explanation": "連通管原理：同一液體靜止時各管液面等高。",
+      "id": 1591
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "大氣壓力約為多少 Pa？",
+      "options": [
+        "1.013×10³",
+        "1.013×10⁴",
+        "1.013×10⁵",
+        "1.013×10⁶"
+      ],
+      "answer": 2,
+      "explanation": "1 atm=1013 hPa=1.013×10⁵ Pa。",
+      "id": 1592
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "水分子由幾個原子組成？",
+      "options": [
+        "1 個",
+        "2 個",
+        "3 個",
+        "4 個"
+      ],
+      "answer": 2,
+      "explanation": "H₂O 含 2 個氫原子和 1 個氧原子，共 3 個原子。",
+      "id": 1593
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "原子中的電子分布在？",
+      "options": [
+        "原子核內",
+        "原子核外的軌域",
+        "質子之間",
+        "中子之間"
+      ],
+      "answer": 1,
+      "explanation": "電子在原子核外的電子軌域（殼層）中運動。",
+      "id": 1594
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者不是化學變化的現象？",
+      "options": [
+        "產生氣體",
+        "產生沉澱",
+        "顏色變化",
+        "體積變化"
+      ],
+      "answer": 3,
+      "explanation": "體積變化不一定為化學變化（如熱脹冷縮為物理變化）。",
+      "id": 1595
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電解水時，陽極產生的氣體為？",
+      "options": [
+        "氫氣",
+        "氧氣",
+        "氯氣",
+        "氮氣"
+      ],
+      "answer": 1,
+      "explanation": "電解水陽極產生氧氣（O₂），陰極產生氫氣（H₂），體積比 H₂:O₂=2:1。",
+      "id": 1596
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為鹼性物質？",
+      "options": [
+        "汽水",
+        "肥皂水",
+        "檸檬水",
+        "食醋"
+      ],
+      "answer": 1,
+      "explanation": "肥皂水 pH>7 為鹼性。汽水、檸檬水、食醋皆為酸性。",
+      "id": 1597
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "pH=3 的溶液與 pH=5 的溶液相比，酸性強度差多少倍？",
+      "options": [
+        "2 倍",
+        "10 倍",
+        "100 倍",
+        "1000 倍"
+      ],
+      "answer": 2,
+      "explanation": "pH 每差 1 酸度差 10 倍。pH 差 2→酸度差 10²=100 倍。",
+      "id": 1598
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "10 mL、0.1 M HCl 與 10 mL、0.1 M NaOH 混合，溶液呈？",
+      "options": [
+        "強酸性",
+        "弱酸性",
+        "中性",
+        "鹼性"
+      ],
+      "answer": 2,
+      "explanation": "等體積等濃度強酸強鹼完全中和，pH=7 中性。",
+      "id": 1599
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "哪一種金屬在空氣中最容易氧化？",
+      "options": [
+        "金",
+        "銀",
+        "鐵",
+        "鉑"
+      ],
+      "answer": 2,
+      "explanation": "鐵在潮濕空氣中易生鏽（氧化）。金、銀、鉑為惰性金屬。",
+      "id": 1600
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "食物的腐敗主要是因為？",
+      "options": [
+        "物理變化",
+        "氧化反應",
+        "中和反應",
+        "電解反應"
+      ],
+      "answer": 1,
+      "explanation": "食物與空氣中的氧氣反應（氧化）導致腐敗變質。",
+      "id": 1601
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為有機化合物？",
+      "options": [
+        "水",
+        "鹽酸",
+        "葡萄糖",
+        "碳酸鈣"
+      ],
+      "answer": 2,
+      "explanation": "含碳化合物（除 CO、CO₂、碳酸鹽等）為有機物。葡萄糖含碳氫氧。",
+      "id": 1602
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "使用顯微鏡時，應先用哪一種調節輪？",
+      "options": [
+        "細調節輪",
+        "粗調節輪",
+        "兩者皆可",
+        "不需調節"
+      ],
+      "answer": 1,
+      "explanation": "低倍鏡下先用粗調節輪找到物像，再用細調節輪對焦。",
+      "id": 1603
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "過濾操作中濾紙應如何放置？",
+      "options": [
+        "平鋪在漏斗底部",
+        "摺成圓錐形貼合漏斗",
+        "直接放入漏斗",
+        "放在燒杯上方"
+      ],
+      "answer": 1,
+      "explanation": "濾紙需摺成圓錐形，緊貼漏斗壁，用水潤溼。",
+      "id": 1604
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "How long have you ___ English?",
+      "options": [
+        "study",
+        "studying",
+        "studied",
+        "studies"
+      ],
+      "answer": 2,
+      "explanation": "Present perfect: have + past participle (studied).",
+      "id": 1605
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "She is used to ___ early in the morning.",
+      "options": [
+        "get up",
+        "getting up",
+        "got up",
+        "gets up"
+      ],
+      "answer": 1,
+      "explanation": "'Be used to + V-ing' means accustomed to. 'Used to + V' means past habit.",
+      "id": 1606
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "DNA contains the genetic instructions for living organisms. What does 'genetic' mean?",
+      "options": [
+        "Related to genes",
+        "Related to energy",
+        "Related to digestion",
+        "Related to movement"
+      ],
+      "answer": 0,
+      "explanation": "Genetic means relating to genes or heredity.",
+      "id": 1607
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) The human skeleton has 206 bones at adulthood. It serves five main functions: support, movement, protection, blood cell production, and mineral storage. Bones are connected by joints, and muscles pull on bones to create movement. The spine, or backbone, is made of 33 vertebrae and protects the spinal cord.<br>(a) How many bones does an adult human have?<br>(b) What are two functions of the skeleton?<br>(c) What does the spine protect?",
+      "options": [
+        "206 bones, Support and protection, Spinal cord",
+        "300 bones, Digestion and breathing, Heart",
+        "206 bones, Thinking and feeling, Brain",
+        "150 bones, Growth and repair, Lungs"
+      ],
+      "answer": 0,
+      "explanation": "(a) 206 bones. (b) Support, movement, protection, blood cell production, mineral storage. (c) The spine protects the spinal cord.",
+      "id": 1608
     }
   ],
   "subjects": [
@@ -25238,6 +25830,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1571
+    "totalQuestions": 1608
   }
 }
