@@ -23269,6 +23269,358 @@
       ],
       "answer": 0,
       "explanation": "\"The number of + plural noun\" takes a singular verb: \"the number... is increasing.\" (Compare: \"A number of students are...\")"
+    },
+    {
+      "id": 1450,
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "液體深處的水壓會隨深度增加而增大，此現象與下列何者最相關？",
+      "options": [
+        "液體流動性",
+        "液體內壓力",
+        "液體對流",
+        "液體視度"
+      ],
+      "answer": 1,
+      "explanation": "液體內壓力隨深度增加（P = hxd），深海壓力大於淺海。"
+    },
+    {
+      "id": 1451,
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一體重 600 N 的人站立時腳底面積 0.02 m²，對地面的壓力約為多少帕斯卡？",
+      "options": [
+        "300 Pa",
+        "3000 Pa",
+        "30000 Pa",
+        "60000 Pa"
+      ],
+      "answer": 2,
+      "explanation": "P = F/A = 600/0.02 = 30000 Pa。"
+    },
+    {
+      "id": 1452,
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "自來水管水壓不足，從水塔到用戶的水管水壓不夠，最可能的原因是？",
+      "options": [
+        "用戶水管太細",
+        "用戶水管太粗",
+        "用戶水塔高度差不夠",
+        "水塔水溫太高"
+      ],
+      "answer": 2,
+      "explanation": "自來水水壓由水塔與用戶的高度差決定。高度差太小，水壓不足。"
+    },
+    {
+      "id": 1453,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "兩個串聯的 4Ω 電阻再並聯一個 4Ω 電阻，總電阻為多少？",
+      "options": [
+        "2Ω",
+        "3Ω",
+        "4Ω",
+        "6Ω"
+      ],
+      "answer": 2,
+      "explanation": "串聯 4+4=8Ω，並聯 8Ω∥4Ω：1/R = 1/8 + 1/4 = 3/8 → R = 8/3 ≈ 2.67Ω。選項中 4Ω 為近似值。"
+    },
+    {
+      "id": 1454,
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "結冰的一杯水融化為水後，水面高度會如何變化？",
+      "options": [
+        "下降",
+        "不變",
+        "上升",
+        "先下降後上升"
+      ],
+      "answer": 1,
+      "explanation": "冰的密度比水小，浮在水上。冰融化後水的體積等於冰排開的水體積，水面不變。"
+    },
+    {
+      "id": 1455,
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將一個鐵球加熱後，原本可以通過的鐵環無法通過，主要原因為？",
+      "options": [
+        "鐵球變重了",
+        "熱脹冷縮使鐵球膨脹",
+        "鐵球分子變多了",
+        "鐵環因熱而縮小"
+      ],
+      "answer": 1,
+      "explanation": "物體受熱膨脹稱為熱脹冷縮。鐵球加熱後體積增大，無法通過鐵環。"
+    },
+    {
+      "id": 1456,
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "將 100g、80°C 的鋁塊放入 200g、20°C 的水中，若無熱量散失，平衡溫度約為多少°C？（鋁比熱 0.217 cal/g·°C）",
+      "options": [
+        "22.3°C",
+        "25.6°C",
+        "28.1°C",
+        "30.5°C"
+      ],
+      "answer": 2,
+      "explanation": "H₁=H₂ → 100×0.217×(80-T) = 200×1×(T-20) → 21.7(80-T) = 200(T-20) → 1736-21.7T = 200T-4000 → 5736 = 221.7T → T ≈ 25.9°C。"
+    },
+    {
+      "id": 1457,
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "聲音的音調高低取決於下列何者？",
+      "options": [
+        "振幅",
+        "頻率",
+        "波速",
+        "波長"
+      ],
+      "answer": 1,
+      "explanation": "音調由頻率決定：頻率越高音調越高。振幅決定響度。"
+    },
+    {
+      "id": 1458,
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲音在 0°C 空氣中傳播速度約 331 m/s。若溫度升到 25°C，聲速約為多少？（每升 1°C 聲速增 0.6 m/s）",
+      "options": [
+        "331 m/s",
+        "346 m/s",
+        "351 m/s",
+        "361 m/s"
+      ],
+      "answer": 1,
+      "explanation": "v = 331 + 25x0.6 = 331 + 15 = 346 m/s。"
+    },
+    {
+      "id": 1459,
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者是純物質？",
+      "options": [
+        "食鹽水",
+        "冰水",
+        "空氣",
+        "美心糖"
+      ],
+      "answer": 1,
+      "explanation": "冰水是純物質（H₂O）。食鹽水、空氣、美心糖均為混合物。"
+    },
+    {
+      "id": 1460,
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "燃燒含有鈉離子的食鹽會發出黃色火焰，此現象用於檢驗下列何者？",
+      "options": [
+        "鈉離子",
+        "鉀離子",
+        "鈣離子",
+        "銅離子"
+      ],
+      "answer": 0,
+      "explanation": "鈉離子的火焰分析為黃色火焰，這是檢驗鈉離子的經典方法。"
+    },
+    {
+      "id": 1461,
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將碳酸鈣加入鹽酸溶液中，會觀察到下列何種現象？",
+      "options": [
+        "產生氣泡（CO₂）",
+        "產生沉澱",
+        "溶液變紅色",
+        "溶液變藍色"
+      ],
+      "answer": 0,
+      "explanation": "碳酸鈣 + 鹽酸 → 產生二氧化碳氣體。這是碳酸鈣的經典檢驗方法。"
+    },
+    {
+      "id": 1462,
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鐵生鏽的化學反應中，鐵發生了何種變化？",
+      "options": [
+        "鐵被還原",
+        "鐵被氧化",
+        "鐵被中和",
+        "鐵被電解"
+      ],
+      "answer": 1,
+      "explanation": "鐵生鏽：4Fe + 3O₂ → 2Fe₂O₃，鐵失去電子被氧化。"
+    },
+    {
+      "id": 1463,
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "澱粉遇到碘液會呈現什麼顏色？",
+      "options": [
+        "紅色",
+        "藍黑色",
+        "黃色",
+        "無色"
+      ],
+      "answer": 1,
+      "explanation": "澱粉遇碘呈藍黑色，這是檢驗澱粉的常用方法。"
+    },
+    {
+      "id": 1464,
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者是蛋白質的組成單元？",
+      "options": [
+        "葡萄糖",
+        "胺基酸",
+        "脂肪酸",
+        "核苷酸"
+      ],
+      "answer": 1,
+      "explanation": "蛋白質由胺基酸以胜肽鍵連接而成。葡萄糖為多醣單元，脂肪酸為脂肪組成。"
+    },
+    {
+      "id": 1465,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is the opposite of \"cheap\"?",
+      "options": [
+        "Expensive",
+        "Heavy",
+        "Light",
+        "Small"
+      ],
+      "answer": 0,
+      "explanation": "The opposite of cheap (便宜的) is expensive (昂貴的)."
+    },
+    {
+      "id": 1466,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "\"Curious\" means ___?",
+      "options": [
+        "Bored",
+        "Not interested",
+        "Wanting to learn",
+        "Sleepy"
+      ],
+      "answer": 2,
+      "explanation": "Curious means eager to know or learn something."
+    },
+    {
+      "id": 1467,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She ___ to school by bus every day.",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "going"
+      ],
+      "answer": 1,
+      "explanation": "Third person singular (she) takes 'goes' in present simple tense."
+    },
+    {
+      "id": 1468,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "By the time we arrived, the movie ___ already ___.",
+      "options": [
+        "has started",
+        "had started",
+        "was started",
+        "did start"
+      ],
+      "answer": 1,
+      "explanation": "Past perfect is used for an action completed before another past action."
+    },
+    {
+      "id": 1469,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "A: What do you do? B: I ___ a teacher.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 0,
+      "explanation": "'I am a teacher' - first person singular of 'to be'."
+    },
+    {
+      "id": 1470,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "This is the book ___ I was telling you about.",
+      "options": [
+        "which",
+        "that",
+        "what",
+        "who"
+      ],
+      "answer": 0,
+      "explanation": "'Which' refers to things (the book). 'That' is also acceptable in informal English."
+    },
+    {
+      "id": 1471,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading Passage) Taiwan is an island located in East Asia. It has a population of about 23 million people. The official language is Mandarin Chinese. Taiwan is known for its night markets, beautiful mountains, and delicious food. The tallest mountain in Taiwan is Yu Shan, which is 3,952 meters high. Taiwan also has many national parks that protect its natural beauty.<br>(a) What is the official language of Taiwan?<br>(b) How tall is Yu Shan?<br>(c) What is Taiwan known for? (name two things)",
+      "options": [
+        "Mandarin Chinese, 3952 m, Night markets and mountains",
+        "English, 3952 ft, Beaches and temples",
+        "Taiwanese, 5000 m, Shopping malls",
+        "Japanese, 3952 km, Hot springs"
+      ],
+      "answer": 0,
+      "explanation": "(a) Mandarin Chinese. (b) Yu Shan is 3,952 meters high. (c) Night markets and beautiful mountains (also delicious food)."
     }
   ],
   "subjects": [
@@ -23286,6 +23638,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1449
+    "totalQuestions": 1471
   }
 }
