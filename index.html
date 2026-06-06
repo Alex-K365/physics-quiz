@@ -1440,10 +1440,6 @@ function updateStreak() {
 }
 
 
-  const list = [...dueIds].map(id => QUESTIONS.find(q=>q.id===id)).filter(Boolean);
-  list.sort(() => Math.random()-0.5);
-  return list.slice(0, limit || list.length);
-}
 
 // ============================
 // Export Wrong Questions to PDF
