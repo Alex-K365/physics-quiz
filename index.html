@@ -765,6 +765,8 @@ function submitMock() {
       if (!wrongs[id]) wrongs[id] = {wrongCount:0, lastWrong:new Date().toISOString()};
       wrongs[id].wrongCount++;
       wrongs[id].lastWrong = new Date().toISOString();
+      wrongs[id].userAnswer = userAns;
+      wrongs[id].correctAnswer = q.answer;
       setStore('wrong', wrongs);
       wrongIds.push(id);
     }
@@ -892,8 +894,18 @@ function renderWrong() {
       '<span class="q-tag" style="background:#fef2f2;color:#dc2626">錯 '+w.wrongCount+' 次</span></div>'+
       '<div class="q-text">'+q.question+'</div>'+
       '<div class="q-options">'+
-        (q.type==='multiple' ? q.options.map(o=>'<label><input type="checkbox" disabled> '+o+'</label>').join('') :
-         q.options.map(o=>'<label><input type="radio" disabled> '+o+'</label>').join('')) +
+        q.options.map(function(o, oi) {
+          var letter = String.fromCharCode(65 + oi);
+          var isUser = w.userAnswer === letter;
+          var isCorrect = w.correctAnswer === letter;
+          var style = '';
+          var prefix = '<input type="' + (q.type==='multiple'?'checkbox':'radio') + '" disabled>';
+          var label = o;
+          if (isUser && isCorrect) { style = 'background:#bbf7d0;border-color:#059669;border-radius:8px'; label = '✓ ' + o; }
+          else if (isUser && !isCorrect) { style = 'background:#fecaca;border-color:#dc2626;border-radius:8px'; label = '✗ ' + o; }
+          else if (isCorrect) { style = 'background:#d1fae5;border-color:#059669;border-radius:8px'; label = '✓ ' + o; }
+          return '<label style="' + style + '">' + prefix + ' ' + label + '</label>';
+        }).join('') +
       '</div>'+
       '<div class="q-actions">'+
         '<button class="btn-star '+(isFav?'fav':'')+'" onclick="toggleFav('+id+')" title="收藏">'+(isFav?'★':'☆')+'</button>'+
@@ -1468,14 +1480,22 @@ function exportWrongPDF() {
     var w = wrongs[id];
     var ansStr = q.answer;
     if (Array.isArray(q.answer)) ansStr = q.answer.join(', ');
+    var userStr = w.userAnswer || '';
+    if (Array.isArray(w.userAnswer)) userStr = w.userAnswer.join(', ');
     var optsHtml = '';
     q.options.forEach(function(o, oi) {
-      optsHtml += String.fromCharCode(65 + oi) + ') ' + o + '<br>';
+      var letter = String.fromCharCode(65 + oi);
+      var prefix = '';
+      if (w.userAnswer === letter) prefix = '✗ ';
+      if (w.correctAnswer === letter) prefix = '✓ ';
+      optsHtml += prefix + letter + ') ' + o + '<br>';
     });
+    var userHtml = w.userAnswer ? '<div style="font-size:10pt;color:#dc2626;margin-top:2pt">✗ 你的答案：' + userStr + '</div>' : '';
     qhtml += '<div class="q">' +
       '<div class="hdr">第 ' + (idx+1) + ' 題  [' + q.subject + '·' + q.unit + '] [' + q.difficulty + ']  錯 ' + (w.wrongCount||0) + ' 次</div>' +
       '<div class="txt">' + q.question + '</div>' +
       '<div class="opts">' + optsHtml + '</div>' +
+      userHtml +
       '<div class="ans">\u2705 \u6b63\u786e\u7b54\u6848\uff1a' + ansStr + '</div>' +
       '<div class="exp">' + q.explanation + '</div></div>';
   });
