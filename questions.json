@@ -30949,6 +30949,1142 @@
       "answer": 0,
       "explanation": "葡萄糖為 C₆H₁₂O₆。",
       "id": 1929
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "摩擦力方向與物體運動方向？",
+      "options": [
+        "相同",
+        "相反",
+        "垂直",
+        "無關"
+      ],
+      "answer": 1,
+      "explanation": "摩擦力方向與物體運動或運動趨勢方向相反。",
+      "id": 1930
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "以 20 N 水平力推 5 kg 木箱，摩擦力 5 N，加速度為？",
+      "options": [
+        "1 m/s²",
+        "2 m/s²",
+        "3 m/s²",
+        "4 m/s²"
+      ],
+      "answer": 2,
+      "explanation": "合力=20-5=15 N，a=15/5=3 m/s²。",
+      "id": 1931
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "等速運動的物體所受合力為？",
+      "options": [
+        "零",
+        "不為零",
+        "大於零",
+        "小於零"
+      ],
+      "answer": 0,
+      "explanation": "牛頓第一定律：等速運動或靜止時合力為零。",
+      "id": 1932
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體由靜止以 2 m/s² 加速 10 秒，第 10 秒末速度？",
+      "options": [
+        "10 m/s",
+        "15 m/s",
+        "20 m/s",
+        "40 m/s"
+      ],
+      "answer": 2,
+      "explanation": "v=at=2×10=20 m/s。",
+      "id": 1933
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將彈簧壓縮 5 cm 需作功 2.5 J，彈簧常數為？",
+      "options": [
+        "500 N/m",
+        "1000 N/m",
+        "2000 N/m",
+        "5000 N/m"
+      ],
+      "answer": 2,
+      "explanation": "U=½kx²→k=2U/x²=5/0.0025=2000 N/m。",
+      "id": 1934
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電路中瓦時計（電表）測量？",
+      "options": [
+        "電功率",
+        "用電度數",
+        "電流",
+        "電壓"
+      ],
+      "answer": 1,
+      "explanation": "瓦時計（電度表）測量累積用電量。",
+      "id": 1935
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "針孔成像實驗說明了光的何種性質？",
+      "options": [
+        "直進",
+        "反射",
+        "折射",
+        "色散"
+      ],
+      "answer": 0,
+      "explanation": "針孔成像為光直進的證明。",
+      "id": 1936
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電磁鐵的鐵芯材料為？",
+      "options": [
+        "軟鐵",
+        "硬鐵",
+        "銅",
+        "鋁"
+      ],
+      "answer": 0,
+      "explanation": "軟鐵易磁化且斷電後磁性快速消失。",
+      "id": 1937
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "較厚衣物可保暖是因為？",
+      "options": [
+        "增加空氣層減少熱傳導",
+        "布料產熱",
+        "反射熱能",
+        "吸收陽光"
+      ],
+      "answer": 0,
+      "explanation": "衣物間空氣為不良導體，減少熱量散失。",
+      "id": 1938
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "吸塵器利用？",
+      "options": [
+        "大氣壓力",
+        "離心力",
+        "電力",
+        "磁力"
+      ],
+      "answer": 0,
+      "explanation": "吸塵器風扇排出空氣使內部氣壓下降，外部大氣壓將灰塵推入。",
+      "id": 1939
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "金屬導電靠？",
+      "options": [
+        "自由電子",
+        "離子",
+        "質子",
+        "中子"
+      ],
+      "answer": 0,
+      "explanation": "金屬晶體中有自由電子，可在外加電場下定向移動。",
+      "id": 1940
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "水電解時，加入少許硫酸的目的為？",
+      "options": [
+        "增加導電度",
+        "催化",
+        "產酸",
+        "中和"
+      ],
+      "answer": 0,
+      "explanation": "純水導電度低，加硫酸增加離子濃度提高導電度。",
+      "id": 1941
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "檸檬汁中的酸為？",
+      "options": [
+        "檸檬酸",
+        "醋酸",
+        "鹽酸",
+        "硫酸"
+      ],
+      "answer": 0,
+      "explanation": "檸檬含檸檬酸。",
+      "id": 1942
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "酸雨對建築物的侵蝕主要是與何者反應？",
+      "options": [
+        "碳酸鈣",
+        "二氧化矽",
+        "氧化鐵",
+        "氫氧化鈉"
+      ],
+      "answer": 0,
+      "explanation": "酸雨中的酸與建築石材的碳酸鈣反應。",
+      "id": 1943
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "食物中加入維生素 C 可？",
+      "options": [
+        "抗氧化",
+        "防腐",
+        "調味",
+        "染色"
+      ],
+      "answer": 0,
+      "explanation": "維生素 C 為抗氧化劑，防止食物氧化變質。",
+      "id": 1944
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "蛋白質在人體內最終分解為？",
+      "options": [
+        "胺基酸",
+        "葡萄糖",
+        "脂肪酸",
+        "核苷酸"
+      ],
+      "answer": 0,
+      "explanation": "蛋白質→胜肽→胺基酸。",
+      "id": 1945
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "The word \"tiny\" means ___?",
+      "options": [
+        "Very big",
+        "Very small",
+        "Very fast",
+        "Very slow"
+      ],
+      "answer": 1,
+      "explanation": "Tiny means extremely small.",
+      "id": 1946
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "She ___ to music right now.",
+      "options": [
+        "listen",
+        "listens",
+        "is listening",
+        "listened"
+      ],
+      "answer": 2,
+      "explanation": "Present continuous: is listening (right now).",
+      "id": 1947
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "How do you say 謝謝 in English?",
+      "options": [
+        "Sorry",
+        "Please",
+        "Thank you",
+        "Hello"
+      ],
+      "answer": 2,
+      "explanation": "Thank you = 謝謝.",
+      "id": 1948
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I bought this pen ___ NT$50.",
+      "options": [
+        "for",
+        "at",
+        "in",
+        "by"
+      ],
+      "answer": 0,
+      "explanation": "'For' indicates the price.",
+      "id": 1949
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The Earth rotates on its axis every 24 hours. What does 'rotates' mean?",
+      "options": [
+        "Floats",
+        "Spins",
+        "Moves in a line",
+        "Stops"
+      ],
+      "answer": 1,
+      "explanation": "Rotates means spins or turns around its axis.",
+      "id": 1950
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "DNA is like a \"blueprint\" for living organisms. What does DNA contain?",
+      "options": [
+        "Genetic instructions",
+        "Energy",
+        "Water",
+        "Minerals"
+      ],
+      "answer": 0,
+      "explanation": "DNA contains the genetic instructions for development and function.",
+      "id": 1951
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "使用天平前應先？",
+      "options": [
+        "歸零校正",
+        "加油",
+        "清潔",
+        "保養"
+      ],
+      "answer": 0,
+      "explanation": "天平使用前須歸零。",
+      "id": 1952
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "檢驗氧氣可用？",
+      "options": [
+        "點燃的線香（復燃）",
+        "澄清石灰水",
+        "溼潤石蕊試紙",
+        "酚酞"
+      ],
+      "answer": 0,
+      "explanation": "氧氣助燃，可使餘燼線香復燃。",
+      "id": 1953
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "臺灣水庫淤積的主要原因是？",
+      "options": [
+        "上游水土保持不佳",
+        "地震頻繁",
+        "降雨量過多",
+        "水溫過高"
+      ],
+      "answer": 0,
+      "explanation": "上游濫墾及水土保持不佳導致土石沖刷入水庫。",
+      "id": 1954
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "PM2.5 對人體的主要影響是？",
+      "options": [
+        "呼吸道和心血管疾病",
+        "消化不良",
+        "骨折",
+        "皮膚過敏"
+      ],
+      "answer": 0,
+      "explanation": "PM2.5 可深入肺部甚至進入血液，危害呼吸和心血管系統。",
+      "id": 1955
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "食品包裝上的營養標示中，熱量單位常用？",
+      "options": [
+        "大卡（kcal）",
+        "焦耳",
+        "瓦特",
+        "度"
+      ],
+      "answer": 0,
+      "explanation": "食品營養標示熱量用大卡（kcal）。",
+      "id": 1956
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "汽車安全氣囊的作用是增加緩衝時間以減少？",
+      "options": [
+        "衝力",
+        "速度",
+        "加速度",
+        "重量"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1957
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "s-t 圖為拋物線表示物體作？",
+      "options": [
+        "等速運動",
+        "等加速運動",
+        "靜止",
+        "圓周運動"
+      ],
+      "answer": 1,
+      "explanation": "s-t 圖為二次函數→等加速度運動。",
+      "id": 1958
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "核電廠反應爐中的核反應為？",
+      "options": [
+        "核分裂",
+        "核融合",
+        "化學反應",
+        "物理變化"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1959
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "半導體中加入微量雜質的過程稱為？",
+      "options": [
+        "摻雜",
+        "電鍍",
+        "電解",
+        "蒸鍍"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1960
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "相機光圈的功能為？",
+      "options": [
+        "控制進光量",
+        "對焦",
+        "變焦",
+        "穩定"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1961
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "飛機能飛行是利用？",
+      "options": [
+        "白努力原理",
+        "阿基米德原理",
+        "帕斯卡原理",
+        "連通管原理"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1962
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "觸媒轉換器用於？",
+      "options": [
+        "減少汽車廢氣汙染",
+        "加速引擎運轉",
+        "增加馬力",
+        "省油"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1963
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "緩衝溶液可？",
+      "options": [
+        "抵抗 pH 值變化",
+        "增加酸度",
+        "增加鹼度",
+        "加速反應"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1964
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電化電池中鹽橋的功能為？",
+      "options": [
+        "維持電中性",
+        "導電",
+        "隔離離子",
+        "產生電壓"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1965
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "DNA 的雙螺旋結構由誰提出？",
+      "options": [
+        "華生和克里克",
+        "達爾文",
+        "孟德爾",
+        "拉馬克"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1966
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Innovation' means ___?",
+      "options": [
+        "Invention",
+        "Destruction",
+        "Tradition",
+        "Reduction"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1967
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "She would rather ___ home than go out.",
+      "options": [
+        "stay",
+        "staying",
+        "stayed",
+        "to stay"
+      ],
+      "answer": 0,
+      "explanation": "Would rather + base verb.",
+      "id": 1968
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "生態足跡是衡量？",
+      "options": [
+        "人類對環境的影響",
+        "生物數量",
+        "經濟成長",
+        "人口密度"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1969
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "循環經濟的核心概念是？",
+      "options": [
+        "資源再利用",
+        "線性生產",
+        "最大消費",
+        "快速淘汰"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1970
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "巴黎協定的目標是？",
+      "options": [
+        "控制全球升溫",
+        "促進貿易",
+        "保護森林",
+        "減少塑膠"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1971
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "綠色消費的原則不包括？",
+      "options": [
+        "買最便宜的",
+        "減少包裝",
+        "重複使用",
+        "資源回收"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1972
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "超聲波檢查（超音波）利用？",
+      "options": [
+        "聲波反射成像",
+        "X 射線",
+        "磁場",
+        "電流"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1973
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "MRI（核磁共振成像）利用？",
+      "options": [
+        "磁場和無線電波",
+        "X 射線",
+        "超聲波",
+        "雷射"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1974
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "絕對零度約為？",
+      "options": [
+        "-273°C",
+        "-100°C",
+        "0°C",
+        "100°C"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1975
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電子顯微鏡可觀察到？",
+      "options": [
+        "原子",
+        "細胞",
+        "細菌",
+        "病毒"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1976
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體質量 2 kg，受水平力 8 N 和 6 N 垂直作用，合力？",
+      "options": [
+        "10 N",
+        "14 N",
+        "48 N",
+        "100 N"
+      ],
+      "answer": 0,
+      "explanation": "合力=√(8²+6²)=10 N。",
+      "id": 1977
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "地球表面重力加速度約 9.8 m/s²，質量 70 kg 的人重約？",
+      "options": [
+        "70 N",
+        "686 N",
+        "700 N",
+        "98 N"
+      ],
+      "answer": 1,
+      "explanation": "W=70×9.8=686 N。",
+      "id": 1978
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一球以 15 m/s 鉛直上拋，經 3 秒落地，最高點離地約？（g=10）",
+      "options": [
+        "11.25 m",
+        "22.5 m",
+        "33.75 m",
+        "45 m"
+      ],
+      "answer": 0,
+      "explanation": "上升時間 1.5 s，h=½×10×1.5²=11.25 m。",
+      "id": 1979
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "手將彈簧壓縮，手對彈簧作功 5 J，彈簧獲得的能量為？",
+      "options": [
+        "5 J 彈力位能",
+        "5 J 動能",
+        "10 J 位能",
+        "2.5 J 熱能"
+      ],
+      "answer": 0,
+      "explanation": "作功轉換為彈力位能儲存。",
+      "id": 1980
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "直流電與交流電的主要差異在？",
+      "options": [
+        "電流方向是否週期改變",
+        "電壓大小",
+        "電阻值",
+        "功率大小"
+      ],
+      "answer": 0,
+      "explanation": "直流電方向不變，交流電方向週期性改變。",
+      "id": 1981
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "凹透鏡成像永遠為？",
+      "options": [
+        "正立縮小虛像",
+        "倒立實像",
+        "正立放大虛像",
+        "倒立虛像"
+      ],
+      "answer": 0,
+      "explanation": "凹透鏡發散光線，永遠成縮小正立虛像。",
+      "id": 1982
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "冷氣機運作時，室外機吹出熱風是因為？",
+      "options": [
+        "冷媒壓縮放熱",
+        "壓縮機發熱",
+        "室外溫度高",
+        "散熱不良"
+      ],
+      "answer": 0,
+      "explanation": "冷媒經壓縮機壓縮後溫度升高，在室外機散熱。",
+      "id": 1983
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "氨水（NH₃·H₂O）呈弱鹼性，其水溶液含？",
+      "options": [
+        "OH⁻離子",
+        "H⁺離子",
+        "Cl⁻離子",
+        "Na⁺離子"
+      ],
+      "answer": 0,
+      "explanation": "NH₃+H₂O→NH₄⁺+OH⁻。",
+      "id": 1984
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "光合作用中氧氣來自水的分解，水被？",
+      "options": [
+        "氧化",
+        "還原",
+        "催化",
+        "中和"
+      ],
+      "answer": 0,
+      "explanation": "水失去電子→氧化，產生 O₂。",
+      "id": 1985
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "界面活性劑分子具有？",
+      "options": [
+        "親水端和親油端",
+        "僅親水",
+        "僅親油",
+        "不溶於水"
+      ],
+      "answer": 0,
+      "explanation": "界面活性劑有親水基和親油基，可降低表面張力。",
+      "id": 1986
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "\"Sustainable\" means ___?",
+      "options": [
+        "Can be maintained long-term",
+        "Temporary",
+        "Expensive",
+        "Difficult"
+      ],
+      "answer": 0,
+      "explanation": "Sustainable means able to be maintained at a certain level.",
+      "id": 1987
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "It is important that every student ___ the rules.",
+      "options": [
+        "follows",
+        "follow",
+        "followed",
+        "following"
+      ],
+      "answer": 1,
+      "explanation": "Subjunctive: essential/important that + base verb.",
+      "id": 1988
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) A solar eclipse occurs when the Moon passes between the Sun and Earth, blocking sunlight. A lunar eclipse occurs when Earth passes between the Sun and Moon, casting a shadow on the Moon.<br>(a) What causes a solar eclipse?<br>(b) What causes a lunar eclipse?<br>(c) Which is more common to see from one location on Earth?",
+      "options": [
+        "Moon blocks Sun, Earth blocks Sun to Moon, Lunar",
+        "Earth blocks Sun, Moon blocks Earth, Solar",
+        "Clouds block Sun, Moon reflects Sun, Neither",
+        "Sun moves, Earth moves, Both equal"
+      ],
+      "answer": 0,
+      "explanation": "",
+      "id": 1989
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "為什麼傍晚天空呈紅色？",
+      "options": [
+        "紅光波長長易散射",
+        "藍光被吸收",
+        "大氣折射",
+        "雲層反射"
+      ],
+      "answer": 0,
+      "explanation": "瑞立散射：波長短的藍光易被散射，紅光穿透力強。",
+      "id": 1990
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "衣物烘乾機中衣服烘乾是？",
+      "options": [
+        "物理變化（水蒸發）",
+        "化學變化",
+        "生物變化",
+        "核變化"
+      ],
+      "answer": 0,
+      "explanation": "水由液態變氣態為物理變化（蒸發）。",
+      "id": 1991
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "食物冷藏可以保存較久是因為？",
+      "options": [
+        "低溫減緩微生物繁殖",
+        "殺死細菌",
+        "去除水分",
+        "隔絕空氣"
+      ],
+      "answer": 0,
+      "explanation": "低溫使微生物生長繁殖速率減緩。",
+      "id": 1992
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "核融合反應的條件需要？",
+      "options": [
+        "高溫高壓",
+        "低溫",
+        "真空",
+        "酸性環境"
+      ],
+      "answer": 0,
+      "explanation": "核融合需極高溫（如太陽核心）克服原子核間庫侖斥力。",
+      "id": 1993
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣電力系統的尖峰負載通常在？",
+      "options": [
+        "夏天中午",
+        "冬天晚上",
+        "春天早上",
+        "秋天下午"
+      ],
+      "answer": 0,
+      "explanation": "夏天用冷氣空調，用電量最大。",
+      "id": 1994
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電動車的電池主流技術為？",
+      "options": [
+        "鋰離子電池",
+        "鉛蓄電池",
+        "鎳氫電池",
+        "燃料電池"
+      ],
+      "answer": 0,
+      "explanation": "電動車主要使用鋰離子電池。",
+      "id": 1995
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "氫能車使用氫氣作為燃料，其燃燒產物為？",
+      "options": [
+        "水",
+        "二氧化碳",
+        "一氧化碳",
+        "氮氧化物"
+      ],
+      "answer": 0,
+      "explanation": "2H₂+O₂→2H₂O，無碳排放。",
+      "id": 1996
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "複合材料（如碳纖維）的優點為？",
+      "options": [
+        "輕量高強度",
+        "成本低",
+        "可回收",
+        "導電性佳"
+      ],
+      "answer": 0,
+      "explanation": "碳纖維重量輕且強度高。",
+      "id": 1997
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電解質飲料補充的電解質主要指？",
+      "options": [
+        "鈉、鉀離子",
+        "葡萄糖",
+        "蛋白質",
+        "維生素"
+      ],
+      "answer": 0,
+      "explanation": "運動飲料補充鈉、鉀等電解質。",
+      "id": 1998
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "玉米製成的生質酒精屬於哪類能源？",
+      "options": [
+        "再生能源",
+        "非再生能源",
+        "核能",
+        "化石能源"
+      ],
+      "answer": 0,
+      "explanation": "生質酒精來自植物，可再生。",
+      "id": 1999
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "半導體製程中，黃光室使用黃光的原因是？",
+      "options": [
+        "避免感光材料曝光",
+        "照明效果好",
+        "節能",
+        "成本低"
+      ],
+      "answer": 0,
+      "explanation": "黃光波長不易使光阻劑感光。",
+      "id": 2000
     }
   ],
   "subjects": [
@@ -30966,6 +32102,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1929
+    "totalQuestions": 2000
   }
 }
