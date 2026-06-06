@@ -54,40 +54,40 @@ const FORMULAS = [
   {label:"電壓 V (伏特)",key:"v"},
   {label:"電流 I (安培)",key:"i"},
   {label:"電阻 R (歐姆)",key:"r"}
-],calc:(v,i,r)=>{
-  if(v&&i&&!r) return {v,r:null,result:`R = V/I = ${v}/${i} = ${(v/i).toFixed(3)} Ω`};
-  if(v&&r&&!i) return {v,i:null,result:`I = V/R = ${v}/${r} = ${(v/r).toFixed(3)} A`};
-  if(i&&r&&!v) return {v:null,result:`V = I×R = ${i}×${r} = ${(i*r).toFixed(3)} V`};
+],calc:({v,i,r})=>{
+  if(v&&i&&!r) return {result:`R = V/I = ${v}/${i} = ${(v/i).toFixed(3)} Ω`};
+  if(v&&r&&!i) return {result:`I = V/R = ${v}/${r} = ${(v/r).toFixed(3)} A`};
+  if(i&&r&&!v) return {result:`V = I×R = ${i}×${r} = ${(i*r).toFixed(3)} V`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"功率 P=IV",fields:[
   {label:"功率 P (瓦特)",key:"p"},
   {label:"電流 I (安培)",key:"i"},
   {label:"電壓 V (伏特)",key:"v"}
-],calc:(p,i,v)=>{
-  if(p&&i&&!v) return {v:null,result:`V = P/I = ${p}/${i} = ${(p/i).toFixed(3)} V`};
-  if(p&&v&&!i) return {i:null,result:`I = P/V = ${p}/${v} = ${(p/v).toFixed(3)} A`};
-  if(i&&v&&!p) return {p:null,result:`P = I×V = ${i}×${v} = ${(i*v).toFixed(3)} W`};
+],calc:({p,i,v})=>{
+  if(p&&i&&!v) return {result:`V = P/I = ${p}/${i} = ${(p/i).toFixed(3)} V`};
+  if(p&&v&&!i) return {result:`I = P/V = ${p}/${v} = ${(p/v).toFixed(3)} A`};
+  if(i&&v&&!p) return {result:`P = I×V = ${i}×${v} = ${(i*v).toFixed(3)} W`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"牛頓第二定律 F=ma",fields:[
   {label:"力 F (牛頓)",key:"f"},
   {label:"質量 m (公斤)",key:"m"},
   {label:"加速度 a (m/s²)",key:"a"}
-],calc:(f,m,a)=>{
-  if(f&&m&&!a) return {a:null,result:`a = F/m = ${f}/${m} = ${(f/m).toFixed(3)} m/s²`};
-  if(f&&a&&!m) return {m:null,result:`m = F/a = ${f}/${a} = ${(f/a).toFixed(3)} kg`};
-  if(m&&a&&!f) return {f:null,result:`F = m×a = ${m}×${a} = ${(m*a).toFixed(3)} N`};
+],calc:({f,m,a})=>{
+  if(f&&m&&!a) return {result:`a = F/m = ${f}/${m} = ${(f/m).toFixed(3)} m/s²`};
+  if(f&&a&&!m) return {result:`m = F/a = ${f}/${a} = ${(f/a).toFixed(3)} kg`};
+  if(m&&a&&!f) return {result:`F = m×a = ${m}×${a} = ${(m*a).toFixed(3)} N`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"動能 Ek=½mv²",fields:[
   {label:"動能 Ek (焦耳)",key:"ek"},
   {label:"質量 m (公斤)",key:"m"},
   {label:"速度 v (m/s)",key:"v"}
-],calc:(ek,m,v)=>{
-  if(m&&v&&!ek) return {ek:null,result:`Ek = ½×${m}×${v}² = ${(0.5*m*v*v).toFixed(3)} J`};
-  if(ek&&m&&!v) return {v:null,result:`v = √(2Ek/m) = √(${2*ek/m}) = ${Math.sqrt(2*ek/m).toFixed(3)} m/s`};
-  if(ek&&v&&!m) return {m:null,result:`m = 2Ek/v² = ${2*ek}/(${v*v}) = ${(2*ek/(v*v)).toFixed(3)} kg`};
+],calc:({ek,m,v})=>{
+  if(m&&v&&!ek) return {result:`Ek = ½×${m}×${v}² = ${(0.5*m*v*v).toFixed(3)} J`};
+  if(ek&&m&&!v) return {result:`v = √(2Ek/m) = √(${2*ek/m}) = ${Math.sqrt(2*ek/m).toFixed(3)} m/s`};
+  if(ek&&v&&!m) return {result:`m = 2Ek/v² = ${2*ek}/(${v*v}) = ${(2*ek/(v*v)).toFixed(3)} kg`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"重力位能 U=mgh",fields:[
@@ -95,41 +95,41 @@ const FORMULAS = [
   {label:"質量 m (公斤)",key:"m"},
   {label:"高度 h (公尺)",key:"h"},
   {label:"重力 g (預設 10)",key:"g",def:10}
-],calc:(u,m,h,g)=>{
+],calc:({u,m,h,g})=>{
   g=g||10;
-  if(m&&h&&!u) return {u:null,result:`U = ${m}×${g}×${h} = ${(m*g*h).toFixed(3)} J`};
-  if(u&&m&&!h) return {h:null,result:`h = U/(mg) = ${u}/(${m}×${g}) = ${(u/(m*g)).toFixed(3)} m`};
-  if(u&&h&&!m) return {m:null,result:`m = U/(gh) = ${u}/(${g}×${h}) = ${(u/(g*h)).toFixed(3)} kg`};
+  if(m&&h&&!u) return {result:`U = ${m}×${g}×${h} = ${(m*g*h).toFixed(3)} J`};
+  if(u&&m&&!h) return {result:`h = U/(mg) = ${u}/(${m}×${g}) = ${(u/(m*g)).toFixed(3)} m`};
+  if(u&&h&&!m) return {result:`m = U/(gh) = ${u}/(${g}×${h}) = ${(u/(g*h)).toFixed(3)} kg`};
   return {result:"請輸入其中兩個值 (質量+高度 或 位能+其一)"};
 }},
 {cat:"phys",name:"速度 v=at",fields:[
   {label:"末速 v (m/s)",key:"v"},
   {label:"加速度 a (m/s²)",key:"a"},
   {label:"時間 t (秒)",key:"t"}
-],calc:(v,a,t)=>{
-  if(a&&t&&!v) return {v:null,result:`v = ${a}×${t} = ${(a*t).toFixed(3)} m/s`};
-  if(v&&t&&!a) return {a:null,result:`a = v/t = ${v}/${t} = ${(v/t).toFixed(3)} m/s²`};
-  if(v&&a&&!t) return {t:null,result:`t = v/a = ${v}/${a} = ${(v/a).toFixed(3)} s`};
+],calc:({v,a,t})=>{
+  if(a&&t&&!v) return {result:`v = ${a}×${t} = ${(a*t).toFixed(3)} m/s`};
+  if(v&&t&&!a) return {result:`a = v/t = ${v}/${t} = ${(v/t).toFixed(3)} m/s²`};
+  if(v&&a&&!t) return {result:`t = v/a = ${v}/${a} = ${(v/a).toFixed(3)} s`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"壓力 P=F/A",fields:[
   {label:"壓力 P (Pa)",key:"p"},
   {label:"力 F (牛頓)",key:"f"},
   {label:"面積 A (m²)",key:"a"}
-],calc:(p,f,a)=>{
-  if(f&&a&&!p) return {p:null,result:`P = ${f}/${a} = ${(f/a).toFixed(3)} Pa`};
-  if(p&&a&&!f) return {f:null,result:`F = ${p}×${a} = ${(p*a).toFixed(3)} N`};
-  if(p&&f&&!a) return {a:null,result:`A = ${f}/${p} = ${(f/p).toFixed(6)} m²`};
+],calc:({p,f,a})=>{
+  if(f&&a&&!p) return {result:`P = ${f}/${a} = ${(f/a).toFixed(3)} Pa`};
+  if(p&&a&&!f) return {result:`F = ${p}×${a} = ${(p*a).toFixed(3)} N`};
+  if(p&&f&&!a) return {result:`A = ${f}/${p} = ${(f/p).toFixed(6)} m²`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"密度 ρ=m/V",fields:[
   {label:"密度 ρ (g/cm³)",key:"d"},
   {label:"質量 m (公克)",key:"m"},
   {label:"體積 V (cm³)",key:"v"}
-],calc:(d,m,v)=>{
-  if(m&&v&&!d) return {d:null,result:`ρ = ${m}/${v} = ${(m/v).toFixed(3)} g/cm³`};
-  if(d&&v&&!m) return {m:null,result:`m = ${d}×${v} = ${(d*v).toFixed(3)} g`};
-  if(d&&m&&!v) return {v:null,result:`V = ${m}/${d} = ${(m/d).toFixed(3)} cm³`};
+],calc:({d,m,v})=>{
+  if(m&&v&&!d) return {result:`ρ = ${m}/${v} = ${(m/v).toFixed(3)} g/cm³`};
+  if(d&&v&&!m) return {result:`m = ${d}×${v} = ${(d*v).toFixed(3)} g`};
+  if(d&&m&&!v) return {result:`V = ${m}/${d} = ${(m/d).toFixed(3)} cm³`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"浮力 B=ρVg",fields:[
@@ -137,51 +137,51 @@ const FORMULAS = [
   {label:"液體密度 ρ (kg/m³)",key:"d"},
   {label:"排開體積 V (m³)",key:"v"},
   {label:"重力 g (預設 10)",key:"g",def:10}
-],calc:(b,d,v,g)=>{
+],calc:({b,d,v,g})=>{
   g=g||10;
-  if(d&&v&&!b) return {b:null,result:`B = ${d}×${v}×${g} = ${(d*v*g).toFixed(3)} N`};
-  if(b&&v&&!d) return {d:null,result:`ρ = B/(Vg) = ${b}/(${v}×${g}) = ${(b/(v*g)).toFixed(3)} kg/m³`};
-  if(b&&d&&!v) return {v:null,result:`V = B/(ρg) = ${b}/(${d}×${g}) = ${(b/(d*g)).toFixed(6)} m³`};
+  if(d&&v&&!b) return {result:`B = ${d}×${v}×${g} = ${(d*v*g).toFixed(3)} N`};
+  if(b&&v&&!d) return {result:`ρ = B/(Vg) = ${b}/(${v}×${g}) = ${(b/(v*g)).toFixed(3)} kg/m³`};
+  if(b&&d&&!v) return {result:`V = B/(ρg) = ${b}/(${d}×${g}) = ${(b/(d*g)).toFixed(6)} m³`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"波速 v=fλ",fields:[
   {label:"波速 v (m/s)",key:"v"},
   {label:"頻率 f (Hz)",key:"f"},
   {label:"波長 λ (m)",key:"l"}
-],calc:(v,f,l)=>{
-  if(f&&l&&!v) return {v:null,result:`v = ${f}×${l} = ${(f*l).toFixed(3)} m/s`};
-  if(v&&l&&!f) return {f:null,result:`f = v/λ = ${v}/${l} = ${(v/l).toFixed(3)} Hz`};
-  if(v&&f&&!l) return {l:null,result:`λ = v/f = ${v}/${f} = ${(v/f).toFixed(3)} m`};
+],calc:({v,f,l})=>{
+  if(f&&l&&!v) return {result:`v = ${f}×${l} = ${(f*l).toFixed(3)} m/s`};
+  if(v&&l&&!f) return {result:`f = v/λ = ${v}/${l} = ${(v/l).toFixed(3)} Hz`};
+  if(v&&f&&!l) return {result:`λ = v/f = ${v}/${f} = ${(v/f).toFixed(3)} m`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"phys",name:"功 W=Fd",fields:[
   {label:"功 W (焦耳)",key:"w"},
   {label:"力 F (牛頓)",key:"f"},
   {label:"位移 d (公尺)",key:"d"}
-],calc:(w,f,d)=>{
-  if(f&&d&&!w) return {w:null,result:`W = ${f}×${d} = ${(f*d).toFixed(3)} J`};
-  if(w&&d&&!f) return {f:null,result:`F = W/d = ${w}/${d} = ${(w/d).toFixed(3)} N`};
-  if(w&&f&&!d) return {d:null,result:`d = W/F = ${w}/${f} = ${(w/f).toFixed(3)} m`};
+],calc:({w,f,d})=>{
+  if(f&&d&&!w) return {result:`W = ${f}×${d} = ${(f*d).toFixed(3)} J`};
+  if(w&&d&&!f) return {result:`F = W/d = ${w}/${d} = ${(w/d).toFixed(3)} N`};
+  if(w&&f&&!d) return {result:`d = W/F = ${w}/${f} = ${(w/f).toFixed(3)} m`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"chem",name:"莫耳數 n=m/M",fields:[
   {label:"莫耳數 n (mol)",key:"n"},
   {label:"質量 m (公克)",key:"m"},
   {label:"分子量 M (g/mol)",key:"M"}
-],calc:(n,m,M)=>{
-  if(m&&M&&!n) return {n:null,result:`n = ${m}/${M} = ${(m/M).toFixed(4)} mol`};
-  if(n&&M&&!m) return {m:null,result:`m = ${n}×${M} = ${(n*M).toFixed(3)} g`};
-  if(n&&m&&!M) return {M:null,result:`M = ${m}/${n} = ${(m/n).toFixed(3)} g/mol`};
+],calc:({n,m,M})=>{
+  if(m&&M&&!n) return {result:`n = ${m}/${M} = ${(m/M).toFixed(4)} mol`};
+  if(n&&M&&!m) return {result:`m = ${n}×${M} = ${(n*M).toFixed(3)} g`};
+  if(n&&m&&!M) return {result:`M = ${m}/${n} = ${(m/n).toFixed(3)} g/mol`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"chem",name:"濃度 C=n/V",fields:[
   {label:"濃度 C (M)",key:"c"},
   {label:"莫耳數 n (mol)",key:"n"},
   {label:"體積 V (公升)",key:"v"}
-],calc:(c,n,v)=>{
-  if(n&&v&&!c) return {c:null,result:`C = ${n}/${v} = ${(n/v).toFixed(4)} M`};
-  if(c&&v&&!n) return {n:null,result:`n = ${c}×${v} = ${(c*v).toFixed(4)} mol`};
-  if(c&&n&&!v) return {v:null,result:`V = ${n}/${c} = ${(n/c).toFixed(4)} L`};
+],calc:({c,n,v})=>{
+  if(n&&v&&!c) return {result:`C = ${n}/${v} = ${(n/v).toFixed(4)} M`};
+  if(c&&v&&!n) return {result:`n = ${c}×${v} = ${(c*v).toFixed(4)} mol`};
+  if(c&&n&&!v) return {result:`V = ${n}/${c} = ${(n/c).toFixed(4)} L`};
   return {result:"請輸入其中兩個值"};
 }},
 {cat:"chem",name:"理想氣體 PV=nRT",fields:[
@@ -189,27 +189,27 @@ const FORMULAS = [
   {label:"體積 V (L)",key:"v"},
   {label:"莫耳數 n (mol)",key:"n"},
   {label:"溫度 T (K)",key:"t"}
-],calc:(p,v,n,t)=>{
+],calc:({p,v,n,t})=>{
   const R=0.0821;
-  if(p&&v&&n&&!t) return {t:null,result:`T = PV/(nR) = ${p}×${v}/(${n}×${R}) = ${(p*v/(n*R)).toFixed(1)} K`};
-  if(p&&v&&t&&!n) return {n:null,result:`n = PV/(RT) = ${p}×${v}/(${R}×${t}) = ${(p*v/(R*t)).toFixed(4)} mol`};
-  if(n&&v&&t&&!p) return {p:null,result:`P = nRT/V = ${n}×${R}×${t}/${v} = ${(n*R*t/v).toFixed(3)} atm`};
-  if(p&&n&&t&&!v) return {v:null,result:`V = nRT/P = ${n}×${R}×${t}/${p} = ${(n*R*t/p).toFixed(3)} L`};
+  if(p&&v&&n&&!t) return {result:`T = PV/(nR) = ${p}×${v}/(${n}×${R}) = ${(p*v/(n*R)).toFixed(1)} K`};
+  if(p&&v&&t&&!n) return {result:`n = PV/(RT) = ${p}×${v}/(${R}×${t}) = ${(p*v/(R*t)).toFixed(4)} mol`};
+  if(n&&v&&t&&!p) return {result:`P = nRT/V = ${n}×${R}×${t}/${v} = ${(n*R*t/v).toFixed(3)} atm`};
+  if(p&&n&&t&&!v) return {result:`V = nRT/P = ${n}×${R}×${t}/${p} = ${(n*R*t/p).toFixed(3)} L`};
   return {result:"請輸入其中三個值"};
 }},
 {cat:"chem",name:"pH = -log[H⁺]",fields:[
   {label:"pH 值",key:"ph"},
   {label:"H⁺ 濃度 (M)",key:"h"}
-],calc:(ph,h)=>{
-  if(h&&!ph) return {ph:null,result:`pH = -log(${h}) = ${(-Math.log10(h)).toFixed(2)}`};
-  if(ph&&!h) return {h:null,result:`[H⁺] = 10^(${-ph}) = ${(10**-ph).toExponential(3)} M`};
+],calc:({ph,h})=>{
+  if(h&&!ph) return {result:`pH = -log(${h}) = ${(-Math.log10(h)).toFixed(2)}`};
+  if(ph&&!h) return {result:`[H⁺] = 10^(${-ph}) = ${(10**-ph).toExponential(3)} M`};
   return {result:"請輸入 pH 值或 H⁺ 濃度"};
 }},
 {cat:"phys",name:"電度數 kWh",fields:[
   {label:"功率 P (瓦特)",key:"p"},
   {label:"時間 t (小時)",key:"t"},
   {label:"電費單價 (元/度，預設 3)",key:"c",def:3}
-],calc:(p,t,c)=>{
+],calc:({p,t,c})=>{
   c=c||3;
   if(p&&t) return {result:`用電度數 = ${p/1000}×${t} = ${(p*t/1000).toFixed(3)} 度<br>電費 = ${(p*t/1000*c).toFixed(2)} 元`};
   return {result:"請輸入功率和時間"};
@@ -252,7 +252,7 @@ function calc(i){
     const inp=document.getElementById(`f${i}_${fd.key}`);
     vals[fd.key]=inp.value?parseFloat(inp.value):null;
   });
-  const res=f.calc(vals.v,vals.i,vals.r,vals.p,vals.m,vals.a,vals.ek,vals.u,vals.h,vals.g,vals.f,vals.d,vals.l,vals.w,vals.n,vals.M,vals.c,vals.t,vals.b,vals.ph,vals.b||vals.h);
+  const res=f.calc(vals);
   document.getElementById(`res${i}`).innerHTML=res.result?`<span>${res.result}</span>`:"";
 }
 
