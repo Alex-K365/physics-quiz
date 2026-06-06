@@ -23621,6 +23621,870 @@
       ],
       "answer": 0,
       "explanation": "(a) Mandarin Chinese. (b) Yu Shan is 3,952 meters high. (c) Night markets and beautiful mountains (also delicious food)."
+    },
+    {
+      "id": 1472,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "牛頓第一運動定律又稱為？",
+      "options": [
+        "萬有引力定律",
+        "慣性定律",
+        "作用與反作用定律",
+        "加速度定律"
+      ],
+      "answer": 1,
+      "explanation": "牛頓第一運動定律即慣性定律：物體若不受外力，靜者恆靜、動者恆作等速直線運動。"
+    },
+    {
+      "id": 1473,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "質量的 SI 單位為何？",
+      "options": [
+        "牛頓",
+        "公斤",
+        "磅",
+        "公克"
+      ],
+      "answer": 1,
+      "explanation": "質量的 SI 單位為公斤（kg）。牛頓是力的單位。"
+    },
+    {
+      "id": 1474,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量 5 kg 的物體受到 20 N 的淨力作用，加速度為多少？",
+      "options": [
+        "4 m/s²",
+        "5 m/s²",
+        "10 m/s²",
+        "100 m/s²"
+      ],
+      "answer": 0,
+      "explanation": "F=ma → a=F/m=20/5=4 m/s²。"
+    },
+    {
+      "id": 1475,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "月球上的重力加速度約為地球的 1/6。在地球上體重 60 kgw 的人，在月球上的重量約為？",
+      "options": [
+        "6 kgw",
+        "10 kgw",
+        "60 kgw",
+        "360 kgw"
+      ],
+      "answer": 1,
+      "explanation": "重量 = mg，月球 g 為地球 1/6，所以重量 = 60/6 = 10 kgw。質量不變仍為 60 kg。"
+    },
+    {
+      "id": 1476,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一物體自高處自由落下，不計空氣阻力，第 2 秒末的瞬時速度約為多少？（g=10 m/s²）",
+      "options": [
+        "10 m/s",
+        "15 m/s",
+        "20 m/s",
+        "40 m/s"
+      ],
+      "answer": 2,
+      "explanation": "v=gt=10×2=20 m/s。自由落體每秒速度增加 10 m/s。"
+    },
+    {
+      "id": 1477,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "在光滑水平面上，一物體受水平力 F 作用產生加速度 a。若施力變為 3F，則加速度變為？",
+      "options": [
+        "a/3",
+        "a",
+        "3a",
+        "9a"
+      ],
+      "answer": 2,
+      "explanation": "F=ma，a=F/m。F 變 3 倍→a 變 3 倍→3a。"
+    },
+    {
+      "id": 1478,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "手握瓶子靜止不動時，瓶子的重力與手對瓶子的摩擦力之間的關係為何？",
+      "options": [
+        "重力大於摩擦力",
+        "摩擦力大於重力",
+        "兩者相等",
+        "兩者方向相同"
+      ],
+      "answer": 2,
+      "explanation": "瓶子靜止代表合力為零，重力向下，摩擦力向上，兩者大小相等方向相反。"
+    },
+    {
+      "id": 1479,
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者不是向量？",
+      "options": [
+        "速度",
+        "加速度",
+        "距離",
+        "力"
+      ],
+      "answer": 2,
+      "explanation": "距離為純量（只有大小）。速度、加速度、力皆為向量（有大小和方向）。"
+    },
+    {
+      "id": 1480,
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "速率 36 km/h 相當於多少 m/s？",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "20 m/s",
+        "36 m/s"
+      ],
+      "answer": 1,
+      "explanation": "36 km/h = 36×1000/3600 = 10 m/s。"
+    },
+    {
+      "id": 1481,
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一輛車由靜止以 2 m/s² 加速 5 秒，行駛距離為多少？",
+      "options": [
+        "10 m",
+        "20 m",
+        "25 m",
+        "50 m"
+      ],
+      "answer": 2,
+      "explanation": "S=½at²=½×2×25=25 m。"
+    },
+    {
+      "id": 1482,
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "鉛直上拋的物體，上升至最高點時的瞬時速度為何？",
+      "options": [
+        "v₀",
+        "0",
+        "-v₀",
+        "無法判斷"
+      ],
+      "answer": 1,
+      "explanation": "最高點時物體瞬時速度為 0，之後開始下落。"
+    },
+    {
+      "id": 1483,
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "功率的 SI 單位為？",
+      "options": [
+        "焦耳",
+        "瓦特",
+        "牛頓",
+        "伏特"
+      ],
+      "answer": 1,
+      "explanation": "功率單位為瓦特（W），1 W = 1 J/s。焦耳為能量單位。"
+    },
+    {
+      "id": 1484,
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量 2 kg 的物體以 3 m/s 的速度運動，其動能為多少？",
+      "options": [
+        "3 J",
+        "6 J",
+        "9 J",
+        "18 J"
+      ],
+      "answer": 2,
+      "explanation": "Ek=½mv²=½×2×9=9 J。"
+    },
+    {
+      "id": 1485,
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將 10 kg 的物體舉高 2 m，需作功多少？（g=10 m/s²）",
+      "options": [
+        "20 J",
+        "100 J",
+        "200 J",
+        "400 J"
+      ],
+      "answer": 2,
+      "explanation": "W=Fd=mgh=10×10×2=200 J。"
+    },
+    {
+      "id": 1486,
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一物體由靜止自由落下，不計阻力，下落 5 m 時的速度約為多少？（g=10 m/s²）",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "14 m/s",
+        "20 m/s"
+      ],
+      "answer": 1,
+      "explanation": "力學能守恆：mgh=½mv²→v=√(2gh)=√(2×10×5)=√100=10 m/s。"
+    },
+    {
+      "id": 1487,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電流的 SI 單位為何？",
+      "options": [
+        "伏特",
+        "安培",
+        "歐姆",
+        "瓦特"
+      ],
+      "answer": 1,
+      "explanation": "電流單位為安培（A）。伏特為電壓，歐姆為電阻。"
+    },
+    {
+      "id": 1488,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一電阻兩端電壓為 12 V，通過電流為 3 A，則電阻值為多少？",
+      "options": [
+        "4 Ω",
+        "6 Ω",
+        "12 Ω",
+        "36 Ω"
+      ],
+      "answer": 0,
+      "explanation": "V=IR→R=V/I=12/3=4 Ω。"
+    },
+    {
+      "id": 1489,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "兩個 12Ω 的電阻並聯，總電阻為多少？",
+      "options": [
+        "6 Ω",
+        "12 Ω",
+        "18 Ω",
+        "24 Ω"
+      ],
+      "answer": 0,
+      "explanation": "1/R=1/12+1/12=2/12→R=6 Ω。"
+    },
+    {
+      "id": 1490,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "標示 110V、550W 的電器，正常使用時通過的電流為多少？",
+      "options": [
+        "2 A",
+        "5 A",
+        "10 A",
+        "20 A"
+      ],
+      "answer": 1,
+      "explanation": "P=IV→I=P/V=550/110=5 A。"
+    },
+    {
+      "id": 1491,
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "1 度電等於多少焦耳？",
+      "options": [
+        "3.6×10³ J",
+        "3.6×10⁴ J",
+        "3.6×10⁵ J",
+        "3.6×10⁶ J"
+      ],
+      "answer": 3,
+      "explanation": "1 度 = 1 kW×1 h = 1000×3600 = 3.6×10⁶ J。"
+    },
+    {
+      "id": 1492,
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為光的反射現象？",
+      "options": [
+        "筷子在水中看起來折斷",
+        "彩虹的形成",
+        "平面鏡成像",
+        "近視眼鏡矯正視力"
+      ],
+      "answer": 2,
+      "explanation": "平面鏡成像為反射。筷子折斷和彩虹為折射，近視眼鏡為折射。"
+    },
+    {
+      "id": 1493,
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體放在凸透鏡的 2 倍焦距外，成像性質為何？",
+      "options": [
+        "正立放大虛像",
+        "倒立縮小實像",
+        "倒立放大實像",
+        "正立縮小實像"
+      ],
+      "answer": 1,
+      "explanation": "物體在凸透鏡 2 倍焦距外→倒立縮小實像。相機原理。"
+    },
+    {
+      "id": 1494,
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "紅綠藍三色光等比例混合會得到什麼顏色？",
+      "options": [
+        "黑色",
+        "白色",
+        "黃色",
+        "紫色"
+      ],
+      "answer": 1,
+      "explanation": "光的三原色紅綠藍等比例混合→白光（加法混色）。"
+    },
+    {
+      "id": 1495,
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪一種物質具有鐵磁性？",
+      "options": [
+        "銅",
+        "鐵",
+        "鋁",
+        "塑膠"
+      ],
+      "answer": 1,
+      "explanation": "鐵、鈷、鎳具有鐵磁性，可被磁鐵吸引。"
+    },
+    {
+      "id": 1496,
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "通電螺線管內部的磁場方向可用下列何者判斷？",
+      "options": [
+        "右手定則",
+        "左手定則",
+        "法拉第定律",
+        "冷次定律"
+      ],
+      "answer": 0,
+      "explanation": "安培右手定則：右手握住螺線管，四指指向電流方向，拇指指向為 N 極（磁場方向）。"
+    },
+    {
+      "id": 1497,
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電動機（馬達）的原理是依據？",
+      "options": [
+        "電流磁效應",
+        "電磁感應",
+        "安培定律",
+        "電流的熱效應"
+      ],
+      "answer": 0,
+      "explanation": "電動機利用電流磁效應：通電導線在磁場中受力而轉動。"
+    },
+    {
+      "id": 1498,
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "溫度為物體冷熱程度的表示，其 SI 單位為？",
+      "options": [
+        "攝氏度",
+        "華氏度",
+        "克耳文",
+        "焦耳"
+      ],
+      "answer": 2,
+      "explanation": "溫度的 SI 單位為克耳文（K）。攝氏度為常用單位。"
+    },
+    {
+      "id": 1499,
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪一種介質無法傳遞聲音？",
+      "options": [
+        "空氣",
+        "水",
+        "鋼鐵",
+        "真空"
+      ],
+      "answer": 3,
+      "explanation": "聲音需要介質傳播，真空中無介質所以無法傳聲。"
+    },
+    {
+      "id": 1500,
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲音在空氣中的傳播速率約為多少 m/s（常溫）？",
+      "options": [
+        "34 m/s",
+        "340 m/s",
+        "3400 m/s",
+        "34000 m/s"
+      ],
+      "answer": 1,
+      "explanation": "常溫下聲速約 340 m/s，隨溫度升高而增加。"
+    },
+    {
+      "id": 1501,
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "頻率 512 Hz 的聲波在空氣中的波長約為多少？（聲速 340 m/s）",
+      "options": [
+        "0.33 m",
+        "0.66 m",
+        "1.5 m",
+        "3.4 m"
+      ],
+      "answer": 1,
+      "explanation": "v=fλ→λ=v/f=340/512≈0.66 m。"
+    },
+    {
+      "id": 1502,
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "原子核內不帶電的粒子為何？",
+      "options": [
+        "質子",
+        "中子",
+        "電子",
+        "離子"
+      ],
+      "answer": 1,
+      "explanation": "中子不帶電。質子帶正電，電子帶負電。"
+    },
+    {
+      "id": 1503,
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為兩種元素組成的化合物？",
+      "options": [
+        "氧氣 O₂",
+        "食鹽 NaCl",
+        "氮氣 N₂",
+        "臭氧 O₃"
+      ],
+      "answer": 1,
+      "explanation": "NaCl 由 Na 和 Cl 兩種元素組成。O₂、N₂、O₃ 為元素。"
+    },
+    {
+      "id": 1504,
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一個碳-12 原子質量的 1/12 定義為？",
+      "options": [
+        "莫耳",
+        "原子質量單位（amu）",
+        "分子量",
+        "原子序"
+      ],
+      "answer": 1,
+      "explanation": "原子質量單位（amu）定義為碳-12 原子質量的 1/12。"
+    },
+    {
+      "id": 1505,
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "2H₂ + O₂ → 2H₂O 中，氫氣與氧氣的係數比為？",
+      "options": [
+        "1:1",
+        "2:1",
+        "1:2",
+        "2:2"
+      ],
+      "answer": 1,
+      "explanation": "係數比 H₂:O₂ = 2:1。"
+    },
+    {
+      "id": 1506,
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "催化劑對化學反應的影響為何？",
+      "options": [
+        "改變反應產物",
+        "降低活化能加快反應",
+        "增加產物量",
+        "提高反應溫度"
+      ],
+      "answer": 1,
+      "explanation": "催化劑降低活化能，加快反應速率，但不影響平衡和產物量。"
+    },
+    {
+      "id": 1507,
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "pH=7 的溶液呈什麼性質？",
+      "options": [
+        "酸性",
+        "中性",
+        "鹼性",
+        "強酸"
+      ],
+      "answer": 1,
+      "explanation": "pH=7 為中性。pH<7 為酸性，pH>7 為鹼性。"
+    },
+    {
+      "id": 1508,
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鹽酸（HCl）的 pH 值約為多少？",
+      "options": [
+        "pH=1",
+        "pH=5",
+        "pH=7",
+        "pH=10"
+      ],
+      "answer": 0,
+      "explanation": "鹽酸為強酸，0.1M 鹽酸 pH 約為 1。"
+    },
+    {
+      "id": 1509,
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "酸鹼中和反應的產物為？",
+      "options": [
+        "鹽和水",
+        "酸和鹽",
+        "水和氧氣",
+        "鹽和氫氣"
+      ],
+      "answer": 0,
+      "explanation": "酸+鹼→鹽+水。HCl+NaOH→NaCl+H₂O。"
+    },
+    {
+      "id": 1510,
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電化學中，陽極發生何種反應？",
+      "options": [
+        "還原",
+        "氧化",
+        "中和",
+        "電解"
+      ],
+      "answer": 1,
+      "explanation": "陽極（anode）發生氧化反應，陰極（cathode）發生還原反應。"
+    },
+    {
+      "id": 1511,
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "活性：Mg > Zn > Fe > Cu > Ag。下列哪種金屬可與 CuSO₄ 發生置換反應？",
+      "options": [
+        "Ag",
+        "Cu",
+        "Fe",
+        "Au"
+      ],
+      "answer": 2,
+      "explanation": "Fe 活性大於 Cu，Fe+CuSO₄→FeSO₄+Cu。Ag、Cu、Au 活性小於 Cu 無法置換。"
+    },
+    {
+      "id": 1512,
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "天然氣的主要成分為？",
+      "options": [
+        "甲烷",
+        "乙烷",
+        "丙烷",
+        "丁烷"
+      ],
+      "answer": 0,
+      "explanation": "天然氣含 85-95% 甲烷（CH₄）。"
+    },
+    {
+      "id": 1513,
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "乙醇（酒精）的化學式為？",
+      "options": [
+        "CH₄",
+        "C₂H₅OH",
+        "CH₃COOH",
+        "C₂H₆"
+      ],
+      "answer": 1,
+      "explanation": "乙醇（酒精）為 C₂H₅OH。CH₄ 為甲烷，CH₃COOH 為醋酸。"
+    },
+    {
+      "id": 1514,
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "下列何者為聚合物？",
+      "options": [
+        "葡萄糖",
+        "澱粉",
+        "酒精",
+        "醋酸"
+      ],
+      "answer": 1,
+      "explanation": "澱粉為葡萄糖聚合物。葡萄糖、酒精、醋酸為小分子。"
+    },
+    {
+      "id": 1515,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is the meaning of \"happy\"?",
+      "options": [
+        "Sad",
+        "Angry",
+        "Joyful",
+        "Tired"
+      ],
+      "answer": 2,
+      "explanation": "Happy means feeling or showing pleasure or contentment."
+    },
+    {
+      "id": 1516,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The synonym of \"quickly\" is ___?",
+      "options": [
+        "Slowly",
+        "Rapidly",
+        "Carefully",
+        "Quietly"
+      ],
+      "answer": 1,
+      "explanation": "Quickly and rapidly both mean at a fast speed."
+    },
+    {
+      "id": 1517,
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "\"Inevitable\" means ___?",
+      "options": [
+        "Avoidable",
+        "Certain to happen",
+        "Unlikely",
+        "Optional"
+      ],
+      "answer": 1,
+      "explanation": "Inevitable means something that is certain to happen and cannot be avoided."
+    },
+    {
+      "id": 1518,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "There ___ a book on the table.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "answer": 0,
+      "explanation": "Singular subject 'a book' takes 'is'. There is a book."
+    },
+    {
+      "id": 1519,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "He has been studying English ___ three years.",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "from"
+      ],
+      "answer": 1,
+      "explanation": "'For' is used with duration (three years). 'Since' with a point in time."
+    },
+    {
+      "id": 1520,
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "I wish I ___ harder for the test.",
+      "options": [
+        "study",
+        "studied",
+        "had studied",
+        "would study"
+      ],
+      "answer": 2,
+      "explanation": "Wish + past perfect (had studied) expresses regret about the past."
+    },
+    {
+      "id": 1521,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "Nice to meet you! is used when you ___ someone.",
+      "options": [
+        "meet someone for the first time",
+        "say goodbye",
+        "apologize",
+        "ask for help"
+      ],
+      "answer": 0,
+      "explanation": "'Nice to meet you!' is a common greeting when meeting someone for the first time."
+    },
+    {
+      "id": 1522,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She is ___ girl in the class.",
+      "options": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "answer": 2,
+      "explanation": "Superlative: 'the tallest' for comparing three or more."
+    },
+    {
+      "id": 1523,
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "He asked me where I ___ the day before.",
+      "options": [
+        "go",
+        "went",
+        "have gone",
+        "had gone"
+      ],
+      "answer": 3,
+      "explanation": "Reported speech with backshift: 'Where did you go?' → where I had gone."
+    },
+    {
+      "id": 1524,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "Water boils at 100°C. What does 'boils' mean?",
+      "options": [
+        "Freezes",
+        "Heats up to become vapor",
+        "Cools down",
+        "Melts"
+      ],
+      "answer": 1,
+      "explanation": "Boil means to heat a liquid until it turns into vapor."
+    },
+    {
+      "id": 1525,
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "mixed",
+      "question": "(Reading) The water cycle has three main steps: evaporation, condensation, and precipitation. First, the sun heats water in rivers and oceans, turning it into water vapor (evaporation). Then, the vapor rises and cools, forming clouds (condensation). Finally, water falls back to Earth as rain or snow (precipitation).<br>(a) What is the first step of the water cycle?<br>(b) What forms during condensation?<br>(c) What are two forms of precipitation mentioned?",
+      "options": [
+        "Evaporation, Clouds, Rain and snow",
+        "Condensation, Rain, Snow and hail",
+        "Precipitation, Water vapor, Rivers and oceans",
+        "Evaporation, Fog, Ice and sleet"
+      ],
+      "answer": 0,
+      "explanation": "(a) Evaporation. (b) Clouds form during condensation. (c) Rain and snow are mentioned."
     }
   ],
   "subjects": [
@@ -23638,6 +24502,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1471
+    "totalQuestions": 1525
   }
 }
