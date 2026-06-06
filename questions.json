@@ -24485,6 +24485,742 @@
       ],
       "answer": 0,
       "explanation": "(a) Evaporation. (b) Clouds form during condensation. (c) Rain and snow are mentioned."
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "影響物體慣性大小的因素為何？",
+      "options": [
+        "速度",
+        "質量",
+        "體積",
+        "形狀"
+      ],
+      "answer": 1,
+      "explanation": "慣性大小只與質量有關，質量越大慣性越大。",
+      "id": 1526
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體在光滑平面上作等速直線運動，若不受外力，則物體將？",
+      "options": [
+        "越來越快",
+        "越來越慢",
+        "維持等速",
+        "先快後慢"
+      ],
+      "answer": 2,
+      "explanation": "牛頓第一定律：合力為零時，物體維持原運動狀態。",
+      "id": 1527
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "質量 2 kg 的物體，受 8 N 和 6 N 的兩力垂直作用，則加速度大小為何？",
+      "options": [
+        "3 m/s²",
+        "4 m/s²",
+        "5 m/s²",
+        "7 m/s²"
+      ],
+      "answer": 2,
+      "explanation": "合力=√(8²+6²)=10 N，a=F/m=10/2=5 m/s²。",
+      "id": 1528
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為加速度的 SI 單位？",
+      "options": [
+        "m/s",
+        "m/s²",
+        "km/h",
+        "N/kg"
+      ],
+      "answer": 1,
+      "explanation": "加速度單位為 m/s²（每秒速度變化量）。",
+      "id": 1529
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體速度由 10 m/s 均勻減速至 2 m/s 歷時 4 秒，則加速度為？",
+      "options": [
+        "-2 m/s²",
+        "2 m/s²",
+        "-4 m/s²",
+        "4 m/s²"
+      ],
+      "answer": 0,
+      "explanation": "a=(v-u)/t=(2-10)/4=-2 m/s²（負號表示減速）。",
+      "id": 1530
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為能量的單位？",
+      "options": [
+        "牛頓",
+        "瓦特",
+        "焦耳",
+        "帕斯卡"
+      ],
+      "answer": 2,
+      "explanation": "能量單位為焦耳（J）。牛頓為力，瓦特為功率，帕斯卡為壓力。",
+      "id": 1531
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何種能量轉換發生在電池中？",
+      "options": [
+        "熱能→光能",
+        "化學能→電能",
+        "電能→化學能",
+        "動能→電能"
+      ],
+      "answer": 1,
+      "explanation": "電池將化學能轉變為電能。充電時則為電能→化學能。",
+      "id": 1532
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "測量電壓的儀器為？",
+      "options": [
+        "安培計",
+        "電壓計",
+        "歐姆計",
+        "功率計"
+      ],
+      "answer": 1,
+      "explanation": "電壓計（伏特計）並聯於待測電路。安培計串聯測電流。",
+      "id": 1533
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "家庭用電為交流電，臺灣的頻率為？",
+      "options": [
+        "50 Hz",
+        "60 Hz",
+        "100 Hz",
+        "120 Hz"
+      ],
+      "answer": 1,
+      "explanation": "臺灣家庭用電為 110V、60 Hz 交流電。",
+      "id": 1534
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者可以產生光的色散？",
+      "options": [
+        "平面鏡",
+        "三稜鏡",
+        "凹面鏡",
+        "放大鏡"
+      ],
+      "answer": 1,
+      "explanation": "三稜鏡可將白光色散為七色光譜。",
+      "id": 1535
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "光在真空中的傳播速度約為？",
+      "options": [
+        "3×10⁴ m/s",
+        "3×10⁶ m/s",
+        "3×10⁸ m/s",
+        "3×10¹⁰ m/s"
+      ],
+      "answer": 2,
+      "explanation": "光速 c=3×10⁸ m/s（每秒約 30 萬公里）。",
+      "id": 1536
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "指南針的 N 極指向地理上的哪個方向？",
+      "options": [
+        "東方",
+        "南方",
+        "西方",
+        "北方"
+      ],
+      "answer": 3,
+      "explanation": "指南針 N 極指向地理北極（地磁南極）。",
+      "id": 1537
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "熱量由高溫物體傳到低溫物體的三種方式不包括？",
+      "options": [
+        "傳導",
+        "對流",
+        "輻射",
+        "折射"
+      ],
+      "answer": 3,
+      "explanation": "折射為光的現象。熱傳播三方式：傳導、對流、輻射。",
+      "id": 1538
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將 200 g、25°C 的水加熱至 75°C，需要吸收多少熱量？",
+      "options": [
+        "5000 cal",
+        "10000 cal",
+        "15000 cal",
+        "20000 cal"
+      ],
+      "answer": 1,
+      "explanation": "H=m×s×ΔT=200×1×(75-25)=200×50=10000 cal。",
+      "id": 1539
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "冰的熔化熱為 80 cal/g。將 50 g、0°C 的冰完全熔化為 0°C 的水，需要吸收多少熱量？",
+      "options": [
+        "80 cal",
+        "400 cal",
+        "4000 cal",
+        "8000 cal"
+      ],
+      "answer": 2,
+      "explanation": "H=m×Lf=50×80=4000 cal。",
+      "id": 1540
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "回聲是利用聲音的何種特性？",
+      "options": [
+        "折射",
+        "反射",
+        "繞射",
+        "干涉"
+      ],
+      "answer": 2,
+      "explanation": "回聲是聲波碰到障礙物反射回來造成的現象。",
+      "id": 1541
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "液體壓力與下列何者成正比？",
+      "options": [
+        "液體體積",
+        "液體深度",
+        "液體表面積",
+        "容器形狀"
+      ],
+      "answer": 1,
+      "explanation": "液體壓力 P=h×d，與深度成正比。",
+      "id": 1542
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將同一塊木頭分別放入清水和鹽水中，何者受到的浮力較大？",
+      "options": [
+        "清水",
+        "鹽水",
+        "一樣大",
+        "無法比較"
+      ],
+      "answer": 1,
+      "explanation": "鹽水密度較大，木頭排開的液體重較大，浮力較大。",
+      "id": 1543
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "潛水員在深 20 米處所受的壓力約為多少 atm？（每 10 米水深約 1 atm）",
+      "options": [
+        "1 atm",
+        "2 atm",
+        "3 atm",
+        "20 atm"
+      ],
+      "answer": 2,
+      "explanation": "水面 1 atm + 水深 20m=2 atm，共 3 atm。",
+      "id": 1544
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "元素週期表是依照下列何者排列？",
+      "options": [
+        "原子量",
+        "原子序",
+        "中子數",
+        "質量數"
+      ],
+      "answer": 1,
+      "explanation": "元素週期表依原子序（質子數）遞增排列。",
+      "id": 1545
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "H₂O 的分子量約為多少？",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "answer": 2,
+      "explanation": "H₂O=1×2+16=18。",
+      "id": 1546
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "1 莫耳的氧氣（O₂）含有多少個氧分子？",
+      "options": [
+        "6×10²³",
+        "12×10²³",
+        "3×10²³",
+        "1×10²³"
+      ],
+      "answer": 0,
+      "explanation": "1 莫耳=6×10²³ 個粒子（亞佛加厥常數）。",
+      "id": 1547
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者屬於化學變化？",
+      "options": [
+        "冰融化",
+        "糖溶水",
+        "鐵生鏽",
+        "水蒸發"
+      ],
+      "answer": 2,
+      "explanation": "鐵生鏽產生新物質（鐵鏽），為化學變化。其餘為物理變化。",
+      "id": 1548
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "12 g 碳與 32 g 氧完全反應生成 CO₂，符合？",
+      "options": [
+        "能量守恆",
+        "質量守恆",
+        "原子說",
+        "定比定律"
+      ],
+      "answer": 1,
+      "explanation": "質量守恆定律：反應前後總質量不變，12+32=44 g CO₂。",
+      "id": 1549
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "下列何者不能加快化學反應速率？",
+      "options": [
+        "提高溫度",
+        "增加濃度",
+        "加入催化劑",
+        "降低壓力"
+      ],
+      "answer": 3,
+      "explanation": "降低壓力使氣體濃度下降，反應速率變慢。",
+      "id": 1550
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為強酸？",
+      "options": [
+        "醋酸",
+        "鹽酸",
+        "碳酸",
+        "檸檬酸"
+      ],
+      "answer": 1,
+      "explanation": "鹽酸（HCl）為強酸。醋酸、碳酸、檸檬酸為弱酸。",
+      "id": 1551
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "石蕊試紙在酸性溶液中的顏色變化為？",
+      "options": [
+        "紅→藍",
+        "藍→紅",
+        "不變",
+        "變黃"
+      ],
+      "answer": 1,
+      "explanation": "藍色石蕊試紙遇酸變紅，紅色石蕊試紙遇鹼變藍。",
+      "id": 1552
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "物質得到電子的反應稱為？",
+      "options": [
+        "氧化",
+        "還原",
+        "電解",
+        "中和"
+      ],
+      "answer": 1,
+      "explanation": "得到電子→還原（氧化數下降）；失去電子→氧化。",
+      "id": 1553
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電鍍時，欲鍍的金屬應連接電源的哪一極？",
+      "options": [
+        "正極（陽極）",
+        "負極（陰極）",
+        "不一定",
+        "不接電源"
+      ],
+      "answer": 0,
+      "explanation": "欲鍍金屬接正極（陽極）氧化成金屬離子，在陰極還原析出。",
+      "id": 1554
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "石油分餾是利用下列何種性質分離？",
+      "options": [
+        "溶解度",
+        "沸點",
+        "密度",
+        "顏色"
+      ],
+      "answer": 1,
+      "explanation": "石油分餾利用各成分沸點不同進行分離。",
+      "id": 1555
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "醋的主要成分為？",
+      "options": [
+        "乙醇",
+        "醋酸",
+        "甲酸",
+        "乳酸"
+      ],
+      "answer": 1,
+      "explanation": "醋含 3-5% 醋酸（CH₃COOH）。乙醇為酒精，乳酸為牛奶發酵產物。",
+      "id": 1556
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "塑膠是一種？",
+      "options": [
+        "天然聚合物",
+        "人造聚合物",
+        "金屬材料",
+        "陶瓷材料"
+      ],
+      "answer": 1,
+      "explanation": "塑膠為人造聚合物（由小分子聚合而成）。",
+      "id": 1557
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "實驗室加熱試管中的液體時，試管口應朝向？",
+      "options": [
+        "自己",
+        "他人",
+        "無人方向",
+        "天花板"
+      ],
+      "answer": 2,
+      "explanation": "加熱時試管口不可朝向自己或他人，以免液體噴濺。",
+      "id": 1558
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "測量液體體積時，視線應與下列何處齊平？",
+      "options": [
+        "量筒最高點",
+        "液面中央凹下最低處",
+        "液面邊緣",
+        "量筒刻度"
+      ],
+      "answer": 1,
+      "explanation": "讀取量筒刻度時，視線應與凹液面最低處齊平。",
+      "id": 1559
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What does \"delicious\" mean?",
+      "options": [
+        "Terrible",
+        "Very tasty",
+        "Expensive",
+        "Healthy"
+      ],
+      "answer": 1,
+      "explanation": "Delicious means very pleasant to taste.",
+      "id": 1560
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The opposite of \"ancient\" is ___?",
+      "options": [
+        "Old",
+        "Modern",
+        "Historic",
+        "Elderly"
+      ],
+      "answer": 1,
+      "explanation": "Ancient means very old; modern means relating to the present time. Both are adjectives.",
+      "id": 1561
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "\"Ambiguous\" means ___?",
+      "options": [
+        "Clear",
+        "Having multiple meanings",
+        "Simple",
+        "Short"
+      ],
+      "answer": 1,
+      "explanation": "Ambiguous means open to more than one interpretation.",
+      "id": 1562
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "I ___ like swimming when I was young.",
+      "options": [
+        "use to",
+        "used to",
+        "am used to",
+        "was used"
+      ],
+      "answer": 1,
+      "explanation": "'Used to' indicates a past habit that is no longer true.",
+      "id": 1563
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She asked if I ___ her.",
+      "options": [
+        "help",
+        "helped",
+        "will help",
+        "am helping"
+      ],
+      "answer": 1,
+      "explanation": "Reported speech: 'Do you help me?' → asked if I helped. Backshift to past.",
+      "id": 1564
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "___ the rain, we went for a walk.",
+      "options": [
+        "Because",
+        "Despite",
+        "Although",
+        "However"
+      ],
+      "answer": 1,
+      "explanation": "'Despite + noun' means 'in spite of'. 'Although + clause'.",
+      "id": 1565
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "A: How are you? B: ___, thank you.",
+      "options": [
+        "I'm fine",
+        "I'm five",
+        "I'm here",
+        "I'm going"
+      ],
+      "answer": 0,
+      "explanation": "'I'm fine, thank you' is the standard response to 'How are you?'",
+      "id": 1566
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I don't have ___ money left.",
+      "options": [
+        "some",
+        "any",
+        "no",
+        "many"
+      ],
+      "answer": 1,
+      "explanation": "'Any' is used in negative sentences. 'Some' is used in positive sentences.",
+      "id": 1567
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "___ you study harder, you won't pass the exam.",
+      "options": [
+        "If",
+        "Unless",
+        "When",
+        "Because"
+      ],
+      "answer": 1,
+      "explanation": "'Unless' means 'if not'. 'Unless you study harder = If you don't study harder.'",
+      "id": 1568
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What does \"GPS\" stand for?",
+      "options": [
+        "Global Positioning System",
+        "General Power Supply",
+        "Great Physical Science",
+        "Geographic Paper Survey"
+      ],
+      "answer": 0,
+      "explanation": "GPS stands for Global Positioning System.",
+      "id": 1569
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The Amazon rainforest produces about 20% of the world's oxygen. What is the main idea?",
+      "options": [
+        "The Amazon is in Brazil",
+        "The Amazon produces oxygen",
+        "The Amazon has many animals",
+        "The Amazon is very large"
+      ],
+      "answer": 1,
+      "explanation": "The main idea is that the Amazon produces 20% of the world's oxygen.",
+      "id": 1570
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) Photosynthesis is the process plants use to convert light energy into chemical energy. During this process, plants take in carbon dioxide (CO₂) from the air and water (H₂O) from the soil. Using sunlight and chlorophyll, they produce glucose (C₆H₁₂O₆) and release oxygen (O₂) as a byproduct. This process is essential for life on Earth because it produces both food and oxygen.<br>(a) What is the main purpose of photosynthesis?<br>(b) What gas do plants release during photosynthesis?<br>(c) Why is photosynthesis essential for life on Earth?",
+      "options": [
+        "Convert light to chemical energy, Oxygen, It produces food and oxygen",
+        "Produce CO₂, Nitrogen, It cools the planet",
+        "Absorb water, Hydrogen, It makes soil fertile",
+        "Create heat, Carbon, It blocks UV rays"
+      ],
+      "answer": 0,
+      "explanation": "(a) Convert light energy into chemical energy. (b) Oxygen (O₂). (c) It produces both food and oxygen.",
+      "id": 1571
     }
   ],
   "subjects": [
@@ -24502,6 +25238,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1525
+    "totalQuestions": 1571
   }
 }
