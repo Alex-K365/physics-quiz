@@ -26965,6 +26965,582 @@
       "answer": 0,
       "explanation": "(a) Antibiotics fight bacterial infections. (b) Bacteria evolve to survive antibiotics (resistance). (c) No, cold is viral.",
       "id": 1680
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為向量？",
+      "options": [
+        "速率",
+        "溫度",
+        "速度",
+        "質量"
+      ],
+      "answer": 2,
+      "explanation": "速度為向量（有大小方向）。速率、溫度、質量為純量。",
+      "id": 1681
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "手提書包靜止時，手對書包的施力與書包的重力互為？",
+      "options": [
+        "作用力與反作用力",
+        "平衡力",
+        "摩擦力",
+        "正向力"
+      ],
+      "answer": 1,
+      "explanation": "兩力作用在同一物體上且合力為零→平衡力。",
+      "id": 1682
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "地球質量約為月球 81 倍，地球對月球的引力與月球對地球的引力之比為？",
+      "options": [
+        "1:1",
+        "81:1",
+        "1:81",
+        "9:1"
+      ],
+      "answer": 0,
+      "explanation": "兩力互為作用力與反作用力，大小相等（牛頓第三定律）。",
+      "id": 1683
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "等加速度運動的速度－時間圖為？",
+      "options": [
+        "水平線",
+        "斜直線",
+        "拋物線",
+        "雙曲線"
+      ],
+      "answer": 1,
+      "explanation": "等加速度→v-t 圖為斜直線。斜率=加速度。",
+      "id": 1684
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "作功的大小與力和位移的何者有關？",
+      "options": [
+        "和",
+        "差",
+        "積",
+        "商"
+      ],
+      "answer": 2,
+      "explanation": "W=F×d×cosθ，功=力×位移×夾角餘弦。",
+      "id": 1685
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "汽油引擎中，化學能轉換成熱能再轉換成？",
+      "options": [
+        "電能",
+        "機械能",
+        "光能",
+        "核能"
+      ],
+      "answer": 1,
+      "explanation": "汽油引擎：化學能→熱能→機械能（活塞運動）。",
+      "id": 1686
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種材料是半導體？",
+      "options": [
+        "銅",
+        "矽",
+        "鋁",
+        "鐵"
+      ],
+      "answer": 1,
+      "explanation": "矽（Si）為半導體。銅、鋁、鐵為金屬導體。",
+      "id": 1687
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "串聯電路中，各元件的何者相同？",
+      "options": [
+        "電壓",
+        "電流",
+        "電阻",
+        "功率"
+      ],
+      "answer": 1,
+      "explanation": "串聯電路電流處處相等。並聯電路電壓相等。",
+      "id": 1688
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "近視的原因是眼球何種構造過長？",
+      "options": [
+        "角膜",
+        "水晶體",
+        "眼軸",
+        "視網膜"
+      ],
+      "answer": 2,
+      "explanation": "眼軸過長或水晶體屈光力過強→成像在視網膜前（近視）。",
+      "id": 1689
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "潛水員在水面下看岸上景物會感覺？",
+      "options": [
+        "景物變小",
+        "景物變高",
+        "景物變低",
+        "景物不變"
+      ],
+      "answer": 1,
+      "explanation": "光從空氣→水折射偏離法線，感覺景物比實際高。",
+      "id": 1690
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "磁鐵的 S 極與 S 極靠近會？",
+      "options": [
+        "吸引",
+        "排斥",
+        "無作用",
+        "產生電流"
+      ],
+      "answer": 1,
+      "explanation": "同性極相斥，異性極相吸。",
+      "id": 1691
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電鈴主要利用下列何種原理？",
+      "options": [
+        "電磁感應",
+        "電流磁效應",
+        "靜電感應",
+        "化學效應"
+      ],
+      "answer": 1,
+      "explanation": "電鈴利用電磁鐵（電流磁效應）吸引鈴舌敲擊鈴鐺。",
+      "id": 1692
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "0°C 的冰與 0°C 的水相比，何者較冷？",
+      "options": [
+        "冰較冷",
+        "水較冷",
+        "一樣冷",
+        "無法比較"
+      ],
+      "answer": 2,
+      "explanation": "溫度相同（0°C），冷熱程度相同。但冰含較少熱能（熔化熱）。",
+      "id": 1693
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "大氣壓力隨高度增加而？",
+      "options": [
+        "增加",
+        "減少",
+        "不變",
+        "不一定"
+      ],
+      "answer": 1,
+      "explanation": "高度越高，空氣越稀薄，大氣壓力越小。",
+      "id": 1694
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "潛水夫病是因為浮起太快，溶解在血液中的何種氣體來不及排出？",
+      "options": [
+        "氧氣",
+        "氮氣",
+        "二氧化碳",
+        "氫氣"
+      ],
+      "answer": 1,
+      "explanation": "深水高壓下氮氣溶入血液，上升過快時氮氣形成氣泡造成減壓症。",
+      "id": 1695
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "超聲波是指頻率高於多少 Hz 的聲波？",
+      "options": [
+        "200 Hz",
+        "2000 Hz",
+        "20000 Hz",
+        "200000 Hz"
+      ],
+      "answer": 2,
+      "explanation": "超聲波頻率 > 20000 Hz，人耳無法聽見。",
+      "id": 1696
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "冰、水、水蒸氣三者具有相同的？",
+      "options": [
+        "分子排列",
+        "化學性質",
+        "物理性質",
+        "溫度"
+      ],
+      "answer": 1,
+      "explanation": "三者皆為 H₂O 分子，化學性質相同。物理性質（狀態）不同。",
+      "id": 1697
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為分解反應？",
+      "options": [
+        "C+O₂→CO₂",
+        "2KClO₃→2KCl+3O₂",
+        "Fe+CuSO₄→FeSO₄+Cu",
+        "NaOH+HCl→NaCl+H₂O"
+      ],
+      "answer": 1,
+      "explanation": "KClO₃ 受熱分解為 KCl 和 O₂。A 為合成，C 為置換，D 為中和。",
+      "id": 1698
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者的 pH 值大於 7？",
+      "options": [
+        "鹽酸",
+        "氨水",
+        "食醋",
+        "汽水"
+      ],
+      "answer": 1,
+      "explanation": "氨水為鹼性 pH>7。鹽酸、食醋、汽水皆為酸性。",
+      "id": 1699
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "以碳還原氧化銅的反應中，碳扮演的角色為？",
+      "options": [
+        "氧化劑",
+        "還原劑",
+        "催化劑",
+        "電解質"
+      ],
+      "answer": 1,
+      "explanation": "C + 2CuO → 2Cu + CO₂，碳使 CuO 還原為 Cu，故碳為還原劑。",
+      "id": 1700
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "肥皂的主要成分為？",
+      "options": [
+        "脂肪酸",
+        "脂肪酸鈉",
+        "乙醇",
+        "甘油"
+      ],
+      "answer": 1,
+      "explanation": "肥皂為脂肪酸鈉鹽（脂肪酸+NaOH 皂化）。",
+      "id": 1701
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "讀取量筒中液體體積時，視線應？",
+      "options": [
+        "高於液面",
+        "與凹液面最低處齊平",
+        "低於液面",
+        "從上方俯視"
+      ],
+      "answer": 1,
+      "explanation": "視線與凹液面最低處齊平，避免誤差。",
+      "id": 1702
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Empty' means ___?",
+      "options": [
+        "Full",
+        "Containing nothing",
+        "Heavy",
+        "Closed"
+      ],
+      "answer": 1,
+      "explanation": "Empty means containing nothing.",
+      "id": 1703
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The antonym of 'victory' is ___?",
+      "options": [
+        "Success",
+        "Defeat",
+        "Prize",
+        "Trophy"
+      ],
+      "answer": 1,
+      "explanation": "Victory means win; defeat means loss.",
+      "id": 1704
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "We ___ to the museum tomorrow.",
+      "options": [
+        "go",
+        "went",
+        "will go",
+        "goes"
+      ],
+      "answer": 2,
+      "explanation": "Future tense: will go.",
+      "id": 1705
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The food ___ delicious.",
+      "options": [
+        "smell",
+        "smells",
+        "are smelling",
+        "have smelled"
+      ],
+      "answer": 1,
+      "explanation": "Food is singular → smells. Sense verbs use simple present.",
+      "id": 1706
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What color is the sky on a clear day?",
+      "options": [
+        "Green",
+        "Blue",
+        "Red",
+        "Yellow"
+      ],
+      "answer": 1,
+      "explanation": "The sky is blue on a clear day.",
+      "id": 1707
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "You look tired. You ___ take a rest.",
+      "options": [
+        "should",
+        "mustn't",
+        "can't",
+        "won't"
+      ],
+      "answer": 0,
+      "explanation": "Should (advice) = it's a good idea to.",
+      "id": 1708
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Recycling helps reduce waste and save resources. What is the main idea?",
+      "options": [
+        "Recycling is expensive",
+        "Recycling benefits the environment",
+        "Recycling is difficult",
+        "Recycling takes time"
+      ],
+      "answer": 1,
+      "explanation": "The main idea is that recycling helps reduce waste and save resources.",
+      "id": 1709
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) A food chain shows how energy moves through an ecosystem. Plants (producers) use sunlight to make food. Herbivores eat plants, and carnivores eat herbivores. Decomposers break down dead organisms, returning nutrients to the soil. The energy transfer between each level is only about 10% efficient.<br>(a) What do producers use to make food?<br>(b) What do carnivores eat?<br>(c) How much energy is transferred between each level?",
+      "options": [
+        "Sunlight, Herbivores, 10%",
+        "Water, Plants, 50%",
+        "Soil, Decomposers, 90%",
+        "Air, Producers, 100%"
+      ],
+      "answer": 0,
+      "explanation": "(a) Sunlight. (b) Carnivores eat herbivores (or other carnivores). (c) About 10%.",
+      "id": 1710
+    },
+    {
+      "unit": "能量",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "若太陽能板效率 20%，面積 1 m² 每秒接收 1000 J 太陽能，可供應多少瓦電力？",
+      "options": [
+        "100 W",
+        "200 W",
+        "500 W",
+        "1000 W"
+      ],
+      "answer": 1,
+      "explanation": "有效能量=1000×20%=200 J/s=200 W。",
+      "id": 1711
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "用排水法測不規則固體體積時，若物體浮在水面應如何處理？",
+      "options": [
+        "用手指壓入水中",
+        "用細針壓入水中",
+        "直接測量",
+        "換其他方法"
+      ],
+      "answer": 1,
+      "explanation": "用細針將物體完全壓入水中，測量排開的水體積。",
+      "id": 1712
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "測定溶液的 pH 值，最方便的工具為？",
+      "options": [
+        "石蕊試紙",
+        "廣用試紙",
+        "pH 計",
+        "酚酞"
+      ],
+      "answer": 1,
+      "explanation": "廣用試紙可快速測量 pH 值範圍。石蕊只能測酸鹼。",
+      "id": 1713
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "氧原子（O）的原子序為 8，表示氧原子含有？",
+      "options": [
+        "8 個質子",
+        "8 個中子",
+        "8 個電子",
+        "8 個原子"
+      ],
+      "answer": 0,
+      "explanation": "原子序=質子數=電子數。氧原子有 8 個質子。",
+      "id": 1714
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "質量守恆定律的基礎是？",
+      "options": [
+        "原子不可分割",
+        "原子不可創造消滅",
+        "分子不斷運動",
+        "能量守恆"
+      ],
+      "answer": 1,
+      "explanation": "化學反應中原子重新排列，原子數目不變，故質量守恆。",
+      "id": 1715
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "鹽酸與氫氧化鈉中和後，溶液蒸乾可得何種固體？",
+      "options": [
+        "NaCl（食鹽）",
+        "NaOH",
+        "HCl",
+        "Na₂CO₃"
+      ],
+      "answer": 0,
+      "explanation": "HCl+NaOH→NaCl+H₂O，蒸乾得食鹽。",
+      "id": 1716
     }
   ],
   "subjects": [
@@ -26982,6 +27558,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1680
+    "totalQuestions": 1716
   }
 }
