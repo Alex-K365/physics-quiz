@@ -26389,6 +26389,582 @@
       "answer": 0,
       "explanation": "(a) Stratosphere contains the ozone layer. (b) Weather occurs in the troposphere. (c) The ozone layer protects from UV radiation.",
       "id": 1644
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "力的單位牛頓（N）可表示為？",
+      "options": [
+        "kg·m/s",
+        "kg·m/s²",
+        "kg·m²/s",
+        "kg/m·s²"
+      ],
+      "answer": 1,
+      "explanation": "1 N = 1 kg·m/s²。",
+      "id": 1645
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "彈簧的伸長量與所受拉力成正比，此為？",
+      "options": [
+        "牛頓定律",
+        "虎克定律",
+        "阿基米德原理",
+        "帕斯卡原理"
+      ],
+      "answer": 1,
+      "explanation": "虎克定律：F=kx，彈力與形變量成正比。",
+      "id": 1646
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "某星球的重量為地球的 2 倍，半徑為地球的 2 倍，其重力加速度為地球的幾倍？",
+      "options": [
+        "0.25",
+        "0.5",
+        "1",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "g=GM/R²，M變2倍R變2倍→g變2/4=0.5倍。",
+      "id": 1647
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "v-t 圖中圖形下方斜線面積代表？",
+      "options": [
+        "速度",
+        "加速度",
+        "位移",
+        "時間"
+      ],
+      "answer": 2,
+      "explanation": "v-t 圖面積=位移。斜率=加速度。",
+      "id": 1648
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "舉重選手將槓鈴舉在頭頂靜止不動時，對槓鈴作功為？",
+      "options": [
+        "正功",
+        "零",
+        "負功",
+        "無法判斷"
+      ],
+      "answer": 1,
+      "explanation": "W=Fd cosθ，靜止時位移 d=0，作功=0。",
+      "id": 1649
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "水力發電是將水的何種能轉換為電能？",
+      "options": [
+        "動能",
+        "位能",
+        "化學能",
+        "熱能"
+      ],
+      "answer": 0,
+      "explanation": "水從高處落下，位能→動能→推動渦輪機→電能。",
+      "id": 1650
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "彈簧常數 100 N/m，壓縮 0.1 m 儲存的彈力位能為？",
+      "options": [
+        "0.5 J",
+        "1 J",
+        "5 J",
+        "10 J"
+      ],
+      "answer": 0,
+      "explanation": "U=½kx²=½×100×0.01=0.5 J。",
+      "id": 1651
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電阻的 SI 單位為？",
+      "options": [
+        "伏特",
+        "安培",
+        "歐姆",
+        "瓦特"
+      ],
+      "answer": 2,
+      "explanation": "電阻單位為歐姆（Ω）。V=IR→Ω=V/A。",
+      "id": 1652
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "三個 9Ω 的電阻並聯，總電阻為？",
+      "options": [
+        "3 Ω",
+        "6 Ω",
+        "9 Ω",
+        "27 Ω"
+      ],
+      "answer": 0,
+      "explanation": "1/R=1/9+1/9+1/9=3/9→R=3 Ω。",
+      "id": 1653
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "夜空中看到的星星閃爍是因光的？",
+      "options": [
+        "反射",
+        "折射",
+        "繞射",
+        "干涉"
+      ],
+      "answer": 1,
+      "explanation": "星光穿越大氣層時因空氣密度變化產生折射，造成閃爍。",
+      "id": 1654
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "彩虹的形成是因為光的？",
+      "options": [
+        "反射和折射",
+        "折射和色散",
+        "反射和繞射",
+        "干涉和繞射"
+      ],
+      "answer": 1,
+      "explanation": "陽光經水滴折射→色散→反射→再折射形成彩虹。",
+      "id": 1655
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "地磁的北極位於地理上的？",
+      "options": [
+        "北極附近",
+        "南極附近",
+        "赤道附近",
+        "無關"
+      ],
+      "answer": 1,
+      "explanation": "地磁北極位於地理南極附近（指南針 N 極指向地理北極）。",
+      "id": 1656
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為熱的傳導現象？",
+      "options": [
+        "暖氣使房間變暖",
+        "手握冰塊感覺冰",
+        "太陽照射地面升溫",
+        "水沸騰"
+      ],
+      "answer": 1,
+      "explanation": "手握冰塊：熱從手傳到冰塊（傳導）。暖氣為對流，太陽為輻射。",
+      "id": 1657
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鋁的比熱 0.217 cal/g·°C，200 g 鋁升溫 50°C 需吸熱？",
+      "options": [
+        "1085 cal",
+        "2170 cal",
+        "4340 cal",
+        "8680 cal"
+      ],
+      "answer": 1,
+      "explanation": "H=200×0.217×50=2170 cal。",
+      "id": 1658
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "帕斯卡原理應用於？",
+      "options": [
+        "吸管",
+        "液壓升降機",
+        "溫度計",
+        "彈簧秤"
+      ],
+      "answer": 1,
+      "explanation": "液壓升降機利用帕斯卡原理：密閉液體各處壓力相同。",
+      "id": 1659
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體在流體中所受浮力等於？",
+      "options": [
+        "物體重量",
+        "排開液體重量",
+        "物體體積×密度",
+        "液體壓力"
+      ],
+      "answer": 1,
+      "explanation": "浮力=排開的液體重（阿基米德原理）。",
+      "id": 1660
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一木塊浮於水面，露出部分佔 1/3，則木塊密度約為水的幾倍？",
+      "options": [
+        "1/3",
+        "2/3",
+        "1",
+        "3/2"
+      ],
+      "answer": 1,
+      "explanation": "浮體：物體密度/液體密度=沉入體積/總體積=2/3。",
+      "id": 1661
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為純物質？",
+      "options": [
+        "鹽酸溶液",
+        "食鹽水",
+        "蒸餾水",
+        "礦泉水"
+      ],
+      "answer": 2,
+      "explanation": "蒸餾水為純水。鹽酸溶液、食鹽水、礦泉水皆為混合物。",
+      "id": 1662
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "二氧化碳可使澄清石灰水變？",
+      "options": [
+        "紅色",
+        "藍色",
+        "白色混濁",
+        "無色"
+      ],
+      "answer": 2,
+      "explanation": "CO₂+Ca(OH)₂→CaCO₃↓+H₂O，產生白色沉澱（碳酸鈣）。",
+      "id": 1663
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "鎂帶燃燒的產物為？",
+      "options": [
+        "MgO",
+        "MgCO₃",
+        "MgCl₂",
+        "Mg(OH)₂"
+      ],
+      "answer": 0,
+      "explanation": "2Mg+O₂→2MgO（白色粉末）。",
+      "id": 1664
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "胃酸的主要成分為？",
+      "options": [
+        "硫酸",
+        "鹽酸",
+        "硝酸",
+        "磷酸"
+      ],
+      "answer": 1,
+      "explanation": "胃酸含鹽酸（HCl），幫助消化和殺菌。",
+      "id": 1665
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者的水溶液呈鹼性？",
+      "options": [
+        "食醋",
+        "氨水",
+        "汽水",
+        "檸檬汁"
+      ],
+      "answer": 1,
+      "explanation": "氨水（NH₃水溶液）為弱鹼性。食醋、汽水、檸檬汁為酸性。",
+      "id": 1666
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "光合作用中，水被氧化產生？",
+      "options": [
+        "氧氣",
+        "二氧化碳",
+        "葡萄糖",
+        "ATP"
+      ],
+      "answer": 0,
+      "explanation": "光合作用：水被氧化（失去電子）產生 O₂。",
+      "id": 1667
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列哪個反應是氧化還原反應？",
+      "options": [
+        "HCl+NaOH→NaCl+H₂O",
+        "2Na+Cl₂→2NaCl",
+        "NaCl+AgNO₃→AgCl↓+NaNO₃",
+        "CaCO₃→CaO+CO₂"
+      ],
+      "answer": 1,
+      "explanation": "Na+Cl₂→NaCl 為氧化還原（Na 被氧化，Cl 被還原）。",
+      "id": 1668
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "澱粉與碘液反應呈？",
+      "options": [
+        "紅色",
+        "藍紫色",
+        "黃色",
+        "無色"
+      ],
+      "answer": 1,
+      "explanation": "澱粉遇碘呈藍紫色（藍黑色），為澱粉檢驗法。",
+      "id": 1669
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "酒精發酵的主要產物為？",
+      "options": [
+        "乙醇和 CO₂",
+        "甲醇和 O₂",
+        "醋酸和水",
+        "乳酸和 CO₂"
+      ],
+      "answer": 0,
+      "explanation": "酵母菌將糖發酵產生乙醇（酒精）和二氧化碳。",
+      "id": 1670
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "實驗室測量物體質量應使用？",
+      "options": [
+        "量筒",
+        "天平",
+        "溫度計",
+        "燒杯"
+      ],
+      "answer": 1,
+      "explanation": "質量用天平測量。量筒測體積，溫度計測溫度。",
+      "id": 1671
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "欲分離水和酒精的混合物，應使用？",
+      "options": [
+        "過濾",
+        "蒸餾",
+        "萃取",
+        "層析"
+      ],
+      "answer": 1,
+      "explanation": "利用水和酒精沸點不同進行蒸餾分離。",
+      "id": 1672
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What day comes after Tuesday?",
+      "options": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "answer": 1,
+      "explanation": "Wednesday comes after Tuesday.",
+      "id": 1673
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She ___ a book when I called her.",
+      "options": [
+        "reads",
+        "was reading",
+        "has read",
+        "will read"
+      ],
+      "answer": 1,
+      "explanation": "Past continuous for interrupted action: was reading when I called.",
+      "id": 1674
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Difficult' means ___?",
+      "options": [
+        "Easy",
+        "Hard",
+        "Simple",
+        "Light"
+      ],
+      "answer": 1,
+      "explanation": "Difficult means hard to do or understand.",
+      "id": 1675
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "What is a synonym of 'begin'?",
+      "options": [
+        "End",
+        "Start",
+        "Stop",
+        "Finish"
+      ],
+      "answer": 1,
+      "explanation": "Begin and start are synonyms. Both mean to commence.",
+      "id": 1676
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Not until she arrived ___ the truth.",
+      "options": [
+        "she knew",
+        "did she know",
+        "she knows",
+        "does she know"
+      ],
+      "answer": 1,
+      "explanation": "'Not until' at the beginning triggers subject-auxiliary inversion: did she know.",
+      "id": 1677
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Neither the teacher nor the students ___ in the room.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "answer": 1,
+      "explanation": "With 'neither...nor', verb agrees with the closest subject (students → plural).",
+      "id": 1678
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "What does 'www' stand for in website addresses?",
+      "options": [
+        "World Wide Web",
+        "World Weather Watch",
+        "Wireless Web Wave",
+        "Western World Web"
+      ],
+      "answer": 0,
+      "explanation": "WWW stands for World Wide Web.",
+      "id": 1679
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) Antibiotics are medicines that fight bacterial infections. They work by killing bacteria or preventing them from reproducing. However, overuse of antibiotics has led to antibiotic resistance, where bacteria evolve to survive the drugs. It is important to take antibiotics exactly as prescribed and never use them for viral infections like the common cold.<br>(a) What do antibiotics fight against?<br>(b) What is antibiotic resistance?<br>(c) Should antibiotics be used for the common cold?",
+      "options": [
+        "Bacterial infections, Bacteria evolve to survive, No",
+        "Viral infections, Drugs become stronger, Yes",
+        "Fungal infections, Body becomes immune, Maybe",
+        "All infections, Patients get allergies, Only sometimes"
+      ],
+      "answer": 0,
+      "explanation": "(a) Antibiotics fight bacterial infections. (b) Bacteria evolve to survive antibiotics (resistance). (c) No, cold is viral.",
+      "id": 1680
     }
   ],
   "subjects": [
@@ -26406,6 +26982,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1644
+    "totalQuestions": 1680
   }
 }
