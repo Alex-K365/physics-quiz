@@ -25813,6 +25813,582 @@
       "answer": 0,
       "explanation": "(a) 206 bones. (b) Support, movement, protection, blood cell production, mineral storage. (c) The spine protects the spinal cord.",
       "id": 1608
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "無外力時，靜止物體會保持靜止，這是何種定律？",
+      "options": [
+        "萬有引力定律",
+        "慣性定律",
+        "作用與反作用定律",
+        "加速度定律"
+      ],
+      "answer": 1,
+      "explanation": "慣性定律（牛頓第一運動定律）。",
+      "id": 1609
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量不變時，物體的加速度與所受外力成？",
+      "options": [
+        "正比",
+        "反比",
+        "平方正比",
+        "無關"
+      ],
+      "answer": 0,
+      "explanation": "F=ma→a=F/m，質量一定時 a∝F（正比）。",
+      "id": 1610
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "一物體在光滑斜面下滑，下滑加速度與下列何者有關？",
+      "options": [
+        "物體質量",
+        "斜面角度",
+        "斜面長度",
+        "物體體積"
+      ],
+      "answer": 1,
+      "explanation": "a=g×sinθ，與質量無關，只與斜面角度有關。",
+      "id": 1611
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "若物體作等速運動，則其加速度為？",
+      "options": [
+        "0",
+        "正值",
+        "負值",
+        "不一定"
+      ],
+      "answer": 0,
+      "explanation": "等速運動速度不變，加速度=0。",
+      "id": 1612
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一枚火箭以 5 m/s² 加速上升，5 秒後速度為多少？（初速 0）",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "25 m/s",
+        "50 m/s"
+      ],
+      "answer": 2,
+      "explanation": "v=at=5×5=25 m/s。",
+      "id": 1613
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "某物體位移時間關係為 X=2t²，則其加速度為？",
+      "options": [
+        "2 m/s²",
+        "4 m/s²",
+        "6 m/s²",
+        "8 m/s²"
+      ],
+      "answer": 1,
+      "explanation": "X=½at²→½a=2→a=4 m/s²。",
+      "id": 1614
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者不是能量單位？",
+      "options": [
+        "焦耳",
+        "卡",
+        "瓦特",
+        "度"
+      ],
+      "answer": 2,
+      "explanation": "瓦特為功率單位（J/s）。焦耳、卡、度為能量單位。",
+      "id": 1615
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體從 10 m 高處自由落下（g=10），落地時速率約為？",
+      "options": [
+        "10 m/s",
+        "14 m/s",
+        "20 m/s",
+        "40 m/s"
+      ],
+      "answer": 1,
+      "explanation": "v=√(2gh)=√(2×10×10)=√200≈14.1 m/s。",
+      "id": 1616
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "導線的電阻與下列何者無關？",
+      "options": [
+        "長度",
+        "截面積",
+        "材質",
+        "電壓"
+      ],
+      "answer": 3,
+      "explanation": "R=ρL/A，與材質（ρ）、長度（L）、截面積（A）有關，與電壓無關。",
+      "id": 1617
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為絕緣體？",
+      "options": [
+        "銅線",
+        "鐵絲",
+        "鋁箔",
+        "橡膠"
+      ],
+      "answer": 3,
+      "explanation": "橡膠為絕緣體，不導電。銅、鐵、鋁為導體。",
+      "id": 1618
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "家庭電路中，各電器之間的連接方式為？",
+      "options": [
+        "全部串聯",
+        "全部並聯",
+        "串並聯混合",
+        "任意連接"
+      ],
+      "answer": 1,
+      "explanation": "家庭電路各電器並聯，電壓相同，可獨立開關。",
+      "id": 1619
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "物體在凸透鏡焦點內（小於焦距）成像性質為何？",
+      "options": [
+        "倒立實像",
+        "正立放大虛像",
+        "倒立虛像",
+        "正立縮小實像"
+      ],
+      "answer": 1,
+      "explanation": "物體在焦點內→正立放大虛像（放大鏡原理）。",
+      "id": 1620
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "陽光下物體有影子是因為光具有何種性質？",
+      "options": [
+        "反射",
+        "折射",
+        "直進",
+        "繞射"
+      ],
+      "answer": 2,
+      "explanation": "光的直進性質：光直線前進，遇障礙物形成影子。",
+      "id": 1621
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "遠視眼鏡使用何種鏡片？",
+      "options": [
+        "凹透鏡",
+        "凸透鏡",
+        "平面鏡",
+        "凹面鏡"
+      ],
+      "answer": 1,
+      "explanation": "遠視用凸透鏡矯正（光線會聚）。",
+      "id": 1622
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "電磁鐵的磁性強弱與下列何者無關？",
+      "options": [
+        "線圈圈數",
+        "電流大小",
+        "鐵芯材質",
+        "磁鐵顏色"
+      ],
+      "answer": 3,
+      "explanation": "電磁鐵磁性與圈數、電流、鐵芯有關，與顏色無關。",
+      "id": 1623
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "發電機的原理是？",
+      "options": [
+        "電流磁效應",
+        "電磁感應",
+        "電流的熱效應",
+        "化學反應"
+      ],
+      "answer": 1,
+      "explanation": "發電機利用電磁感應：線圈在磁場中轉動產生感應電流。",
+      "id": 1624
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "汽車引擎的水箱利用水的何種性質冷卻？",
+      "options": [
+        "比熱大",
+        "比熱小",
+        "密度大",
+        "密度小"
+      ],
+      "answer": 0,
+      "explanation": "水的比熱大，升溫慢降溫慢，可有效帶走熱量。",
+      "id": 1625
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "將 80°C 的鐵塊（質量 100 g，比熱 0.113 cal/g·°C）放入 20°C 的水（200 g）中，平衡溫度約為？",
+      "options": [
+        "22.6°C",
+        "24.8°C",
+        "26.3°C",
+        "28.1°C"
+      ],
+      "answer": 1,
+      "explanation": "H₁=H₂→100×0.113×(80-T)=200×1×(T-20)→11.3(80-T)=200T-4000→904-11.3T=200T-4000→4904=211.3T→T≈23.2°C。",
+      "id": 1626
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "人耳可聽見的頻率範圍約為？",
+      "options": [
+        "20-200 Hz",
+        "20-2000 Hz",
+        "20-20000 Hz",
+        "200-20000 Hz"
+      ],
+      "answer": 2,
+      "explanation": "人耳可聽頻率約 20-20000 Hz。超聲波>20000 Hz，次聲波<20 Hz。",
+      "id": 1627
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "吸管喝飲料是利用何種原理？",
+      "options": [
+        "毛細現象",
+        "大氣壓力",
+        "連通管原理",
+        "擴散作用"
+      ],
+      "answer": 1,
+      "explanation": "吸管內氣壓減小，大氣壓力將飲料壓入吸管。",
+      "id": 1628
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一物體在空氣中重 50 N，在水中重 30 N，浮力為？",
+      "options": [
+        "10 N",
+        "20 N",
+        "30 N",
+        "50 N"
+      ],
+      "answer": 1,
+      "explanation": "浮力=空氣中重-水中重=50-30=20 N。",
+      "id": 1629
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為元素？",
+      "options": [
+        "水",
+        "氧氣",
+        "鹽酸",
+        "食鹽"
+      ],
+      "answer": 1,
+      "explanation": "氧氣（O₂）為元素。水為化合物，鹽酸為混合物。",
+      "id": 1630
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "原子核由哪些粒子組成？",
+      "options": [
+        "質子和電子",
+        "質子和中子",
+        "中子和電子",
+        "質子和離子"
+      ],
+      "answer": 0,
+      "explanation": "100x0.113x(80-T)=200x1x(T-20) -> 11.3(80-T)=200T-4000 -> 4904=211.3T -> T=23.2C",
+      "id": 1631
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "碳完全燃燒的產物為？",
+      "options": [
+        "一氧化碳",
+        "二氧化碳",
+        "碳化鈣",
+        "碳酸"
+      ],
+      "answer": 1,
+      "explanation": "C+O₂→CO₂（完全燃燒）。氧氣不足時生成 CO。",
+      "id": 1632
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "雙氧水（H₂O₂）分解的產物為？",
+      "options": [
+        "H₂和O₂",
+        "H₂O和O₂",
+        "H₂O和H₂",
+        "O₂和H₂O₂"
+      ],
+      "answer": 1,
+      "explanation": "2H₂O₂→2H₂O+O₂（二氧化錳催化）。",
+      "id": 1633
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "酚酞指示劑在鹼性溶液中呈何色？",
+      "options": [
+        "無色",
+        "紅色",
+        "藍色",
+        "黃色"
+      ],
+      "answer": 1,
+      "explanation": "酚酞在酸性及中性無色，鹼性呈紅色（粉紅色）。",
+      "id": 1634
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "碳酸鈣與鹽酸反應的產物為何？",
+      "options": [
+        "CaCl₂+CO₂+H₂O",
+        "CaO+CO₂",
+        "Ca(OH)₂+CO₂",
+        "CaCl₂+H₂"
+      ],
+      "answer": 0,
+      "explanation": "CaCO₃+2HCl→CaCl₂+CO₂+H₂O。",
+      "id": 1635
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "過氧化氫（H₂O₂）在氧化還原反應中可作為？",
+      "options": [
+        "僅氧化劑",
+        "僅還原劑",
+        "氧化劑或還原劑",
+        "催化劑"
+      ],
+      "answer": 2,
+      "explanation": "H₂O₂可被氧化成O₂（還原劑），也可被還原成H₂O（氧化劑）。",
+      "id": 1636
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "下列反應中，何者不是氧化還原？",
+      "options": [
+        "2Mg+O₂→2MgO",
+        "Fe+CuSO₄→FeSO₄+Cu",
+        "NaOH+HCl→NaCl+H₂O",
+        "2H₂+O₂→2H₂O"
+      ],
+      "answer": 2,
+      "explanation": "酸鹼中和無氧化數變化，非氧化還原反應。",
+      "id": 1637
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "蛋白質的元素組成不包括？",
+      "options": [
+        "碳",
+        "氫",
+        "氮",
+        "鈉"
+      ],
+      "answer": 3,
+      "explanation": "蛋白質含 C、H、O、N，部分含 S。不含 Na。",
+      "id": 1638
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為不飽和碳氫化合物？",
+      "options": [
+        "甲烷 C₂H₄",
+        "乙烷 C₂H₆",
+        "丙烷 C₃H₈",
+        "丁烷 C₄H₁₀"
+      ],
+      "answer": 0,
+      "explanation": "C₂H₄（乙烯）為烯烴，含雙鍵，不飽和。烷烴皆為飽和。",
+      "id": 1639
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "實驗室中稀釋濃硫酸時應如何進行？",
+      "options": [
+        "將水加入濃硫酸",
+        "將濃硫酸緩緩加入水中",
+        "兩者同時混合",
+        "任意順序均可"
+      ],
+      "answer": 1,
+      "explanation": "稀釋濃硫酸：酸入水（將濃硫酸沿杯壁緩緩加入水中攪拌），放熱。",
+      "id": 1640
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為正確的廢液處理方式？",
+      "options": [
+        "直接倒入水槽",
+        "倒入指定廢液桶",
+        "倒入花圃",
+        "任意傾倒"
+      ],
+      "answer": 1,
+      "explanation": "廢液應分類收集於指定廢液桶，不可隨意傾倒。",
+      "id": 1641
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "Excuse me, where is the ___ bathroom?",
+      "options": [
+        "near",
+        "nearest",
+        "nearly",
+        "nearby"
+      ],
+      "answer": 1,
+      "explanation": "Superlative 'nearest' means closest in distance.",
+      "id": 1642
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "He was ___ tired that he fell asleep immediately.",
+      "options": [
+        "so",
+        "such",
+        "too",
+        "very"
+      ],
+      "answer": 0,
+      "explanation": "'So + adjective + that' structure.",
+      "id": 1643
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "mixed",
+      "question": "(Reading) The Earth's atmosphere is composed of several layers. The troposphere is the lowest layer, where weather occurs. Above it is the stratosphere, which contains the ozone layer that protects us from harmful UV radiation. The mesosphere and thermosphere are higher layers. The exosphere is the outermost layer, where atoms escape into space.<br>(a) Which layer contains the ozone layer?<br>(b) Where does weather occur?<br>(c) What protects us from UV radiation?",
+      "options": [
+        "Stratosphere, Troposphere, Ozone layer",
+        "Troposphere, Stratosphere, Clouds",
+        "Mesosphere, Thermosphere, CO₂",
+        "Exosphere, Troposphere, Gravity"
+      ],
+      "answer": 0,
+      "explanation": "(a) Stratosphere contains the ozone layer. (b) Weather occurs in the troposphere. (c) The ozone layer protects from UV radiation.",
+      "id": 1644
     }
   ],
   "subjects": [
@@ -25830,6 +26406,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1608
+    "totalQuestions": 1644
   }
 }
