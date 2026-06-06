@@ -29493,6 +29493,646 @@
       "answer": 0,
       "explanation": "電動車行駛時零廢氣排放。",
       "id": 1838
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者不是力的三要素？",
+      "options": [
+        "大小",
+        "方向",
+        "作用點",
+        "速度"
+      ],
+      "answer": 3,
+      "explanation": "力的三要素：大小、方向、作用點。",
+      "id": 1839
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "物體在作等速圓周運動時，何者不變？",
+      "options": [
+        "速度方向",
+        "速率",
+        "加速度",
+        "向心力"
+      ],
+      "answer": 1,
+      "explanation": "速率不變但方向持續改變。",
+      "id": 1840
+    },
+    {
+      "unit": "力學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "兩物體質量分別為 m 和 2m，受相同力作用，加速度比為？",
+      "options": [
+        "1:1",
+        "1:2",
+        "2:1",
+        "4:1"
+      ],
+      "answer": 2,
+      "explanation": "a=F/m，a₁/a₂=(F/m)/(F/2m)=2:1。",
+      "id": 1841
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "物體沿直線由 A 到 B 再回到 A，位移為？",
+      "options": [
+        "0",
+        "AB",
+        "2AB",
+        "無法判斷"
+      ],
+      "answer": 0,
+      "explanation": "起終點相同，位移=0。",
+      "id": 1842
+    },
+    {
+      "unit": "運動學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "一車初速 10 m/s，加速度 -3 m/s²，2 秒後位移？",
+      "options": [
+        "10 m",
+        "14 m",
+        "20 m",
+        "26 m"
+      ],
+      "answer": 1,
+      "explanation": "S=ut+½at²=10×2+½×(-3)×4=20-6=14 m。",
+      "id": 1843
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "彈簧壓縮量從 x 變為 2x，彈力位能變為？",
+      "options": [
+        "2 倍",
+        "3 倍",
+        "4 倍",
+        "8 倍"
+      ],
+      "answer": 2,
+      "explanation": "U=½kx²，x 變 2 倍→U 變 4 倍。",
+      "id": 1844
+    },
+    {
+      "unit": "能量",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "質量 1000 kg 汽車由靜止加速至 20 m/s 需作功？",
+      "options": [
+        "100 kJ",
+        "200 kJ",
+        "300 kJ",
+        "400 kJ"
+      ],
+      "answer": 1,
+      "explanation": "W=ΔEk=½×1000×400=200,000 J=200 kJ。",
+      "id": 1845
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "家庭電路的保護裝置為？",
+      "options": [
+        "開關",
+        "保險絲",
+        "插座",
+        "電線"
+      ],
+      "answer": 1,
+      "explanation": "保險絲過載時熔斷切斷電路。",
+      "id": 1846
+    },
+    {
+      "unit": "電學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "兩個 20 Ω 電阻並聯後串聯一個 10 Ω，總電阻？",
+      "options": [
+        "10 Ω",
+        "15 Ω",
+        "20 Ω",
+        "30 Ω"
+      ],
+      "answer": 2,
+      "explanation": "並聯部分：1/R=1/20+1/20=1/10→10Ω，串聯 10Ω→20Ω。",
+      "id": 1847
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "透鏡的焦距越短，放大倍率越？",
+      "options": [
+        "大",
+        "小",
+        "不變",
+        "不一定"
+      ],
+      "answer": 0,
+      "explanation": "焦距越短，放大倍率越大。",
+      "id": 1848
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "雷射光具有何種特性？",
+      "options": [
+        "單色、同調",
+        "多色、散射",
+        "發散、多頻",
+        "吸收、反射"
+      ],
+      "answer": 0,
+      "explanation": "雷射為單色光、同調性高、方向性佳。",
+      "id": 1849
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "磁力線的方向由？",
+      "options": [
+        "N→S",
+        "S→N",
+        "任意方向",
+        "垂直方向"
+      ],
+      "answer": 0,
+      "explanation": "磁力線方向由 N 極出發到 S 極。",
+      "id": 1850
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "以導線切割磁力線可產生？",
+      "options": [
+        "電流",
+        "電壓",
+        "電阻",
+        "電荷"
+      ],
+      "answer": 0,
+      "explanation": "電磁感應：導線切割磁力線產生感應電流。",
+      "id": 1851
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "相變化時溫度不變是因為？",
+      "options": [
+        "熱能消耗在改變分子排列",
+        "熱能散失",
+        "比熱改變",
+        "密度改變"
+      ],
+      "answer": 0,
+      "explanation": "相變化時熱能用於改變分子間排列（潛熱）。",
+      "id": 1852
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "理想氣體定律 PV=nRT，若溫度提高 2 倍，壓力不變，體積變為？",
+      "options": [
+        "不變",
+        "2 倍",
+        "4 倍",
+        "½"
+      ],
+      "answer": 1,
+      "explanation": "等壓下 V∝T，T 變 2 倍→V 變 2 倍。",
+      "id": 1853
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "噪音的單位為？",
+      "options": [
+        "Hz",
+        "dB",
+        "W",
+        "J"
+      ],
+      "answer": 1,
+      "explanation": "噪音用分貝（dB）衡量。Hz 為頻率。",
+      "id": 1854
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "針尖很細是為了？",
+      "options": [
+        "減少壓力",
+        "增加壓力",
+        "防止生鏽",
+        "美觀"
+      ],
+      "answer": 1,
+      "explanation": "P=F/A，面積越小壓力越大，容易刺穿物體。",
+      "id": 1855
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "水壩底部較寬是因為？",
+      "options": [
+        "美觀",
+        "底部水壓較大",
+        "節省材料",
+        "方便施工"
+      ],
+      "answer": 1,
+      "explanation": "水壓力隨深度增加，底部需承受較大壓力。",
+      "id": 1856
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "流入血管的點滴藥水是利用？",
+      "options": [
+        "重力",
+        "大氣壓力",
+        "幫浦",
+        "毛細現象"
+      ],
+      "answer": 0,
+      "explanation": "點滴瓶高於身體，藥水因重力流入血管。",
+      "id": 1857
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為原子？",
+      "options": [
+        "H₂O",
+        "Na",
+        "CO₂",
+        "NH₃"
+      ],
+      "answer": 1,
+      "explanation": "Na 為鈉原子。H₂O、CO₂、NH₃ 為分子。",
+      "id": 1858
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "劇烈氧化反應伴隨發光發熱稱為？",
+      "options": [
+        "燃燒",
+        "生鏽",
+        "腐敗",
+        "發酵"
+      ],
+      "answer": 0,
+      "explanation": "燃燒為劇烈氧化，產生光和熱。",
+      "id": 1859
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "勒沙特列原理說明？",
+      "options": [
+        "平衡移動方向",
+        "反應速率",
+        "觸媒活性",
+        "溶解度"
+      ],
+      "answer": 0,
+      "explanation": "勒沙特列原理：改變條件時平衡朝抵消改變的方向移動。",
+      "id": 1860
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "肥皂水呈什麼性？",
+      "options": [
+        "酸性",
+        "中性",
+        "鹼性",
+        "強酸"
+      ],
+      "answer": 2,
+      "explanation": "肥皂水為弱鹼性。",
+      "id": 1861
+    },
+    {
+      "unit": "酸鹼鹽",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為酸雨的主要原因？",
+      "options": [
+        "CO₂",
+        "SO₂ 和 NOₓ",
+        "O₂",
+        "N₂"
+      ],
+      "answer": 1,
+      "explanation": "化石燃料燃燒產生的 SO₂ 和 NOₓ 溶於水形成酸雨。",
+      "id": 1862
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "銅器表面變綠是因？",
+      "options": [
+        "氧化",
+        "還原",
+        "硫化",
+        "電鍍"
+      ],
+      "answer": 0,
+      "explanation": "銅與空氣中的氧和水分反應生成銅綠（鹼式碳酸銅）。",
+      "id": 1863
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電鍍時工件應連接電源的？",
+      "options": [
+        "正極",
+        "負極",
+        "不接",
+        "接地"
+      ],
+      "answer": 1,
+      "explanation": "工件接負極（陰極），金屬離子在陰極還原析出。",
+      "id": 1864
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "酒的主要成分為？",
+      "options": [
+        "乙醇",
+        "甲醇",
+        "醋酸",
+        "甘油"
+      ],
+      "answer": 0,
+      "explanation": "酒含乙醇（酒精）。甲醇有毒不可飲用。",
+      "id": 1865
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "所有有機物皆含有？",
+      "options": [
+        "氧",
+        "氫",
+        "碳",
+        "氮"
+      ],
+      "answer": 2,
+      "explanation": "有機物必含碳元素。",
+      "id": 1866
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Late' means ___?",
+      "options": [
+        "Early",
+        "After the expected time",
+        "On time",
+        "Fast"
+      ],
+      "answer": 1,
+      "explanation": "Late means after the expected or usual time.",
+      "id": 1867
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Assist' is similar to ___?",
+      "options": [
+        "Help",
+        "Hinder",
+        "Stop",
+        "Delay"
+      ],
+      "answer": 0,
+      "explanation": "Assist means to help or support.",
+      "id": 1868
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "I ___ a student.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 0,
+      "explanation": "'I' takes 'am'.",
+      "id": 1869
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She has been to Japan twice, ___?",
+      "options": [
+        "has she",
+        "hasn't she",
+        "does she",
+        "did she"
+      ],
+      "answer": 1,
+      "explanation": "Tag question: positive statement → negative tag (hasn't she).",
+      "id": 1870
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is the first month of the year?",
+      "options": [
+        "February",
+        "January",
+        "March",
+        "April"
+      ],
+      "answer": 1,
+      "explanation": "January is the first month.",
+      "id": 1871
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Can you tell me where ___?",
+      "options": [
+        "is the station",
+        "the station is",
+        "does the station",
+        "the station does"
+      ],
+      "answer": 1,
+      "explanation": "Indirect question: Can you tell me where the station is.",
+      "id": 1872
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The human body is about 60% water. What does this mean?",
+      "options": [
+        "We need to drink water",
+        "We are mostly water",
+        "Water is heavy",
+        "We should swim"
+      ],
+      "answer": 1,
+      "explanation": "About 60% of human body weight is water.",
+      "id": 1873
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "紡織品耐摩擦程度測試屬於？",
+      "options": [
+        "物理測試",
+        "化學測試",
+        "生物測試",
+        "光學測試"
+      ],
+      "answer": 0,
+      "explanation": "摩擦為物理作用，屬物理測試。",
+      "id": 1874
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "配置一定濃度溶液時，溶解步驟應在？",
+      "options": [
+        "量筒中",
+        "燒杯中",
+        "試管中",
+        "滴定管中"
+      ],
+      "answer": 1,
+      "explanation": "溶液配置在燒杯中進行，再轉移至量瓶定容。",
+      "id": 1875
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣最常見的災害性天氣為？",
+      "options": [
+        "颱風",
+        "龍捲風",
+        "沙塵暴",
+        "暴風雪"
+      ],
+      "answer": 0,
+      "explanation": "臺灣位處西北太平洋，颱風為最常見的災害天氣。",
+      "id": 1876
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "『碳捕捉與封存』（CCS）的目的是？",
+      "options": [
+        "減少大氣 CO₂",
+        "增加氧氣",
+        "淨化水源",
+        "降低溫度"
+      ],
+      "answer": 0,
+      "explanation": "CCS 捕捉發電廠等排放的 CO₂，封存於地底。",
+      "id": 1877
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣西部沿岸地層下陷的主因為？",
+      "options": [
+        "超抽地下水",
+        "地震頻繁",
+        "海平面上升",
+        "土壤液化"
+      ],
+      "answer": 0,
+      "explanation": "超抽地下水導致含水層壓縮，地層下陷。",
+      "id": 1878
     }
   ],
   "subjects": [
@@ -29510,6 +30150,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 1838
+    "totalQuestions": 1878
   }
 }
