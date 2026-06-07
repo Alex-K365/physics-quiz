@@ -32085,6 +32085,662 @@
       "answer": 0,
       "explanation": "黃光波長不易使光阻劑感光。",
       "id": 2000
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "大氣壓力約為多少 cmHg？",
+      "options": [
+        "56 cmHg",
+        "76 cmHg",
+        "96 cmHg",
+        "100 cmHg"
+      ],
+      "answer": 1,
+      "explanation": "1 atm = 76 cmHg = 1013 hPa。托里切利實驗測得。",
+      "id": 2001
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "吸塵器能吸灰塵是利用？",
+      "options": [
+        "大氣壓力",
+        "離心力",
+        "重力",
+        "磁力"
+      ],
+      "answer": 0,
+      "explanation": "吸塵器風扇排出空氣使內部氣壓下降，外部大氣壓力將灰塵推入。",
+      "id": 2002
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "潛水員在 30 米深處所受壓力約為多少 atm？",
+      "options": [
+        "1 atm",
+        "2 atm",
+        "3 atm",
+        "4 atm"
+      ],
+      "answer": 3,
+      "explanation": "水面 1 atm + 水深 30 m = 3 atm，共 4 atm。",
+      "id": 2003
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "山上煮食物不易熟是因為？",
+      "options": [
+        "溫度較低",
+        "氣壓較低沸點下降",
+        "氣壓較高",
+        "氧氣較少"
+      ],
+      "answer": 1,
+      "explanation": "高山氣壓低，水沸點低於 100°C，食物不易煮熟。",
+      "id": 2004
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "液壓機是根據下列何種原理？",
+      "options": [
+        "阿基米德原理",
+        "帕斯卡原理",
+        "白努力原理",
+        "連通管原理"
+      ],
+      "answer": 1,
+      "explanation": "帕斯卡原理：密閉液體各處壓力相同，F₁/A₁=F₂/A₂。",
+      "id": 2005
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "水壩底部設計較寬的原因是？",
+      "options": [
+        "美觀",
+        "底部水壓力最大",
+        "節省材料",
+        "方便施工"
+      ],
+      "answer": 1,
+      "explanation": "水壓力 P=hd，隨深度增加而增大，底部需承受最大壓力。",
+      "id": 2006
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者屬於再生能源？",
+      "options": [
+        "煤炭",
+        "天然氣",
+        "太陽能",
+        "核能"
+      ],
+      "answer": 2,
+      "explanation": "太陽能取之不盡且可持續利用。煤、天然氣、核燃料均有限。",
+      "id": 2007
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電動車比燃油車環保的主要原因？",
+      "options": [
+        "無廢氣排放",
+        "速度更快",
+        "外型好看",
+        "價格更低"
+      ],
+      "answer": 0,
+      "explanation": "電動車行駛時零廢氣排放，減少空氣汙染。",
+      "id": 2008
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "臺灣水庫淤積嚴重的主要原因是？",
+      "options": [
+        "地震頻繁",
+        "上游濫墾水土流失",
+        "降雨太少",
+        "水溫過高"
+      ],
+      "answer": 1,
+      "explanation": "上游山坡地濫墾導致土石沖刷入水庫。",
+      "id": 2009
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "全球暖化主要因為大氣中哪種氣體增加？",
+      "options": [
+        "氧氣",
+        "二氧化碳",
+        "氮氣",
+        "氫氣"
+      ],
+      "answer": 1,
+      "explanation": "化石燃料燃燒排放大量 CO₂，加劇溫室效應。",
+      "id": 2010
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "碳捕捉與封存（CCS）的主要目的是？",
+      "options": [
+        "減少大氣 CO₂",
+        "增加氧氣",
+        "淨化水質",
+        "降低噪音"
+      ],
+      "answer": 0,
+      "explanation": "CCS 捕捉工廠排放的 CO₂，封存於地層中。",
+      "id": 2011
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣最常見的災害性天氣為？",
+      "options": [
+        "龍捲風",
+        "颱風",
+        "沙塵暴",
+        "暴風雪"
+      ],
+      "answer": 1,
+      "explanation": "臺灣位於西北太平洋，颱風為最常見的災害天氣。",
+      "id": 2012
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "食品包裝上的營養標示熱量單位常用？",
+      "options": [
+        "焦耳",
+        "大卡（kcal）",
+        "瓦特",
+        "度"
+      ],
+      "answer": 1,
+      "explanation": "食品熱量以大卡（kcal）標示。",
+      "id": 2013
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "What is the meaning of 'library'?",
+      "options": [
+        "教室",
+        "圖書館",
+        "餐廳",
+        "辦公室"
+      ],
+      "answer": 1,
+      "explanation": "Library is a place where books are kept for reading.",
+      "id": 2014
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Doctor' is a person who ___?",
+      "options": [
+        "teaches students",
+        "treats sick people",
+        "drives cars",
+        "sells food"
+      ],
+      "answer": 1,
+      "explanation": "A doctor treats sick people.",
+      "id": 2015
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The Amazon is the largest rainforest. It produces 20% of Earth's oxygen. What is the main idea?",
+      "options": [
+        "The Amazon produces oxygen and is the largest rainforest",
+        "The Amazon has many animals",
+        "The Amazon is in Brazil",
+        "The Amazon is hot"
+      ],
+      "answer": 0,
+      "explanation": "The main idea is that the Amazon is the largest rainforest producing 20% of oxygen.",
+      "id": 2016
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Renewable energy comes from sources that naturally replenish. Solar and wind are examples. What does 'renewable energy' mean?",
+      "options": [
+        "Energy that never runs out naturally replenishes",
+        "Energy from coal",
+        "Energy from nuclear",
+        "Energy that is cheap"
+      ],
+      "answer": 0,
+      "explanation": "Renewable energy comes from naturally replenishing sources like solar and wind.",
+      "id": 2017
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "人耳可聽見的頻率範圍約為？",
+      "options": [
+        "20-200 Hz",
+        "20-2000 Hz",
+        "20-20000 Hz",
+        "200-20000 Hz"
+      ],
+      "answer": 2,
+      "explanation": "人耳可聽頻率約 20~20000 Hz。",
+      "id": 2018
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲波在空氣中屬於？",
+      "options": [
+        "橫波",
+        "縱波",
+        "電磁波",
+        "表面波"
+      ],
+      "answer": 1,
+      "explanation": "聲波為縱波（疏密波），介質振動方向與傳播方向平行。",
+      "id": 2019
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "超聲波的頻率高於？",
+      "options": [
+        "200 Hz",
+        "2000 Hz",
+        "20000 Hz",
+        "200000 Hz"
+      ],
+      "answer": 2,
+      "explanation": "超聲波 > 20000 Hz。蝙蝠、海豚以此導航。",
+      "id": 2020
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種金屬具有鐵磁性？",
+      "options": [
+        "銅",
+        "鐵",
+        "鋁",
+        "鋅"
+      ],
+      "answer": 1,
+      "explanation": "鐵、鈷、鎳具有鐵磁性。銅、鋁、鋅無鐵磁性。",
+      "id": 2021
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電鈴的工作原理是？",
+      "options": [
+        "電磁感應",
+        "電流磁效應",
+        "靜電感應",
+        "化學效應"
+      ],
+      "answer": 1,
+      "explanation": "電鈴利用電磁鐵（電流磁效應）吸引鈴舌敲擊鈴鐺。",
+      "id": 2022
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "變壓器是根據何種原理？",
+      "options": [
+        "電流磁效應",
+        "電磁感應",
+        "電流的熱效應",
+        "化學效應"
+      ],
+      "answer": 1,
+      "explanation": "變壓器利用電磁感應改變交流電電壓。",
+      "id": 2023
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種熱傳播方式不需要介質？",
+      "options": [
+        "傳導",
+        "對流",
+        "輻射",
+        "三者都需要"
+      ],
+      "answer": 2,
+      "explanation": "輻射以電磁波傳熱，不需介質（太陽熱能到地球）。",
+      "id": 2024
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "0°C 的冰與 0°C 的水相比，何者含有較多熱能？",
+      "options": [
+        "冰",
+        "水",
+        "一樣",
+        "無法比較"
+      ],
+      "answer": 1,
+      "explanation": "水有較多熱能（冰需吸收熔化熱才能變成水）。溫度相同但內能不同。",
+      "id": 2025
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "冷氣機的冷媒在室內機發生何種變化？",
+      "options": [
+        "蒸發吸熱",
+        "凝結放熱",
+        "熔化吸熱",
+        "凝固放熱"
+      ],
+      "answer": 0,
+      "explanation": "冷媒在室內機蒸發（液→氣）吸收室內熱量，達到降溫效果。",
+      "id": 2026
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者是光的折射現象？",
+      "options": [
+        "鏡子中的影像",
+        "筷子在水中彎折",
+        "影子形成",
+        "黑板反光"
+      ],
+      "answer": 1,
+      "explanation": "筷子在水中彎折是光從水到空氣產生的折射。",
+      "id": 2027
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "近視眼鏡使用何種鏡片？",
+      "options": [
+        "凸透鏡",
+        "凹透鏡",
+        "平面鏡",
+        "三稜鏡"
+      ],
+      "answer": 1,
+      "explanation": "近視用凹透鏡（發散光線）。遠視用凸透鏡。",
+      "id": 2028
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "光纖通訊利用光的何種原理？",
+      "options": [
+        "反射",
+        "折射",
+        "全反射",
+        "繞射"
+      ],
+      "answer": 2,
+      "explanation": "光纖利用全反射傳遞光訊號，損耗極低。",
+      "id": 2029
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Finish' means ___?",
+      "options": [
+        "Start",
+        "Complete",
+        "Break",
+        "Divide"
+      ],
+      "answer": 1,
+      "explanation": "Finish means to complete or bring to an end.",
+      "id": 2030
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Consider' is similar to ___?",
+      "options": [
+        "Ignore",
+        "Think about",
+        "Forget",
+        "Reject"
+      ],
+      "answer": 1,
+      "explanation": "Consider means to think about carefully.",
+      "id": 2031
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "My brother ___ a teacher.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 1,
+      "explanation": "'My brother' is singular → 'is'.",
+      "id": 2032
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "Neither Tom nor his sisters ___ here.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "has been"
+      ],
+      "answer": 1,
+      "explanation": "'Neither...nor' verb agrees with closest subject (sisters → plural).",
+      "id": 2033
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "I am going to the store ___ buy some food.",
+      "options": [
+        "for",
+        "to",
+        "in",
+        "at"
+      ],
+      "answer": 1,
+      "explanation": "'To' indicates purpose: go to the store to buy.",
+      "id": 2034
+    },
+    {
+      "unit": "英文",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "She has been learning piano ___ she was six.",
+      "options": [
+        "for",
+        "since",
+        "from",
+        "during"
+      ],
+      "answer": 1,
+      "explanation": "'Since' with a point in time (she was six).",
+      "id": 2035
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "原子的質量主要集中在？",
+      "options": [
+        "原子核",
+        "電子雲",
+        "質子",
+        "中子"
+      ],
+      "answer": 0,
+      "explanation": "原子質量幾乎集中在原子核（質子和中子），電子質量極小。",
+      "id": 2036
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "化合物與混合物的主要差異？",
+      "options": [
+        "是否由純物質組成",
+        "組成元素是否有固定比例",
+        "是否透明",
+        "是否可導電"
+      ],
+      "answer": 1,
+      "explanation": "化合物元素比例固定，混合物比例不固定。",
+      "id": 2037
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "蠟燭燃燒屬於？",
+      "options": [
+        "物理變化",
+        "化學變化",
+        "核變化",
+        "生物變化"
+      ],
+      "answer": 1,
+      "explanation": "蠟燭與氧氣反應產生新物質（CO₂+H₂O），為化學變化。",
+      "id": 2038
+    },
+    {
+      "unit": "化學反應",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "質量守恆定律說明？",
+      "options": [
+        "能量不滅",
+        "原子不滅",
+        "分子不滅",
+        "電子不滅"
+      ],
+      "answer": 1,
+      "explanation": "化學反應中原子重新排列，原子種類和數目不變，質量守恆。",
+      "id": 2039
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鐵生鏽是鐵與何種物質反應？",
+      "options": [
+        "氧氣和水",
+        "二氧化碳",
+        "氮氣",
+        "氫氣"
+      ],
+      "answer": 0,
+      "explanation": "4Fe+3O₂+2xH₂O→2Fe₂O₃·xH₂O（鐵鏽）。",
+      "id": 2040
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "人體消化澱粉的最終產物為？",
+      "options": [
+        "葡萄糖",
+        "胺基酸",
+        "脂肪酸",
+        "甘油"
+      ],
+      "answer": 0,
+      "explanation": "澱粉→麥芽糖→葡萄糖，由唾液澱粉酶和胰澱粉酶催化。",
+      "id": 2041
     }
   ],
   "subjects": [
@@ -32102,6 +32758,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 2000
+    "totalQuestions": 2041
   }
 }
