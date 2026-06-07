@@ -33381,6 +33381,646 @@
       "answer": 0,
       "explanation": "雷射改變角膜曲率，矯正屈光不正。",
       "id": 2081
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "托里切利實驗使用何種液體測量大氣壓力？",
+      "options": [
+        "水",
+        "水銀",
+        "酒精",
+        "食鹽水"
+      ],
+      "answer": 1,
+      "explanation": "托里切利使用水銀柱，1 atm = 76 cmHg。",
+      "id": 2082
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "液體壓力與下列何者無關？",
+      "options": [
+        "液體密度",
+        "液體深度",
+        "容器形狀",
+        "重力加速度"
+      ],
+      "answer": 2,
+      "explanation": "液體壓力 P=hdg，與容器形狀無關。",
+      "id": 2083
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "帕斯卡實驗顯示密閉液體中各處壓力相同，此為？",
+      "options": [
+        "阿基米德原理",
+        "帕斯卡原理",
+        "白努力原理",
+        "連通管原理"
+      ],
+      "answer": 1,
+      "explanation": "帕斯卡原理應用於液壓煞車、液壓升降機等。",
+      "id": 2084
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "臺灣最常見的天災為？",
+      "options": [
+        "地震",
+        "龍捲風",
+        "火山爆發",
+        "海嘯"
+      ],
+      "answer": 0,
+      "explanation": "臺灣位於板塊交界處，地震頻繁。",
+      "id": 2085
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "為了減少空氣汙染，應推廣？",
+      "options": [
+        "燃油車",
+        "電動車",
+        "柴油車",
+        " hybrids"
+      ],
+      "answer": 1,
+      "explanation": "電動車零排放，減少空氣汙染。",
+      "id": 2086
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "聯合國氣候變遷會議（COP）的主要目標為？",
+      "options": [
+        "控制全球升溫",
+        "促進貿易",
+        "保護森林",
+        "減少塑膠"
+      ],
+      "answer": 0,
+      "explanation": "COP 旨在控制全球升溫在 1.5-2°C 內。",
+      "id": 2087
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣推動「循環經濟」的核心？",
+      "options": [
+        "資源回收再利用",
+        "線性生產",
+        "最大消費",
+        "廢物丟棄"
+      ],
+      "answer": 0,
+      "explanation": "循環經濟將廢棄物轉為資源，減少消耗。",
+      "id": 2088
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Weather' refers to the state of the ___ outside.",
+      "options": [
+        "atmosphere",
+        "ground",
+        "ocean",
+        "space"
+      ],
+      "answer": 0,
+      "explanation": "Weather is the state of the atmosphere (temperature, rain, wind).",
+      "id": 2089
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "A magnet has a north pole and a south pole. Like poles repel. What does 'repel' mean?",
+      "options": [
+        "Push away",
+        "Pull together",
+        "Attract",
+        "Join"
+      ],
+      "answer": 0,
+      "explanation": "Repel means to push away or force apart.",
+      "id": 2090
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "A hypothesis must be testable. What does 'hypothesis' mean?",
+      "options": [
+        "A proposed explanation",
+        "A proven fact",
+        "A law",
+        "A guess"
+      ],
+      "answer": 0,
+      "explanation": "A hypothesis is a testable proposed explanation.",
+      "id": 2091
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種樂器是透過弦振動發聲？",
+      "options": [
+        "直笛",
+        "鋼琴",
+        "喇叭",
+        "木琴"
+      ],
+      "answer": 1,
+      "explanation": "鋼琴靠弦振動發聲。直笛靠空氣柱，喇叭靠唇振動。",
+      "id": 2092
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲音的響度取決於？",
+      "options": [
+        "頻率",
+        "振幅",
+        "波速",
+        "波長"
+      ],
+      "answer": 1,
+      "explanation": "響度（音量）由振幅決定，振幅越大聲音越大。",
+      "id": 2093
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "超聲波檢查是利用？",
+      "options": [
+        "聲波反射",
+        "聲波折射",
+        "聲波繞射",
+        "聲波干涉"
+      ],
+      "answer": 0,
+      "explanation": "超聲波遇到組織界面產生反射，接收反射波成像。",
+      "id": 2094
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Empty' means ___?",
+      "options": [
+        "Containing nothing",
+        "Full",
+        "Heavy",
+        "Closed"
+      ],
+      "answer": 0,
+      "explanation": "Empty means containing nothing inside.",
+      "id": 2095
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Frequent' means happening ___?",
+      "options": [
+        "Rarely",
+        "Often",
+        "Never",
+        "Sometimes"
+      ],
+      "answer": 1,
+      "explanation": "Frequent means occurring often or regularly.",
+      "id": 2096
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Inevitable' means ___?",
+      "options": [
+        "Certain to happen",
+        "Avoidable",
+        "Unlikely",
+        "Optional"
+      ],
+      "answer": 0,
+      "explanation": "Inevitable means impossible to avoid or prevent.",
+      "id": 2097
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "I ___ a student at this school.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": 0,
+      "explanation": "'I' takes 'am'.",
+      "id": 2098
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "He didn't ___ the answer.",
+      "options": [
+        "knew",
+        "know",
+        "known",
+        "knows"
+      ],
+      "answer": 1,
+      "explanation": "Didn't + base verb (know).",
+      "id": 2099
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "___ he rich, he would buy a mansion.",
+      "options": [
+        "If",
+        "Were",
+        "Was",
+        "Had"
+      ],
+      "answer": 1,
+      "explanation": "Subjunctive: 'Were he rich' = 'If he were rich' (inversion).",
+      "id": 2100
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪種方式可以增強電磁鐵磁力？",
+      "options": [
+        "減少圈數",
+        "增大電流",
+        "使用細導線",
+        "減少電池"
+      ],
+      "answer": 1,
+      "explanation": "電磁鐵磁力與圈數和電流成正比。",
+      "id": 2101
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "將磁鐵折斷成兩段，會？",
+      "options": [
+        "失去磁性",
+        "各成完整磁鐵",
+        "只剩 N 極",
+        "只剩 S 極"
+      ],
+      "answer": 1,
+      "explanation": "磁鐵折斷後每段都有 N 極和 S 極。",
+      "id": 2102
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "MRI（核磁共振成像）利用？",
+      "options": [
+        "磁場和無線電波",
+        "X 射線",
+        "超聲波",
+        "雷射"
+      ],
+      "answer": 0,
+      "explanation": "MRI 利用強磁場和無線電波產生成像訊號。",
+      "id": 2103
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鐵軌間留有縫隙是為了？",
+      "options": [
+        "方便維修",
+        "熱脹冷縮",
+        "節省材料",
+        "美觀"
+      ],
+      "answer": 1,
+      "explanation": "夏天鐵軌受熱膨脹，預留縫隙避免變形。",
+      "id": 2104
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "保溫杯的夾層真空是為了減少？",
+      "options": [
+        "傳導和對流",
+        "輻射",
+        "蒸發",
+        "凝結"
+      ],
+      "answer": 0,
+      "explanation": "真空層消除傳導和對流，鍍銀層減少輻射。",
+      "id": 2105
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "絕對零度約為？",
+      "options": [
+        "-273°C",
+        "-100°C",
+        "0°C",
+        "100°C"
+      ],
+      "answer": 0,
+      "explanation": "絕對零度 = 0 K = -273°C，理論最低溫度。",
+      "id": 2106
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鐵、鋁、金等屬於？",
+      "options": [
+        "元素",
+        "化合物",
+        "混合物",
+        "溶液"
+      ],
+      "answer": 0,
+      "explanation": "金屬元素由相同原子組成。",
+      "id": 2107
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為單原子分子？",
+      "options": [
+        "O₂",
+        "He",
+        "H₂O",
+        "CO₂"
+      ],
+      "answer": 1,
+      "explanation": "惰性氣體 He 以單原子形式存在。",
+      "id": 2108
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電子在原子中的分布稱為？",
+      "options": [
+        "電子殼層",
+        "原子核",
+        "質子層",
+        "中子層"
+      ],
+      "answer": 0,
+      "explanation": "電子在原子核外分層分布（K、L、M 殼層）。",
+      "id": 2109
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "蘋果切開後變褐色是因為？",
+      "options": [
+        "氧化",
+        "還原",
+        "中和",
+        "發酵"
+      ],
+      "answer": 0,
+      "explanation": "蘋果中的酚類物質被空氣氧化而褐變。",
+      "id": 2110
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "光合作用中，哪個物質被氧化？",
+      "options": [
+        "水",
+        "二氧化碳",
+        "葡萄糖",
+        "氧氣"
+      ],
+      "answer": 0,
+      "explanation": "水失去電子被氧化，產生氧氣。",
+      "id": 2111
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "維生素 C 可作為？",
+      "options": [
+        "抗氧化劑",
+        "漂白劑",
+        "防腐劑",
+        "酸化劑"
+      ],
+      "answer": 0,
+      "explanation": "維生素 C具還原性，可防止食物氧化變質。",
+      "id": 2112
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "酒的主要成分為？",
+      "options": [
+        "乙醇",
+        "甲醇",
+        "醋酸",
+        "甘油"
+      ],
+      "answer": 0,
+      "explanation": "酒含乙醇（C₂H₅OH）。甲醇有毒不可飲用。",
+      "id": 2113
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "皂化反應是油脂與何種物質反應？",
+      "options": [
+        "氫氧化鈉",
+        "鹽酸",
+        "硫酸",
+        "水"
+      ],
+      "answer": 0,
+      "explanation": "油脂+NaOH→肥皂（脂肪酸鈉）+甘油。",
+      "id": 2114
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "尼龍屬於？",
+      "options": [
+        "合成聚合物",
+        "天然聚合物",
+        "金屬",
+        "陶瓷"
+      ],
+      "answer": 0,
+      "explanation": "尼龍為合成聚醯胺纖維。",
+      "id": 2115
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "測量液體體積應使用？",
+      "options": [
+        "量筒",
+        "天平",
+        "溫度計",
+        "酒精燈"
+      ],
+      "answer": 0,
+      "explanation": "量筒用於測量液體體積。天平測質量。",
+      "id": 2116
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "分離水和食鹽的混合物可用？",
+      "options": [
+        "過濾後蒸發",
+        "蒸餾",
+        "層析",
+        "萃取"
+      ],
+      "answer": 1,
+      "explanation": "蒸餾利用水和食鹽的沸點差異分離。",
+      "id": 2117
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "pH 計使用前應？",
+      "options": [
+        "校正",
+        "加熱",
+        "搖晃",
+        "冷凍"
+      ],
+      "answer": 0,
+      "explanation": "pH 計使用前需用標準緩衝液校正。",
+      "id": 2118
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為光的直進現象？",
+      "options": [
+        "影子",
+        "彩虹",
+        "近視眼鏡",
+        "放大鏡"
+      ],
+      "answer": 0,
+      "explanation": "影子因光直線前進被物體阻擋而形成。",
+      "id": 2119
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "放大鏡是使用何種透鏡？",
+      "options": [
+        "凸透鏡",
+        "凹透鏡",
+        "平面鏡",
+        "三稜鏡"
+      ],
+      "answer": 0,
+      "explanation": "物體在凸透鏡焦點內形成放大虛像。",
+      "id": 2120
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "光的偏振證明光是？",
+      "options": [
+        "橫波",
+        "縱波",
+        "電磁波",
+        "粒子"
+      ],
+      "answer": 0,
+      "explanation": "偏振現象只發生在橫波，證明光是橫波。",
+      "id": 2121
     }
   ],
   "subjects": [
@@ -33398,6 +34038,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 2081
+    "totalQuestions": 2121
   }
 }
