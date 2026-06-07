@@ -32741,6 +32741,646 @@
       "answer": 0,
       "explanation": "澱粉→麥芽糖→葡萄糖，由唾液澱粉酶和胰澱粉酶催化。",
       "id": 2041
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "將吸管插入飲料中，吸一口後飲料上升是因為？",
+      "options": [
+        "毛細現象",
+        "大氣壓力",
+        "虹吸原理",
+        "擴散作用"
+      ],
+      "answer": 1,
+      "explanation": "吸管內氣壓減小，大氣壓力將飲料壓入吸管。",
+      "id": 2042
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "兩艘船並排行駛時容易碰撞，是因為？",
+      "options": [
+        "流體速度大壓力小",
+        "船體互相吸引",
+        "波浪推擠",
+        "風力影響"
+      ],
+      "answer": 0,
+      "explanation": "白努力原理：流體速度越快壓力越小，船間壓力小於外側。",
+      "id": 2043
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "潛水夫病是因為上升過快，血液中哪種氣體形成氣泡？",
+      "options": [
+        "氧氣",
+        "氮氣",
+        "二氧化碳",
+        "氫氣"
+      ],
+      "answer": 1,
+      "explanation": "深水高壓下氮氣溶入血液，快速上升時氮氣形成氣泡。",
+      "id": 2044
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "臺灣目前最主要的再生能源為？",
+      "options": [
+        "太陽光電",
+        "風力發電",
+        "水力發電",
+        "地熱發電"
+      ],
+      "answer": 0,
+      "explanation": "臺灣太陽光電裝置容量最大，其次為風力和水力。",
+      "id": 2045
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "推廣電動車的主要目的為？",
+      "options": [
+        "減少碳排放",
+        "降低噪音",
+        "提高速度",
+        "節省空間"
+      ],
+      "answer": 0,
+      "explanation": "電動車零排放，減少交通運輸的碳排放。",
+      "id": 2046
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣沿海地層下陷的主因？",
+      "options": [
+        "超抽地下水",
+        "海平面上升",
+        "地震頻繁",
+        "土壤液化"
+      ],
+      "answer": 0,
+      "explanation": "西南沿海超抽地下水導致含水層壓縮、地層下陷。",
+      "id": 2047
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "何謂「綠色消費」？",
+      "options": [
+        "購買環保節能產品",
+        "買綠色產品",
+        "多買東西",
+        "使用現金"
+      ],
+      "answer": 0,
+      "explanation": "綠色消費指選購對環境負擔較小的產品。",
+      "id": 2048
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Breakfast' is the ___ meal of the day.",
+      "options": [
+        "first",
+        "last",
+        "biggest",
+        "smallest"
+      ],
+      "answer": 0,
+      "explanation": "Breakfast is the first meal of the day, eaten in the morning.",
+      "id": 2049
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The Earth revolves around the Sun. What does 'revolves' mean?",
+      "options": [
+        "Moves in a circle around",
+        "Moves away from",
+        "Moves toward",
+        "Stops near"
+      ],
+      "answer": 0,
+      "explanation": "Revolves means moves in a circular orbit around something.",
+      "id": 2050
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Photosynthesis' comes from Greek words meaning 'light' and 'putting together.' What does it literally mean?",
+      "options": [
+        "Light and putting together",
+        "Plant growth",
+        "Sun energy",
+        "Green leaves"
+      ],
+      "answer": 0,
+      "explanation": "Photo=light, synthesis=putting together.",
+      "id": 2051
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "聲音無法在何種介質中傳播？",
+      "options": [
+        "空氣",
+        "水",
+        "鋼鐵",
+        "真空"
+      ],
+      "answer": 3,
+      "explanation": "聲音需要介質傳播，真空中無介質故無法傳聲。",
+      "id": 2052
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "聲音在空氣中的速度約為多少 m/s？",
+      "options": [
+        "34 m/s",
+        "340 m/s",
+        "3400 m/s",
+        "34000 m/s"
+      ],
+      "answer": 1,
+      "explanation": "常溫下聲速約 340 m/s，隨溫度升高而增快。",
+      "id": 2053
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "噪音的單位為？",
+      "options": [
+        "Hz",
+        "dB",
+        "W",
+        "J"
+      ],
+      "answer": 1,
+      "explanation": "噪音用分貝（dB）衡量。Hz 為頻率單位。",
+      "id": 2054
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Beautiful' means ___?",
+      "options": [
+        "Ugly",
+        "Pretty",
+        "Angry",
+        "Sad"
+      ],
+      "answer": 1,
+      "explanation": "Beautiful means pleasing to the eye.",
+      "id": 2055
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Ancient' means ___?",
+      "options": [
+        "Very old",
+        "New",
+        "Modern",
+        "Young"
+      ],
+      "answer": 0,
+      "explanation": "Ancient means belonging to the very distant past.",
+      "id": 2056
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Temporary' means lasting for ___?",
+      "options": [
+        "A short time",
+        "Forever",
+        "A year",
+        "A century"
+      ],
+      "answer": 0,
+      "explanation": "Temporary means lasting for a limited period of time.",
+      "id": 2057
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "They ___ playing basketball now.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "answer": 1,
+      "explanation": "'They' plural → present continuous 'are playing'.",
+      "id": 2058
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "I have been studying English ___ 2019.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "in"
+      ],
+      "answer": 0,
+      "explanation": "'Since' with a specific year (2019). 'For' with duration.",
+      "id": 2059
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "Had she arrived earlier, she ___ the train.",
+      "options": [
+        "would catch",
+        "would have caught",
+        "will catch",
+        "catches"
+      ],
+      "answer": 1,
+      "explanation": "Third conditional: If + past perfect, would have + pp.",
+      "id": 2060
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "磁鐵的 N 極與 S 極靠近會？",
+      "options": [
+        "吸引",
+        "排斥",
+        "無作用",
+        "產生電流"
+      ],
+      "answer": 0,
+      "explanation": "異性極相吸，同性極相斥。",
+      "id": 2061
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電磁鐵斷電後磁性？",
+      "options": [
+        "立即消失",
+        "保留",
+        "逐漸增強",
+        "變為永久磁鐵"
+      ],
+      "answer": 0,
+      "explanation": "軟鐵芯電磁鐵斷電後磁性立即消失。",
+      "id": 2062
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "麥克風的原理是？",
+      "options": [
+        "電流磁效應",
+        "電磁感應",
+        "電流的熱效應",
+        "壓電效應"
+      ],
+      "answer": 1,
+      "explanation": "麥克風利用聲波振動線圈切割磁力線，產生感應電流。",
+      "id": 2063
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "熱對流主要發生在？",
+      "options": [
+        "固體",
+        "液體和氣體",
+        "真空",
+        "金屬"
+      ],
+      "answer": 1,
+      "explanation": "對流發生在流體（液體和氣體）中，因密度差異流動。",
+      "id": 2064
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "冬天摸鐵製品比木製品感覺更冷是因為？",
+      "options": [
+        "鐵溫度更低",
+        "鐵導熱更快",
+        "鐵比熱更小",
+        "鐵密度更大"
+      ],
+      "answer": 1,
+      "explanation": "鐵導熱係數大，熱量從手快速傳走，感覺更冷。",
+      "id": 2065
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "液態氮的沸點為 -196°C，在室溫下會？",
+      "options": [
+        "凝固",
+        "迅速汽化",
+        "保持液態",
+        "熔化"
+      ],
+      "answer": 1,
+      "explanation": "液態氮沸點遠低於室溫，接觸空氣立即汽化。",
+      "id": 2066
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "水分子由哪兩種元素組成？",
+      "options": [
+        "氫和氧",
+        "氫和氮",
+        "氧和碳",
+        "鈉和氯"
+      ],
+      "answer": 0,
+      "explanation": "水（H₂O）由氫和氧組成。",
+      "id": 2067
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者是純物質？",
+      "options": [
+        "食鹽水",
+        "蒸餾水",
+        "礦泉水",
+        "空氣"
+      ],
+      "answer": 1,
+      "explanation": "蒸餾水為純水。食鹽水、礦泉水、空氣均為混合物。",
+      "id": 2068
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "同位素具有相同的？",
+      "options": [
+        "質子數",
+        "中子數",
+        "質量數",
+        "電子數"
+      ],
+      "answer": 0,
+      "explanation": "同位素：質子數相同、中子數不同。",
+      "id": 2069
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "燃燒屬於？",
+      "options": [
+        "氧化反應",
+        "還原反應",
+        "中和反應",
+        "電解反應"
+      ],
+      "answer": 0,
+      "explanation": "燃燒是物質與氧氣的劇烈氧化反應，伴隨發光發熱。",
+      "id": 2070
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電池放電時，負極發生？",
+      "options": [
+        "氧化反應",
+        "還原反應",
+        "中和反應",
+        "電解反應"
+      ],
+      "answer": 0,
+      "explanation": "電池負極發生氧化（失去電子），正極發生還原。",
+      "id": 2071
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "漂白水的殺菌原理是？",
+      "options": [
+        "強氧化作用",
+        "強還原作用",
+        "脫水作用",
+        "酸鹼中和"
+      ],
+      "answer": 0,
+      "explanation": "漂白水（次氯酸鈉）具強氧化性，破壞細菌結構。",
+      "id": 2072
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "天然氣的主要成分為？",
+      "options": [
+        "甲烷",
+        "乙烷",
+        "丙烷",
+        "丁烷"
+      ],
+      "answer": 0,
+      "explanation": "天然氣含 85-95% 甲烷（CH₄）。",
+      "id": 2073
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "塑膠是屬於？",
+      "options": [
+        "天然聚合物",
+        "合成聚合物",
+        "金屬材料",
+        "陶瓷材料"
+      ],
+      "answer": 1,
+      "explanation": "塑膠為合成聚合物（由小分子聚合而成）。",
+      "id": 2074
+    },
+    {
+      "unit": "有機化學",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "蛋白質的組成元素主要為？",
+      "options": [
+        "C、H、O、N",
+        "C、H、O",
+        "C、H、O、Na",
+        "C、H、N、Cl"
+      ],
+      "answer": 0,
+      "explanation": "蛋白質含 C、H、O、N，部分含 S、P。",
+      "id": 2075
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "實驗室中點燃酒精燈應使用？",
+      "options": [
+        "打火機",
+        "火柴",
+        "另一個酒精燈引火",
+        "以上均可"
+      ],
+      "answer": 1,
+      "explanation": "使用火柴點燃酒精燈，禁止用另一個燃燒的酒精燈引火。",
+      "id": 2076
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "過濾時漏斗下端應？",
+      "options": [
+        "靠著燒杯內壁",
+        "懸空",
+        "插入液面",
+        "朝向自己"
+      ],
+      "answer": 0,
+      "explanation": "漏斗下端靠燒杯內壁，使濾液沿壁流下避免濺出。",
+      "id": 2077
+    },
+    {
+      "unit": "實驗",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "定量分析中的誤差分為？",
+      "options": [
+        "隨機誤差和系統誤差",
+        "人為誤差和環境誤差",
+        "儀器誤差和操作誤差",
+        "計算誤差和測量誤差"
+      ],
+      "answer": 0,
+      "explanation": "隨機誤差影響精密度，系統誤差影響準確度。",
+      "id": 2078
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為光的反射現象？",
+      "options": [
+        "筷子折斷",
+        "彩虹",
+        "平面鏡成像",
+        "近視眼鏡"
+      ],
+      "answer": 2,
+      "explanation": "平面鏡成像為反射。筷子折斷和彩虹為折射。",
+      "id": 2079
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "白色陽光經三稜鏡色散後不會出現哪種顏色？",
+      "options": [
+        "紅",
+        "黃",
+        "紫",
+        "黑"
+      ],
+      "answer": 3,
+      "explanation": "色散產生紅橙黃綠藍靛紫七色，黑色不是色散產物。",
+      "id": 2080
+    },
+    {
+      "unit": "光學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "近視雷射手術是改變？",
+      "options": [
+        "角膜曲率",
+        "水晶體厚度",
+        "眼軸長度",
+        "視網膜位置"
+      ],
+      "answer": 0,
+      "explanation": "雷射改變角膜曲率，矯正屈光不正。",
+      "id": 2081
     }
   ],
   "subjects": [
@@ -32758,6 +33398,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 2041
+    "totalQuestions": 2081
   }
 }
