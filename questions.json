@@ -34021,6 +34021,502 @@
       "answer": 0,
       "explanation": "偏振現象只發生在橫波，證明光是橫波。",
       "id": 2121
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "用吸管喝飲料是利用？",
+      "options": [
+        "大氣壓力",
+        "重力",
+        "毛細現象",
+        "擴散作用"
+      ],
+      "answer": 0,
+      "explanation": "吸管內氣壓減小，大氣壓將飲料壓入。",
+      "id": 2122
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "飛機的機翼截面設計成上凸下平是為了？",
+      "options": [
+        "增加升力",
+        "減少阻力",
+        "美觀",
+        "節省材料"
+      ],
+      "answer": 0,
+      "explanation": "白努力原理：上方面積大流速快壓力小，產生升力。",
+      "id": 2123
+    },
+    {
+      "unit": "壓力",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "輪胎胎壓不足時，接觸面積增大，壓力？",
+      "options": [
+        "變大",
+        "變小",
+        "不變",
+        "不一定"
+      ],
+      "answer": 1,
+      "explanation": "P=F/A，面積增大則壓力變小。",
+      "id": 2124
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列何者為非再生能源？",
+      "options": [
+        "太陽能",
+        "風力",
+        "天然氣",
+        "水力"
+      ],
+      "answer": 2,
+      "explanation": "天然氣為化石燃料，取用後無法短時間再生。",
+      "id": 2125
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "全球暖化導致的現象不包括？",
+      "options": [
+        "海平面上升",
+        "極端氣候",
+        "冰川融化",
+        "臭氧層破洞"
+      ],
+      "answer": 3,
+      "explanation": "臭氧層破洞主因是氟氯碳化物，與暖化無直接關聯。",
+      "id": 2126
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "核能發電的燃料棒使用後產生的高階核廢料如何處理？",
+      "options": [
+        "深層地質處置",
+        "倒入海洋",
+        "掩埋公園",
+        "燃燒處理"
+      ],
+      "answer": 0,
+      "explanation": "高階核廢料需經冷卻後深層地質處置（最終處置場）。",
+      "id": 2127
+    },
+    {
+      "unit": "跨科素養",
+      "subject": "理化",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "臺灣推動「2025非核家園」的主要能源規劃方向為？",
+      "options": [
+        "擴大再生能源",
+        "增建燃煤電廠",
+        "進口核電",
+        "增加燃油"
+      ],
+      "answer": 0,
+      "explanation": "非核家園以再生能源（太陽能、風力）取代核能。",
+      "id": 2128
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Planet' is a large body that orbits a ___?",
+      "options": [
+        "star",
+        "moon",
+        "Earth",
+        "satellite"
+      ],
+      "answer": 0,
+      "explanation": "A planet orbits a star (like the Sun).",
+      "id": 2129
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "The heart pumps blood through the body. What does 'pumps' mean?",
+      "options": [
+        "Pushes or moves",
+        "Stops",
+        "Cleans",
+        "Heats"
+      ],
+      "answer": 0,
+      "explanation": "Pumps means pushes or moves fluid through a system.",
+      "id": 2130
+    },
+    {
+      "unit": "閱讀",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Sustainable development' meets present needs without harming future generations. What does 'sustainable' mean?",
+      "options": [
+        "Can be maintained long-term",
+        "Quick",
+        "Expensive",
+        "Modern"
+      ],
+      "answer": 0,
+      "explanation": "Sustainable means able to be maintained at a certain level long-term.",
+      "id": 2131
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "聲音的大小（響度）由下列何者決定？",
+      "options": [
+        "頻率",
+        "振幅",
+        "波速",
+        "波長"
+      ],
+      "answer": 1,
+      "explanation": "響度由振幅決定，振幅越大聲音越大。",
+      "id": 2132
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "迴聲是因為聲音的何種現象？",
+      "options": [
+        "折射",
+        "反射",
+        "繞射",
+        "干涉"
+      ],
+      "answer": 1,
+      "explanation": "聲波碰到障礙物反射回來形成回聲。",
+      "id": 2133
+    },
+    {
+      "unit": "聲波",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "噪音對人體的影響不包括？",
+      "options": [
+        "聽力受損",
+        "睡眠干擾",
+        "提高專注力",
+        "心理壓力"
+      ],
+      "answer": 2,
+      "explanation": "噪音會降低專注力而非提高。",
+      "id": 2134
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "'Small' means ___ in size.",
+      "options": [
+        "big",
+        "little",
+        "heavy",
+        "long"
+      ],
+      "answer": 1,
+      "explanation": "Small means little in size.",
+      "id": 2135
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "'Obvious' means ___?",
+      "options": [
+        "Easy to see",
+        "Hidden",
+        "Difficult",
+        "Rare"
+      ],
+      "answer": 0,
+      "explanation": "Obvious means easily seen or understood.",
+      "id": 2136
+    },
+    {
+      "unit": "單字",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "'Sufficient' means ___?",
+      "options": [
+        "Enough",
+        "Too little",
+        "Too much",
+        "Limited"
+      ],
+      "answer": 0,
+      "explanation": "Sufficient means enough or adequate.",
+      "id": 2137
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "She ___ a beautiful song yesterday.",
+      "options": [
+        "sing",
+        "sang",
+        "sung",
+        "singing"
+      ],
+      "answer": 1,
+      "explanation": "Past tense: sang.",
+      "id": 2138
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "We have ___ finished our homework.",
+      "options": [
+        "already",
+        "yet",
+        "ever",
+        "never"
+      ],
+      "answer": 0,
+      "explanation": "'Already' is used in positive present perfect sentences.",
+      "id": 2139
+    },
+    {
+      "unit": "文法",
+      "subject": "英文",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "It is essential that he ___ immediately.",
+      "options": [
+        "leaves",
+        "leave",
+        "left",
+        "leaving"
+      ],
+      "answer": 1,
+      "explanation": "Subjunctive: essential that + base verb.",
+      "id": 2140
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪個裝置內部有磁鐵？",
+      "options": [
+        "燈泡",
+        "喇叭",
+        "電鍋",
+        "電風扇開關"
+      ],
+      "answer": 1,
+      "explanation": "喇叭內有磁鐵和線圈，利用電流磁效應發聲。",
+      "id": 2141
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "電磁鐵的磁性強弱與哪個因素無關？",
+      "options": [
+        "線圈圈數",
+        "電流大小",
+        "鐵芯有無",
+        "磁鐵顏色"
+      ],
+      "answer": 3,
+      "explanation": "與顏色完全無關。",
+      "id": 2142
+    },
+    {
+      "unit": "磁學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "冷次定律指出感應電流的方向會？",
+      "options": [
+        "抵抗磁場變化",
+        "增強磁場變化",
+        "不變",
+        "隨機"
+      ],
+      "answer": 0,
+      "explanation": "冷次定律：感應電流產生的磁場抵抗原磁場的變化。",
+      "id": 2143
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "熱量由高溫傳到低溫，三種方式為？",
+      "options": [
+        "傳導、對流、輻射",
+        "傳導、對流、折射",
+        "傳導、輻射、折射",
+        "對流、輻射、折射"
+      ],
+      "answer": 0,
+      "explanation": "熱傳播三方式：傳導、對流、輻射。",
+      "id": 2144
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "水從 0°C 加熱到 4°C 體積會？",
+      "options": [
+        "縮小",
+        "增大",
+        "不變",
+        "先增後減"
+      ],
+      "answer": 0,
+      "explanation": "水在 4°C 時密度最大，0→4°C 體積縮小。",
+      "id": 2145
+    },
+    {
+      "unit": "熱學",
+      "subject": "物理",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "壓力鍋能加速煮熟食物的原因是？",
+      "options": [
+        "壓力高沸點上升",
+        "壓力高沸點下降",
+        "溫度較高",
+        "體積較大"
+      ],
+      "answer": 0,
+      "explanation": "壓力鍋內壓力高於 1 atm，水沸點高於 100°C。",
+      "id": 2146
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "鉀、鈉等金屬與水反應會產生？",
+      "options": [
+        "氫氣",
+        "氧氣",
+        "氯氣",
+        "氮氣"
+      ],
+      "answer": 0,
+      "explanation": "2Na+2H₂O→2NaOH+H₂↑。",
+      "id": 2147
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "下列何者為雙原子分子？",
+      "options": [
+        "He",
+        "O₂",
+        "CO₂",
+        "CH₄"
+      ],
+      "answer": 1,
+      "explanation": "O₂ 為兩個氧原子組成的雙原子分子。He 為單原子。",
+      "id": 2148
+    },
+    {
+      "unit": "物質組成",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電子組態 2-8-2 代表哪個元素？",
+      "options": [
+        "鎂（Mg）",
+        "鈉（Na）",
+        "鋁（Al）",
+        "矽（Si）"
+      ],
+      "answer": 0,
+      "explanation": "2-8-2 共 12 個電子，原子序 12 為鎂。",
+      "id": 2149
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "基礎",
+      "type": "single",
+      "question": "下列哪個反應屬於還原？",
+      "options": [
+        "Fe₂O₃→Fe",
+        "Fe→Fe₂O₃",
+        "Mg→MgO",
+        "Na→Na⁺"
+      ],
+      "answer": 0,
+      "explanation": "Fe₂O₃→Fe，鐵得到電子被還原。",
+      "id": 2150
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "中等",
+      "type": "single",
+      "question": "焊接金屬前常用氯化銨除去金屬表面的氧化層，這是利用？",
+      "options": [
+        "氧化還原",
+        "酸鹼中和",
+        "沉澱",
+        "錯合物"
+      ],
+      "answer": 0,
+      "explanation": "氯化銨加熱產生 HCl，與氧化層反應。",
+      "id": 2151
+    },
+    {
+      "unit": "氧化還原",
+      "subject": "化學",
+      "difficulty": "進階",
+      "type": "single",
+      "question": "電解食鹽水時，陽極產生？",
+      "options": [
+        "氯氣",
+        "氫氣",
+        "氧氣",
+        "鈉"
+      ],
+      "answer": 0,
+      "explanation": "電解食鹽水：陽極 Cl⁻→Cl₂，陰極 H₂O→H₂+OH⁻。",
+      "id": 2152
     }
   ],
   "subjects": [
@@ -34038,6 +34534,6 @@
     }
   ],
   "meta": {
-    "totalQuestions": 2121
+    "totalQuestions": 2152
   }
 }
