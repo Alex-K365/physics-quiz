@@ -9,6 +9,13 @@
 <meta property="og:title" content="理化題庫 - 免費線上練習">
 <meta property="og:description" content="免費理化題庫，涵蓋力學、光學、電學等 14 單元，含模擬考與錯題本功能。">
 <meta property="og:type" content="website">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="理化題庫">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%231f6392' rx='32'/%3E%3Ctext x='96' y='128' font-size='120' text-anchor='middle' fill='white' font-family='sans-serif'%3E🧪%3C/text%3E%3C/svg%3E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="理化題庫">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 :root{--bg-start:#eef2f9;--bg-end:#d9e2ef;--card-bg:rgba(255,255,255,0.55);--card-border:rgba(255,255,255,0.5);--card-shadow:0 8px 32px rgba(0,0,0,0.06),0 1px 4px rgba(0,0,0,0.04);--card-hover-shadow:0 20px 60px -8px rgba(0,0,0,0.15),0 4px 12px rgba(0,0,0,0.05);--text-primary:#1a2c3e;--text-secondary:#2c3e50;--text-muted:#4a627a;--accent:#1f6392;--accent-light:#3b82f6;--accent-glow:rgba(59,130,246,0.35);--tag-bg:rgba(31,99,146,0.1);--btn-bg:#1f3a4b;--btn-hover:#2c7da0;--border-light:rgba(0,0,0,0.06);--glass-rgb:255,255,255;--nav-blur:rgba(255,255,255,0.6);--wrong-bg:rgba(220,38,38,0.08);--correct-bg:rgba(5,150,105,0.08);--gradient-1:rgba(59,130,246,0.08);--gradient-2:rgba(168,85,247,0.05)}
@@ -1601,44 +1608,10 @@ function exportWrongPDF() {
 
 loadQuestions();
 
-
-
-
-// Fetch latest blog posts from Blogger via JSONP (bypass CORS)
-function loadBlogPosts() {
-  var s = document.createElement('script');
-  s.src = 'https://edtechlab365.blogspot.com/feeds/posts/default?alt=json-in-script&callback=handleBlogFeed&max-results=5';
-  document.body.appendChild(s);
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(function(){});
 }
 
-function handleBlogFeed(data) {
-  var entries = data.feed.entry || [];
-  var html = '<ul class="blog-list">';
-  for (var i = 0; i < Math.min(entries.length, 5); i++) {
-    var e = entries[i];
-    var title = e.title.$t;
-    var link = e.link.find(function(l) { return l.rel === 'alternate'; });
-    var href = link ? link.href : '#';
-    var published = e.published.$t;
-    var date = published ? published.slice(0, 10) : '';
-    var labels = '';
-    if (e.category) {
-      var cats = e.category.map(function(c) { return c.term; }).slice(0, 3);
-      if (cats.length) labels = '<span style="font-size:11px;color:var(--accent)">#' + cats.join(' #') + '</span>';
-    }
-    html += '<li class="blog-item">' +
-      '<div class="blog-icon">📄</div>' +
-      '<div class="blog-info">' +
-      '<a class="blog-title" href="' + href + '" target="_blank" rel="noopener">' + title + '</a>' +
-      '<div class="blog-meta">' + date + (labels ? ' &middot; ' + labels : '') + '</div>' +
-      '</div></li>';
-  }
-  html += '</ul>';
-  html += '<div style="text-align:right;margin-top:8px"><a href="https://edtechlab365.blogspot.com/" target="_blank" style="font-size:12px;color:var(--accent);text-decoration:none">更多文章 →</a></div>';
-  document.getElementById('blogContent').innerHTML = html;
-}
-
-setTimeout(loadBlogPosts, 1000);
 </script>
 
 <div class="footer">
